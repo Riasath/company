@@ -72,7 +72,7 @@
 						<img src="../front-end/img/info-box6.png" alt="image">
 					</div>
 					<div class="info-box-content">
-						<h5 class="info-box-title">IMPECCABLE QUALITY</h5>
+						<h5 class="info-box-title">IMPECCABLE Test QUALITY</h5>
 						<p class="text">The joint venture experience of our versatile engineers strictly maintain the quality of your products. 
 						This standard has been indisputably maintained from 2001.
 						</p>

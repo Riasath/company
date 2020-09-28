@@ -96,3 +96,4 @@
 					<img src="../front-end/img/testimonial2.png" alt="image">
 				</div>
 			</div>
+		</div>
