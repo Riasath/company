@@ -29,7 +29,7 @@
 
 				<ul class="primary-menu-menu">
 					<li class="menu-item-has-children">
-						<a href="#">Home</a>
+						<a href="<?php echo base_url()?>home-menu">Home</a>
 					</li>
 					
 					<li class="has-megamenu menu-item-has-children">
