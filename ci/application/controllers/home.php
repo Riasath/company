@@ -71,7 +71,7 @@ class Home extends CI_Controller {
           $data['client_section']='pages/client';
            $data['signup_section']='pages/signup';
 
-           $this->load->view('pages/blogtest',$data);
+           $this->load->view('pages/blogpage',$data);
 
      }
 
