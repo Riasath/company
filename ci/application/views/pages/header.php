@@ -1,7 +1,7 @@
 <div class="container">
 		<div class="top-bar-contact">
 			<div class="contact-item">
-				<img src="../front-end/img/united-states-of-america.png" class="flags" alt="flag">
+				<img src="front-end/img/united-states-of-america.png" class="flags" alt="flag">
 				<select>
 					<option >All</option>
 					<option value="2">Farmgate,Dhaka</option>
@@ -23,7 +23,7 @@
 		</div>
 
 		<div class="login-block">
-			<img src="../front-end/img/signin_dark.png" class="sign-in">
+			<img src="front-end/img/signin_dark.png" class="sign-in">
 			<a class="js-window-popup" href="#">Sign up</a>
 		</div>
 
@@ -32,19 +32,19 @@
 			<div class="socials">
 
 				<a href="#" class="social__item">
-					<img src="../front-end/svg/circle-facebook.svg" alt="facebook">
+					<img src="front-end/svg/circle-facebook.svg" alt="facebook">
 				</a>
 
 				<a href="#" class="social__item">
-					<img src="../front-end/svg/twitter.svg" alt="twitter">
+					<img src="front-end/svg/twitter.svg" alt="twitter">
 				</a>
 
 				<a href="#" class="social__item">
-					<img src="../front-end/svg/google.svg" alt="google">
+					<img src="front-end/svg/google.svg" alt="google">
 				</a>
 
 				<a href="#" class="social__item">
-					<img src="../front-end/svg/youtube.svg" alt="youtube">
+					<img src="front-end/svg/youtube.svg" alt="youtube">
 				</a>
 
 			</div>

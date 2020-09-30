@@ -42,7 +42,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author1.png" alt="author">
+										<img src="front-end/img/post-author1.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -68,7 +68,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author2.png" alt="author">
+										<img src="front-end/img/post-author2.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -94,7 +94,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author3.png" alt="author">
+										<img src="front-end/img/post-author3.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -120,7 +120,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author1.png" alt="author">
+										<img src="front-end/img/post-author1.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -146,7 +146,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author2.png" alt="author">
+										<img src="front-end/img/post-author2.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -172,7 +172,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author3.png" alt="author">
+										<img src="front-end/img/post-author3.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -198,7 +198,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author1.png" alt="author">
+										<img src="front-end/img/post-author1.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -224,7 +224,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="../front-end/img/post-author2.png" alt="author">
+										<img src="front-end/img/post-author2.png" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>

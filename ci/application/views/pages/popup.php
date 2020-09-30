@@ -11,7 +11,7 @@
 
 			<div class="logo">
 				<a href="" class="full-block-link"></a>
-				<img src="../front-end/custom/img/rtsoftbd_logo.png" alt="RTSOFTBD">
+				<img src="front-end/custom/img/rtsoftbd_logo.png" alt="RTSOFTBD">
 				
 			</div>
 
@@ -29,7 +29,7 @@
 			<br>
 
 			<div class="contacts-item">
-				<img src="../front-end/img/contact4.png" alt="phone">
+				<img src="front-end/img/contact4.png" alt="phone">
 				<div class="content">
 					<a href="#" class="title">+8801775-373737</a>
 					<p class="sub-title">Mon-Sat 9am-6pm</p>
@@ -37,7 +37,7 @@
 			</div>
 
 			<div class="contacts-item">
-				<img src="../front-end/img/contact5.png" alt="phone">
+				<img src="front-end/img/contact5.png" alt="phone">
 				<div class="content">
 					<a href="#" class="title">info@rtsoftbd.com</a>
 					<p class="sub-title">online/offline support</p>
@@ -45,7 +45,7 @@
 			</div>
 
 			<div class="contacts-item">
-				<img src="../front-end/img/contact6.png" alt="phone">
+				<img src="front-end/img/contact6.png" alt="phone">
 				<div class="content">
 					<a href="#" class="title">House # 41, Flat # B3, Road # 8, Block # E,</a>
 					<p class="sub-title">Banasree, Rampura, Dhaka-1219</p>

@@ -21,25 +21,25 @@
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="../front-end/img/client1-hover.png" alt="logo" class="hover">
+									<img src="front-end/img/client1-hover.png" alt="logo" class="hover">
 								</a>
 							</div>
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="../front-end/img/client2-hover.png" alt="logo" class="hover">
+									<img src="front-end/img/client2-hover.png" alt="logo" class="hover">
 								</a>
 							</div>
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="../front-end/img/client3-hover.png" alt="logo" class="hover">
+									<img src="front-end/img/client3-hover.png" alt="logo" class="hover">
 								</a>
 							</div>
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="../front-end/img/client4-hover.png" alt="logo" class="hover">
+									<img src="front-end/img/client4-hover.png" alt="logo" class="hover">
 								</a>
 							</div>
 

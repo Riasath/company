@@ -27,7 +27,7 @@
 							</div>
 							<div class="col-lg-12">
 								<div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-									<img src="../front-end/img/slider1.png" alt="slider">
+									<img src="front-end/img/slider1.png" alt="slider">
 								</div>
 							</div>
 
@@ -65,7 +65,7 @@
 
 							<div class="col-lg-7 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-									<img src="../front-end/img/slider2.png" alt="slider">
+									<img src="front-end/img/slider2.png" alt="slider">
 								</div>
 							</div>
 
@@ -102,7 +102,7 @@
 							</div>
 							<div class="col-lg-6 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-									<img src="../front-end/img/slider3.png" alt="slider">
+									<img src="front-end/img/slider3.png" alt="slider">
 								</div>
 							</div>
 
@@ -136,7 +136,7 @@
 
 							<div class="col-lg-12">
 								<div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-									<img src="../front-end/img/slider4.png" alt="slider">
+									<img src="front-end/img/slider4.png" alt="slider">
 								</div>
 
 							</div>
@@ -180,7 +180,7 @@
 
 							<div class="col-lg-6 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-									<img src="../front-end/img/slider5.png" alt="slider">
+									<img src="front-end/img/slider5.png" alt="slider">
 								</div>
 							</div>
 

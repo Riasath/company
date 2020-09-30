@@ -6,7 +6,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="../front-end/img/info-box1.png" alt="image">
+						<img src="front-end/img/info-box1.png" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">OUR PLANNING BETTER</h5>
@@ -19,7 +19,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="../front-end/img/info-box2.png" alt="image">
+						<img src="front-end/img/info-box2.png" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">OUR FINANCES STAY TRACKED</h5>
@@ -32,7 +32,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="../front-end/img/info-box3.png" alt="image">
+						<img src="front-end/img/info-box3.png" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">WE FUNCTION FASTER</h5>
@@ -46,7 +46,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="../front-end/img/info-box4.png" alt="image">
+						<img src="front-end/img/info-box4.png" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">WE CAN CONVERT MORE LEADS</h5>
@@ -59,7 +59,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="../front-end/img/info-box5.png" alt="image">
+						<img src="front-end/img/info-box5.png" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">WE ARE VERY EFFICIENT!</h5>
@@ -73,7 +73,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="../front-end/img/info-box6.png" alt="image">
+						<img src="front-end/img/info-box6.png" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">IMPECCABLE Test QUALITY</h5>

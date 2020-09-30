@@ -16,19 +16,19 @@
 
 					<div class="socials">
 						<a href="#" class="social__item">
-							<img src="../front-end/svg/circle-facebook.svg" alt="facebook">
+							<img src="front-end/svg/circle-facebook.svg" alt="facebook">
 						</a>
 						<a href="#" class="social__item">
-							<img src="../front-end/svg/twitter.svg" alt="twitter">
+							<img src="front-end/svg/twitter.svg" alt="twitter">
 						</a>
 						<a href="#" class="social__item">
-							<img src="../front-end/svg/google.svg" alt="google">
+							<img src="front-end/svg/google.svg" alt="google">
 						</a>
 						<a href="#" class="social__item">
-							<img src="../front-end/svg/youtube.svg" alt="youtube">
+							<img src="front-end/svg/youtube.svg" alt="youtube">
 						</a>
 						<a href="#" class="social__item">
-							<img src="../front-end/svg/rss.svg" alt="rss">
+							<img src="front-end/svg/rss.svg" alt="rss">
 						</a>
 					</div>
 				</div>

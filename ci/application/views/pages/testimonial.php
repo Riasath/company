@@ -47,7 +47,7 @@
 
 											</div>
 											<div class="avatar" data-swiper-parallax="-50">
-												<img src="../front-end/img/avatar.png" alt="avatar">
+												<img src="front-end/img/avatar.png" alt="avatar">
 											</div>
 										</div>
 										<div class="testimonial-slider-item swiper-slide">
@@ -60,7 +60,7 @@
 
 											</div>
 											<div class="avatar" data-swiper-parallax="-50">
-												<img src="../front-end/img/avatar.png" alt="avatar">
+												<img src="front-end/img/avatar.png" alt="avatar">
 											</div>
 										</div>
 										<div class="testimonial-slider-item swiper-slide">
@@ -73,7 +73,7 @@
 
 											</div>
 											<div class="avatar" data-swiper-parallax="-50">
-												<img src="../front-end/img/avatar.png" alt="avatar">
+												<img src="front-end/img/avatar.png" alt="avatar">
 											</div>
 										</div>
 									</div>
@@ -86,14 +86,14 @@
 								</div>
 
 								<div class="testimonial__thumb-img">
-									<img src="../front-end/img/testimonial1.png" alt="image">
+									<img src="front-end/img/testimonial1.png" alt="image">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="testimonial-img">
-					<img src="../front-end/img/testimonial2.png" alt="image">
+					<img src="front-end/img/testimonial2.png" alt="image">
 				</div>
 			</div>
 		</div>

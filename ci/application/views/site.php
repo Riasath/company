@@ -6,24 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title><?php echo"$title";?></title>
 
-	<link rel="stylesheet" type="text/css" href="../front-end/css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/crumina-fonts.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/grid.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/base.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/blocks.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/layouts.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/modules.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/widgets-styles.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/ion.rangeSlider.css">
-
-
+	<link rel="stylesheet" type="text/css" href="front-end/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/crumina-fonts.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/base.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/blocks.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/layouts.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/modules.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/widgets-styles.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/ion.rangeSlider.css"
 	<!--Plugins styles-->
 
-	<link rel="stylesheet" type="text/css" href="../front-end/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/primary-menu.css">
-	<link rel="stylesheet" type="text/css" href="../front-end/css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/primary-menu.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/magnific-popup.css">
 
 	<!--Styles for RTL-->
 
@@ -247,39 +245,39 @@
 
 <!-- JS Script -->
 
-<script src="../front-end/js/jquery-3.4.1.js"></script>
+<script src="front-end/js/jquery-3.4.1.js"></script>
 
-<script src="../front-end/js/js-plugins/crum-mega-menu.js"></script>
-<script src="../front-end/js/js-plugins/swiper.jquery.min.js"></script>
-<script src="../front-end/js/js-plugins/waypoints.js"></script>
-<script src="../front-end/js/js-plugins/jquery.drawsvg.js"></script>
-<script src="../front-end/js/js-plugins/jquery-countTo.js"></script>
-<script src="../front-end/js/js-plugins/jquery.mousewheel.js"></script>
-<script src="../front-end/js/js-plugins/jquery.mCustomScrollbar.js"></script>
-<script src="../front-end/js/js-plugins/imagesLoaded.js"></script>
-<script src="../front-end/js/js-plugins/jquery.magnific-popup.js"></script>
-<script src="../front-end/js/js-plugins/jquery.matchHeight.js"></script>
-<script src="../front-end/js/js-plugins/segment.js"></script>
-<script src="../front-end/js/js-plugins/bootstrap.js"></script>
-<script src="../front-end/js/js-plugins/jquery-circle-progress.js"></script>
-<script src="../front-end/js/js-plugins/Headroom.js"></script>
-<script src="../front-end/js/js-plugins/smooth-scroll.js"></script>
-<script src="../front-end/js/js-plugins/jquery.nice-select.js"></script>
-<script src="../front-end/js/js-plugins/fastClick.js"></script>
-<script src="../front-end/js/js-plugins/form-actions.js"></script>
-<script src="../front-end/js/js-plugins/velocity.js"></script>
-<script src="../front-end/js/js-plugins/time-line.js"></script>
-<script src="../front-end/js/js-plugins/ScrollMagic.min.js"></script>
-<script src="../front-end/js/js-plugins/animation.velocity.min.js"></script>
-<script src="../front-end/js/js-plugins/ajax-pagination.js"></script>
-<script src="../front-end/js/js-plugins/donut-chart.js"></script>
-<script src="../front-end/js/js-plugins/isotope.pkgd.min.js"></script>
-<script src="../front-end/js/js-plugins/photo-gallery.js"></script>
-<script src="../front-end/js/js-plugins/ion.rangeSlider.js"></script>
-<script src="../front-end/js/js-plugins/leaflet.js"></script>
-<script src="../front-end/js/js-plugins/MarkerClusterGroup.js"></script>
+<script src="front-end/js/js-plugins/crum-mega-menu.js"></script>
+<script src="front-end/js/js-plugins/swiper.jquery.min.js"></script>
+<script src="front-end/js/js-plugins/waypoints.js"></script>
+<script src="front-end/js/js-plugins/jquery.drawsvg.js"></script>
+<script src="front-end/js/js-plugins/jquery-countTo.js"></script>
+<script src="front-end/js/js-plugins/jquery.mousewheel.js"></script>
+<script src="front-end/js/js-plugins/jquery.mCustomScrollbar.js"></script>
+<script src="front-end/js/js-plugins/imagesLoaded.js"></script>
+<script src="front-end/js/js-plugins/jquery.magnific-popup.js"></script>
+<script src="front-end/js/js-plugins/jquery.matchHeight.js"></script>
+<script src="front-end/js/js-plugins/segment.js"></script>
+<script src="front-end/js/js-plugins/bootstrap.js"></script>
+<script src="front-end/js/js-plugins/jquery-circle-progress.js"></script>
+<script src="front-end/js/js-plugins/Headroom.js"></script>
+<script src="front-end/js/js-plugins/smooth-scroll.js"></script>
+<script src="front-end/js/js-plugins/jquery.nice-select.js"></script>
+<script src="front-end/js/js-plugins/fastClick.js"></script>
+<script src="front-end/js/js-plugins/form-actions.js"></script>
+<script src="front-end/js/js-plugins/velocity.js"></script>
+<script src="front-end/js/js-plugins/time-line.js"></script>
+<script src="front-end/js/js-plugins/ScrollMagic.min.js"></script>
+<script src="front-end/js/js-plugins/animation.velocity.min.js"></script>
+<script src="front-end/js/js-plugins/ajax-pagination.js"></script>
+<script src="front-end/js/js-plugins/donut-chart.js"></script>
+<script src="front-end/js/js-plugins/isotope.pkgd.min.js"></script>
+<script src="front-end/js/js-plugins/photo-gallery.js"></script>
+<script src="front-end/js/js-plugins/ion.rangeSlider.js"></script>
+<script src="front-end/js/js-plugins/leaflet.js"></script>
+<script src="front-end/js/js-plugins/MarkerClusterGroup.js"></script>
 
-<script src="../front-end/js/main.js"></script>
+<script src="front-end/js/main.js"></script>
 
 <!-- ...end JS Script -->
 

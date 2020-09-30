@@ -18,9 +18,9 @@
 						</div>
 
 						<div class="images-block">
-							<img src="../front-end/img/subscr-gear.png" alt="gear" class="gear">
-							<img src="../front-end/img/subscr1.png" alt="mail" class="mail">
-							<img src="../front-end/img/subscr-mailopen.png" alt="mail" class="mail-2">
+							<img src="front-end/img/subscr-gear.png" alt="gear" class="gear">
+							<img src="front-end/img/subscr1.png" alt="mail" class="mail">
+							<img src="front-end/img/subscr-mailopen.png" alt="mail" class="mail-2">
 						</div>
 					</div>
 				</div>

@@ -8,7 +8,7 @@
 
 			<div class="logo">
 				<a href="#" class="full-block-link"></a>
-				<img src="../front-end/custom/img/rtsoftbd_logo.png" alt="RTSOFTBD">
+				<img src="front-end/custom/img/rtsoftbd_logo.png" alt="RTSOFTBD">
 				
 			</div>
 
@@ -114,8 +114,8 @@
 									<ul>
 										<li>
 											<div class="google-logo">
-												<img src="../front-end/custom/img/basis.png" alt="logo">
-												<img src="../front-end/custom/img/iso-header-logo.png" alt="logo">
+												<img src="front-end/custom/img/basis.png" alt="logo">
+												<img src="front-end/custom/img/iso-header-logo.png" alt="logo">
 											</div>
 
 											<p class="google-text">Our company is a member of BASIS.
