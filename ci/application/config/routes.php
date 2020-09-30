@@ -53,3 +53,4 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['home-menu']='home/home_menu';
+$route['blog-menu']='home/blog_menu';

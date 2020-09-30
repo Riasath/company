@@ -175,7 +175,7 @@
 					
 
 					<li class="">
-						<a href="#">Blog</a>
+						<a href="<?php echo base_url()?>blog-menu">Blog</a>
 					</li>
 					<li class="">
 						<a href="#">Contacts</a>

@@ -22,6 +22,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	//only fot test purpose
 	public function rtsoft()
 	{
 		$this->load->view('welcome_message');
