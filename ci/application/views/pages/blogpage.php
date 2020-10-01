@@ -3,24 +3,24 @@
 <head>
 	<title></title>
 
-	<link rel="stylesheet" type="text/css" hrefront-end/css/fonts.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/crumina-fonts.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/normalize.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/grid.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/base.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/blocks.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/layouts.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/modules.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/widgets-styles.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/ion.rangeSlider.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/primary-menu.css">
-	<link rel="stylesheet" type="text/css" hrefront-end/css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/crumina-fonts.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/base.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/blocks.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/layouts.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/modules.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/widgets-styles.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/ion.rangeSlider.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/primary-menu.css">
+	<link rel="stylesheet" type="text/css" href="front-end/css/magnific-popup.css">
 
 	<!--Styles for RTL-->
 
-	<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">--
 
 	<!--External fonts-->
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
