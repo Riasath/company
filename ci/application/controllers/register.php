@@ -37,15 +37,9 @@ class Register extends CI_Controller {
    $sdata=array();
   redirect('','refresh');
  }
-public function manage_users(){
 
-    $data=array();
-    $data['all_users_info']=$this->admin_model->all_users_info();
-$data['admin_index']=$this->load->view('pages/manage_users','data',true);
-   
-     $this->load->view('pages/manage_users',$data);
   
-}
+
 public function users_login_area(){
 
      $username=$this->input->post('username',true);
@@ -80,6 +74,60 @@ public function users_login_area(){
 
 
 }
+public function add_admin(){
+
+$this->load->view('pages/add_admin');
+
+}
+public function save_admin(){
+$this->admin_model->save_admin_info();
+   $sdata=array();
+  redirect('','refresh');
+
+}
+
+public function manage_admin(){
+
+
+    $data=array();
+    $data['all_admin_info']=$this->admin_model->all_admin_info();
+$data['admin_index']=$this->load->view('pages/manage_admin','data',true);
+   
+     $this->load->view('pages/manage_admin',$data);
+}
+public function slider_image(){
+
+
+  $this->load->view('pages/sliderimage');
+}
+public function save_slider_image(){
+
+$this->admin_model->save_slider_info();
+   $sdata=array();
+  redirect('','refresh');
+
+
+
+}
+public function slider_page(){
+
+
+$this->load->view('pages/sliderarea');
+}
+public function manage_users(){
+
+
+    $data=array();
+    $data['all_users_info']=$this->admin_model->all_users_info();
+$data['admin_index']=$this->load->view('pages/manage_users','data',true);
+   
+     $this->load->view('pages/manage_users',$data);
+  
+}
+
+  
+
+
 
 	
 

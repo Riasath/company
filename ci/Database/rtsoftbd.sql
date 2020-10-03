@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 02, 2020 at 10:25 AM
+-- Generation Time: Oct 03, 2020 at 02:11 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -35,6 +35,15 @@ CREATE TABLE `slider` (
   `slider_descriptions` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `slider`
+--
+
+INSERT INTO `slider` (`slider_id`, `slider_image`, `slider_status`, `slider_created_at`, `slider_descriptions`) VALUES
+(1, 'slider-image/11.jpg', 0, '2020-10-03 08:58:00', 'wfswd'),
+(2, 'slider-image/6.png', 0, '2020-10-03 09:29:19', 'shaownit solution'),
+(3, 'slider-image/5.png', 0, '2020-10-03 10:23:34', 'shaownit solution');
+
 -- --------------------------------------------------------
 
 --
@@ -44,15 +53,20 @@ CREATE TABLE `slider` (
 CREATE TABLE `tbl_admin` (
   `admin_id` int(11) NOT NULL,
   `adminname` varchar(100) NOT NULL,
-  `adminpassword` varchar(100) NOT NULL
+  `adminpassword` varchar(100) NOT NULL,
+  `adminimage` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbl_admin`
 --
 
-INSERT INTO `tbl_admin` (`admin_id`, `adminname`, `adminpassword`) VALUES
-(4, 'admin', 'admin');
+INSERT INTO `tbl_admin` (`admin_id`, `adminname`, `adminpassword`, `adminimage`) VALUES
+(4, 'admin', 'admin', ''),
+(13, 'dfg', 'dfg', ''),
+(15, 'shaown', '12345', 'images/client1-hover.png'),
+(17, 'testadmin', '12345', 'images/client1-hover1.png'),
+(18, 'admin', '12345', 'images/54.png');
 
 -- --------------------------------------------------------
 
@@ -125,13 +139,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `slider_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -143,3 +157,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+

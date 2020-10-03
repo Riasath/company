@@ -56,4 +56,90 @@ $result=$query_result->row();
 return $result;
 	}
 	
+
+	public function save_admin_info(){
+
+           $data=array();
+           $data['adminname']=$this->input->post('adminname',true);   
+           $data['adminpassword']=$this->input->post('adminpassword',true); 
+
+
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('adminimage')){
+
+             	$error=$this->upload->display_errors();
+             }
+             else{
+
+             	$sdata=$this->upload->data();
+             	$data['adminimage']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('tbl_admin',$data);
+
+
+
+
+			}
+			public function all_admin_info(){
+
+
+			$this->db->SELECT('*');
+			$this->db->FROM('tbl_admin');
+			$query_result=$this->db->get();
+			$admin_info=$query_result->result();
+			return $admin_info;
+
+
+
+			}
+
+
+	public function save_slider_info(){
+
+$data=array();
+$data['slider_descriptions']=$this->input->post('slider_descriptions',true);   
+
+
+
+             $sdata=array();
+             $error="";
+$config['upload_path']             = 'slider-image/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('slider_image')){
+
+             	$error=$this->upload->display_errors();
+             }
+             else{
+
+             	$sdata=$this->upload->data();
+             	$data['slider_image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('slider',$data);
+
+
+
+
+			}
+
+	
+
+
+
 }
