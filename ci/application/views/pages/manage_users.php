@@ -32,7 +32,7 @@
         <td class="center"><?php echo $v_users->first_name ?></td>
         <td class="center"><?php echo $v_users->last_name ?></td>
         <td class="center"><?php echo $v_users->username ?></td>
-        <td class="center"><?php echo $v_users->password ?></td>
+       
 
 
 

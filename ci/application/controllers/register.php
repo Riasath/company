@@ -125,6 +125,9 @@ $data['admin_index']=$this->load->view('pages/manage_users','data',true);
   
 }
 
+
+
+
   
 
 

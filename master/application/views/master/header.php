@@ -3,27 +3,27 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>RTSOFTBD - Software And System Designs</title>
+	<title><?php echo $title;?></title>
 
 
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/fonts.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/crumina-fonts.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/normalize.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/grid.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/base.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/blocks.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/layouts.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/modules.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/widgets-styles.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/ion.rangeSlider.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/fonts.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/crumina-fonts.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/normalize.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/grid.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/base.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/blocks.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/layouts.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/modules.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/widgets-styles.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/ion.rangeSlider.css');?>">
 
 
 	<!--Plugins styles-->
 
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery.mCustomScrollbar.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/swiper.min.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/primary-menu.css');?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/magnific-popup.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/jquery.mCustomScrollbar.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/swiper.min.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/primary-menu.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/magnific-popup.css');?>">
 
 	<!--Styles for RTL-->
 
@@ -78,7 +78,7 @@
 	<div class="container">
 		<div class="top-bar-contact">
 			<div class="contact-item">
-				<img src="assets/images/united-states-of-america.png" class="flags" alt="flag">
+				<img src="<?= base_url('assets/images/united-states-of-america.png');?>" class="flags" alt="flag">
 				<select>
 					<option >All</option>
 					<option value="2">Farmgate,Dhaka</option>
@@ -100,7 +100,7 @@
 		</div>
 
 		<div class="login-block">
-			<img src="assets/images/signin_dark.png" class="sign-in">
+			<img src="<?= base_url('assets/images/signin_dark.png');?>" class="sign-in">
 			<a class="js-window-popup" href="#">Sign up</a>
 		</div>
 
@@ -109,19 +109,19 @@
 			<div class="socials">
 
 				<a href="#" class="social__item">
-					<img src="assets/images/circle-facebook.svg" alt="facebook">
+					<img src="<?= base_url('assets/images/circle-facebook.svg');?>" alt="facebook">
 				</a>
 
 				<a href="#" class="social__item">
-					<img src="assets/images/twitter.svg" alt="twitter">
+					<img src="<?= base_url('assets/images/twitter.svg');?>" alt="twitter">
 				</a>
 
 				<a href="#" class="social__item">
-					<img src="assets/images/google.svg" alt="google">
+					<img src="<?= base_url('assets/images/google.svg');?>" alt="google">
 				</a>
 
 				<a href="#" class="social__item">
-					<img src="assets/images/youtube.svg" alt="youtube">
+					<img src="<?= base_url('assets/images/youtube.svg');?>" alt="youtube">
 				</a>
 
 			</div>
@@ -146,7 +146,7 @@
 
 			<div class="logo">
 				<a href="#" class="full-block-link"></a>
-				<img src="assets/images/rtsoftbd_logo.png" alt="RTSOFTBD">
+				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" alt="RTSOFTBD">
 				
 			</div>
 
@@ -252,8 +252,8 @@
 									<ul>
 										<li>
 											<div class="google-logo">
-												<img src="assets/images/basis.png" alt="logo">
-												<img src="assets/images/iso-header-logo.png" alt="logo">
+												<img src="<?= base_url('assets/images/basis.png');?>" alt="logo">
+												<img src="<?= base_url('assets/images/iso-header-logo.png');?>" alt="logo">
 											</div>
 
 											<p class="google-text">Our company is a member of BASIS.
@@ -379,7 +379,7 @@
 
 			<div class="logo">
 				<a href="#" class="full-block-link"></a>
-				<img src="assets/images/rtsoftbd_logo.png" alt="RTSOFTBD">
+				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" alt="RTSOFTBD">
 				
 			</div>
 
@@ -397,7 +397,7 @@
 			<br>
 
 			<div class="contacts-item">
-				<img src="assets/images/contact4.png" alt="phone">
+				<img src="<?= base_url('assets/images/contact4.png');?>" alt="phone">
 				<div class="content">
 					<a href="#" class="title">+8801775-373737</a>
 					<p class="sub-title">Mon-Sat 9am-6pm</p>
@@ -405,7 +405,7 @@
 			</div>
 
 			<div class="contacts-item">
-				<img src="assets/images/contact5.png" alt="phone">
+				<img src="<?= base_url('assets/images/contact5.png');?>" alt="phone">
 				<div class="content">
 					<a href="#" class="title">info@rtsoftbd.com</a>
 					<p class="sub-title">online/offline support</p>
@@ -413,7 +413,7 @@
 			</div>
 
 			<div class="contacts-item">
-				<img src="assets/images/contact6.png" alt="phone">
+				<img src="<?= base_url('assets/images/contact6.png');?>" alt="phone">
 				<div class="content">
 					<a href="#" class="title">House # 41, Flat # B3, Road # 8, Block # E,</a>
 					<p class="sub-title">Banasree, Rampura, Dhaka-1219</p>

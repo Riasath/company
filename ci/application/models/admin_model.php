@@ -27,8 +27,32 @@ public function save_users_info(){
 		$data['last_name']=$this->input->post('last_name',true);
 		$data['username']=$this->input->post('username',true);
 		$data['password']=$this->input->post('password',true);
-		$this->db->insert('users',$data);
-	}
+
+$sdata=array();
+             $error="";
+             $config['upload_path']             = 'users_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+                  $error=$this->upload->display_errors();
+             }
+             else{
+
+                  $sdata=$this->upload->data();
+                  $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+
+          
+
+            $this->db->insert('users',$data);
+      }
 	public function all_users_info(){
 
 

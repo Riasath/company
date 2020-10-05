@@ -12,5 +12,7 @@
 <a href="<?php echo base_url()?>sliderpage">Add Slider Image</a></br>
 
 
+
+
 </body>
 </html>

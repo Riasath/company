@@ -1,5 +1,6 @@
 
 
+
 <!-- Preloader -->
 
 <?php $this->load->view($header);?>
@@ -40,7 +41,7 @@
 							</div>
 							<div class="col-lg-12">
 								<div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-									<img src="assets/images/slider1.png" alt="slider">
+									<img src="<?= base_url('assets/images/slider1.png');?>" alt="slider">
 								</div>
 							</div>
 
@@ -78,7 +79,7 @@
 
 							<div class="col-lg-7 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-									<img src="assets/images/slider2.png" alt="slider">
+									<img src="<?= base_url('assets/images/slider2.png');?>" alt="slider">
 								</div>
 							</div>
 
@@ -115,7 +116,7 @@
 							</div>
 							<div class="col-lg-6 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-									<img src="assets/images/slider3.png" alt="slider">
+									<img src="<?= base_url('assets/images/slider3.png');?>" alt="slider">
 								</div>
 							</div>
 
@@ -149,7 +150,7 @@
 
 							<div class="col-lg-12">
 								<div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
-									<img src="assets/images/slider4.png" alt="slider">
+									<img src="<?= base_url('assets/images/slider4.png');?>" alt="slider">
 								</div>
 
 							</div>
@@ -193,7 +194,7 @@
 
 							<div class="col-lg-6 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
-									<img src="assets/images/slider5.png" alt="slider">
+									<img src="<?= base_url('assets/images/slider5.png');?>" alt="slider">
 								</div>
 							</div>
 
@@ -276,7 +277,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box1.png" alt="image">
+						<img src="<?= base_url('assets/images/info-box1.png');?>" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">OUR PLANNING BETTER</h5>
@@ -289,7 +290,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box2.png" alt="image">
+						<img src="<?= base_url('assets/images/info-box2.png');?>" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">OUR FINANCES STAY TRACKED</h5>
@@ -302,7 +303,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box3.png" alt="image">
+						<img src="<?= base_url('assets/images/info-box3.png');?>" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">WE FUNCTION FASTER</h5>
@@ -316,7 +317,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box4.png" alt="image">
+						<img src="<?= base_url('assets/images/info-box4.png');?>" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">WE CAN CONVERT MORE LEADS</h5>
@@ -329,7 +330,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box5.png" alt="image">
+						<img src="<?= base_url('assets/images/info-box5.png');?>" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">WE ARE VERY EFFICIENT!</h5>
@@ -343,7 +344,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box6.png" alt="image">
+						<img src="<?= base_url('assets/images/info-box6.png');?>" alt="image">
 					</div>
 					<div class="info-box-content">
 						<h5 class="info-box-title">IMPECCABLE QUALITY</h5>
@@ -489,7 +490,7 @@
 
 											</div>
 											<div class="avatar" data-swiper-parallax="-50">
-												<img src="assets/images/avatar.png" alt="avatar">
+												<img src="<?= base_url('assets/images/avatar.png');?>" alt="avatar">
 											</div>
 										</div>
 										<div class="testimonial-slider-item swiper-slide">
@@ -502,7 +503,7 @@
 
 											</div>
 											<div class="avatar" data-swiper-parallax="-50">
-												<img src="assets/images/avatar.png" alt="avatar">
+												<img src="<?= base_url('assets/images/avatar.png');?>" alt="avatar">
 											</div>
 										</div>
 										<div class="testimonial-slider-item swiper-slide">
@@ -515,7 +516,7 @@
 
 											</div>
 											<div class="avatar" data-swiper-parallax="-50">
-												<img src="assets/images/avatar.png" alt="avatar">
+												<img src="<?= base_url('assets/images/avatar.png');?>" alt="avatar">
 											</div>
 										</div>
 									</div>
@@ -528,14 +529,14 @@
 								</div>
 
 								<div class="testimonial__thumb-img">
-									<img src="assets/images/testimonial1.png" alt="image">
+									<img src="<?= base_url('assets/images/testimonial1.png');?>" alt="image">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="testimonial-img">
-					<img src="assets/images/testimonial2.png" alt="image">
+					<img src="<?= base_url('assets/images/testimonial2.png');?>" alt="image">
 				</div>
 			</div>
 		</div>
@@ -621,7 +622,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="assets/images/post-author2.png" alt="author">
+										<img src="<?= base_url('assets/images/post-author2.png');?>" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -647,7 +648,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="assets/images/post-author3.png" alt="author">
+										<img src="<?= base_url('assets/images/post-author3.png');?>" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -673,7 +674,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="assets/images/post-author1.png" alt="author">
+										<img src="<?= base_url('assets/images/post-author1.png');?>" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -699,7 +700,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="assets/images/post-author2.png" alt="author">
+										<img src="<?= base_url('assets/images/post-author2.png');?>" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -725,7 +726,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="assets/images/post-author3.png" alt="author">
+										<img src="<?= base_url('assets/images/post-author3.png');?>" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -751,7 +752,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="assets/images/post-author1.png" alt="author">
+										<img src="<?= base_url('assets/images/post-author1.png" alt="author');?>">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -777,7 +778,7 @@
 
 								<div class="post__author author vcard">
 									<div class="post-avatar">
-										<img src="assets/images/post-author2.png" alt="author">
+										<img src="<?= base_url('assets/images/post-author2.png');?>" alt="author">
 									</div>
 									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
 								</div>
@@ -821,25 +822,25 @@
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="assets/images/client1-hover.png" alt="logo" class="hover">
+									<img src="<?= base_url('assets/images/client1-hover.png');?>" alt="logo" class="hover">
 								</a>
 							</div>
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="assets/images/client2-hover.png" alt="logo" class="hover">
+									<img src="<?= base_url('assets/images/client2-hover.png');?>" alt="logo" class="hover">
 								</a>
 							</div>
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="assets/images/client3-hover.png" alt="logo" class="hover">
+									<img src="<?= base_url('assets/images/client3-hover.png');?>" alt="logo" class="hover">
 								</a>
 							</div>
 
 							<div class="swiper-slide client-item">
 								<a href="09_our_clients.html" class="client-image">
-									<img src="assets/images/client4-hover.png" alt="logo" class="hover">
+									<img src="<?= base_url('assets/images/client4-hover.png');?>" alt="logo" class="hover">
 								</a>
 							</div>
 
@@ -885,9 +886,9 @@
 						</div>
 
 						<div class="images-block">
-							<img src="assets/images/subscr-gear.png" alt="gear" class="gear">
-							<img src="assets/images/subscr1.png" alt="mail" class="mail">
-							<img src="assets/images/subscr-mailopen.png" alt="mail" class="mail-2">
+							<img src="<?= base_url('assets/images/subscr-gear.png');?>" alt="gear" class="gear">
+							<img src="<?= base_url('assets/images/subscr1.png');?>" alt="mail" class="mail">
+							<img src="<?= base_url('assets/images/subscr-mailopen.png');?>" alt="mail" class="mail-2">
 						</div>
 					</div>
 				</div>

@@ -17,5 +17,8 @@ $route['manage-admin']='register/manage_admin';
 $route['slider-image']='register/slider_image';
 $route['save-slider-image']='register/save_slider_image';
 $route['sliderpage']='register/slider_page';
+$route['manage-users-page']='pagination/index';
+$route['pagination/(:num)'] = 'pagination';
+
 
 

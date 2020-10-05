@@ -19,19 +19,19 @@
 
 					<div class="socials">
 						<a href="#" class="social__item">
-							<img src="assets/images/circle-facebook.svg" alt="facebook">
+							<img src="<?= base_url('assets/images/circle-facebook.svg');?>" alt="facebook">
 						</a>
 						<a href="#" class="social__item">
-							<img src="assets/images/twitter.svg" alt="twitter">
+							<img src="<?= base_url('assets/images/twitter.svg');?>" alt="twitter">
 						</a>
 						<a href="#" class="social__item">
-							<img src="assets/images/google.svg" alt="google">
+							<img src="<?= base_url('assets/images/google.svg');?>" alt="google">
 						</a>
 						<a href="#" class="social__item">
-							<img src="assets/images/youtube.svg" alt="youtube">
+							<img src="<?= base_url('assets/images/youtube.svg');?>" alt="youtube">
 						</a>
 						<a href="#" class="social__item">
-							<img src="assets/images/rss.svg" alt="rss">
+							<img src="<?= base_url('assets/images/rss.svg');?>" alt="rss">
 						</a>
 					</div>
 				</div>
@@ -273,39 +273,40 @@
 <!-- JS Script -->
 
 
-<script src="assets/js/jquery-3.4.1.js"></script>
+<script src="<?= base_url('assets/js/jquery-3.4.1.js');?>"></script>
 
-<script src="assets/js/js-plugins/crum-mega-menu.js"></script>
-<script src="assets/js/js-plugins/swiper.jquery.min.js"></script>
-<script src="assets/js/js-plugins/waypoints.js"></script>
-<script src="assets/js/js-plugins/jquery.drawsvg.js"></script>
-<script src="assets/js/js-plugins/jquery-countTo.js"></script>
-<script src="assets/js/js-plugins/jquery.mousewheel.js"></script>
-<script src="assets/js/js-plugins/jquery.mCustomScrollbar.js"></script>
-<script src="assets/js/js-plugins/imagesLoaded.js"></script>
-<script src="assets/js/js-plugins/jquery.magnific-popup.js"></script>
-<script src="assets/js/js-plugins/jquery.matchHeight.js"></script>
-<script src="assets/js/js-plugins/segment.js"></script>
-<script src="assets/js/js-plugins/bootstrap.js"></script>
-<script src="assets/js/js-plugins/jquery-circle-progress.js"></script>
-<script src="assets/js/js-plugins/Headroom.js"></script>
-<script src="assets/js/js-plugins/smooth-scroll.js"></script>
-<script src="assets/js/js-plugins/jquery.nice-select.js"></script>
-<script src="assets/js/js-plugins/fastClick.js"></script>
-<script src="assets/js/js-plugins/form-actions.js"></script>
-<script src="assets/js/js-plugins/velocity.js"></script>
-<script src="assets/js/js-plugins/time-line.js"></script>
-<script src="assets/js/js-plugins/ScrollMagic.min.js"></script>
-<script src="assets/js/js-plugins/animation.velocity.min.js"></script>
-<script src="assets/js/js-plugins/ajax-pagination.js"></script>
-<script src="assets/js/js-plugins/donut-chart.js"></script>
-<script src="assets/js/js-plugins/isotope.pkgd.min.js"></script>
-<script src="assets/js/js-plugins/photo-gallery.js"></script>
-<script src="assets/js/js-plugins/ion.rangeSlider.js"></script>
-<script src="assets/js/js-plugins/leaflet.js"></script>
-<script src="assets/js/js-plugins/MarkerClusterGroup.js"></script>
+<script src="<?= base_url('assets/js/js-plugins/crum-mega-menu.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/swiper.jquery.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/waypoints.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.drawsvg.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery-countTo.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.mousewheel.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.mCustomScrollbar.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/imagesLoaded.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.magnific-popup.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.matchHeight.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/segment.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/bootstrap.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery-circle-progress.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/Headroom.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/smooth-scroll.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.nice-select.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/fastClick.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/form-actions.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/velocity.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/time-line.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/ScrollMagic.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/animation.velocity.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/ajax-pagination.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/donut-chart.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/isotope.pkgd.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/photo-gallery.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/ion.rangeSlider.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/leaflet.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/MarkerClusterGroup.js');?>"></script>
 
-<script src="assets/js/main.js"></script>
+<script src="<?= base_url('assets/js/main.js');?>"></script>
+
 
 <!-- ...end JS Script -->
 

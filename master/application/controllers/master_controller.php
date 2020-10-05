@@ -14,7 +14,7 @@ class Master_controller extends CI_Controller {
             $data['header']='master/header';
             $data['footer']='master/footer';
           
-			$this->load->view('master_layout',$data);
+			$this->load->view('main_layout',$data);
 		
 	}
 

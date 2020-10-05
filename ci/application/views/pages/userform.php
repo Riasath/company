@@ -9,7 +9,7 @@
   
 <div class="container">
 
-  <form action="<?php base_url();?>save-users" method="post">
+  <form action="<?php base_url();?>save-users" method="post" enctype="multipart/form-data">
 
     <label for="fname">First_Name</label>
     <input type="text" id="fname" required="" name="first_name">
