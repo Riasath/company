@@ -19,6 +19,7 @@ $route['save-slider-image']='register/save_slider_image';
 $route['sliderpage']='register/slider_page';
 $route['manage-users-page']='pagination/index';
 $route['pagination/(:num)'] = 'pagination';
+$route['search/(:num)'] = 'search';
 
 
 

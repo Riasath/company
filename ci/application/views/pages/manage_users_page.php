@@ -32,9 +32,8 @@
                                 <td><?= $user->last_name ?></td>
                                 <td><?= $user->username ?></td>
                                  <td><?= $user->password ?></td>
-                                 <td><?= $user->image ?></td>
-                            
-                              
+                                           
+                                          <td> <img src="<?php echo base_url($user->image);?>"></td>
                                
                               
                                
