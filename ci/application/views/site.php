@@ -1,27 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title><?php echo"$title";?></title>
+	<title>RTSOFTBD</title>
 
-	<link rel="stylesheet" type="text/css" href="front-end/css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/crumina-fonts.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/grid.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/base.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/blocks.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/layouts.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/modules.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/widgets-styles.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/ion.rangeSlider.css"
+
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/fonts.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/crumina-fonts.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/normalize.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/grid.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/base.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/blocks.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/layouts.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/modules.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/widgets-styles.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/ion.rangeSlider.css');?>">
+
+
 	<!--Plugins styles-->
 
-	<link rel="stylesheet" type="text/css" href="front-end/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/swiper.min.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/primary-menu.css">
-	<link rel="stylesheet" type="text/css" href="front-end/css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/jquery.mCustomScrollbar.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/swiper.min.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/primary-menu.css');?>">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/magnific-popup.css');?>">
 
 	<!--Styles for RTL-->
 
@@ -34,9 +36,6 @@
 
 
 <body class=" ">
-
-<!-- Preloader -->
-
 <div id="hellopreloader">
 	<div class="preloader">
 		<svg width="58" height="58">
@@ -76,11 +75,289 @@
 <!-- Header -->
 
 <div class="top-bar top-bar-dark">
-	<?php $this->load->view($header_section);?>
+	<div class="container">
+		<div class="top-bar-contact">
+			<div class="contact-item">
+				<img src="<?= base_url('assets/images/united-states-of-america.png');?>" class="flags" alt="flag">
+				<select>
+					<option >All</option>
+					<option value="2">Farmgate,Dhaka</option>
+					<option value="3">Bonosree,Dhaka</option>
+				</select>
+			</div>
+
+			<div class="contact-item">
+				01775-373737
+			</div>
+
+			<div class="contact-item">
+				<a href="#">info@rtsoftbd.com</a>
+			</div>
+
+			<div class="contact-item">
+				<span>Mon. - Sat.</span> 10:00 - 21:00
+			</div>
+		</div>
+
+		<div class="login-block">
+			<img src="<?= base_url('assets/images/signin_dark.png');?>" class="sign-in">
+			<a class="js-window-popup" href="#">Sign up</a>
+		</div>
+
+		<div class="follow_us">
+			<span>Follow us:</span>
+			<div class="socials">
+
+				<a href="#" class="social__item">
+					<img src="<?= base_url('assets/images/circle-facebook.svg');?>" alt="facebook">
+				</a>
+
+				<a href="#" class="social__item">
+					<img src="<?= base_url('assets/images/twitter.svg');?>" alt="twitter">
+				</a>
+
+				<a href="#" class="social__item">
+					<img src="<?= base_url('assets/images/google.svg');?>" alt="google">
+				</a>
+
+				<a href="#" class="social__item">
+					<img src="<?= base_url('assets/images/youtube.svg');?>" alt="youtube">
+				</a>
+
+			</div>
+		</div>
+
+		<a href="#" class="top-bar-close" id="top-bar-close-js">
+			<span></span>
+			<span></span>
+		</a>
+
+	</div>
 </div>
 
 <header class="header" id="site-header">
-	<?php $this->load->view($menu_section);?>
+	<a href="#" id="top-bar-js" class="top-bar-link">
+		<i class="seosight-icon seoicon-arrow-to-bottom"></i>
+	</a>
+
+	<div class="container">
+
+		<div class="header-content-wrapper">
+
+			<div class="logo">
+				<a href="#" class="full-block-link"></a>
+				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" alt="RTSOFTBD">
+				
+			</div>
+
+			<nav id="primary-menu" class="primary-menu">
+
+				<a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+					<span class="mob-menu--title">Menu</span>
+					<span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                            <svg width="1000px" height="1000px">
+                                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                <path id="pathE" d="M 300 500 L 700 500"></path>
+                                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                            </svg>
+                        </span>
+				</a>
+
+				<!-- menu-icon-wrapper -->
+
+				<ul class="primary-menu-menu">
+					<li class="menu-item-has-children">
+						<a href="<?php base_url();?>homee">Home</a>
+					</li>
+					
+					<li class="has-megamenu menu-item-has-children">
+						<a href="#">Software Development</a>
+
+						<div class="megamenu" style="background-image: url('img/menu-bg.png');">
+							<div class="megamenu-row">
+
+								<div class="col3">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">ENTERPRISE SOLUTION</h5>
+											
+										</li>
+
+										<li>
+											<a href="#">ERP Solutions<i class="seoicon-right-arrow"></i></a>
+										</li>
+										<li>
+											<a href="#">Micro finance Solutions<i class="seoicon-right-arrow"></i></a>
+										</li>
+
+										<li>
+											<a href="#">Office Management Solutions
+												<i class="seoicon-right-arrow"></i></a>
+										</li>
+										
+									</ul>
+								</div>
+								<div class="col3">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Corporate solutions</h5>
+											
+										</li>
+
+										<li>
+											<a href="#">E-commerce Solutions<i class="seoicon-right-arrow"></i></a>
+										</li>
+										<li>
+											<a href="#">School Management System<i class="seoicon-right-arrow"></i></a>
+										</li>
+
+										<li>
+											<a href="#">Point of Sale<i class="seoicon-right-arrow"></i></a>
+										</li>
+
+										<li>
+											<a href="#">Storage Management System<i class="seoicon-right-arrow"></i></a>
+										</li>
+
+										<li>
+											<a href="#">Our Testimonials<i class="seoicon-right-arrow"></i></a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="col3">
+									<ul>
+
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Mobile App & IoT</h5>
+											
+										</li>
+
+										<li>
+											<a href="#">Mobile App development & maintenance<i class="seoicon-right-arrow"></i></a>
+										</li>
+										<li>
+											<a href="#">IoT<i class="seoicon-right-arrow"></i></a>
+										</li>
+										<li>
+											<a href="#">Enterprise & Cloud<i class="seoicon-right-arrow"></i></a>
+										</li>
+										
+
+									</ul>
+								</div>
+
+
+								<div class="col3">
+									<ul>
+										<li>
+											<div class="google-logo">
+												<img src="<?= base_url('assets/images/basis.png');?>" alt="logo">
+												<img src="<?= base_url('assets/images/iso-header-logo.png');?>" alt="logo">
+											</div>
+
+											<p class="google-text">Our company is a member of BASIS.
+											and our E-commerce Solution is ISO 9001 certified.
+											</p>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</li>
+					
+
+					<li class="">
+						<a href="#">Digital Marketing</a>
+						<ul class="dropdown">
+							<li class="megamenu-item-info">
+								<h5 class="megamenu-item-info-title">List of Services</h5>
+								<p class="megamenu-item-info-text">Choose a Service</p>
+							</li>
+							<li class="hover-ver2">
+								<a href="#"><i class="seoicon-pin-map"></i>
+									Local SEO
+								</a>
+							</li>
+							<li class="hover-ver2">
+								<a href="#"><i class="seoicon-mail-send"></i>
+									Email Marketing
+								</a>
+							</li>
+							<li class="hover-ver2">
+								<a href="#"><i class="seoicon-chat-comment"></i>
+									Social Media Marketing
+								</a>
+							</li>
+							<li class="menu-item-has-children hover-ver2">
+								<a href="#">
+									<i class="seoicon-search"></i>
+									Search Engine Optimization
+								</a>
+							</li>
+							<li class="hover-ver2">
+								<a href="#"><i class="seoicon-button"></i>
+									Pay Per Click Management
+								</a>
+							</li>
+							<li class="menu-item-has-children hover-ver2">
+								<a href="#">
+									<i class="seoicon-pie-graph-split"></i>
+									Services Promo List
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					
+
+					<li class="">
+						<a href="<?php base_url();?>blog">Blog</a>
+					</li>
+					<li class="">
+						<a href="#">Contacts</a>
+					</li>
+				</ul>
+			</nav>
+
+			<ul class="nav-add">
+				<li class="cart">
+
+					<a href="#" class="js-cart-animate">
+						<i class="seoicon-basket"></i>
+						<span class="cart-count">0</span>
+					</a>
+
+					<div class="cart-popup-wrap">
+						<div class="popup-cart">
+							<h4 class="title-cart">No products in the cart!</h4>
+							<p class="subtitle">Please make your choice.</p>
+							<div class="btn btn-small btn--dark">
+								<span class="text">view all catalog</span>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+				<li class="search search_main">
+					<a href="#" class="js-open-search">
+						<i class="seoicon-loupe"></i>
+					</a>
+				</li>
+			</ul>
+
+			<div class="user-menu open-overlay">
+				<a href="#" class="user-menu-content  js-open-aside">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+
+	</div>
 
 </header>
 <!-- ... End Header -->
@@ -89,90 +366,248 @@
 
 <div class="mCustomScrollbar" data-mcs-theme="dark">
 
-	<?php $this->load->view($popup_section);?>
+	<div class="popup right-menu">
 
-</div>
+		<div class="right-menu-wrap">
 
-<!-- ... End Right-menu -->
+			<div class="user-menu-close js-close-aside">
+				<a href="#" class="user-menu-content  js-clode-aside">
+					<span></span>
+					<span></span>
+				</a>
+			</div>
 
-<div class="content-wrapper">
- 
-	<!-- Main Slider -->
+			<div class="logo">
+				<a href="#" class="full-block-link"></a>
+				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" alt="RTSOFTBD">
+				
+			</div>
 
-	<div class="container-full-width">
-		<?php $this->load->view($slider_section);?>
-	</div>
+			
 
+		</div>
 
-	<!-- ... End Main Slider -->
-
-
-	<!-- Info-Box -->
-
-	<div class="container info-boxes pt100 pb100">
-
-		<?php $this->load->view($infobox_section); ?>
-
-	</div>
-
-	<!-- ... End Info-Box -->
-
-	<!-- Counters -->
-
-	<div class="container-fluid">
-
-	<?php $this->load->view($counter_section);?>
-	</div>
-
-	<!-- End Counters -->
-
-<!-- Testimonial-slider -->
-
-	<div class="container-fluid">
-		<?php $this->load->view($testimonial_section);?>
 		
+		<div class="widget contacts">
+
+			<h4 class="contacts-title">Get In Touch</h4>
+			<p class="contacts-text">RTSOFTBD is an incredibly SOFTWARE Farm for corporate and creative professionals.Focused on helping clients to build a successful business on web and mobile application.
+			It works on all major software sector.
+			</p>
+			<br>
+
+			<div class="contacts-item">
+				<img src="<?= base_url('assets/images/contact4.png');?>" alt="phone">
+				<div class="content">
+					<a href="#" class="title">+8801775-373737</a>
+					<p class="sub-title">Mon-Sat 9am-6pm</p>
+				</div>
+			</div>
+
+			<div class="contacts-item">
+				<img src="<?= base_url('assets/images/contact5.png');?>" alt="phone">
+				<div class="content">
+					<a href="#" class="title">info@rtsoftbd.com</a>
+					<p class="sub-title">online/offline support</p>
+				</div>
+			</div>
+
+			<div class="contacts-item">
+				<img src="<?= base_url('assets/images/contact6.png');?>" alt="phone">
+				<div class="content">
+					<a href="#" class="title">House # 41, Flat # B3, Road # 8, Block # E,</a>
+					<p class="sub-title">Banasree, Rampura, Dhaka-1219</p>
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 
-	<!-- End Testimonial-slider -->
-
-	<!-- Post-slider -->
-
-
-	<div class="container">
-
-	<?php $this->load->view($blog_section);?>
-	</div>
-
-	<!-- End Post-slider -->
-
-
-	<!-- Clients -->
-
-	<div class="section">
-		<?php $this->load->view($client_section);?>
-	</div>
-
-	<!-- End Clients -->
-   
-
-
-   
-
-	<!-- Subscribe Form -->
-
-	<div class="container-fluid bg-green-color">
-		<?php $this->load->view($subscribe_section);?>
-	</div>
-
-	<!-- End Subscribe Form -->
 </div>
+
+
+<section id="main-content">
+       <section class="wrapper">
+            <?= $content; ?>
+        </section>
+    </section>
+
+
+ 
+
+
+
+
+
+
+
+
 
 
 <!-- Footer -->
 
 <footer class="footer js-fixed-footer" id="site-footer">
+	<div class="container">
+		<div class="row">
 
-<?php $this->load->view($footer_page);?>
+			<div class="info">
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<div class="heading">
+						<h3 class="heading-title">RTSOFTBD</h3>
+						<div class="heading-line">
+							<span class="short-line"></span>
+							<span class="long-line"></span>
+						</div>
+						<p class="heading-text">RTSOFTBD is an incredibly SOFTWARE Farm for corporate and creative professionals.Focused on helping clients to build a successful business on web and mobile application.
+			It works on all major software sector.
+						</p>
+					</div>
+
+					<div class="socials">
+						<a href="#" class="social__item">
+							<img src="<?= base_url('assets/images/circle-facebook.svg');?>" alt="facebook">
+						</a>
+						<a href="#" class="social__item">
+							<img src="<?= base_url('assets/images/twitter.svg');?>" alt="twitter">
+						</a>
+						<a href="#" class="social__item">
+							<img src="<?= base_url('assets/images/google.svg');?>" alt="google">
+						</a>
+						<a href="#" class="social__item">
+							<img src="<?= base_url('assets/images/youtube.svg');?>" alt="youtube">
+						</a>
+						<a href="#" class="social__item">
+							<img src="<?= base_url('assets/images/rss.svg');?>" alt="rss">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 col-xs-12">
+					<div class="services">
+						<div class="heading">
+							<h3 class="heading-title">Services Provided</h3>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+						</div>
+
+						<ul class="list list--primary">
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">SEO Services</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Pay-per-click</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Social Media</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Web Analytics</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Web Development</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Content Management</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Blog Management</a>
+							</li>
+						</ul>
+
+						<ul class="list list--primary">
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Virtual Marketing</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Email Marketing</a>
+							</li>
+							<li>
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+								<a href="#">Keyword Analytics</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="contacts">
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+					<div class="contacts-item">
+						<div class="icon js-animate-icon">
+							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="  M45.1,44.2C42.9,42,39.6,40,37,42.6c-1.8,1.8-2.6,3.9-2.6,3.9s-4.3,2.3-11.7-5.2s-5.2-11.7-5.2-11.7s2.1-0.8,3.9-2.6  c2.6-2.6,0.6-5.9-1.7-8.1c-2.7-2.7-6.2-4.9-8.2-2.9c-3.7,3.7-4.4,8.4-4.4,8.4S9,35.5,18.7,45.3s20.9,11.6,20.9,11.6s4.7-0.7,8.4-4.4  C50,50.4,47.8,46.9,45.1,44.2z" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M18.4,12.2C22.2,9.5,26.9,8,32,8c13.3,0,24,10.8,24,24c0,4-1.3,9-4.4,12.2" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M27.3,55.6c-9.8-1.9-17.5-9.8-19.1-19.7" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M30,21c0,0,4.4,0,5.2,0c1.2,0,1.8,0.2,1.8,1.1s0,0.7,0,1.3c0,0.6,0,1.4-1.6,2.5c-2.3,1.6-5.6,3.8-5.6,5.1c0,1.6,0.7,2,1.8,2  s5.3,0,5.3,0" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M40,21c0,0,0,2.8,0,3.8S39.9,27,41.5,27c1.6,0,4.5,0,4.5,0v-6.1V33" fill="none" stroke="#fcb03b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+						</div>
+						<div class="content">
+							<a href="#" class="title">8 800 567.890.11</a>
+							<p class="sub-title">Mon-Fri 9am-6pm</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+					<div class="contacts-item">
+						<div class="icon js-animate-icon">
+							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="  54,17 32,36 10,17 " stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" x1="10.9" x2="26" y1="48" y2="36"/><path d="  M32.7,49H13c-2.2,0-4-1.8-4-4V19c0-2.2,1.8-4,4-4h38c2.2,0,4,1.8,4,4v15.5" fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><circle cx="44.9" cy="43.1" fill="none" r="10.1" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="  M44,41.4c0,0-1.3,3.4-0.9,5.1c0.4,1.7,2.6,2.1,3.7,1.1" fill="none" stroke="#f15b26" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><g><circle cx="45.4" cy="38.3" fill="#DCE9EE" r="0.9"/><path d="M45.4,37.3c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9C46.4,37.8,46,37.3,45.4,37.3   L45.4,37.3z" fill="#f15b26"/></g></svg>
+						</div>
+						<div class="content">
+							<a href="#" class="title">info@seosight.com</a>
+							<p class="sub-title">online support</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+					<div class="contacts-item">
+						<div class="icon js-animate-icon">
+							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon fill="none" points="  38.7,36.4 56,32 38.7,27.6 42,22 36.4,25.3 32,8 27.6,25.3 22,22 25.3,27.6 8,32 25.3,36.4 22,42 27.6,38.7 32,56 36.4,38.7 42,42   " stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></polygon><circle cx="32" cy="32" fill="none" r="4" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></circle><path d="  M26.1,53.2c-7.9-2.2-13.9-8.6-15.6-16.7" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M53.5,36.9c-1.8,8.1-8.2,14.6-16.3,16.5" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M36.9,10.5c8.2,1.9,14.7,8.3,16.6,16.6" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path><path d="  M10.5,27.1c1.9-8.2,8.3-14.6,16.4-16.5" fill="none" stroke="#3cb878" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path></svg>
+						</div>
+						<div class="content">
+							<a href="#" class="title">Melbourne, Australia</a>
+							<p class="sub-title">795 South Park Avenue</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <span>
+                        Copyright © 2016 <a href="index-2.html" class="sub-footer__link">Seosight,</a>
+                        Designed by <a href="https://themeforest.net/user/themefire/portfolio">themefire</a>
+                    </span>
+
+					<span>Developed by <a href="https://themeforest.net/user/crumina/portfolio">Crumina</a></span>
+					<span>Only on <a href="https://themeforest.net/user/crumina/portfolio">Envato Market</a></span>
+
+					<a class="back-to-top" href="#">
+						<svg class="back-to-top">
+							<use xlink:href="#to-top"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </footer>
 
 <!-- End Footer -->
@@ -181,7 +616,46 @@
 <!-- Sign-in Form Popup -->
 
 <div class="window-popup">
-	<?php $this->load->view($signup_section);?>
+	<a href="#" class="popup-close js-popup-close cd-nav-trigger">
+		<i class="seosight-icon seoicon-delete"></i>
+	</a>
+
+	<div class="sign-in-popup">
+		<h5 class="title">Register to SeoSight</h5>
+		<p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnais.</p>
+		<form class="form-validate contact-form">
+			<div class="row">
+
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<input class="input-standard-grey" placeholder="First Name" type="text">
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<input class="input-standard-grey" placeholder="Last Name" type="text">
+				</div>
+
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<input class="input-standard-grey" placeholder="Your Email" type="email">
+					<input class="input-standard-grey" placeholder="Your Password" type="password">
+
+					<select>
+						<option value="MA">Male</option>
+						<option value="FE">Female</option>
+					</select>
+
+					<div class="remember-wrap">
+						<div class="checkbox">
+							<input id="terms" type="checkbox" name="terms" value="terms">
+							<label for="terms">I accept the Terms and Conditions</label>
+						</div>
+					</div>
+
+					<a href="#" class="btn btn-large btn--primary">Complete Registration!</a>
+				</div>
+
+			</div>
+		</form>
+	</div>
 </div>
 
 <!-- Sign-in Form Popup -->
@@ -245,39 +719,41 @@
 
 <!-- JS Script -->
 
-<script src="front-end/js/jquery-3.4.1.js"></script>
 
-<script src="front-end/js/js-plugins/crum-mega-menu.js"></script>
-<script src="front-end/js/js-plugins/swiper.jquery.min.js"></script>
-<script src="front-end/js/js-plugins/waypoints.js"></script>
-<script src="front-end/js/js-plugins/jquery.drawsvg.js"></script>
-<script src="front-end/js/js-plugins/jquery-countTo.js"></script>
-<script src="front-end/js/js-plugins/jquery.mousewheel.js"></script>
-<script src="front-end/js/js-plugins/jquery.mCustomScrollbar.js"></script>
-<script src="front-end/js/js-plugins/imagesLoaded.js"></script>
-<script src="front-end/js/js-plugins/jquery.magnific-popup.js"></script>
-<script src="front-end/js/js-plugins/jquery.matchHeight.js"></script>
-<script src="front-end/js/js-plugins/segment.js"></script>
-<script src="front-end/js/js-plugins/bootstrap.js"></script>
-<script src="front-end/js/js-plugins/jquery-circle-progress.js"></script>
-<script src="front-end/js/js-plugins/Headroom.js"></script>
-<script src="front-end/js/js-plugins/smooth-scroll.js"></script>
-<script src="front-end/js/js-plugins/jquery.nice-select.js"></script>
-<script src="front-end/js/js-plugins/fastClick.js"></script>
-<script src="front-end/js/js-plugins/form-actions.js"></script>
-<script src="front-end/js/js-plugins/velocity.js"></script>
-<script src="front-end/js/js-plugins/time-line.js"></script>
-<script src="front-end/js/js-plugins/ScrollMagic.min.js"></script>
-<script src="front-end/js/js-plugins/animation.velocity.min.js"></script>
-<script src="front-end/js/js-plugins/ajax-pagination.js"></script>
-<script src="front-end/js/js-plugins/donut-chart.js"></script>
-<script src="front-end/js/js-plugins/isotope.pkgd.min.js"></script>
-<script src="front-end/js/js-plugins/photo-gallery.js"></script>
-<script src="front-end/js/js-plugins/ion.rangeSlider.js"></script>
-<script src="front-end/js/js-plugins/leaflet.js"></script>
-<script src="front-end/js/js-plugins/MarkerClusterGroup.js"></script>
+<script src="<?= base_url('assets/js/jquery-3.4.1.js');?>"></script>
 
-<script src="front-end/js/main.js"></script>
+<script src="<?= base_url('assets/js/js-plugins/crum-mega-menu.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/swiper.jquery.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/waypoints.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.drawsvg.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery-countTo.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.mousewheel.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.mCustomScrollbar.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/imagesLoaded.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.magnific-popup.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.matchHeight.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/segment.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/bootstrap.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery-circle-progress.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/Headroom.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/smooth-scroll.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/jquery.nice-select.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/fastClick.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/form-actions.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/velocity.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/time-line.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/ScrollMagic.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/animation.velocity.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/ajax-pagination.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/donut-chart.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/isotope.pkgd.min.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/photo-gallery.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/ion.rangeSlider.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/leaflet.js');?>"></script>
+<script src="<?= base_url('assets/js/js-plugins/MarkerClusterGroup.js');?>"></script>
+
+<script src="<?= base_url('assets/js/main.js');?>"></script>
+
 
 <!-- ...end JS Script -->
 

@@ -14,6 +14,7 @@ class Search extends CI_Controller {
     //display data with CI pagination
     public function index() {
 
+      
         $this->load->library('pagination');
         
           $config["base_url"] = base_url() . "search";
@@ -43,7 +44,7 @@ class Search extends CI_Controller {
         $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
         $this->pagination->initialize($config);
         $data['link'] = $this->pagination->create_links();
-        $data['message'] = '';
+        $data['message'] = 'Please type a Name';
         $data['records'] = $this->Search_model->getUserPagintaion($config['per_page'], $page);
         $this->load->view('search_data', $data);
         
@@ -59,7 +60,7 @@ class Search extends CI_Controller {
             $this->load->view('search_data' , $data);
         }
         else {
-            redirect('Search') ;
+            redirect('') ;
         }
     }
 }

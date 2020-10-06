@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2020 at 02:11 PM
+-- Generation Time: Oct 06, 2020 at 01:50 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -78,7 +78,7 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
-  `image` blob NOT NULL,
+  `image` varchar(200) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `status` int(11) NOT NULL
@@ -89,25 +89,25 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `image`, `username`, `password`, `status`) VALUES
-(3, 'asasas', 'asadadad', '', '', '', 0),
-(4, 'asasas', 'asadadad', '', '', '', 0),
-(5, 'asasas', 'asadadad', '', '', '', 0),
-(6, 'asasas', 'asadadad', '', '', '', 0),
-(7, 'asasas', 'asadadad', '', '', '', 0),
-(8, 'asasas', 'asadadad', '', '', '', 0),
-(9, 'asasas', 'asadadad', '', '', '', 0),
-(10, 'asasas', 'asadadad', '', '', '', 0),
-(11, 'asasas', 'asadadad', '', '', '', 0),
-(12, '111111111', 'asadadad', '', '', '', 0),
-(13, 'wef', 'sdfsd', '', 'df', '56465', 0),
-(14, 'saon', 'loin', '', 'serwsre', '2412', 0),
-(15, 'ads', 'asdsad', '', 'asfdsaf', '123456', 0),
-(16, 'shaown', 'mahmub', '', 'shaown', '123456', 0),
-(17, 'shaown', 'mahmub', '', 'shaown', '123456', 0),
-(18, 'shaown', 'mahmub', '', 'shaown', '123456', 0),
-(19, 'mini', 'project', '', 'codeigniter', '123456', 0),
-(20, 'rtsoft', 'bd', '', 'rtsoftbd', '123456', 0),
-(21, 'alvi', 'md', '', 'alvi', '780099', 0);
+(47, 'wef', 'dfghdf', 'users_images/5.png', 'dfg', 'dfgfd', 0),
+(48, 'shaown', 'md', 'users_images/6.png', 'shaown', '12345', 0),
+(49, 'ikbal ', 'ahmed', 'users_images/avatar.png', 'ikbal', '12345', 0),
+(50, 'Abid', 'abid', 'users_images/avatar1.png', 'abid', '12345', 0),
+(51, 'sajal', 'mazumder', 'users_images/avatar2.png', 'sazal', '12345', 0),
+(52, 'mustofa', 'md', 'users_images/avatar4.png', 'mustofa', '12345', 0),
+(53, 'sharmin', 'akter', 'users_images/avatar7.png', 'sharmin', '12345', 0),
+(56, 'manik', 'das', 'users_images/post-author3.png', 'manik', '12345', 0),
+(57, 'kallol', 'dey', 'users_images/blog-details-author.png', 'kallol', '12345', 0),
+(58, 'rakhi', 'anushua', 'users_images/avatar9.png', 'rakhi', '12345', 0),
+(59, 'sohel', 'md', 'users_images/avatar21.png', 'sohel', '12345', 0),
+(60, 'muhib', 'khan', 'users_images/51.png', 'muhib', '12345', 0),
+(61, 'sagor', 'md', 'users_images/61.png', 'sagor', '12345', 0),
+(62, 'kawsar', 'md', 'users_images/amex.png', 'kawsar', '12345', 0),
+(63, 'ershad', 'md', 'users_images/avatar11.png', 'ershad', '12345', 0),
+(64, 'tuhin', 'khan', 'users_images/avatar22.png', 'tuhin', '12345', 0),
+(65, 'kalam', 'kalam', 'users_images/avatar3.png', 'kalam', '12345', 0),
+(66, 'nayan', 'md', 'users_images/avatar71.png', 'nayan', '12345', 0),
+(67, 'musa', 'ashari', 'users_images/client1-hover1.png', 'musa', '12345', 0);
 
 --
 -- Indexes for dumped tables
@@ -151,10 +151,9 @@ ALTER TABLE `tbl_admin`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
