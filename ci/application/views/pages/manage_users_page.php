@@ -16,8 +16,18 @@
     </style>
     </head>
     <body>
+
         <div class="container">
             <h3 class="title is-3">User Information</h3>
+
+          <?php echo form_open("Search/searchUser" , ['class' => 'form-inline']); ?>
+            <div class="form-group">
+              <input type="text" class="form-control" id="searchuser" name="search" placeholder="Type a name">
+            </div>
+            <button type="submit" name="searchBtn" class="btn btn-primary submit">Search</button>
+           
+        <?php echo form_close(); ?>
+
               
             <div class="column">
                 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">

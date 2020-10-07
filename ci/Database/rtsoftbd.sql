@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 06, 2020 at 01:50 PM
+-- Generation Time: Oct 07, 2020 at 02:37 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -107,7 +107,8 @@ INSERT INTO `users` (`id`, `first_name`, `last_name`, `image`, `username`, `pass
 (64, 'tuhin', 'khan', 'users_images/avatar22.png', 'tuhin', '12345', 0),
 (65, 'kalam', 'kalam', 'users_images/avatar3.png', 'kalam', '12345', 0),
 (66, 'nayan', 'md', 'users_images/avatar71.png', 'nayan', '12345', 0),
-(67, 'musa', 'ashari', 'users_images/client1-hover1.png', 'musa', '12345', 0);
+(67, 'musa', 'ashari', 'users_images/client1-hover1.png', 'musa', '12345', 0),
+(68, 'saon', 'md', 'users_images/post-author1.png', 'rtsoftbd', '12345', 0);
 
 --
 -- Indexes for dumped tables
@@ -151,7 +152,7 @@ ALTER TABLE `tbl_admin`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

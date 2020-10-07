@@ -3,8 +3,8 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--	<title>--><?php //echo $title;?><!--</title>-->
-
+	
+           <!--  --><?php //echo $title;?><!--  -->
 
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/fonts.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/crumina-fonts.css'); ?>">
@@ -156,7 +156,7 @@
 		<div class="header-content-wrapper">
 
 			<div class="logo">
-				<a href="index-2.html" class="full-block-link"></a>
+				<a href="#" class="full-block-link"></a>
 				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" alt="RTSOFTBD">
 
 			</div>
@@ -180,13 +180,13 @@
 
 				<ul class="primary-menu-menu">
 					<li class="menu-item-has-children">
-						<a href="index-2.html">Home</a>
+						<a href="<?php echo base_url();?>home">Home</a>
 					</li>
 
 					<li class="has-megamenu menu-item-has-children">
 						<a href="#">Software Development</a>
 
-						<div class="megamenu" style="background-image: url('img/menu-bg.png');">
+						<div class="megamenu" style="background-image: url('<?= base_url('assets/images/menu-bg.png');?>');">
 							<div class="megamenu-row">
 
 								<div class="col3">
@@ -218,11 +218,11 @@
 										</li>
 
 										<li>
-											<a href="36_slider-with-photo.html">E-commerce Solutions<i
+											<a href="#">E-commerce Solutions<i
 														class="seoicon-right-arrow"></i></a>
 										</li>
 										<li>
-											<a href="25_navigation-flat.html">School Management System<i
+											<a href="#">School Management System<i
 														class="seoicon-right-arrow"></i></a>
 										</li>
 
@@ -271,8 +271,8 @@
 									<ul>
 										<li>
 											<div class="google-logo">
-												<img src="custom/img/basis.png" alt="logo">
-												<img src="custom/img/iso-header-logo.png" alt="logo">
+												<img src="<?php echo base_url('assets/')?>images/basis.png" alt="logo">
+												<img src="<?php echo base_url('assets/');?>images/iso-header-logo.png" alt="logo">
 											</div>
 
 											<p class="google-text">Our company is a member of BASIS.
@@ -331,10 +331,10 @@
 
 
 					<li class="">
-						<a href="14_blog.html">Blog</a>
+						<a href="<?php echo base_url();?>blog">Blog</a>
 					</li>
 					<li class="">
-						<a href="22_contacts.html">Contacts</a>
+						<a href="<?php echo base_url();?>contact">Contacts</a>
 					</li>
 				</ul>
 			</nav>
@@ -396,8 +396,8 @@
 			</div>
 
 			<div class="logo">
-				<a href="index-2.html" class="full-block-link"></a>
-				<img src="custom/img/rtsoftbd_logo.png" alt="RTSOFTBD">
+				<a href="#" class="full-block-link"></a>
+				<img src="<?php echo base_url('assets/');?>images/rtsoftbd_logo.png" alt="RTSOFTBD">
 
 			</div>
 
@@ -414,8 +414,8 @@
 			</p>
 			<br>
 
-			<div class="contacts-item">
-				<img src="img/contact4.png" alt="phone">
+          <div class="contacts-item">
+				<img src="<?php echo base_url('assets/');?>images/contact4.png" alt="phone">
 				<div class="content">
 					<a href="#" class="title">+8801775-373737</a>
 					<p class="sub-title">Mon-Sat 9am-6pm</p>
@@ -423,7 +423,7 @@
 			</div>
 
 			<div class="contacts-item">
-				<img src="img/contact5.png" alt="phone">
+				<img src="<?php echo base_url('assets/');?>images/contact5.png" alt="phone">
 				<div class="content">
 					<a href="#" class="title">info@rtsoftbd.com</a>
 					<p class="sub-title">online/offline support</p>
@@ -431,7 +431,7 @@
 			</div>
 
 			<div class="contacts-item">
-				<img src="img/contact6.png" alt="phone">
+				<img src="<?php echo base_url('assets/');?>images/contact6.png" alt="phone">
 				<div class="content">
 					<a href="#" class="title">House # 41, Flat # B3, Road # 8, Block # E,</a>
 					<p class="sub-title">Banasree, Rampura, Dhaka-1219</p>
@@ -474,19 +474,19 @@
 
 					<div class="socials">
 						<a href="#" class="social__item">
-							<img src="svg/circle-facebook.svg" alt="facebook">
+							<img src="<?php echo base_url('assets/');?>images/circle-facebook.svg" alt="facebook">
 						</a>
 						<a href="#" class="social__item">
-							<img src="svg/twitter.svg" alt="twitter">
+							<img src="<?php echo base_url('assets/');?>images/twitter.svg" alt="twitter">
 						</a>
 						<a href="#" class="social__item">
-							<img src="svg/google.svg" alt="google">
+							<img src="<?php echo base_url('assets/');?>images/google.svg" alt="google">
 						</a>
 						<a href="#" class="social__item">
-							<img src="svg/youtube.svg" alt="youtube">
+							<img src="<?php echo base_url('assets/');?>images/youtube.svg" alt="youtube">
 						</a>
 						<a href="#" class="social__item">
-							<img src="svg/rss.svg" alt="rss">
+							<img src="<?php echo base_url('assets/');?>images/rss.svg" alt="rss">
 						</a>
 					</div>
 				</div>

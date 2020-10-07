@@ -3,20 +3,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
-	public function index()
+public function index()
+  {
 
 
-
-	{
-           
-			$this->load->view('site');
-
-     }
+  $data['abc'] = 'xyz';
+    $data['content'] = $this->load->view('indexpage',$data, TRUE);
+    $this->load->view('site',$data);
+  
+  }
      public function homee(){
 
  
       $data=array();
-      $data['content']='pages/page_content';
+      $data['content']=$this->load->view('indexpage',$data, TRUE);
       
 			$this->load->view('site',$data);
     
@@ -24,8 +24,11 @@ class Home extends CI_Controller {
      public function blog(){
              
                
-
-           $this->load->view('site');
+     $data=array();
+      $data['content']=$this->load->view('indexpage',$data, TRUE);
+      
+      $this->load->view('site',$data);
+          
 
      }
 
