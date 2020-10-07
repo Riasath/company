@@ -1,21 +1,19 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Master_controller extends CI_Controller {
+class Master_controller extends CI_Controller
+{
 
-	
+
 	public function index()
 	{
 
-$this->load->view('main_layout');
-		
+//		echo "skjbskjdb";
+
+		$data['abc'] = 'xyz';
+		$data['content'] = $this->load->view('index',$data, TRUE);
+		$this->load->view('main_layout',$data);
 	}
 
 
-
-
-
-	
-
-     
 }
