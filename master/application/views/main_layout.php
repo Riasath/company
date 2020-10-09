@@ -180,7 +180,7 @@
 
 				<ul class="primary-menu-menu">
 					<li class="menu-item-has-children">
-						<a href="<?php echo base_url();?>home">Home</a>
+						<a href="#">Home</a>
 					</li>
 
 					<li class="has-megamenu menu-item-has-children">
@@ -227,17 +227,17 @@
 										</li>
 
 										<li>
-											<a href="37_navigation-with-photo.html">Point of Sale<i
+											<a href="#">Point of Sale<i
 														class="seoicon-right-arrow"></i></a>
 										</li>
 
 										<li>
-											<a href="38_photo-elements.html">Storage Management System<i
+											<a href="#">Storage Management System<i
 														class="seoicon-right-arrow"></i></a>
 										</li>
 
 										<li>
-											<a href="32_testimonials.html">Our Testimonials<i
+											<a href="#">Our Testimonials<i
 														class="seoicon-right-arrow"></i></a>
 										</li>
 
@@ -288,40 +288,40 @@
 
 
 					<li class="">
-						<a href="03_services.html">Digital Marketing</a>
+						<a href="#">Digital Marketing</a>
 						<ul class="dropdown">
 							<li class="megamenu-item-info">
 								<h5 class="megamenu-item-info-title">List of Services</h5>
 								<p class="megamenu-item-info-text">Choose a Service</p>
 							</li>
 							<li class="hover-ver2">
-								<a href="05_service_details_localseo.html"><i class="seoicon-pin-map"></i>
+								<a href="#"><i class="seoicon-pin-map"></i>
 									Local SEO
 								</a>
 							</li>
 							<li class="hover-ver2">
-								<a href="07_service_email_marketing.html"><i class="seoicon-mail-send"></i>
+								<a href="#"><i class="seoicon-mail-send"></i>
 									Email Marketing
 								</a>
 							</li>
 							<li class="hover-ver2">
-								<a href="06_service_detail.html"><i class="seoicon-chat-comment"></i>
+								<a href="#"><i class="seoicon-chat-comment"></i>
 									Social Media Marketing
 								</a>
 							</li>
 							<li class="menu-item-has-children hover-ver2">
-								<a href="04_service_detail_seo.html">
+								<a href="#">
 									<i class="seoicon-search"></i>
 									Search Engine Optimization
 								</a>
 							</li>
 							<li class="hover-ver2">
-								<a href="08_service_ppc_management.html"><i class="seoicon-button"></i>
+								<a href="#"><i class="seoicon-button"></i>
 									Pay Per Click Management
 								</a>
 							</li>
 							<li class="menu-item-has-children hover-ver2">
-								<a href="03_services.html">
+								<a href="#">
 									<i class="seoicon-pie-graph-split"></i>
 									Services Promo List
 								</a>
@@ -331,10 +331,10 @@
 
 
 					<li class="">
-						<a href="<?php echo base_url();?>blog">Blog</a>
+						<a href="#">Blog</a>
 					</li>
-					<li class="">
-						<a href="<?php echo base_url();?>contact">Contacts</a>
+					<li class="#">
+						<a href="#">Contacts</a>
 					</li>
 				</ul>
 			</nav>

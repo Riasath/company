@@ -7,51 +7,22 @@
 
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
+
+				 <?php foreach($all_db_slider as $v_slider){?>
 				<!-- Slides -->
-				<div class="swiper-slide bg-border-color">
-
-					<div class="container">
-						<div class="row table-cell">
-
-							<div class="col-lg-12">
-
-								<div class="slider-content align-center">
-
-									<h1 class="slider-content-title" data-swiper-parallax="-100">ENTERPRISE
-										SOLUTION</h1>
-									<h5 class="slider-content-text c-gray" data-swiper-parallax="-200">Power up the true
-										potential of your business and industry!</h5>
-
-									<div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-										<a href="04_service_detail_seo.html"
-										   class="btn btn-medium btn--dark btn-hover-shadow">
-											<span class="text">learn more</span>
-											<span class="semicircle"></span>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="slider-thumb" data-swiper-parallax="-400"
-									 data-swiper-parallax-duration="600">
-									<img src="<?= base_url('assets/images/slider1.png');?>" alt="slider">
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
 				<div class="swiper-slide bg-primary-color main-slider-bg-dark thumb-left">
+
+
 
 					<div class="container table">
 						<div class="row table-cell">
 
 							<div class="col-lg-5 table-cell">
 								<div class="slider-content">
-									<h3 class="slider-content-title" data-swiper-parallax="-100">
-										<span class="c-dark">Corporate Solutions</span>
+	<h3 class="slider-content-title" data-swiper-parallax="-100">
+		<span class="c-dark">
+      <?php echo $v_slider->slider_descriptions;?>
+		</span>
 									</h3>
 									<h6 class="slider-content-text" data-swiper-parallax="-200">We thrive to satisfy
 										your organizational needs by delivering robust, scalable business-oriented
@@ -60,7 +31,7 @@
 
 									<div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-										<a href="05_service_details_localseo.html"
+										<a href="#"
 										   class="btn btn-medium btn--dark btn-hover-shadow">
 											<span class="text">learn more</span>
 											<span class="semicircle"></span>
@@ -75,138 +46,15 @@
 							<div class="col-lg-7 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300"
 									 data-swiper-parallax-duration="500">
-									<img src="<?= base_url('assets/images/slider2.png');?>" alt="slider">
+		<img src="<?php echo base_url().$v_slider->slider_image;?>" alt="slider">
 								</div>
 							</div>
 
 						</div>
 					</div>
+
 				</div>
-				<div class="swiper-slide bg-secondary-color main-slider-bg-dark">
-
-					<div class="container table">
-						<div class="row table-cell">
-							<div class="col-lg-6 table-cell">
-
-								<div class="slider-content">
-
-									<h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Mobile App &
-										IoT Services
-									</h3>
-
-									<h5 class="slider-content-text" data-swiper-parallax="-200">Transform your business
-										processes with Mobile App & IoT Services.
-									</h5>
-
-									<div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-
-										<a href="06_service_detail.html" class="btn btn-medium btn-border">
-											<span class="text">GET STARTED</span>
-											<span class="semicircle"></span>
-										</a>
-
-									</div>
-
-								</div>
-
-							</div>
-							<div class="col-lg-6 table-cell">
-								<div class="slider-thumb" data-swiper-parallax="-300"
-									 data-swiper-parallax-duration="500">
-									<img src="<?= base_url('assets/images/slider3.png');?>" alt="slider">
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide bg-orange-color main-slider-bg-dark">
-					<div class="container table">
-						<div class="row table-cell">
-
-							<div class="col-lg-12">
-
-								<div class="slider-content align-center">
-									<h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Digital
-										Marketing</h3>
-									<h5 class="slider-content-text" data-swiper-parallax="-200">We take your business to
-										the next level by incorporating a result driven digital marketing strategy with
-										a custom designed website and mobile application, tailored for your business.
-									</h5>
-
-									<div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-										<a href="07_service_email_marketing.html"
-										   class="btn btn-medium btn--dark btn-hover-shadow">
-											<span class="text">learn more</span>
-											<span class="semicircle"></span>
-										</a>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="col-lg-12">
-								<div class="slider-thumb" data-swiper-parallax="-400"
-									 data-swiper-parallax-duration="600">
-									<img src="<?= base_url('assets/images/slider4.png');?>" alt="slider">
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide bg-green-color main-slider-bg-dark">
-
-					<div class="container table">
-						<div class="row table-cell">
-
-							<div class="col-lg-6 table-cell">
-								<div class="slider-content">
-
-									<h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">QA & Test
-										Automation
-									</h3>
-
-									<h5 class="slider-content-text" data-swiper-parallax="-200">Rest assured on the
-										smoothness of functionality, also saving time, money, vastly increasing test
-										coverage and software accuracy.
-										Team morale improves too!
-									</h5>
-
-									<div class="main-slider-btn-wrap" data-swiper-parallax="-300">
-
-										<a href="08_service_ppc_management.html"
-										   class="btn btn-medium btn--dark btn-hover-shadow">
-											<span class="text">learn more</span>
-											<span class="semicircle"></span>
-										</a>
-
-										<a href="08_service_ppc_management.html"
-										   class="btn btn-medium btn-border btn-hover-shadow">
-											<span class="text">GET STARTED</span>
-											<span class="semicircle"></span>
-										</a>
-
-									</div>
-
-								</div>
-							</div>
-
-							<div class="col-lg-6 table-cell">
-								<div class="slider-thumb" data-swiper-parallax="-300"
-									 data-swiper-parallax-duration="500">
-									<img src="<?= base_url('assets/images/slider5.png');?>" alt="slider">
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
+			<?php }?>
 			</div>
 
 			<!--Prev next buttons-->
