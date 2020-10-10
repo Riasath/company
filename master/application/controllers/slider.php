@@ -44,6 +44,14 @@ class Slider extends CI_Controller
 
 
 	}
+	public function view_slider($slider_id){
+
+         $data = array();
+		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
+		$data['slider_info'] = $this->load->view('master/view_slider', $data, true);
+		$this->load->view('master/view_slider', $data);
+		  
+	}
 
 
 }

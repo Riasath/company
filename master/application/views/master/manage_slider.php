@@ -49,6 +49,12 @@
 	Delete
 	<i class="halflings-icon white trash"></i>
 </a>
+<a class="btn btn-success"href="<?php echo base_url();?>view-slider/<?php 
+	echo $v_slider->slider_id ?>" 
+	id="delete">
+	View
+	<i class="halflings-icon white trash"></i>
+</a>
 </td>
  	
 

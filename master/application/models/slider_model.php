@@ -90,6 +90,17 @@ $this->db->where('slider_id',$slider_id);
 $this->db->delete('slider');
 
 	}
+	public function all_slider_view_by_id($slider_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('slider');
+$this->db->WHERE('slider_id',$slider_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
 
 
 

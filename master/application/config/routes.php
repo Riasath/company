@@ -18,3 +18,5 @@ $route['manage-slider']='slider/manage_slider';
 $route['edit-slider/(.+)']='slider/edit_slider/$1';
 $route['update-slider']='slider/update_slider_info';
 $route['delete-slider/(.+)']='slider/delete_slider/$1';
+$route['view-slider/(.+)']='slider/view_slider/$1';
+
