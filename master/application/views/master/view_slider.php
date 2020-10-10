@@ -21,7 +21,7 @@
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
   
-<table style="margin-top: 40px;"class="table table-striped table-bordered bootstarp-datatale datatable">
+<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
 
   <thead>

@@ -18,7 +18,7 @@
   <div class="container">
   
 <label for="slider_image"><b>Recent slider Image</b></label></br>
-    <img src="<?php echo base_url().$all_slider_info_by_id->slider_image?>" style="height:200px;width:200px;border:1px solid #000000;">
+    <img src="<?php echo base_url().$all_slider_info_by_id->slider_image?>" style="height:200px;width:500px;border:1px solid #000000;">
      </br>
 
  <label for="slider_descriptions"><b>Add Slider Title</b></label></br>
