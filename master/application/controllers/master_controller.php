@@ -16,11 +16,13 @@ class Master_controller extends CI_Controller
 //		echo "skjbskjdb";
 
 		$data['abc'] = 'xyz';
-		 $data['all_db_slider']=$this->slider_model->select_all_slider_info();
+		 $data['all_db_slider']=$this->slider_model->select_all_slider_info();	
+		  $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('index',$data, TRUE);
 
 		$this->load->view('main_layout',$data);
 	}
+	
 
 
 

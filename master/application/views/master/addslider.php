@@ -30,8 +30,10 @@
   </br>
 
 
-    <label for="slider_descriptions"><b>Add Slider Descriptions</b></label></br>
-    <input type="text" placeholder="Enter slider_descriptions" name="slider_descriptions" id="slider_descriptions" required></br>
+    <label for="slider_descriptions"><b>Add Slider Title</b></label></br>
+    <input type="text" placeholder="Enter slider title" name="slider_descriptions" id="slider_descriptions" required></br>
+    <label for="slider_about"><b>Add Slider Details</b></label></br>
+    <input type="text" placeholder="Enter slider details" name="slider_about" id="slider_about" required></br>
 
 
 

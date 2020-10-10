@@ -24,9 +24,9 @@
       <?php echo $v_slider->slider_descriptions;?>
 		</span>
 									</h3>
-									<h6 class="slider-content-text" data-swiper-parallax="-200">We thrive to satisfy
-										your organizational needs by delivering robust, scalable business-oriented
-										solutions
+									<h6 class="slider-content-text" data-swiper-parallax="-200">
+
+										<?php echo $v_slider->slider_about;?>
 									</h6>
 
 									<div class="main-slider-btn-wrap" data-swiper-parallax="-300">
@@ -68,53 +68,23 @@
 			</svg>
 
 			<!--Pagination tabs-->
-
-			<div class="slider-slides">
-				<a href="#" class="slides-item bg-border-color main-slider-bg-light">
+              	<div class="slider-slides">
+              		 <?php foreach($all_db_slides as $v_slides){?>
+			<a href="#" style="border-right: 1px solid #ffffff;" class="slides-item bg-green-color">
 					<div class="content">
 						<div class="text-wrap">
-							<h4 class="slides-title">ENTERPRISE SOLUTION</h4>
+							<h4 class="slides-title">
+								<?php echo $v_slides->slides_title;?>
+							</h4>
 						</div>
-						<div class="slides-number">01</div>
+						<div class="slides-number">
+							<?php echo $v_slides->slides_number;?>
+						</div>
 					</div>
 				</a>
+				<?php }?>
 
-				<a href="#" class="slides-item bg-primary-color">
-					<div class="content">
-						<div class="text-wrap">
-							<h4 class="slides-title">Corporate solutions</h4>
-							<div class="slides-sub-title">Mirum est notare quam littera.</div>
-						</div>
-						<div class="slides-number">02</div>
-					</div>
-				</a>
-
-				<a href="#" class="slides-item bg-secondary-color">
-					<div class="content">
-						<div class="text-wrap">
-							<h4 class="slides-title">Mobile App & IoT</h4>
-						</div>
-						<div class="slides-number">03</div>
-					</div>
-				</a>
-
-				<a href="#" class="slides-item bg-orange-color">
-					<div class="content">
-						<div class="text-wrap">
-							<h4 class="slides-title">Digital Marketing</h4>
-						</div>
-						<div class="slides-number">04</div>
-					</div>
-				</a>
-
-				<a href="#" class="slides-item bg-green-color">
-					<div class="content">
-						<div class="text-wrap">
-							<h4 class="slides-title">Security</h4>
-						</div>
-						<div class="slides-number">05</div>
-					</div>
-				</a>
+		
 			</div>
 		</div>
 	</div>

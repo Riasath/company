@@ -38,6 +38,7 @@ public function save_users_info(){
 
            $data=array();
 $data['slider_descriptions']=$this->input->post('slider_descriptions',true);   
+$data['slider_about']=$this->input->post('slider_about',true); 
              
              $sdata=array();
              $error="";
@@ -65,5 +66,17 @@ $data['slider_descriptions']=$this->input->post('slider_descriptions',true);
 
 
 			}
+                  public function save_slides_item_info(){
+
+
+
+      $data=array();
+      $data['slides_title']=$this->input->post('slides_title',true);
+      $data['slides_number']=$this->input->post('slides_number',true);
+
+
+                    $this->db->insert('slides_item',$data);
+                    $this->load->view('master/dashboard');
+      }
 
 }

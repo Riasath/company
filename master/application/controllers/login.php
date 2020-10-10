@@ -24,7 +24,8 @@ class Login extends CI_Controller {
 
      $username=$this->input->post('username',true);
      $password=$this->input->post('password',true);
-     $this->load->model('admin_model');
+     
+     
     $result= $this->admin_model->users_login_info($username,$password);
      
     if($result){
@@ -48,7 +49,19 @@ public function add_slider(){
 public function save_slider(){
 
 	$this->admin_model->save_slider_info();
-      
-  redirect('login');
+     $this->load->view('master/dashboard');
+
+
+}
+public function add_slides_item(){
+ $this->load->view('master/add_slides_item');
+
+}
+public function save_slides_item(){
+
+  $this->admin_model->save_slides_item_info();
+  
+
+
 }
 }

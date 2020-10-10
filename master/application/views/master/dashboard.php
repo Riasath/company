@@ -16,6 +16,17 @@
 	  
 
 	    </p>
+	     <p style="margin-top:60px;margin-left:30px;">
+	   	<a  href="<?= base_url();?>add-slides-item"><button type="button"class="btn btn-success">Add New Slides Item</button></a>
+	  
+
+	    </p>
+	      <p style="margin-top:60px;margin-left:30px;">
+	   	<a  href="<?= base_url();?>manage-slider"><button type="button"class="btn btn-danger">Manage Slider</button></a>
+	  
+
+	    </p>
+
 
 </body>
 </html>
