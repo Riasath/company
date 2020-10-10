@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c747dc84-f88a-44c9-b53c-67202422e750" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/master/application/views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/master/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/master/application/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/master/application/controllers/master_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/master/application/controllers/master_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/master/application/views/main_layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/master/application/views/main_layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -63,7 +61,10 @@
       <updated>1601966296922</updated>
       <workItem from="1601966298100" duration="2653000" />
       <workItem from="1601975118114" duration="102000" />
-      <workItem from="1602046912503" duration="5058000" />
+      <workItem from="1602046912503" duration="5806000" />
+      <workItem from="1602053225557" duration="38000" />
+      <workItem from="1602301046392" duration="794000" />
+      <workItem from="1602304824224" duration="771000" />
     </task>
     <servers />
   </component>
@@ -80,12 +81,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="118" key="FileChooserDialogImpl" timestamp="1601974898972">
+    <state x="460" y="118" key="FileChooserDialogImpl" timestamp="1602301840646">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="460" y="118" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1601974898972" />
+    <state x="460" y="118" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1602301840646" />
     <state x="514" y="287" key="NewPhpFileDialog" timestamp="1602047120922">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
