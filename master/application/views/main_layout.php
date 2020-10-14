@@ -179,6 +179,7 @@
 				<!-- menu-icon-wrapper -->
 
 				<ul class="primary-menu-menu">
+					
 					<li class="menu-item-has-children">
 						<a href="#">Home</a>
 					</li>
@@ -621,13 +622,7 @@
 						<div class="icon js-animate-icon">
 							<svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64"
 								 xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><polygon fill="none"
-																								  points="  38.7,36.4 56,32 38.7,27.6 42,22 36.4,25.3 32,8 27.6,25.3 22,22 25.3,27.6 8,32 25.3,36.4 22,42 27.6,38.7 32,56 36.4,38.7 42,42   "
-																								  stroke="#3cb878"
-																								  stroke-linecap="round"
-																								  stroke-linejoin="round"
-																								  stroke-miterlimit="10"
-																								  stroke-width="2"></polygon>
-								<circle cx="32" cy="32" fill="none" r="4" stroke="#3cb878" stroke-linecap="round"
+																								  po	<circle cx="32" cy="32" fill="none" r="4" stroke="#3cb878" stroke-linecap="round"
 										stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></circle>
 								<path d="  M26.1,53.2c-7.9-2.2-13.9-8.6-15.6-16.7" fill="none" stroke="#3cb878"
 									  stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
@@ -819,8 +814,26 @@
 <script src="<?php echo base_url('assets/') ?>js/js-plugins/MarkerClusterGroup.js"></script>
 
 <script src="<?php echo base_url('assets/') ?>js/main.js"></script>
+<script  src="<?php echo base_url('assets/js/custom.js');?>"></script>
+
+
 
 <!-- ...end JS Script -->
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("testw").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "login", true);
+  xhttp.send();
+}
+</script>
+
+
 
 </body>
 

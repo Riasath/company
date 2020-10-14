@@ -1,3 +1,4 @@
+ 
 <div class="content-wrapper">
 
 	<!-- Main Slider -->
@@ -68,21 +69,55 @@
 			</svg>
 
 			<!--Pagination tabs-->
-              	<div class="slider-slides">
-              		 <?php foreach($all_db_slides as $v_slides){?>
-			<a href="#" style="border-right: 1px solid #ffffff;" class="slides-item bg-green-color">
+
+              	<div class="slider-slides" >
+              			<a  onclick="loadDoc()" href=""  class="slides-item bg-border-color main-slider-bg-light">
+
 					<div class="content">
 						<div class="text-wrap">
-							<h4 class="slides-title">
-								<?php echo $v_slides->slides_title;?>
-							</h4>
+							<h4 class="slides-title">ENTERPRISE SOLUTION</h4>
 						</div>
-						<div class="slides-number">
-							<?php echo $v_slides->slides_number;?>
+						<div class="slides-number">01</div>
+					</div>
+					
+				</a>
+
+				<a href="" class="slides-item bg-primary-color" id="button2">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Corporate solutions</h4>
+							<div class="slides-sub-title">Mirum est notare quam littera.</div>
 						</div>
+						<div class="slides-number">02</div>
 					</div>
 				</a>
-				<?php }?>
+
+				<a href="#" class="slides-item bg-secondary-color" id="button3">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Mobile App & IoT</h4>
+						</div>
+						<div class="slides-number">03</div>
+					</div>
+				</a>
+
+				<a href="" class="slides-item bg-orange-color" id="button4">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Digital Marketing</h4>
+						</div>
+						<div class="slides-number">04</div>
+					</div>
+				</a>
+
+				<a href="#" class="slides-item bg-green-color" id="button5">
+					<div class="content">
+						<div class="text-wrap">
+							<h4 class="slides-title">Security</h4>
+						</div>
+						<div class="slides-number">05</div>
+					</div>
+				</a>
 
 		
 			</div>
@@ -95,99 +130,15 @@
 
 	<!-- Info-Box -->
 
-	<div class="container info-boxes pt100 pb100">
-
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="info-box--standard" data-mh="info-boxes">
-					<div class="info-box-image">
-						<img src="<?= base_url('assets/images/info-box1.png');?>" alt="image">
-					</div>
-					<div class="info-box-content">
-						<h5 class="info-box-title">OUR PLANNING BETTER</h5>
-						<p class="text">with designed complex dataset, and then experiment at scale to deploy optimized
-							large database models.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="info-box--standard" data-mh="info-boxes">
-					<div class="info-box-image">
-						<img src="<?= base_url('assets/images/info-box2.png');?>" alt="image">
-					</div>
-					<div class="info-box-content">
-						<h5 class="info-box-title">OUR FINANCES STAY TRACKED</h5>
-						<p class="text">and our customers get what they want. the latest technological advancements to
-							make everyone’s lives easier.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="info-box--standard" data-mh="info-boxes">
-					<div class="info-box-image">
-						<img src="<?= base_url('assets/images/info-box3.png');?>" alt="image">
-					</div>
-					<div class="info-box-content">
-						<h5 class="info-box-title">WE FUNCTION FASTER</h5>
-						<p class="text">with superior speed and performance for IT resources. Not to mention more
-							efficient utilization of IT resources,
-							lower IT infrastructure and operational costs and increased capacity to handle peaks in
-							demand.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="info-box--standard" data-mh="info-boxes">
-					<div class="info-box-image">
-						<img src="<?= base_url('assets/images/info-box4.png');?>" alt="image">
-					</div>
-					<div class="info-box-content">
-						<h5 class="info-box-title">WE CAN CONVERT MORE LEADS</h5>
-						<p class="text">by delivering better front and back-end experiences from real time insights to
-							generate even more revenue, customers, and partners.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="info-box--standard" data-mh="info-boxes">
-					<div class="info-box-image">
-						<img src="<?= base_url('assets/images/info-box5.png');?>" alt="image">
-					</div>
-					<div class="info-box-content">
-						<h5 class="info-box-title">WE ARE VERY EFFICIENT!</h5>
-						<p class="text">We should be, considering we enable business transformation through enhanced
-							speed,
-							efficiency, cost predictability, continuous visibility and monitoring of operations.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-				<div class="info-box--standard" data-mh="info-boxes">
-					<div class="info-box-image">
-						<img src="<?= base_url('assets/images/info-box6.png');?>" alt="image">
-					</div>
-					<div class="info-box-content">
-						<h5 class="info-box-title">IMPECCABLE QUALITY</h5>
-						<p class="text">The joint venture experience of our versatile engineers strictly maintain the
-							quality of your products.
-							This standard has been indisputably maintained from 2001.
-						</p>
-					</div>
-				</div>
-			</div>
+		<div id="testw">
+			
 		</div>
 
-	</div>
+		
+
+
+	
+
 
 	<!-- ... End Info-Box -->
 

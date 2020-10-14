@@ -500,7 +500,9 @@ var CRUMINA = {};
 		});
 
 		//swiper tabs
-		$('.slider-slides .slides-item').on('click', function () {
+		
+
+	$('.slider-slides .slides-item').on('click', function () {
 			if ($(this).hasClass('slide-active')) return false;
 			var activeIndex = $(this).parent().find('.slides-item').index(this);
 			swipers['swiper-' + $(this).closest('.swiper-container').attr('id')].slideTo(activeIndex + 1);
@@ -511,6 +513,7 @@ var CRUMINA = {};
 
 		});
 	};
+	
 
 
 	CRUMINA.burgerAnimation = function () {
