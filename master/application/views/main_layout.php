@@ -831,6 +831,16 @@ function loadDoc() {
   xhttp.open("GET", "login", true);
   xhttp.send();
 }
+function loadDoc1() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("testw").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "license.txt", true);
+  xhttp.send();
+}
 </script>
 
 

@@ -1,6 +1,6 @@
 
 
-$('#button2').click(function(){
+$('#button9').click(function(){
 
 $('#testw').load('login.php');
 

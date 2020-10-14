@@ -82,7 +82,7 @@
 					
 				</a>
 
-				<a href="" class="slides-item bg-primary-color" id="button2">
+				<a onclick="loadDoc1()" href="" class="slides-item bg-primary-color" id="button2">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Corporate solutions</h4>
