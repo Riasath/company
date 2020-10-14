@@ -181,7 +181,7 @@
 				<ul class="primary-menu-menu">
 					
 					<li class="menu-item-has-children">
-						<a href="#">Home</a>
+						<a href="<?php base_url();?>home">Home</a>
 					</li>
 
 					<li class="has-megamenu menu-item-has-children">
@@ -191,80 +191,80 @@
 							<div class="megamenu-row">
 
 								<div class="col3">
-									<ul>
-										<li class="megamenu-item-info">
-											<h5 class="megamenu-item-info-title">ENTERPRISE SOLUTION</h5>
+	<ul>
+		<li class="megamenu-item-info">
+			<h5 class="megamenu-item-info-title">ENTERPRISE SOLUTION</h5>
 
-										</li>
+		</li>
 
-										<li>
-											<a href="#">ERP Solutions<i class="seoicon-right-arrow"></i></a>
-										</li>
-										<li>
-											<a href="#">Micro finance Solutions<i class="seoicon-right-arrow"></i></a>
-										</li>
+		<li>
+<a href="<?php echo site_url();?>erpsolutions">ERP Solutions<i class="seoicon-right-arrow"></i></a>
+		</li>
+		<li>
+<a href="<?php echo base_url();?>micro-finance">Micro finance Solutions<i class="seoicon-right-arrow"></i></a>
+		</li>
 
-										<li>
-											<a href="#">Office Management Solutions
-												<i class="seoicon-right-arrow"></i></a>
-										</li>
+		<li>
+<a href="<?php base_url();?>office-mgt">Office Management Solutions
+				<i class="seoicon-right-arrow"></i></a>
+		</li>
 
-									</ul>
+	</ul>
 								</div>
 								<div class="col3">
-									<ul>
-										<li class="megamenu-item-info">
-											<h5 class="megamenu-item-info-title">Corporate solutions</h5>
+	<ul>
+		<li class="megamenu-item-info">
+			<h5 class="megamenu-item-info-title">Corporate solutions</h5>
 
-										</li>
+		</li>
 
-										<li>
-											<a href="#">E-commerce Solutions<i
-														class="seoicon-right-arrow"></i></a>
-										</li>
-										<li>
-											<a href="#">School Management System<i
-														class="seoicon-right-arrow"></i></a>
-										</li>
+		<li>
+<a href="<?php echo base_url();?>e-commerce">E-commerce Solutions<i
+						class="seoicon-right-arrow"></i></a>
+		</li>
+		<li>
+<a href="<?php echo base_url();?>school-mgt">School Management System<i
+						class="seoicon-right-arrow"></i></a>
+		</li>
 
-										<li>
-											<a href="#">Point of Sale<i
-														class="seoicon-right-arrow"></i></a>
-										</li>
+		<li>
+<a href="<?php echo base_url();?>point-sale">Point of Sale<i
+						class="seoicon-right-arrow"></i></a>
+		</li>
 
-										<li>
-											<a href="#">Storage Management System<i
-														class="seoicon-right-arrow"></i></a>
-										</li>
+		<li>
+<a href="<?php echo base_url();?>storage">Storage Management System<i
+						class="seoicon-right-arrow"></i></a>
+		</li>
 
-										<li>
-											<a href="#">Our Testimonials<i
-														class="seoicon-right-arrow"></i></a>
-										</li>
+		<li>
+<a href="<?php echo base_url();?>testimonials">Our Testimonials<i
+						class="seoicon-right-arrow"></i></a>
+		</li>
 
-									</ul>
-								</div>
+	</ul>
+</div>
 								<div class="col3">
-									<ul>
+	<ul>
 
-										<li class="megamenu-item-info">
-											<h5 class="megamenu-item-info-title">Mobile App & IoT</h5>
+		<li class="megamenu-item-info">
+			<h5 class="megamenu-item-info-title">Mobile App & IoT</h5>
 
-										</li>
+		</li>
 
-										<li>
-											<a href="#">Mobile App development & maintenance<i
-														class="seoicon-right-arrow"></i></a>
-										</li>
-										<li>
-											<a href="#">IoT<i class="seoicon-right-arrow"></i></a>
-										</li>
-										<li>
-											<a href="#">Enterprise & Cloud<i class="seoicon-right-arrow"></i></a>
-										</li>
+		<li>
+<a href="<?php base_url();?>mobile-app">Mobile App development & maintenance<i
+						class="seoicon-right-arrow"></i></a>
+		</li>
+		<li>
+<a href="<?php base_url();?>iot-app">IoT<i class="seoicon-right-arrow"></i></a>
+		</li>
+		<li>
+<a href="<?php base_url();?>cloud-app">Enterprise & Cloud<i class="seoicon-right-arrow"></i></a>
+		</li>
 
 
-									</ul>
+	</ul>
 								</div>
 
 
@@ -290,52 +290,52 @@
 
 					<li class="">
 						<a href="#">Digital Marketing</a>
-						<ul class="dropdown">
-							<li class="megamenu-item-info">
-								<h5 class="megamenu-item-info-title">List of Services</h5>
-								<p class="megamenu-item-info-text">Choose a Service</p>
-							</li>
-							<li class="hover-ver2">
-								<a href="#"><i class="seoicon-pin-map"></i>
-									Local SEO
-								</a>
-							</li>
-							<li class="hover-ver2">
-								<a href="#"><i class="seoicon-mail-send"></i>
-									Email Marketing
-								</a>
-							</li>
-							<li class="hover-ver2">
-								<a href="#"><i class="seoicon-chat-comment"></i>
-									Social Media Marketing
-								</a>
-							</li>
-							<li class="menu-item-has-children hover-ver2">
-								<a href="#">
-									<i class="seoicon-search"></i>
-									Search Engine Optimization
-								</a>
-							</li>
-							<li class="hover-ver2">
-								<a href="#"><i class="seoicon-button"></i>
-									Pay Per Click Management
-								</a>
-							</li>
-							<li class="menu-item-has-children hover-ver2">
-								<a href="#">
-									<i class="seoicon-pie-graph-split"></i>
-									Services Promo List
-								</a>
-							</li>
-						</ul>
+	<ul class="dropdown">
+		<li class="megamenu-item-info">
+			<h5 class="megamenu-item-info-title">List of Services</h5>
+			<p class="megamenu-item-info-text">Choose a Service</p>
+		</li>
+		<li class="hover-ver2">
+			<a href="<?php echo base_url();?>local-seo"><i class="seoicon-pin-map"></i>
+				Local SEO
+			</a>
+		</li>
+		<li class="hover-ver2">
+			<a href="<?php echo base_url();?>email-marketing"><i class="seoicon-mail-send"></i>
+				Email Marketing
+			</a>
+		</li>
+		<li class="hover-ver2">
+			<a href="<?php echo base_url();?>media-marketing"><i class="seoicon-chat-comment"></i>
+				Social Media Marketing
+			</a>
+		</li>
+		<li class="menu-item-has-children hover-ver2">
+			<a href="<?php echo base_url();?>seo">
+				<i class="seoicon-search"></i>
+				Search Engine Optimization
+			</a>
+		</li>
+		<li class="hover-ver2">
+			<a href="<?php echo base_url();?>pay-per"><i class="seoicon-button"></i>
+				Pay Per Click Management
+			</a>
+		</li>
+		<li class="menu-item-has-children hover-ver2">
+			<a href="<?php echo base_url();?>service-promo">
+				<i class="seoicon-pie-graph-split"></i>
+				Services Promo List
+			</a>
+		</li>
+	</ul>
 					</li>
 
 
 					<li class="">
-						<a href="#">Blog</a>
+						<a href="<?php echo base_url();?>blog">Blog</a>
 					</li>
 					<li class="#">
-						<a href="#">Contacts</a>
+						<a href="<?php echo base_url();?>contact">Contacts</a>
 					</li>
 				</ul>
 			</nav>
@@ -449,6 +449,7 @@
 
 
 	<?php echo $content; ?>
+
 
 
 
@@ -831,6 +832,13 @@ function loadDoc() {
   xhttp.open("GET", "application/views/infopage/infobox1.php", true);
   xhttp.send();
 }
+
+
+
+$(document).ready(function() { $('#auto').click(); });
+
+
+
 function loadDoc1() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -841,6 +849,11 @@ function loadDoc1() {
   xhttp.open("GET", "application/views/infopage/infobox.php", true);
   xhttp.send();
 }
+
+
+
+
+
 function loadDoc2() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -851,6 +864,10 @@ function loadDoc2() {
   xhttp.open("GET", "application/views/infopage/infobox2.php", true);
   xhttp.send();
 }
+
+
+
+
 function loadDoc3() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -861,6 +878,8 @@ function loadDoc3() {
   xhttp.open("GET", "application/views/infopage/infobox3.php", true);
   xhttp.send();
 }
+
+
 function loadDoc4() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -871,6 +890,9 @@ function loadDoc4() {
   xhttp.open("GET", "application/views/infopage/infobox4.php", true);
   xhttp.send();
 }
+
+
+
 </script>
 
 
