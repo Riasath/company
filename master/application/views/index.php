@@ -92,7 +92,7 @@
 					</div>
 				</a>
 
-				<a href="#" class="slides-item bg-secondary-color" id="button3">
+				<a onclick="loadDoc2()" href="#" class="slides-item bg-secondary-color" id="button3">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Mobile App & IoT</h4>
@@ -101,7 +101,7 @@
 					</div>
 				</a>
 
-				<a href="" class="slides-item bg-orange-color" id="button4">
+				<a onclick="loadDoc3()" href="" class="slides-item bg-orange-color" id="button4">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Digital Marketing</h4>
@@ -110,7 +110,7 @@
 					</div>
 				</a>
 
-				<a href="#" class="slides-item bg-green-color" id="button5">
+				<a  onclick="loadDoc4()"href="#" class="slides-item bg-green-color" id="button5">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Security</h4>
@@ -130,7 +130,7 @@
 
 	<!-- Info-Box -->
 
-		<div id="testw">
+       <div id="testw">
 			
 		</div>
 

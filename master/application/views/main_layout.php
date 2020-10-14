@@ -828,7 +828,7 @@ function loadDoc() {
       document.getElementById("testw").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "login", true);
+  xhttp.open("GET", "application/views/infopage/infobox1.php", true);
   xhttp.send();
 }
 function loadDoc1() {
@@ -838,7 +838,37 @@ function loadDoc1() {
       document.getElementById("testw").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "license.txt", true);
+  xhttp.open("GET", "application/views/infopage/infobox.php", true);
+  xhttp.send();
+}
+function loadDoc2() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("testw").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "application/views/infopage/infobox2.php", true);
+  xhttp.send();
+}
+function loadDoc3() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("testw").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "application/views/infopage/infobox3.php", true);
+  xhttp.send();
+}
+function loadDoc4() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("testw").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "application/views/infopage/infobox4.php", true);
   xhttp.send();
 }
 </script>

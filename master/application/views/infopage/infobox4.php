@@ -4,10 +4,10 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box1.png" alt="image">
+						<img src="assets/images/info-box2.png" alt="image">
 					</div>
 					<div class="info-box-content">
-						<h5 class="info-box-title">OUR PLANNING BETTER</h5>
+						<h5 class="info-box-title">Contact</h5>
 						<p class="text">with designed complex dataset, and then experiment at scale to deploy optimized large database models.
 						</p>
 					</div>
@@ -17,10 +17,10 @@
 			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
-						<img src="assets/images/info-box2.png" alt="image">
+						<img src="assets/images/info-box5.png" alt="image">
 					</div>
 					<div class="info-box-content">
-						<h5 class="info-box-title">OUR FINANCES STAY TRACKED</h5>
+						<h5 class="info-box-title">Our Team</h5>
 						<p class="text">and our customers get what they want. the latest technological advancements to make everyone’s lives easier.
 						</p>
 					</div>
