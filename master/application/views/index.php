@@ -592,7 +592,7 @@
 								<span class="short-line"></span>
 								<span class="long-line"></span>
 							</div>
-							<p class="heading-text">Qui mutationem consuetudium. </p>
+							<p class="heading-text">Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD </p>
 						</div>
 					</div>
 				</div>
@@ -606,7 +606,7 @@
 
 
 
-<div class="swiper-slide client-item" style="float: left;">
+
 	
 
 
@@ -615,15 +615,15 @@
 <?php 
 				foreach($all_client_image as $v_client){
 ?>
-                 
+                 <div class="swiper-slide client-item" style="float: left;">
    
    <a href="#" class="client-image">
 		<img  style="float:left;margin:50px;line-height: 30px;"src="<?php echo $v_client->client_image ?>">
 
-		</a>
+		</a></div>
 
                  		 <?php } ?>
-	</div>
+	
 
 
 
