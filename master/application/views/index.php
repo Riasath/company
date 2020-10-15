@@ -233,7 +233,7 @@
 									<span class="short-line bg-yellow-color"></span>
 									<span class="long-line bg-yellow-color"></span>
 								</div>
-								<p class="heading-text c-white">Claritas est etiam processus dynamicus, qui lectorum.
+								<p class="heading-text c-white">Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD
 								</p>
 							</div>
 							<div class="signature js-animate-icon">
@@ -264,54 +264,39 @@
 									 data-loop="false">
 
 									<div class="swiper-wrapper">
-										<div class="testimonial-slider-item swiper-slide">
-											<div class="testimonial-content">
-												<p class="text" data-swiper-parallax="-200">Nam liber tempor cum soluta
-													nobis eleifend option congue
-													nihil imperdiet doming id quod mazim.
-												</p>
-												<a href="#" class="author" data-swiper-parallax="-150">Jonathan
-													Simpson</a>
-												<a href="#" class="company" data-swiper-parallax="-150">Envato
-													Market</a>
 
-											</div>
-											<div class="avatar" data-swiper-parallax="-50">
-												<img src="<?= base_url('assets/images/avatar.png');?>" alt="avatar">
-											</div>
-										</div>
-										<div class="testimonial-slider-item swiper-slide">
-											<div class="testimonial-content">
-												<p class="text" data-swiper-parallax="-200">Nam liber tempor cum soluta
-													nobis eleifend option congue
-													nihil imperdiet doming id quod mazim.
-												</p>
-												<a href="#" class="author" data-swiper-parallax="-150">Jonathan
-													Simpson</a>
-												<a href="#" class="company" data-swiper-parallax="-150">Envato
-													Market</a>
 
-											</div>
-											<div class="avatar" data-swiper-parallax="-50">
-												<img src="<?= base_url('assets/images/avatar.png');?>" alt="avatar">
-											</div>
-										</div>
-										<div class="testimonial-slider-item swiper-slide">
-											<div class="testimonial-content">
-												<p class="text" data-swiper-parallax="-200">Nam liber tempor cum soluta
-													nobis eleifend option congue
-													nihil imperdiet doming id quod mazim.
-												</p>
-												<a href="#" class="author" data-swiper-parallax="-150">Jonathan
-													Simpson</a>
-												<a href="#" class="company" data-swiper-parallax="-150">Envato
-													Market</a>
 
-											</div>
-											<div class="avatar" data-swiper-parallax="-50">
-												<img src="<?= base_url('assets/images/avatar.png');?>" alt="avatar">
-											</div>
-										</div>
+ 	<div class="testimonial-slider-item swiper-slide">
+	 <?php foreach($all_db_testimonials as $v_testimonials){?>
+	
+	<div class="testimonial-content">
+		
+		<p class="text" data-swiper-parallax="-200">
+			<?php echo $v_testimonials->testi_text;?>
+		</p>
+		<a href="#" class="author" data-swiper-parallax="-150">
+				<?php echo $v_testimonials->testi_author;?>
+		</a>
+		<a href="#" class="company" data-swiper-parallax="-150">
+               	<?php echo $v_testimonials->testi_company;?>
+		</a>
+
+	</div>
+	<div class="avatar" data-swiper-parallax="-50">
+		<img src="<?= base_url('assets/images/avatar.png');?>" alt="avatar">
+	</div>
+		
+
+<?php }?>
+</div>
+
+
+
+
+
+										
+									
 									</div>
 									<!-- If we need pagination -->
 									<div class="swiper-pagination"></div>
@@ -618,31 +603,40 @@
 
 						<div class="swiper-wrapper">
 
-							<div class="swiper-slide client-item">
-								<a href="09_our_clients.html" class="client-image">
-									<img src="<?= base_url('assets/images/client1-hover.png');?>" alt="logo" class="hover">
-								</a>
-							</div>
 
-							<div class="swiper-slide client-item">
-								<a href="09_our_clients.html" class="client-image">
-									<img src="<?= base_url('assets/images/client2-hover.png');?>" alt="logo" class="hover">
-								</a>
-							</div>
 
-							<div class="swiper-slide client-item">
-								<a href="09_our_clients.html" class="client-image">
-									<img src="<?= base_url('assets/images/client3-hover.png');?>" alt="logo" class="hover">
-								</a>
-							</div>
 
-							<div class="swiper-slide client-item">
-								<a href="09_our_clients.html" class="client-image">
-									<img src="<?= base_url('assets/images/client4-hover.png');?>" alt="logo" class="hover">
-								</a>
-							</div>
+<div class="swiper-slide client-item" style="float: left;">
+	
 
-						</div>
+
+
+
+<?php 
+				foreach($all_client_image as $v_client){
+?>
+                 
+   
+   <a href="#" class="client-image">
+		<img  style="float:left;margin:50px;line-height: 30px;"src="<?php echo $v_client->client_image ?>">
+
+		</a>
+
+                 		 <?php } ?>
+	</div>
+
+
+
+		
+	
+			
+
+	
+	
+
+	
+
+</div>
 
 						<!--Prev Next Arrows-->
 						<svg class="btn-next">

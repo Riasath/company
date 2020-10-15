@@ -52,6 +52,32 @@ class Slider extends CI_Controller
 		$this->load->view('master/view_slider', $data);
 		  
 	}
+	public function add_testimonials(){
+
+	$this->load->view('master/add_testimonials');
+	}
+	public function save_testimonials(){
+
+    
+   $data['all_testimonials']=$this->admin_model->save_testimonials_info();
+ 
+
+	}
+	public function add_client(){
+
+   $this->load->view('master/add_client');
+	}
+	public function save_client_image(){
+
+$this->admin_model->save_client_info();
+     $this->load->view('master/dashboard');
+
+	}
+	public function show_client(){
+
+
+		   $data['all_client_image']=$this->admin_model->all_client_image();
+	}
 
 
 }

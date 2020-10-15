@@ -19,6 +19,11 @@ $route['edit-slider/(.+)']='slider/edit_slider/$1';
 $route['update-slider']='slider/update_slider_info';
 $route['delete-slider/(.+)']='slider/delete_slider/$1';
 $route['view-slider/(.+)']='slider/view_slider/$1';
+$route['add-testimonials']='slider/add_testimonials';
+$route['save-testimonials']='slider/save_testimonials';
+$route['add-client']='slider/add_client';
+$route['save-client-image']='slider/save_client_image';
+
 
 
 //page_route_start

@@ -79,4 +79,83 @@ $data['slider_about']=$this->input->post('slider_about',true);
                     $this->load->view('master/dashboard');
       }
 
+
+
+public function save_testimonials_info(){
+
+
+
+    $data=array();
+    $data['testi_text']=$this->input->post('testi_text',true);
+    $data['testi_author']=$this->input->post('testi_author',true);
+    $data['testi_company']=$this->input->post('testi_company',true);
+  
+
+        $this->db->insert('testimonials',$data);
+
+         $this->load->view('master/dashboard');
+
+      }
+      public function select_all_testimonials_info(){
+
+
+  $this->db->select('*');
+  $this->db->from('testimonials');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+}
+  public function save_client_info(){
+
+           $data=array();
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'client_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('client_image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['client_image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('client_img',$data);
+
+
+
+
+      }
+      public function all_client_image_info(){
+
+
+
+
+      $this->db->select('*');
+  $this->db->from('client_img');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+
+
+      
+
+      }
+
+
 }

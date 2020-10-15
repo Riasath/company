@@ -612,7 +612,7 @@
 								</g></svg>
 						</div>
 						<div class="content">
-							<a href="#" class="title">info@seosight.com</a>
+							<a href="#" class="title">info@rtsoftbd.com</a>
 							<p class="sub-title">online support</p>
 						</div>
 					</div>
@@ -639,8 +639,8 @@
 									  stroke-width="2"></path></svg>
 						</div>
 						<div class="content">
-							<a href="#" class="title">Melbourne, Australia</a>
-							<p class="sub-title">795 South Park Avenue</p>
+							<a href="#" class="title">32,jahanara garden</a>
+							<p class="sub-title">green road,dhaka</p>
 						</div>
 					</div>
 				</div>
@@ -654,12 +654,12 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <span>
-                        Copyright © 2016 <a href="index-2.html" class="sub-footer__link">Seosight,</a>
-                        Designed by <a href="https://themeforest.net/user/themefire/portfolio">themefire</a>
+                        Copyright © 2020 <a href="index-2.html" class="sub-footer__link">RTSOFTBD,</a>
+                        Designed by <a href="https://themeforest.net/user/themefire/portfolio">RTSOFTBD</a>
                     </span>
 
-					<span>Developed by <a href="https://themeforest.net/user/crumina/portfolio">Crumina</a></span>
-					<span>Only on <a href="https://themeforest.net/user/crumina/portfolio">Envato Market</a></span>
+					<span>Developed by <a href="https://themeforest.net/user/crumina/portfolio">RTSOFTBD WEB TEAM</a></span>
+					<span>Only on <a href="https://themeforest.net/user/crumina/portfolio">RTSOFTBD</a></span>
 
 					<a class="back-to-top" href="#">
 						<svg class="back-to-top">

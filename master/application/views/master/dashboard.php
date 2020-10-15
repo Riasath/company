@@ -11,6 +11,7 @@
 		<h1  class="text-center">Welcome to Dashboard</h1>
 		
 	      <hr>
+	      <div id="left-side" style="float: left;">
 	    <p style="margin-top:100px;margin-left:30px;">
 	   	<a  href="<?= base_url();?>add-slider"><button type="button"class="btn btn-info">Add New Slider Item</button></a>
 	  
@@ -26,6 +27,21 @@
 	  
 
 	    </p>
+	    </p>
+	      <p style="margin-top:60px;margin-left:30px;">
+	   	<a  href="<?= base_url();?>add-testimonials"><button type="button"class="btn btn-warning">ADD Testimonials</button></a>
+	  
+
+	    </p>
+	</div>	    
+    <div id="right_side" style="float: right;">
+	<p style="margin-top:80px;margin-right: 200px;">
+	   	<a  href="<?= base_url();?>add-client"><button type="button"class="btn btn-dark">ADD Client image</button></a>
+	  
+
+	    </p>
+	    </div>
+
 
 
 </body>
