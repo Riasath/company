@@ -49,4 +49,18 @@ $route['blog']='pages/blog';
 $route['contact']='pages/contact';
 $route['service-promo']='pages/service_promo';
 
+//footer section route
+
+$route['add-footer']='slider/add_footer';
+$route['add-footer-heading']='slider/add_footer_heading';
+$route['save-footer-heading']='slider/save_footer_heading';
+$route['save-footer-heading']='slider/save_footer_heading';
+$route['footer-menu']='slider/footer_menu';
+$route['save-footer-menu']='slider/save_footer_menu';
+$route['add-icon']='slider/add_icon';
+$route['save-footer-icon']='slider/save_footer_icon';
+$route['add-copyright']='slider/add_copyright';
+$route['save-copyright']='slider/save_copyright';
+
+
 

@@ -35,11 +35,13 @@
 	    </p>
 	</div>	    
     <div id="right_side" style="float: right;">
-	<p style="margin-top:80px;margin-right: 200px;">
+	<p style="margin-top:98px;margin-right: 500px;">
 	   	<a  href="<?= base_url();?>add-client"><button type="button"class="btn btn-dark">ADD Client image</button></a>
-	  
+	   </p>
+	   <p style="margin-top:40px;margin-right: 500px;">
+	   	<a  href="<?= base_url();?>add-footer"><button type="button"class="btn btn-primary">Add Footer Section</button></a>
+	   </p>
 
-	    </p>
 	    </div>
 
 

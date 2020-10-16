@@ -78,6 +78,53 @@ $this->admin_model->save_client_info();
 
 		   $data['all_client_image']=$this->admin_model->all_client_image();
 	}
+	public function add_footer(){
+            $this->load->view('footer/main_footer');
+
+	}
+	public function add_footer_heading(){
+       $this->load->view('footer/add_footer_heading');
+
+	}
+	public function save_footer_heading(){
+$this->admin_model->save_footer_heading();
+     $this->load->view('footer/main_footer');
+
+	}
+	public function main_footer_load(){
+
+		$this->load->view('footer/main_footer');
+	}
+	public function footer_menu(){
+
+
+		$this->load->view('footer/footer_menu');
+	}
+   public function save_footer_menu(){
+
+$this->admin_model->save_footer_menu();
+     $this->load->view('footer/main_footer');
+	}
+	public function add_icon(){
+
+		$this->load->view('footer/add_icon');
+	}
+	public function save_footer_icon(){
+
+    $this->admin_model->save_icon_info();
+     $this->load->view('footer/main_footer');
+	}
+	public function add_copyright(){
+
+	$this->load->view('footer/copyright');
+	}
+	public function save_copyright(){
+
+$this->admin_model->save_copyright();
+     $this->load->view('footer/main_footer');
+
+
+	}
 
 
 }
