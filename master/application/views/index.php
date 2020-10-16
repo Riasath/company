@@ -604,21 +604,13 @@
 						<div class="swiper-wrapper">
 
 
-
-
-
-	
-
-
-
-
 <?php 
 				foreach($all_client_image as $v_client){
 ?>
                  <div class="swiper-slide client-item" style="float: left;">
    
    <a href="#" class="client-image">
-		<img  style="float:left;margin:50px;line-height: 30px;"src="<?php echo $v_client->client_image ?>">
+		<img  style="float:left;margin:20px;"src="<?php echo $v_client->client_image ?>">
 
 		</a></div>
 
@@ -675,7 +667,7 @@
 									<span class="semicircle--right"></span>
 								</button>
 							</form>
-							<div class="sub-title">Sign up for new Seosignt content, updates, surveys & offers.</div>
+							<div class="sub-title">Sign up for new RTSOFTBD content, updates, surveys & offers.</div>
 
 						</div>
 
