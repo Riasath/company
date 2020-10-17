@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 16, 2020 at 03:44 PM
+-- Generation Time: Oct 17, 2020 at 09:56 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Database: `company`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blog`
+--
+
+CREATE TABLE `blog` (
+  `id` int(11) NOT NULL,
+  `date` date NOT NULL,
+  `blog_title` varchar(250) NOT NULL,
+  `blog_details` varchar(250) NOT NULL,
+  `avatar` varchar(250) NOT NULL,
+  `posted_by` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `blog`
+--
+
+INSERT INTO `blog` (`id`, `date`, `blog_title`, `blog_details`, `avatar`, `posted_by`) VALUES
+(9, '2020-10-17', 'WELCOME TO RTSOFTBD1', '1Why do compromises when RTSOFTBD can make your website the way you want?\r\nJust sit and relax, we are here to take care your virtual appearance the best way', 'blog_avatar/avatar1.png', 'RTSOFTBD1'),
+(10, '2020-10-15', 'Web Application', 'Awesome applocation made by RTSOFTBD Web Application TEAM.\r\nVisit our website gather information.', 'blog_avatar/avatar2.png', 'shaown'),
+(11, '2020-10-08', 'think positive', 'Awesome applocation made by RTSOFTBD Web Application TEAM.', 'blog_avatar/avatar3.png', 'admin'),
+(12, '2020-10-09', 'Another blog', 'Awesome applocation made by RTSOFTBD Web Application TEAM.', 'blog_avatar/avatar5.png', 'admin');
 
 -- --------------------------------------------------------
 
@@ -227,6 +252,12 @@ INSERT INTO `users` (`id`, `first_name`, `last_name`, `username`, `password`) VA
 --
 
 --
+-- Indexes for table `blog`
+--
+ALTER TABLE `blog`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `client_img`
 --
 ALTER TABLE `client_img`
@@ -283,6 +314,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `blog`
+--
+ALTER TABLE `blog`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `client_img`
