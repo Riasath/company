@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 17, 2020 at 09:56 AM
+-- Generation Time: Oct 17, 2020 at 03:18 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -219,9 +219,8 @@ CREATE TABLE `testimonials` (
 --
 
 INSERT INTO `testimonials` (`testi_id`, `testi_text`, `testi_author`, `testi_company`) VALUES
-(1, 'We help people make the most out of their business by offering custom software development according', 'RTSOFTBD_WEB_TEAM', 'RTSOFTBD'),
-(5, 'RTSOFTBD is AWESOME', 'SHAOWN', 'RTSOFTBD'),
-(7, 'RTSOFTBD WEB APPLICATION BETTER', 'NONMAE', 'NONAME');
+(1, 'We help people make the most out of their business by offering custom software development according', 'RTSOFTBD_WEB_TEAM1', 'RTSOFTBD1'),
+(8, 'We help people make the most out of their business by offering custom software development according', 'RTSOFTBD_WEB_TEAM', 'RTSOFTBD');
 
 -- --------------------------------------------------------
 
@@ -367,7 +366,7 @@ ALTER TABLE `slides_item`
 -- AUTO_INCREMENT for table `testimonials`
 --
 ALTER TABLE `testimonials`
-  MODIFY `testi_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `testi_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `users`

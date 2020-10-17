@@ -66,3 +66,12 @@ $route['save-copyright']='slider/save_copyright';
 
 $route['add-blog']='slider/add_blog';
 $route['save-blog']='slider/save_blog';
+
+
+
+//update & delete
+$route['manage-testimonials']='slider/manage_testimonials';
+$route['edit-testimonials/(.+)']='slider/edit_testimonials/$1';
+$route['update-testimonials']='slider/update_testimonials';
+$route['delete-testimonials/(.+)']='slider/delete_testimonials/$1';
+$route['view-testimonials/(.+)']='slider/view_testimonials/$1';

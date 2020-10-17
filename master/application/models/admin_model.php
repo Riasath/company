@@ -305,6 +305,48 @@ $this->db->select('*');
   return $result;
 
   }
+  public function select_all_testimonials_info_by_id($testi_id){
+
+$this->db->select('*');
+  $this->db->from('testimonials');
+  $this->db->where('testi_id',$testi_id);
+  $query_result=$this->db->get();
+  $result=$query_result->row();
+
+
+  return $result;
+
+
+  }
+  public function update_testimonials_info(){
+  
+   $data=array();
+   $testi_id=$this->input->post('testi_id',true);
+   $data['testi_text']=$this->input->post('testi_text',true);
+   $data['testi_author']=$this->input->post('testi_author',true);
+   $data['testi_company']=$this->input->post('testi_company',true);
+  $this->db->WHERE('testi_id',$testi_id);
+  $this->db->update('testimonials',$data);
+
+  }
+  public function delete_testimonials_info_by_id($testi_id){
+
+      $this->db->where('testi_id',$testi_id);
+      $this->db->delete('testimonials');
+
+  }
+ public function all_testimonials_view_by_id($testi_id){
+
+    $this->db->SELECT('*');
+$this->db->FROM('testimonials');
+$this->db->WHERE('testi_id',$testi_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+
+  }
   
    
 

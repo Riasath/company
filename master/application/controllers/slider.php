@@ -134,6 +134,50 @@ $this->admin_model->save_blog_info();
      $this->load->view('master/dashboard');
 
 	}
+	public function manage_testimonials(){
+
+
+          $data = array();
+		$data['all_db_testimonials'] = $this->admin_model->select_all_testimonials_info();
+		$data['testi_info'] = $this->load->view('master/manage_testimonials', $data, true);
+		
+		$this->load->view('master/manage_testimonials', $data);
+
+	}
+	public function edit_testimonials($testi_id){
+
+
+		   $data = array();
+		$data['all_db_testimonials_by_id'] = $this->admin_model->select_all_testimonials_info_by_id($testi_id);
+		$data['testi_info'] = $this->load->view('master/edit_testimonials', $data, true);
+		
+		
+$this->load->view('master/edit_testimonials',$data);
+
+	}
+	public function update_testimonials(){
+
+
+		$this->admin_model->update_testimonials_info();
+		redirect('Slider/manage_testimonials');
+	}
+	public function delete_testimonials($testi_id){
+
+
+   $data = array();
+	$this->admin_model->delete_testimonials_info_by_id($testi_id);
+	redirect('Slider/manage_testimonials');
+	
+	
+	}
+	public function view_testimonials($testi_id){
+
+         $data = array();
+		$data['all_testimonials_view_by_id'] = $this->admin_model->all_testimonials_view_by_id($testi_id);
+		$data['testimonials_info'] = $this->load->view('master/view_testimonials', $data, true);
+		$this->load->view('master/view_testimonials', $data);
+		  
+	}
 
 
 }

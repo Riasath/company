@@ -17,8 +17,8 @@
 </head>
 <body>
 	
-
-<div class="left">
+<div class="container-fluid">
+<div class="left" style="float: left;">
 	<form action="<?php echo base_url()?>save-testimonials" method="post" enctype="multipart/form-data">
   <div class="container">
 
@@ -43,13 +43,22 @@
    
   </div>
 </form>
+
+
+
+   
+
+
+
 </div>
+<div id="right" style="float: right;">
+   <p style="margin-top: 50px; margin-right:250px;">
+      <a  href="<?= base_url();?>manage-testimonials"><button type="button"class="btn btn-danger">Manage Testimonials</button></a>
+    
+
+      </p>
+  
 </div>
-
-
-
-
-
 </div>
 </body>
 </html>
