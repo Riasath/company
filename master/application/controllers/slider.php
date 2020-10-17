@@ -125,6 +125,15 @@ $this->admin_model->save_copyright();
 
 
 	}
+	public function add_blog(){
+$this->load->view('blog/add_blog');
+	}
+	public function save_blog(){
+
+$this->admin_model->save_blog_info();
+     $this->load->view('master/dashboard');
+
+	}
 
 
 }

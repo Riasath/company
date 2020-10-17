@@ -62,5 +62,7 @@ $route['save-footer-icon']='slider/save_footer_icon';
 $route['add-copyright']='slider/add_copyright';
 $route['save-copyright']='slider/save_copyright';
 
+//for blog section
 
-
+$route['add-blog']='slider/add_blog';
+$route['save-blog']='slider/save_blog';

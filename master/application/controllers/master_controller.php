@@ -19,6 +19,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		      $data['copyright']=$this->admin_model->copyright_info();
+		      $data['blog_item']=$this->admin_model->blog_item_show();
 		   
 		$data['content'] = $this->load->view('index',$data, TRUE);
 

@@ -261,6 +261,51 @@ $this->db->select('*');
 
   }
   
+ public function save_blog_info(){
+         $data=array();
+$data['date']=$this->input->post('date',true);   
+$data['blog_title']=$this->input->post('blog_title',true);   
+$data['blog_details']=$this->input->post('blog_details',true);   
+$data['posted_by']=$this->input->post('posted_by',true);   
+   
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'blog_avatar/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('avatar')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['avatar']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('blog',$data);
+
+  }
+  public function blog_item_show(){
+
+
+$this->db->select('*');
+  $this->db->from('blog');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+  }
+  
    
 
 

@@ -41,6 +41,9 @@
 	   <p style="margin-top:40px;margin-right: 500px;">
 	   	<a  href="<?= base_url();?>add-footer"><button type="button"class="btn btn-primary">Add Footer Section</button></a>
 	   </p>
+	   <p style="margin-top:40px;margin-right: 500px;">
+	   	<a  href="<?= base_url();?>add-blog"><button type="button"class="btn btn-light">Add Blog</button></a>
+	   </p>
 
 	    </div>
 
