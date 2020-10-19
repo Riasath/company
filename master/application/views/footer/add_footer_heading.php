@@ -44,7 +44,11 @@
 
 
 
-</div>
+<p style="margin-top:100px;margin-left:44px;">
+      <a  href="<?= base_url();?>manage-footer-heading"><button type="button"class="btn btn-danger">Manage Heading</button></a>
+    
+
+      </p>
 </body>
 </html>
 </body>

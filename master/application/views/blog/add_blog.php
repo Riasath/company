@@ -18,7 +18,7 @@
 <body>
   
 
-<div class="left">
+<div class="left" style="float: left;">
   <form action="<?php echo base_url()?>save-blog" method="post" enctype="multipart/form-data">
   <div class="container">
    
@@ -53,9 +53,14 @@
 
 
 
+<div id="right" style="float: right;">
 
+<p style="margin-top:20px;margin-right:330px;">
+      <a  href="<?= base_url();?>manage-blog"><button type="button"class="btn btn-danger">Manage blog</button></a>
+    
 
-</div>
+      </p>
+    </div>
 </body>
 </html>
 </body>

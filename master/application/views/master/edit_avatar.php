@@ -14,27 +14,31 @@
 </head>
 <body>
 <div class="left">
-	<form action="<?php echo base_url()?>save-footer-icon" method="post" enctype="multipart/form-data">
+	<form action="<?php echo base_url()?>update-avatar" method="post" enctype="multipart/form-data">
   <div class="container">
   
+<label for="footer_images"><b>Recent Avatar</b></label></br>
+    <img src="<?php echo base_url().$all_avatar_by_id->footer_images?>" style="height:85px;width:120px;border:1px solid #000000;">
+     </br>
+     
+   
 
 
    
-    <label for="footer_images"><b>Add Footer Icon</b></label></br>
-     </br>
-         </br>
+   
+    <input type="hidden" value="<?php echo $all_avatar_by_id->id ?>"name="id" id="id" ></br>
+
+   </br>
+   </br>
+  
+    <label for="footer_images"><b>Add NEW AVATAR</b></label></br>
        <input type="file" name="footer_images" id="footer_images" >
          </br>
          </br>
          </br>
+         
 
-   
-    
-
-   
-  
-
-    <button type="submit" class="registerbtn">Submit</button></br>
+    <button type="submit" class="registerbtn">Update</button></br>
    
   </div>
 </form>
@@ -44,11 +48,8 @@
 
 
 
-<p style="margin-top:60px;margin-left:45px;">
-      <a  href="<?= base_url();?>manage-icon"><button type="button"class="btn btn-danger">Manage ICON</button></a>
-    
 
-      </p>
+</div>
 </body>
 </html>
 </body>

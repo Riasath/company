@@ -69,9 +69,58 @@ $route['save-blog']='slider/save_blog';
 
 
 
-//update & delete
+//update & delete FOR testimonials
 $route['manage-testimonials']='slider/manage_testimonials';
 $route['edit-testimonials/(.+)']='slider/edit_testimonials/$1';
 $route['update-testimonials']='slider/update_testimonials';
 $route['delete-testimonials/(.+)']='slider/delete_testimonials/$1';
 $route['view-testimonials/(.+)']='slider/view_testimonials/$1';
+
+
+
+//client_image_CRUD
+
+$route['client-image']='slider/client_image';
+$route['edit-client-image/(.+)']='slider/edit_client_image/$1';
+$route['update-client-image']='slider/update_client_image';
+
+
+//Footer Section edit
+$route['manage-footer-heading']='slider/manage_footer_heading';
+$route['edit-heading/(.+)']='slider/edit_heading/$1';
+$route['update-heading']='slider/update_heading'; 
+$route['manage-icon']='slider/manage_icon'; 
+$route['edit-avatar/(.+)']='slider/edit_avatar/$1';
+$route['update-avatar']='slider/update_avatar';
+$route['manage-fmenu']='slider/manage_fmenu';
+$route['edit-fmenu/(.+)']='slider/edit_fmenu/$1';
+$route['update-fmenu']='slider/update_fmenu';
+$route['manage-copyright']='slider/manage_copyright';
+$route['edit-copyright/(.+)']='slider/edit_copyright/$1';
+$route['update-copyright']='slider/update_copyright';
+
+
+
+// section delete
+
+$route['delete-client/(.+)']='slider/delete_client/$1';
+$route['delete-heading/(.+)']='slider/delete_heading/$1';
+$route['delete-avatar/(.+)']='slider/delete_avatar/$1';
+$route['delete-fmenu/(.+)']='slider/delete_fmenu/$1';
+$route['delete-copyright/(.+)']='slider/delete_copyright/$1';
+
+
+
+
+//section delete
+$route['view-client/(.+)']='slider/view_client/$1';
+$route['view-heading/(.+)']='slider/view_heading/$1';
+$route['view-avatar/(.+)']='slider/view_avatar/$1';
+$route['view-fmenu/(.+)']='slider/view_fmenu/$1';
+$route['view-copyright/(.+)']='slider/view_copyright/$1';
+
+
+//blog section CRUD 
+$route['manage-blog']='slider/manage_blog';
+$route['edit-blog/(.+)']='slider/edit_blog/$1';
+$route['update-blog']='slider/update_blog';

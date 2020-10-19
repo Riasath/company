@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>RTSOFTBD- Software and System Design</title>
+	
 
-<link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
+  <title>RTSOFTBD- Software and System Design</title>
+  <link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
 <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
 </head>
+
+
+
+
+
 <body>
-<div class="left">
+<div class="left" style="float: left;">
 	<form action="<?php echo base_url()?>save-client-image" method="post" enctype="multipart/form-data">
   <div class="container">
   
@@ -46,7 +46,12 @@
 
 
 </div>
-</body>
-</html>
+<div id="right" style="float: right;">
+  <p style="margin-top:60px;margin-right:500px;">
+      <a  href="<?= base_url();?>client-image"><button type="button"class="btn btn-danger">Manage Image</button></a>
+    
+
+      </p>
+</div>
 </body>
 </html>

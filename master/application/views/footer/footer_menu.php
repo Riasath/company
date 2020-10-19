@@ -49,7 +49,11 @@
 
 
 
-</div>
+<p style="margin-top:60px;margin-left:45px;">
+      <a  href="<?= base_url();?>manage-fmenu"><button type="button"class="btn btn-danger">Manage Menu ITEMS</button></a>
+    
+
+      </p>
 </body>
 </html>
 </body>

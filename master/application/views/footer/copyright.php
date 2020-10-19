@@ -18,7 +18,7 @@
 <body>
 	
 
-<div class="left">
+<div class="left" style="float: left;">
 	<form action="<?php echo base_url()?>save-copyright" method="post" enctype="multipart/form-data">
   <div class="container">
    
@@ -44,17 +44,22 @@
 
 
     <button type="submit" class="registerbtn">Submit</button></br>
+
    
   </div>
 </form>
 </div>
 </div>
 
+<div id="right" style="float: right;">
+<p style="margin-top:30px;margin-right:200px;">
+      <a  href="<?= base_url();?>manage-copyright"><button type="button"class="btn btn-danger">Manage Copyright</button></a>
+    
+
+      </p>
+    </div>
 
 
-
-
-</div>
 </body>
 </html>
 </body>
