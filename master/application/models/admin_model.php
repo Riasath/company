@@ -699,7 +699,21 @@ $query_result=$this->db->get();
   $this->db->update('blog',$data);
 
   }
-     
+     public function delete_blog_info_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('blog');
+
+     }
+     public function blog_view_by_id($id){
+   $this->db->SELECT('*');
+$this->db->FROM('blog');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+     }
 
 
 

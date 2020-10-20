@@ -48,12 +48,12 @@
 				Edit
 				<i class="halflings-icon white edit"></i>
 </a>
-<a class="btn btn-danger"href="" 
+<a class="btn btn-danger"href="<?php echo base_url();?>delete-blog/<?php echo  $v_blog->id ?>" 
 	id="sure">
 	Delete
 	<i class="halflings-icon white trash"></i>
 </a>
-<a class="btn btn-success"href="" 
+<a class="btn btn-success"href="<?php echo base_url();?>view-blog/<?php echo  $v_blog->id ?>" 
 	id="delete">
 	View
 	<i class="halflings-icon white trash"></i>

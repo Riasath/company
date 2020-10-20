@@ -381,6 +381,19 @@ $this->admin_model->update_all_blog();
 		$this->load->view('master/dashboard');
 
   }
+  public function delete_blog($id){
+    $data = array();
+	$this->admin_model->delete_blog_info_by_id($id);
+	$this->load->view('master/dashboard');
+
+  }
+  public function view_blog($id){
+
+  	 $data = array();
+		$data['blog_view_by_id'] = $this->admin_model->blog_view_by_id($id);
+		$data['blog_info'] = $this->load->view('master/view_blog', $data, true);
+		$this->load->view('master/view_blog', $data);
+  }
   
   
 
