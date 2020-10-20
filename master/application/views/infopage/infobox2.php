@@ -1,7 +1,7 @@
 <div class="container info-boxes pt100 pb100">
 
 		<div class="row">
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="width:450px;">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
 						<img src="assets/images/info-box5.png" alt="image">
@@ -14,7 +14,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="width:450px;">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
 						<img src="assets/images/info-box4.png" alt="image">
@@ -27,7 +27,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="width:450px;">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
 						<img src="assets/images/info-box2.png" alt="image">
@@ -41,7 +41,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="width:450px;">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
 						<img src="assets/images/info-box3.png" alt="image">
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="width:450px;">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
 						<img src="assets/images/info-box5.png" alt="image">
@@ -68,7 +68,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="margin-top: -227px;">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="margin-top: -240px;width:450px;">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
 						<img src="assets/images/info-box6.png" alt="image">

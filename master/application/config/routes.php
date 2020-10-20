@@ -126,3 +126,4 @@ $route['edit-blog/(.+)']='slider/edit_blog/$1';
 $route['update-blog']='slider/update_blog';
 $route['delete-blog/(.+)']='slider/delete_blog/$1';
 $route['view-blog/(.+)']='slider/view_blog/$1';
+

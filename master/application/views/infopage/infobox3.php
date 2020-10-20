@@ -68,7 +68,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="margin-top: -227px;">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" style="margin-top: -240px;width:450px;">
 				<div class="info-box--standard" data-mh="info-boxes">
 					<div class="info-box-image">
 						<img src="assets/images/info-box4.png" alt="image">
