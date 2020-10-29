@@ -1,0 +1,14 @@
+.text_color_th {
+	color: white;
+}
+
+.table-tr-border-color {
+	background: #3d9970;
+}
+
+input[type="text"]:disabled {
+	background-color: white;
+}
+textarea[type="text"]:disabled {
+	background-color: white;
+}
