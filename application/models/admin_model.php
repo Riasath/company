@@ -42,7 +42,7 @@ $data['slider_about']=$this->input->post('slider_about',true);
              
              $sdata=array();
              $error="";
-             $config['upload_path']             = 'slider_images/';
+             $config['upload_path']             = 'assets/slider_images/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 
@@ -114,7 +114,7 @@ public function save_testimonials_info(){
              
              $sdata=array();
              $error="";
-             $config['upload_path']             = 'client_images/';
+             $config['upload_path']             = 'assets/client_images/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 
@@ -203,7 +203,7 @@ public function  save_footer_menu(){
              
              $sdata=array();
              $error="";
-             $config['upload_path']             = 'footer_images/';
+             $config['upload_path']             = 'assets/footer_images/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 
@@ -272,7 +272,7 @@ $data['posted_by']=$this->input->post('posted_by',true);
              
              $sdata=array();
              $error="";
-             $config['upload_path']             = 'blog_avatar/';
+             $config['upload_path']             = 'assets/blog_avatar/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 
@@ -380,7 +380,7 @@ $query_result=$this->db->get();
 
     $sdata=array();
              $error="";
-             $config['upload_path']             = 'client_images/';
+             $config['upload_path']             = 'assets/client_images/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 
@@ -465,7 +465,7 @@ $query_result=$this->db->get();
 
     $sdata=array();
              $error="";
-             $config['upload_path']             = 'footer_images/';
+             $config['upload_path']             = 'assets/footer_images/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 
@@ -677,7 +677,7 @@ $query_result=$this->db->get();
 
     $sdata=array();
              $error="";
-             $config['upload_path']             = 'blog_avatar/';
+             $config['upload_path']             = 'assets/blog_avatar/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 
