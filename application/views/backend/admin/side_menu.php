@@ -32,6 +32,31 @@
 					</a>
 				</li>
 
+				<li class="nav-item has-treeview <?= active_open('appearance', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('appearance', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+							Appearance
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/list_slider') ?>" class="nav-link <?= active_nav('slider_list', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Slider</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Welcome/test_sub_menu_two') ?>" class="nav-link <?= active_nav('test_sub_menu_two', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>A 1 . 2</p>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
 				<li class="nav-item has-treeview <?= active_open('test_main_menu', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('test_main_menu', $main_nav); ?>">
 						<i class="nav-icon fas fa-edit"></i>
