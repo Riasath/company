@@ -1,16 +1,15 @@
-
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Slider</h3>
+						<h3 class="card-title">Copyright </h3>
 					</div>
 
 					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_slider') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Slider</i>
+						<a href="<?php echo base_url('Admin/add_footer') ?>">
+							<button type='button' id="" class='btn bg-success'>Create New Copyright</i>
 							</button></a>
 					</div>
 				</div>
@@ -27,33 +26,41 @@
 								<thead>
 									<tr>
 										<th >Serial</th>
-										<th >Description</th>
-										<th >About</th>
-										<th >Image</th>
+										<th >Year</th>
+										<th >Company Name</th>
+										<th >Design By</th>
+                                        <th >Developed By</th>
+                                        <th >Only On</th>
                                         <th >Action</th>
 									</tr>
 								</thead>
 								<tbody>
 									<?php
-									if ($sliderList) {
+									if ($footerList) {
 										$serial = 0;
-										foreach ($sliderList->result() as $list) {
+										foreach ($footerList->result() as $list) {
 											$serial++;
 
 
 									?>
 											<tr>
 												<td><?= $serial ?></td>
-												<td ><?= $list->slider_descriptions ?></td>
-												<td ><?= $list->slider_about ?></td>
+												<td ><?= $list->year ?></td>
+												<td ><?= $list->company_name ?></td>
                                                 <td >
-                                                <img src="<?php echo base_url().'assets/'.$list->slider_image;?>" alt="slider">
+                                               <?= $list->design?>
                                                 
                                                 </td>
 
 
 												<td >
-													<a href="#" id="<?= $list->slider_id ?>">
+													  <?= $list->developed ?>
+												</td>
+												<td >
+													  <?= $list->only_on?>
+												</td>
+												<td >
+													<a href="#" id="<?= $list->id ?>">
 														<button type='button' class='btn bg-danger'><i class='fas fa-user-edit'></i>
 														</button>
 													</a>

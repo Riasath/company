@@ -1,3 +1,12 @@
+<html>
+<head>
+    
+
+  <title>RTSOFTBD- Software and System Design</title>
+  <link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
+<link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
+</head>
+<body>
 <div class="content-wrapper">
     <div class="card-body">
         <div class="card card-primary">
@@ -9,7 +18,7 @@
 
                     <div class="col-md-2">
                         <a href="<?php echo base_url('Admin/list_slider') ?>">
-                            <button type='button' id="" class='btn bg-danger'>Slider List</i>
+                            <button type='button' id="" class='btn bg-success'>Slider List</i>
                             </button></a>
                     </div>
                 </div>
@@ -52,5 +61,6 @@
         </div>
     </div>
 </div>
-
+</body>
+</html>
 <!-- /.card-body -->

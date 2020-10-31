@@ -47,12 +47,33 @@
 								<p>Slider</p>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a href="<?php echo base_url('Welcome/test_sub_menu_two') ?>" class="nav-link <?= active_nav('test_sub_menu_two', $sub_nav); ?>">
+							<li class="nav-item">
+							<a href="<?php echo base_url('Admin/testimonials') ?>" class="nav-link <?= active_nav('testimonials', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
-								<p>A 1 . 2</p>
+								<p>Testimonials</p>
 							</a>
 						</li>
+						
+							<li class="nav-item">
+							<a href="<?php echo base_url('Admin/blog') ?>" class="nav-link <?= active_nav('blog', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Blog</p>
+							</a>
+						</li>
+							<li class="nav-item">
+							<a href="<?php echo base_url('Admin/client') ?>" class="nav-link <?= active_nav('client', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Our Client</p>
+							</a>
+						</li>
+						
+							<li class="nav-item">
+							<a href="<?php echo base_url('Admin/footer') ?>" class="nav-link <?= active_nav('footer', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Footer </p>
+							</a>
+						</li>
+						
 						
 					</ul>
 				</li>

@@ -1,16 +1,15 @@
-
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Slider</h3>
+						<h3 class="card-title">Testimonials </h3>
 					</div>
 
 					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_slider') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Slider</i>
+						<a href="<?php echo base_url('Admin/add_testimonials') ?>">
+							<button type='button' id="" class='btn bg-danger'>Create New Testimonials</i>
 							</button></a>
 					</div>
 				</div>
@@ -27,33 +26,33 @@
 								<thead>
 									<tr>
 										<th >Serial</th>
-										<th >Description</th>
-										<th >About</th>
-										<th >Image</th>
+										<th >Testimonials Author</th>
+										<th >Testimonials Text</th>
+										<th >Testimonials Company</th>
                                         <th >Action</th>
 									</tr>
 								</thead>
 								<tbody>
 									<?php
-									if ($sliderList) {
+									if ($testimonialsList) {
 										$serial = 0;
-										foreach ($sliderList->result() as $list) {
+										foreach ($testimonialsList->result() as $list) {
 											$serial++;
 
 
 									?>
 											<tr>
 												<td><?= $serial ?></td>
-												<td ><?= $list->slider_descriptions ?></td>
-												<td ><?= $list->slider_about ?></td>
+												<td ><?= $list->testi_author ?></td>
+												<td ><?= $list->testi_author ?></td>
                                                 <td >
-                                                <img src="<?php echo base_url().'assets/'.$list->slider_image;?>" alt="slider">
+                                               <?= $list->testi_company ?>
                                                 
                                                 </td>
 
 
 												<td >
-													<a href="#" id="<?= $list->slider_id ?>">
+													<a href="#" id="<?= $list->testi_id ?>">
 														<button type='button' class='btn bg-danger'><i class='fas fa-user-edit'></i>
 														</button>
 													</a>

@@ -13,7 +13,7 @@
 <body>
 <div class="box-content">
           <h1 style="text-align: center;color: #00B5FA">Welcome Testimonials Dashboard</h1>
-	<table style="margin-top: 40px;"class="table table-striped table-bordered bootstarp-datatale datatable">
+	<table style="margin-top: 40px;" id="example1" class="table table-striped table-bordered bootstarp-datatale datatable">
 		<thead>
 			<tr>
 				<th> Testimonials ID</th>
