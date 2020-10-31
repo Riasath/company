@@ -45,7 +45,7 @@
 												
 												<td>
                                                 
-                                                <img src="<?= $list->client_image?>">
+                                                <img src="<?php echo base_url().$list->client_image?>">
                                                 </td>
 
 

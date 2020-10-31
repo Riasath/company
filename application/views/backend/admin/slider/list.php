@@ -47,7 +47,8 @@
 												<td ><?= $list->slider_descriptions ?></td>
 												<td ><?= $list->slider_about ?></td>
                                                 <td >
-                                                <img src="<?php echo base_url().'assets/'.$list->slider_image;?>" alt="slider">
+                                                <img src="<?php echo base_url().$list->slider_image?>"
+                                                style="height:100px;width:150px;" >
                                                 
                                                 </td>
 

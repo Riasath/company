@@ -57,7 +57,7 @@
                                                 </td>
 
                                                    <td >
-                                               <?= $list->avatar ?>
+                                 <img src="<?php echo base_url().$list->avatar?>">            
                                                 
                                                 </td>
                                                  <td >
