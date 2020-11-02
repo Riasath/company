@@ -127,3 +127,13 @@ $route['update-blog']='slider/update_blog';
 $route['delete-blog/(.+)']='slider/delete_blog/$1';
 $route['view-blog/(.+)']='slider/view_blog/$1';
 
+
+
+// dashboard route area
+
+$route['edit-slider-list/(.+)']='Admin/edit_slider_list/$1';
+$route['update-slider-list']='Admin/update_slider_list_info';
+$route['delete-slider-list/(.+)']='Admin/delete_slider_list/$1';
+$route['view-slider-list/(.+)']='Admin/view_slider_list/$1';
+
+

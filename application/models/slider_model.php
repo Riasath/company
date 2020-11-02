@@ -39,9 +39,9 @@ $query_result=$this->db->get();
 
 
 	}	
-	public function all_slider_info_by_id($slider_id){
+public function all_slider_info_by_id($slider_id){
 
-		$this->db->SELECT('*');
+$this->db->SELECT('*');
 $this->db->FROM('slider');
 $this->db->WHERE('slider_id',$slider_id);
 $query_result=$this->db->get();
@@ -60,7 +60,7 @@ $query_result=$this->db->get();
 
 		$sdata=array();
              $error="";
-             $config['upload_path']             = 'slider_images/';
+             $config['upload_path']             = 'assets/slider_images/';
              $config['allowed_types']           ='gif|jpg|png';
              $config['max_size']                =100000;
              $config['max_width']               =2048; 

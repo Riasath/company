@@ -45,7 +45,7 @@
 											<tr>
 												<td><?= $serial ?></td>
 												<td ><?= $list->slider_descriptions ?></td>
-												<td ><?= $list->slider_about ?></td>
+												<td><?= $list->slider_about ?></td>
                                                 <td >
                                                 <img src="<?php echo base_url().$list->slider_image?>"
                                                 style="height:100px;width:150px;" >
@@ -54,10 +54,19 @@
 
 
 												<td >
-													<a href="#" id="<?= $list->slider_id ?>">
-														<button type='button' class='btn bg-danger'><i class='fas fa-user-edit'></i>
-														</button>
-													</a>
+<a href="<?php echo base_url()?>edit-slider-list/<?php echo $list->slider_id?>" id="">
+	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
+	</button>
+</a>
+<a href="<?php echo base_url()?>view-slider-list/<?php echo $list->slider_id?>" id="<?= $list->slider_id ?>">
+	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
+	</button>
+</a>
+<a href="<?php echo base_url()?>delete-slider-list/<?php echo $list->slider_id?>" id="<?= $list->slider_id ?>">
+	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
+	</button>
+</a>
+
 												</td>
 											</tr>
 									<?php

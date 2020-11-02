@@ -66,13 +66,34 @@
 								<p>Our Client</p>
 							</a>
 						</li>
+
+							<li class="nav-item">
+							<a href="<?php echo base_url('Admin/footer_top') ?>" class="nav-link <?= active_nav('footer_top', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Footer Top </p>
+							</a>
+						</li>
+
+							<li class="nav-item">
+							<a href="<?php echo base_url('Admin/footer_bottom') ?>" class="nav-link <?= active_nav('footer_bottom', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Footer Bottom </p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/footer_icon') ?>" class="nav-link <?= active_nav('footer_icon', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Footer Social Icon </p>
+							</a>
+						</li>
 						
 							<li class="nav-item">
 							<a href="<?php echo base_url('Admin/footer') ?>" class="nav-link <?= active_nav('footer', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
-								<p>Footer </p>
+								<p>Footer Copyright </p>
 							</a>
 						</li>
+
 						
 						
 					</ul>

@@ -1,15 +1,16 @@
+
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Testimonials </h3>
+						<h3 class="card-title">Footer Icon</h3>
 					</div>
 
 					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_testimonials') ?>">
-							<button type='button' id="" class='btn bg-danger'>Create New Testimonials</i>
+						<a href="<?php echo base_url('Admin/add_footer_icon') ?>">
+							<button type='button' id="" class='btn bg-success'>Create New Footer Icon</i>
 							</button></a>
 					</div>
 				</div>
@@ -26,45 +27,48 @@
 								<thead>
 									<tr>
 										<th >Serial</th>
-										<th >Testimonials Author</th>
-										<th >Testimonials Text</th>
-										<th >Testimonials Company</th>
+										
+										<th >Images</th>
+									
                                         <th >Action</th>
 									</tr>
 								</thead>
 								<tbody>
 									<?php
-									if ($testimonialsList) {
+									if ($footericonList) {
 										$serial = 0;
-										foreach ($testimonialsList->result() as $list) {
+										foreach ($footericonList->result() as $list) {
 											$serial++;
 
 
 									?>
 											<tr>
 												<td><?= $serial ?></td>
-												<td ><?= $list->testi_author ?></td>
-												<td ><?= $list->testi_author ?></td>
-                                                <td >
-                                               <?= $list->testi_company ?>
+												
+													
+												<td>
+					<img src="<?php echo base_url().$list->footer_images?>">							
+													
+												</td>
+
                                                 
-                                                </td>
 
 
 												<td >
-	<a href="<?php echo base_url()?>edit-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
+<a href="<?php echo base_url()?>edit-slider-list/<?php echo $list->id?>" id="">
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
+<a href="<?php echo base_url()?>view-slider-list/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
+<a href="<?php echo base_url()?>delete-slider-list/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>
 </a>
-											</td>
+
+												</td>
 											</tr>
 									<?php
 										}

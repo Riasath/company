@@ -45,6 +45,32 @@ class Admin extends CI_Controller
 
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
+	 public function footer_top ()
+	{
+        $data = $this->engine->store_nav('appearance', 'footer_top', 'Welcome to footer top');
+        $data['footertopList'] = $this->Common->get_data('footer');
+        $path = 'backend/admin/footer/footer_top';
+
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+ public function footer_bottom ()
+	{
+        $data = $this->engine->store_nav('appearance', 'footer_bottom', 'Welcome to footer bottom');
+        $data['footerbottomList'] = $this->Common->get_data('footer_bottom');
+        $path = 'backend/admin/footer/footer_bottom';
+
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function footer_icon ()
+	{
+        $data = $this->engine->store_nav('appearance', 'footer_icon', 'Welcome to footer Icon');
+        $data['footericonList'] = $this->Common->get_data('footer_img');
+        $path = 'backend/admin/footer/footer_icon';
+
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+
 
 
 
@@ -76,10 +102,31 @@ class Admin extends CI_Controller
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
 	}
+	public function add_footer_top()
+	{
+        $data = $this->engine->store_nav('appearance', 'footer', 'Create New footer top');
+		$path = 'backend/admin/footer/add_footer_top';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function add_footer_bottom()
+	{
+        $data = $this->engine->store_nav('appearance', 'footer', 'Create New footer top');
+		$path = 'backend/admin/footer/add_footer_bottom';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
 	public function add_footer()
 	{
         $data = $this->engine->store_nav('appearance', 'footer', 'Create New footer');
 		$path = 'backend/admin/footer/add_footer';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function add_footer_icon()
+	{
+        $data = $this->engine->store_nav('appearance', 'footer_icon', 'Create New footer icon');
+		$path = 'backend/admin/footer/add_footer_icon';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
 	}
@@ -97,5 +144,47 @@ class Admin extends CI_Controller
 	{
 
 		$this->admin_model->save_slides_item_info();
+	}
+
+     //edit slider
+
+	public function edit_slider_list($slider_id)
+	{
+        $data = array();
+		$data['all_slider_info_by_id'] = $this->Common->all_slider_list_by_id($slider_id);
+		$this->load->view('backend/admin/edit_slider/edit_slider_list', $data);
+
+		
+         // $data = $this->engine->store_nav('appearance', 'slider', 'Create New Slider');
+       
+		//$path = 'backend/admin/edit_slider/edit_slider_list';
+		//$this->engine->render_view($data, $path,$this->side_menu, $this->main_layout);
+	
+	}
+
+	public function update_slider_list_info()
+	{
+
+		$this->Common->update_slider_list();
+		redirect('Admin/list_slider');
+
+
+	}
+	public function delete_slider_list($slider_id)
+	{
+
+		$data = array();
+		$this->Common->slider_delete_by_id($slider_id);
+
+		redirect('Admin/list_slider');
+
+	}
+	public function view_slider_list($slider_id){
+
+         $data = array();
+		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
+		$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
+		$this->load->view('backend/admin/edit_slider/view_slider', $data);
+		  
 	}
 }

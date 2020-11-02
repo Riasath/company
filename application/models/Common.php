@@ -17,6 +17,8 @@ class Common extends CI_Model
 		}
 	}
 
+
+
 	public function get_data($table)
 	{
 		$query = $this->db->get($table);
@@ -206,6 +208,65 @@ class Common extends CI_Model
 		return $this->db->count_all("member_info");
 	}
 
+	
+
+	// slider 
+	public function all_slider_list_by_id($slider_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('slider');
+$this->db->WHERE('slider_id',$slider_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+
+	}
+
+
+
+
+
+	public function update_slider_list(){
+
+		$data=array();
+		$slider_id=$this->input->post('slider_id',true);
+		
+
+
+		$sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/slider_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('slider_image')){
+
+             	$error=$this->upload->display_errors();
+             }
+             else{
+
+             	$sdata=$this->upload->data();
+             	$data['slider_image']=$config['upload_path'].$sdata['file_name'];
+             }
+	
+		$data['slider_descriptions']=$this->input->post('slider_descriptions',true);
+		$data['slider_about']=$this->input->post('slider_about',true);
+		$this->db->WHERE('slider_id',$slider_id);
+		$this->db->update('slider',$data);
+	}
+    public function slider_delete_by_id($slider_id){
+
+
+$this->db->where('slider_id',$slider_id);
+$this->db->delete('slider');
+
+	}
 }
 
 
