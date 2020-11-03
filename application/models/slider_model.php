@@ -532,6 +532,17 @@ $query_result=$this->db->get();
   }
 
 
+  //delete all items
+
+
+public function testimonials_delete_by_id($testi_id){
+
+
+$this->db->where('testi_id',$testi_id);
+$this->db->delete('testimonials');
+
+
+	}
 
 
 

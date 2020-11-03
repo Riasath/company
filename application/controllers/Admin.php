@@ -342,7 +342,21 @@ class Admin extends CI_Controller
     	redirect('Admin/footer');
      
 	}
-	
+
+	//delete all items
+
+
+
+	public function delete_testimonials_list($testi_id)
+	{
+
+		
+		$data = array();
+		$this->slider_model->testimonials_delete_by_id($testi_id);
+
+		redirect('Admin/testimonials');
+
+	}
   
 
 	

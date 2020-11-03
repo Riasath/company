@@ -58,11 +58,11 @@
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
+<a href="<?php echo base_url()?>view-testimonials/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
 	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
+<a href="<?php echo base_url()?>delete-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
 	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>
 </a>

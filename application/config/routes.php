@@ -165,6 +165,10 @@ $route['edit-footer-copyright/(.+)']='Admin/edit_footer_copyright/$1';
 $route['save-footer-copyright']='Admin/save_footer_copyright';
 $route['update-footer-copyright']='Admin/update_footer_copyright';
 
+//delete all items
+
+
+$route['delete-testimonials-list/(.+)']='Admin/delete_testimonials_list/$1';
 
 
 
