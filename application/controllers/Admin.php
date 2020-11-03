@@ -189,6 +189,7 @@ class Admin extends CI_Controller
 	}
 
 
+
 	//for testimonials
      public function edit_testimonials_list($testi_id)
 	{
@@ -299,13 +300,10 @@ class Admin extends CI_Controller
            
 
 	}
-  public function edit_footericon($id)
-	{
-        $data = array();
-		$data['all_footericon_by_id'] = $this->slider_model->all_footericon_by_id($id);
-		$this->load->view('backend/admin/footer/edit_footericon', $data);
+  
 
-	}
+	
+
 
 	
 

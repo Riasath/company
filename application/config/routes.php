@@ -136,6 +136,9 @@ $route['update-slider-list']='Admin/update_slider_list_info';
 $route['delete-slider-list/(.+)']='Admin/delete_slider_list/$1';
 $route['view-slider-list/(.+)']='Admin/view_slider_list/$1';
 
+//footer icon
+
+
 
 $route['edit-testimonials-list/(.+)']='Admin/edit_testimonials_list/$1';
 $route['update-testimonials-list']='Admin/update_testimonials_list';

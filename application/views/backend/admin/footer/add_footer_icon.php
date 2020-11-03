@@ -28,7 +28,7 @@
 
             <?= alert_check() ?>
 <div class="left">
-	<form action="<?php echo base_url()?>save-footer-icon" method="post" enctype="multipart/form-data">
+	<form action="<?php echo base_url()?>save-footericon" method="post" enctype="multipart/form-data">
   <div class="container">
    
     <label for="footer_images"><b>Add Footer Icon</b></label></br>
