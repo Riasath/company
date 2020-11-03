@@ -31,7 +31,7 @@
 
             <?= alert_check() ?>
 <div class="left" style="float:right;margin-right: 450px;">
-	<form action="<?php echo base_url()?>save-client-image" method="post" enctype="multipart/form-data">
+	<form action="<?php echo base_url()?>save-client-list" method="post" enctype="multipart/form-data">
   <div class="container">
   
 

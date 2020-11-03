@@ -38,7 +38,7 @@
             <?= alert_check() ?>
 <div class="container-fluid">
 <div class="left" style="float: right;margin-right: 150px;">
-	<form action="<?php echo base_url()?>save-testimonials" method="post" enctype="multipart/form-data">
+	<form action="<?php echo base_url()?>save-testimonials-list" method="post" enctype="multipart/form-data">
   <div class="container">
 
     <label for="testi_text"><b>Add Testimonials Text</b></label></br>

@@ -104,6 +104,281 @@ $query_result=$this->db->get();
 
 
 
+	public function all_testimonials_list_by_id($testi_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('testimonials');
+$this->db->WHERE('testi_id',$testi_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+
+	}
+	public function save_testimonials_list(){
+
+
+
+    $data=array();
+    $data['testi_text']=$this->input->post('testi_text',true);
+    $data['testi_author']=$this->input->post('testi_author',true);
+    $data['testi_company']=$this->input->post('testi_company',true);
+  
+
+        $this->db->insert('testimonials',$data);
+
+        
+
+      }
+	  public function update_testimonials_list(){
+  
+   $data=array();
+   $testi_id=$this->input->post('testi_id',true);
+   $data['testi_text']=$this->input->post('testi_text',true);
+   $data['testi_author']=$this->input->post('testi_author',true);
+   $data['testi_company']=$this->input->post('testi_company',true);
+  $this->db->WHERE('testi_id',$testi_id);
+  $this->db->update('testimonials',$data);
+
+  }
+  public function all_blog_list_by_id($id){
+
+$this->db->SELECT('*');
+$this->db->FROM('blog');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+
+	}
+	 public function update_blog_list(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    $data['date']=$this->input->post('date',true);
+    $data['blog_title']=$this->input->post('blog_title',true);
+    $data['blog_details']=$this->input->post('blog_details',true);
+    $data['posted_by']=$this->input->post('posted_by',true);
+
+
+    $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/blog_avatar/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('avatar')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['avatar']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('blog',$data);
+
+  }
+   public function save_blog_list(){
+         $data=array();
+$data['date']=$this->input->post('date',true);   
+$data['blog_title']=$this->input->post('blog_title',true);   
+$data['blog_details']=$this->input->post('blog_details',true);   
+$data['posted_by']=$this->input->post('posted_by',true);   
+   
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/blog_avatar/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('avatar')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['avatar']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('blog',$data);
+
+  }
+   public function all_client_list_by_id($client_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('client_img');
+$this->db->WHERE('client_id',$client_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+
+	}
+	 public function update_client_list(){
+
+    $data=array();
+    $client_id=$this->input->post('client_id',true);
+    $client_image=$this->input->post('client_image',true);
+
+
+    $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/client_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('client_image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['client_image']=$config['upload_path'].$sdata['file_name'];
+             }
+  
+   
+    $this->db->WHERE('client_id',$client_id);
+    $this->db->update('client_img',$data);
+  }
+  public function save_client_list(){
+
+           $data=array();
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/client_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('client_image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['client_image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('client_img',$data);
+
+      }
+      public function all_footertop_list_by_id($footer_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('footer');
+$this->db->WHERE('footer_id',$footer_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function save_footertop(){
+
+
+
+    $data=array();
+    $data['footer_heading']=$this->input->post('footer_heading',true);
+    $data['footer_details']=$this->input->post('footer_details',true);
+  
+  
+
+        $this->db->insert('footer',$data);
+
+         redirect('Admin/footer_top');
+
+      }
+      public function update_footertop_list(){
+
+
+     $data=array();
+   $footer_id=$this->input->post('footer_id',true);
+   $data['footer_heading']=$this->input->post('footer_heading',true);
+   $data['footer_details']=$this->input->post('footer_details',true);
+
+  $this->db->WHERE('footer_id',$footer_id);
+  $this->db->update('footer',$data);
+  }
+    public function all_footerbottom_list_by_id($id){
+
+$this->db->SELECT('*');
+$this->db->FROM('footer_bottom');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function  save_footerbottom(){
+
+
+
+
+    $data=array();
+    $data['mobile']=$this->input->post('mobile',true);
+    $data['gmail']=$this->input->post('gmail',true);
+    $data['address']=$this->input->post('address',true);
+  
+  
+
+        $this->db->insert('footer_bottom',$data);
+
+         redirect('Admin/footer_bottom');
+}
+public function update_all_fmenu(){
+
+         $data=array();
+   $id=$this->input->post('id',true);
+   $data['mobile']=$this->input->post('mobile',true);
+   $data['gmail']=$this->input->post('gmail',true);
+   $data['address']=$this->input->post('address',true);
+
+  $this->db->WHERE('id',$id);
+  $this->db->update('footer_bottom',$data);
+  }
+  public function update_footerbottom(){
+
+         $data=array();
+   $id=$this->input->post('id',true);
+   $data['mobile']=$this->input->post('mobile',true);
+   $data['gmail']=$this->input->post('gmail',true);
+   $data['address']=$this->input->post('address',true);
+
+  $this->db->WHERE('id',$id);
+  $this->db->update('footer_bottom',$data);
+  }
+ 
+  
+
+
+
 
 
 

@@ -50,7 +50,7 @@
 
 
 <td >
-	<a href="<?php echo base_url()?>edit-testimonials-list/<?php echo $list->client_id?>" id="<?= $list->client_id ?>">
+	<a href="<?php echo base_url()?>edit-client-list/<?php echo $list->client_id?>" id="<?= $list->client_id ?>">
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>

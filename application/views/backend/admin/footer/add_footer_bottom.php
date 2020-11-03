@@ -41,7 +41,7 @@
 	
 
 <div class="roght" style="float: right;margin-right: 250px;">
-	<form action="<?php echo base_url()?>save-footer-menu" method="post" enctype="multipart/form-data">
+	<form action="<?php echo base_url()?>save-footerbottom" method="post" enctype="multipart/form-data">
   <div class="container">
    
 

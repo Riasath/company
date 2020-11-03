@@ -38,7 +38,7 @@
 
             <?= alert_check() ?>
 <div class="left" style="float:right;margin-right:460px;">
-  <form action="<?php echo base_url()?>save-blog" method="post" enctype="multipart/form-data">
+  <form action="<?php echo base_url()?>save-blog-list" method="post" enctype="multipart/form-data">
   <div class="container">
    
 

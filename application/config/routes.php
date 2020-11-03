@@ -137,3 +137,28 @@ $route['delete-slider-list/(.+)']='Admin/delete_slider_list/$1';
 $route['view-slider-list/(.+)']='Admin/view_slider_list/$1';
 
 
+$route['edit-testimonials-list/(.+)']='Admin/edit_testimonials_list/$1';
+$route['update-testimonials-list']='Admin/update_testimonials_list';
+$route['save-testimonials-list']='Admin/save_testimonials_list';
+$route['edit-blog-list/(.+)']='Admin/edit_blog_list/$1';
+$route['update-blog-list']='Admin/update_blog_list';
+$route['save-blog-list']='Admin/save_blog_list';
+$route['edit-client-list/(.+)']='Admin/edit_client_list/$1';
+$route['update-client-list']='Admin/update_client_list';
+$route['save-client-list']='Admin/save_client_list';
+$route['edit-footertop-list/(.+)']='Admin/edit_footertop_list/$1';
+$route['save-footertop']='Admin/save_footertop';
+$route['update-footertop-list']='Admin/update_footertop_list';
+$route['edit-footerbottom-list/(.+)']='Admin/edit_footerbottom_list/$1';
+$route['save-footerbottom']='Admin/save_footerbottom';
+$route['update-footerbottom']='Admin/update_footerbottom';
+$route['edit-footericon/(.+)']='Admin/edit_footericon/$1';
+$route['save-footerbottom']='Admin/save_footerbottom';
+$route['update-footerbottom']='Admin/update_footerbottom';
+
+
+
+
+
+
+

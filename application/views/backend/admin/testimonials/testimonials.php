@@ -15,6 +15,8 @@
 				</div>
 
 
+
+
 			</div>
 
 			<?= alert_check() ?>
@@ -44,7 +46,7 @@
 											<tr>
 												<td><?= $serial ?></td>
 												<td ><?= $list->testi_author ?></td>
-												<td ><?= $list->testi_author ?></td>
+												<td ><?= $list->testi_text ?></td>
                                                 <td >
                                                <?= $list->testi_company ?>
                                                 

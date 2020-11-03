@@ -187,4 +187,126 @@ class Admin extends CI_Controller
 		$this->load->view('backend/admin/edit_slider/view_slider', $data);
 		  
 	}
+
+
+	//for testimonials
+     public function edit_testimonials_list($testi_id)
+	{
+        $data = array();
+		$data['all_testimonials_list_by_id'] = $this->slider_model->all_testimonials_list_by_id($testi_id);
+		$this->load->view('backend/admin/testimonials/edit_testimonials_list', $data);
+
+	
+	}
+	public function save_testimonials_list()
+	{
+
+		$this->slider_model->save_testimonials_list();
+	     redirect('Admin/testimonials');
+	}
+
+	public function update_testimonials_list()
+	{
+
+		$this->slider_model->update_testimonials_list();
+		redirect('Admin/testimonials');
+           
+
+	}
+	 public function edit_blog_list($id)
+	{
+        $data = array();
+		$data['all_blog_list_by_id'] = $this->slider_model->all_blog_list_by_id($id);
+		$this->load->view('backend/admin/blog/edit_blog_list', $data);
+
+	
+	}
+	public function update_blog_list()
+	{
+
+		$this->slider_model->update_blog_list();
+		redirect('Admin/blog');
+           
+
+	}
+	public function save_blog_list()
+	{
+
+		$this->slider_model->save_blog_list();
+	     redirect('Admin/blog');
+	}
+	  public function edit_client_list($client_id)
+	{
+        $data = array();
+		$data['all_client_list_by_id'] = $this->slider_model->all_client_list_by_id($client_id);
+		$this->load->view('backend/admin/client/edit_client_list', $data);
+
+	
+	}
+	public function update_client_list()
+	{
+
+		$this->slider_model->update_client_list();
+		redirect('Admin/client');
+           
+
+	}
+	public function save_client_list()
+	{
+
+		$this->slider_model->save_client_list();
+	     redirect('Admin/client');
+	}
+	  public function edit_footertop_list($footer_id)
+	{
+        $data = array();
+		$data['all_footertop_list_by_id'] = $this->slider_model->all_footertop_list_by_id($footer_id);
+		$this->load->view('backend/admin/footer/edit_footertop_list', $data);
+
+	}
+	public function save_footertop()
+	{
+
+		$this->slider_model->save_footertop();
+	     redirect('Admin/footer_top');
+	}
+	public function update_footertop_list()
+	{
+
+		$this->slider_model->update_footertop_list();
+		redirect('Admin/footer_top');
+           
+
+	}
+	  public function edit_footerbottom_list($id)
+	{
+        $data = array();
+		$data['all_footerbottom_list_by_id'] = $this->slider_model->all_footerbottom_list_by_id($id);
+		$this->load->view('backend/admin/footer/edit_footerbottom_list', $data);
+
+	}
+	public function save_footerbottom()
+	{
+
+		$this->slider_model->save_footerbottom();
+	     redirect('Admin/footer_bottom');
+	}
+	public function update_footerbottom()
+	{
+
+		$this->slider_model->update_footerbottom();
+		redirect('Admin/footer_bottom');
+           
+
+	}
+  public function edit_footericon($id)
+	{
+        $data = array();
+		$data['all_footericon_by_id'] = $this->slider_model->all_footericon_by_id($id);
+		$this->load->view('backend/admin/footer/edit_footericon', $data);
+
+	}
+
+	
+
 }

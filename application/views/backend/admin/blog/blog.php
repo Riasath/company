@@ -68,7 +68,7 @@
 
 
 	<td >
-	<a href="<?php echo base_url()?>edit-testimonials-list/<?php echo $list->id?>">
+	<a href="<?php echo base_url()?>edit-blog-list/<?php echo $list->id?>">
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>

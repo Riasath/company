@@ -40,7 +40,7 @@
     
 
 <div class="left">
-    <form action="<?php echo base_url()?>save-footer-heading" method="post" enctype="multipart/form-data">
+    <form action="<?php echo base_url()?>save-footertop" method="post" enctype="multipart/form-data">
   <div class="container">
    <label for="footer_heading"><b>Add Footer Heading</b></label></br>
     <input type="text"  name="footer_heading" id="footer_heading" required></br>

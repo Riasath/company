@@ -50,7 +50,7 @@
 
 
 												<td >
-<a href="<?php echo base_url()?>edit-slider-list/<?php echo $list->footer_id?>" id="">
+<a href="<?php echo base_url()?>edit-footertop-list/<?php echo $list->footer_id?>" id="">
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
