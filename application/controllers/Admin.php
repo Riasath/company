@@ -187,4 +187,31 @@ class Admin extends CI_Controller
 		$this->load->view('backend/admin/edit_slider/view_slider', $data);
 		  
 	}
+
+
+	//footer icon
+		public function edit_footericon($id)
+	{
+        $data = array();
+		$data['all_footericon_by_id'] = $this->slider_model->all_footericon_by_id($id);
+		$this->load->view('backend/admin/footer/edit_footericon', $data);
+
+		
+	
+	}
+
+	public function update_footericon()
+	{
+
+		$this->slider_model->update_footericon();
+		redirect('Admin/footer_icon');
+
+
+	}
+	public function save_footericon()
+	{
+
+		$this->slider_model->save_footericon();
+		redirect('Admin/footer_icon');
+	}
 }

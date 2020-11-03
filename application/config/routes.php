@@ -136,4 +136,11 @@ $route['update-slider-list']='Admin/update_slider_list_info';
 $route['delete-slider-list/(.+)']='Admin/delete_slider_list/$1';
 $route['view-slider-list/(.+)']='Admin/view_slider_list/$1';
 
+//footer icon
+
+$route['edit-footericon/(.+)']='Admin/edit_footericon/$1';
+$route['update-footericon']='Admin/update_footericon';
+$route['save-footericon']='Admin/save_footericon';
+$route['delete-slider-list/(.+)']='Admin/delete_slider_list/$1';
+$route['view-slider-list/(.+)']='Admin/view_slider_list/$1';
 
