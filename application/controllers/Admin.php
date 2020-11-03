@@ -279,7 +279,7 @@ class Admin extends CI_Controller
            
 
 	}
-	  public function edit_footerbottom_list($id)
+	 public function edit_footerbottom_list($id)
 	{
         $data = array();
 		$data['all_footerbottom_list_by_id'] = $this->slider_model->all_footerbottom_list_by_id($id);
@@ -300,6 +300,49 @@ class Admin extends CI_Controller
            
 
 	}
+	public function edit_footericon($id)
+	{
+        $data = array();
+		$data['edit_footericon_by_id'] = $this->slider_model->edit_footericon_by_id($id);
+		$this->load->view('backend/admin/footer/edit_footericon', $data);
+
+	}
+	public function update_footericon()
+	{
+
+		$this->slider_model->update_footericonlist();
+		redirect('Admin/footer_icon');
+           
+
+	}
+	public function save_footericon(){
+
+    $this->slider_model->save_footericon();
+    	redirect('Admin/footer_icon');
+     
+	}
+	public function edit_footer_copyright($id)
+	{
+        $data = array();
+		$data['edit_footer_copyright_by_id'] = $this->slider_model->edit_footer_copyright_by_id($id);
+		$this->load->view('backend/admin/footer/edit_footer_copyright', $data);
+
+	}
+	public function update_footer_copyright()
+	{
+
+		$this->slider_model->update_footer_copyright_list();
+		redirect('Admin/footer');
+           
+
+	}
+	public function save_footer_copyright(){
+
+    $this->slider_model->save_footer_copyright();
+    	redirect('Admin/footer');
+     
+	}
+	
   
 
 	

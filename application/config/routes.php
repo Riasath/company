@@ -156,8 +156,15 @@ $route['edit-footerbottom-list/(.+)']='Admin/edit_footerbottom_list/$1';
 $route['save-footerbottom']='Admin/save_footerbottom';
 $route['update-footerbottom']='Admin/update_footerbottom';
 $route['edit-footericon/(.+)']='Admin/edit_footericon/$1';
-$route['save-footerbottom']='Admin/save_footerbottom';
-$route['update-footerbottom']='Admin/update_footerbottom';
+$route['save-footericon']='Admin/save_footericon';
+$route['update-footericon']='Admin/update_footericon';
+
+
+
+$route['edit-footer-copyright/(.+)']='Admin/edit_footer_copyright/$1';
+$route['save-footer-copyright']='Admin/save_footer_copyright';
+$route['update-footer-copyright']='Admin/update_footer_copyright';
+
 
 
 

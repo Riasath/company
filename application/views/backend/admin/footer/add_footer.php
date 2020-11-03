@@ -40,7 +40,7 @@
 	
 
 <div class="left" style="float:right;margin-right:175px;">
-	<form action="<?php echo base_url()?>save-copyright" method="post" enctype="multipart/form-data">
+	<form action="<?php echo base_url()?>save-footer-copyright" method="post" enctype="multipart/form-data">
   <div class="container">
    
 

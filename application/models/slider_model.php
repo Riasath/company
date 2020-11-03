@@ -418,8 +418,118 @@ public function update_all_fmenu(){
   $this->db->WHERE('id',$id);
   $this->db->update('footer_bottom',$data);
   }
- 
+   public function edit_footericon_by_id($id){
+
+  $this->db->SELECT('*');
+$this->db->FROM('footer_img');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+  }
+   public function update_footericonlist(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    $footer_images=$this->input->post('footer_images',true);
+
+
+    $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/footer_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('footer_images')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['footer_images']=$config['upload_path'].$sdata['file_name'];
+             }
   
+   
+    $this->db->WHERE('id',$id);
+    $this->db->update('footer_img',$data);
+
+  }
+  public function save_footericon(){
+
+           $data=array();
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/footer_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('footer_images')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['footer_images']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('footer_img',$data);
+
+      }
+      public function edit_footer_copyright_by_id($id){
+
+      $this->db->SELECT('*');
+$this->db->FROM('copyright');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+}
+ public function update_footer_copyright_list(){
+
+  $data=array();
+   $id=$this->input->post('id',true);
+   $data['year']=$this->input->post('year',true);
+   $data['company_name']=$this->input->post('company_name',true);
+   $data['design']=$this->input->post('design',true);
+   $data['developed']=$this->input->post('developed',true);
+   $data['only_on']=$this->input->post('only_on',true);
+
+  $this->db->WHERE('id',$id);
+  $this->db->update('copyright',$data);
+  }
+  
+    public function save_footer_copyright(){
+
+
+ $data=array();
+    $data['year']=$this->input->post('year',true);
+    $data['company_name']=$this->input->post('company_name',true);
+    $data['design']=$this->input->post('design',true);
+    $data['developed']=$this->input->post('developed',true);
+    $data['only_on']=$this->input->post('only_on',true);
+  
+  
+
+        $this->db->insert('copyright',$data);
+
+        
+
+  }
 
 
 
