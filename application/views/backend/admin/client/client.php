@@ -54,7 +54,7 @@
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->client_id?>" id="<?= $list->client_id ?>">
+<a href="<?php echo base_url()?>view-client-list/<?php echo $list->client_id?>" id="<?= $list->client_id ?>">
 	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>

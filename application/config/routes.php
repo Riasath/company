@@ -179,7 +179,14 @@ $route['delete-footercopyright-list/(.+)']='Admin/delete_footercopyright_list/$1
 
 
 
-
+//view items
+$route['view-testimonials-list/(.+)']='Admin/view_testimonials_list/$1';
+$route['view-blog-list/(.+)']='Admin/view_blog_list/$1';
+$route['view-client-list/(.+)']='Admin/view_client_list/$1';
+$route['view-footertop-list/(.+)']='Admin/view_footertop_list/$1';
+$route['view-footerbottom-list/(.+)']='Admin/view_footerbottom_list/$1';
+$route['view-footericon-list/(.+)']='Admin/view_footericon_list/$1';
+$route['view-footercopyright-list/(.+)']='Admin/view_footercopyright_list/$1';
 
 
 

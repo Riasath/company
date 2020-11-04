@@ -591,6 +591,84 @@ $this->db->delete('copyright');
 
 
 	}
+	//view items
+	public function all_testimonials_view_by_id($testi_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('testimonials');
+$this->db->WHERE('testi_id',$testi_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
+	public function all_blog_view_by_id($id){
+
+$this->db->SELECT('*');
+$this->db->FROM('blog');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
+		public function all_client_view_by_id($client_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('client_img');
+$this->db->WHERE('client_id',$client_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
+	public function all_footertop_view_by_id($footer_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('footer');
+$this->db->WHERE('footer_id',$footer_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
+		public function all_footerbottom_view_by_id($id){
+
+$this->db->SELECT('*');
+$this->db->FROM('footer_bottom');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
+	public function all_footericon_view_by_id($id){
+
+$this->db->SELECT('*');
+$this->db->FROM('footer_img');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
+	public function all_footercopyright_view_by_id($id){
+
+$this->db->SELECT('*');
+$this->db->FROM('copyright');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+
+
+	}
 
 
 

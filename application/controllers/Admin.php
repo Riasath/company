@@ -420,6 +420,70 @@ class Admin extends CI_Controller
 		redirect('Admin/footer');
 
 	}
+
+
+
+	//view items
+
+
+	public function view_testimonials_list($testi_id){
+
+         $data = array();
+		$data['all_testimonials_view_by_id'] = $this->slider_model->all_testimonials_view_by_id($testi_id);
+		$data['testimonials_info'] = $this->load->view('backend/admin/testimonials/view_testimonials', $data, true);
+		$this->load->view('backend/admin/testimonials/view_testimonials', $data);
+		  
+	}
+
+	public function view_blog_list($id){
+
+         $data = array();
+		$data['all_blog_view_by_id'] = $this->slider_model->all_blog_view_by_id($id);
+		$data['blog_info'] = $this->load->view('backend/admin/blog/view_blog', $data, true);
+		$this->load->view('backend/admin/blog/view_blog', $data);
+		  
+	}
+	public function view_client_list($client_id){
+
+         $data = array();
+		$data['all_client_view_by_id'] = $this->slider_model->all_client_view_by_id($client_id);
+		$data['client_info'] = $this->load->view('backend/admin/client/view_client', $data, true);
+		$this->load->view('backend/admin/client/view_client', $data);
+		  
+	}
+	public function view_footertop_list($footer_id){
+
+         $data = array();
+		$data['all_footertop_view_by_id'] = $this->slider_model->all_footertop_view_by_id($footer_id);
+		$data['footertop_info'] = $this->load->view('backend/admin/footer/view_footertop', $data, true);
+		$this->load->view('backend/admin/footer/view_footertop', $data);
+		  
+	}
+	public function view_footerbottom_list($id){
+
+         $data = array();
+		$data['all_footerbottom_view_by_id'] = $this->slider_model->all_footerbottom_view_by_id($id);
+		$data['footerbottom_info'] = $this->load->view('backend/admin/footer/view_footerbottom', $data, true);
+		$this->load->view('backend/admin/footer/view_footerbottom', $data);
+		  
+	}
+	public function view_footericon_list($id){
+
+         $data = array();
+		$data['all_footericon_view_by_id'] = $this->slider_model->all_footericon_view_by_id($id);
+		$data['footericon_info'] = $this->load->view('backend/admin/footer/view_footericon', $data, true);
+		$this->load->view('backend/admin/footer/view_footericon', $data);
+		  
+	}
+	public function view_footercopyright_list($id){
+
+         $data = array();
+		$data['all_footercopyright_view_by_id'] = $this->slider_model->all_footercopyright_view_by_id($id);
+		$data['footercopyright_info'] = $this->load->view('backend/admin/footer/view_footercopyright', $data, true);
+		$this->load->view('backend/admin/footer/view_footercopyright', $data);
+		  
+	}
+  
   
 
 	

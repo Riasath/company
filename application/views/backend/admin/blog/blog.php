@@ -72,7 +72,7 @@
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimon-list/<?php echo $list->id?>" id="<?= $list->id ?>">
+<a href="<?php echo base_url()?>view-blog-list/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
