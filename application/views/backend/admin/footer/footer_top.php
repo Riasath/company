@@ -58,7 +58,7 @@
 	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>delete-slider-list/<?php echo $list->footer_id?>" id="<?= $list->footer_id ?>">
+<a href="<?php echo base_url()?>delete-footertop-list/<?php echo $list->footer_id?>" id="<?= $list->footer_id ?>">
 	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>
 </a>

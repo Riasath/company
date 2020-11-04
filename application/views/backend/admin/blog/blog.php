@@ -72,11 +72,11 @@
 	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->id?>" id="<?= $list->id ?>">
+<a href="<?php echo base_url()?>view-testimon-list/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->id?>" id="<?= $list->id ?>">
+<a href="<?php echo base_url()?>delete-blog-list/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>
 </a>	

@@ -58,7 +58,7 @@
 	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->client_id?>" id="<?= $list->client_id ?>">
+<a href="<?php echo base_url()?>delete-client-list/<?php echo $list->client_id?>" id="<?= $list->client_id ?>">
 	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>
 </a>

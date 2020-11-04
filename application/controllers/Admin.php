@@ -59,6 +59,21 @@ class Admin extends CI_Controller
 		$this->load->view('backend/admin/edit_slider/view_slider', $data);
 		  
 	}
+	public function save_slider()
+	{
+
+		$this->admin_model->save_slider_info();
+		redirect('Admin/list_slider');
+	}
+	public function add_slides_item()
+	{
+		$this->load->view('master/add_slides_item');
+	}
+	public function save_slides_item()
+	{
+
+		$this->admin_model->save_slides_item_info();
+	}
 
 	  public function testimonials()
 	{
@@ -171,21 +186,7 @@ class Admin extends CI_Controller
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
 	}
-	public function save_slider()
-	{
-
-		$this->admin_model->save_slider_info();
-		redirect('Admin/list_slider');
-	}
-	public function add_slides_item()
-	{
-		$this->load->view('master/add_slides_item');
-	}
-	public function save_slides_item()
-	{
-
-		$this->admin_model->save_slides_item_info();
-	}
+	
 
      //edit slider
 
@@ -357,6 +358,66 @@ class Admin extends CI_Controller
 		$this->slider_model->testimonials_delete_by_id($testi_id);
 
 		redirect('Admin/testimonials');
+
+	}
+	public function delete_blog_list($id)
+	{
+
+		
+		$data = array();
+		$this->slider_model->blog_delete_by_id($id);
+
+		redirect('Admin/blog');
+
+	}
+	public function delete_client_list($client_id)
+	{
+
+		
+		$data = array();
+		$this->slider_model->client_delete_by_id($client_id);
+
+		redirect('Admin/client');
+
+	}
+	public function delete_footertop_list($footer_id)
+	{
+
+		
+		$data = array();
+		$this->slider_model->delete_footertop_by_id($footer_id);
+
+		redirect('Admin/footer_top');
+
+	}
+	public function delete_footerbottom_list($id)
+	{
+
+		
+		$data = array();
+		$this->slider_model->delete_footerbottom_by_id($id);
+
+		redirect('Admin/footer_bottom');
+
+	}
+	public function delete_footericon_list($id)
+	{
+
+		
+		$data = array();
+		$this->slider_model->delete_footericon_by_id($id);
+
+		redirect('Admin/footer_icon');
+
+	}
+	public function delete_footercopyright_list($id)
+	{
+
+		
+		$data = array();
+		$this->slider_model->delete_footercopyright_by_id($id);
+
+		redirect('Admin/footer');
 
 	}
   

@@ -543,6 +543,55 @@ $this->db->delete('testimonials');
 
 
 	}
+	public function blog_delete_by_id($id){
+
+
+$this->db->where('id',$id);
+$this->db->delete('blog');
+
+
+	}
+	public function client_delete_by_id($client_id){
+
+
+$this->db->where('client_id',$client_id);
+$this->db->delete('client_img');
+
+
+	}
+	public function delete_footertop_by_id($footer_id){
+
+
+$this->db->where('footer_id',$footer_id);
+$this->db->delete('footer');
+
+
+	}
+	public function delete_footerbottom_by_id($id){
+
+
+$this->db->where('id',$id);
+$this->db->delete('footer_bottom');
+
+
+	}
+	public function delete_footericon_by_id($id){
+
+
+$this->db->where('id',$id);
+$this->db->delete('footer_img');
+
+
+	}
+	public function delete_footercopyright_by_id($id){
+
+
+$this->db->where('id',$id);
+$this->db->delete('copyright');
+
+
+	}
+
 
 
 

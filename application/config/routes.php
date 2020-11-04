@@ -169,6 +169,14 @@ $route['update-footer-copyright']='Admin/update_footer_copyright';
 
 
 $route['delete-testimonials-list/(.+)']='Admin/delete_testimonials_list/$1';
+$route['delete-blog-list/(.+)']='Admin/delete_blog_list/$1';
+$route['delete-client-list/(.+)']='Admin/delete_client_list/$1';
+$route['delete-footertop-list/(.+)']='Admin/delete_footertop_list/$1';
+$route['delete-footerbottom-list/(.+)']='Admin/delete_footerbottom_list/$1';
+$route['delete-footericon-list/(.+)']='Admin/delete_footericon_list/$1';
+$route['delete-footercopyright-list/(.+)']='Admin/delete_footercopyright_list/$1';
+
+
 
 
 
