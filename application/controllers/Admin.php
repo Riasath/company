@@ -13,6 +13,53 @@ class Admin extends CI_Controller
         $path = 'backend/admin/slider/list';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
+	public function add_slider()
+	{
+        $data = $this->engine->store_nav('appearance', 'slider', 'Create New Slider');
+		$path = 'backend/admin/slider/add';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function edit_slider_list($slider_id)
+	{
+        $data = array();
+		$data['all_slider_info_by_id'] = $this->Common->all_slider_list_by_id($slider_id);
+		$this->load->view('backend/admin/edit_slider/edit_slider_list', $data);
+
+		
+         // $data = $this->engine->store_nav('appearance', 'slider', 'Create New Slider');
+       
+		//$path = 'backend/admin/edit_slider/edit_slider_list';
+		//$this->engine->render_view($data, $path,$this->side_menu, $this->main_layout);
+	
+	}
+
+	public function update_slider_list_info()
+	{
+
+		$this->Common->update_slider_list();
+		redirect('Admin/list_slider');
+
+
+	}
+	public function delete_slider_list($slider_id)
+	{
+
+		$data = array();
+		$this->Common->slider_delete_by_id($slider_id);
+
+		redirect('Admin/list_slider');
+
+	}
+	public function view_slider_list($slider_id){
+
+         $data = array();
+		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
+		$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
+		$this->load->view('backend/admin/edit_slider/view_slider', $data);
+		  
+	}
+
 	  public function testimonials()
 	{
         $data = $this->engine->store_nav('appearance', 'testimonials', 'Welcome to testimonials');
@@ -74,13 +121,7 @@ class Admin extends CI_Controller
 
 
 
-	public function add_slider()
-	{
-        $data = $this->engine->store_nav('appearance', 'slider', 'Create New Slider');
-		$path = 'backend/admin/slider/add';
-		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
-		
-	}
+	
 	public function add_testimonials()
 	{
         $data = $this->engine->store_nav('appearance', 'tetimonials', 'Create New tetimonials');
@@ -148,46 +189,7 @@ class Admin extends CI_Controller
 
      //edit slider
 
-	public function edit_slider_list($slider_id)
-	{
-        $data = array();
-		$data['all_slider_info_by_id'] = $this->Common->all_slider_list_by_id($slider_id);
-		$this->load->view('backend/admin/edit_slider/edit_slider_list', $data);
-
-		
-         // $data = $this->engine->store_nav('appearance', 'slider', 'Create New Slider');
-       
-		//$path = 'backend/admin/edit_slider/edit_slider_list';
-		//$this->engine->render_view($data, $path,$this->side_menu, $this->main_layout);
 	
-	}
-
-	public function update_slider_list_info()
-	{
-
-		$this->Common->update_slider_list();
-		redirect('Admin/list_slider');
-
-
-	}
-	public function delete_slider_list($slider_id)
-	{
-
-		$data = array();
-		$this->Common->slider_delete_by_id($slider_id);
-
-		redirect('Admin/list_slider');
-
-	}
-	public function view_slider_list($slider_id){
-
-         $data = array();
-		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
-		$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
-		$this->load->view('backend/admin/edit_slider/view_slider', $data);
-		  
-	}
-
 
 
 	//for testimonials
