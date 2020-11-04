@@ -34,30 +34,36 @@
     <tbody>
       <tr>
       <td>
-      <h4><?php echo $all_footercopyright_view_by_id->id ?></h4>
+      <h4><?php echo $all_footercopyright_view_by_id
+        ->id ?></h4>
 
       </td>
       <td>
         <h4>
-          <?php echo $all_footercopyright_view_by_id->year ?>
+          <?php echo $all_footercopyright_view_by_id
+          ->year ?>
         </h4>
         
       </td>
       <td>
-      <h4><?php echo $all_footercopyright_view_by_id->company_name ?></h4>
+      <h4><?php echo $all_footercopyright_view_by_id
+        ->company_name ?></h4>
 
       </td>
       <td>
-      <h4><?php echo $all_footercopyright_view_by_id->design ?></h4>
+      <h4><?php echo $all_footercopyright_view_by_id
+        ->design ?></h4>
 
       </td>
       <td>
-      <h4><?php echo $all_footercopyright_view_by_id->developed ?></h4>
+      <h4><?php echo $all_footercopyright_view_by_id
+        ->developed ?></h4>
 
       </td>
     
     <td>
-      <h4><?php echo $all_footercopyright_view_by_id->only_on ?></h4>
+      <h4><?php echo $all_footercopyright_view_by_id
+        ->only_on ?></h4>
 
       </td>
     

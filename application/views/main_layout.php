@@ -157,7 +157,7 @@
 
 			<div class="logo">
 				<a href="#" class="full-block-link"></a>
-				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" alt="RTSOFTBD">
+				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" style="height:77;width:175px;"alt="RTSOFTBD">
 
 			</div>
 
@@ -182,6 +182,9 @@
 					
 					<li class="menu-item-has-children">
 						<a href="<?php base_url();?>home">Home</a>
+					</li>
+					<li class="menu-item-has-children">
+						<a href="<?php base_url();?>about">About</a>
 					</li>
 
 					<li class="has-megamenu menu-item-has-children">
