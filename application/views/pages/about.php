@@ -177,7 +177,7 @@
 
 					<div class="swiper-wrapper">
  <?php foreach($all_work as $v_work){?>
-<div class="slider-profit swiper-slide" style="margin-top:40px;" >
+<div class="slider-profit swiper-slide" style="margin-top:20px;" >
 
 	<div class="row medium-padding120">
 			<div class="swiper-pagination" style="margin-left: -90px;"></div>
