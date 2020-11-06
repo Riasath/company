@@ -37,7 +37,7 @@
         
       </td>
       <td>
-         <label for="slider_image"><b>Slider Image</b></label></br>
+         <label for="slider_image"><b></b></label></br>
     <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" style="height:300px;width:300px;border:1px solid #FC4136;">
       </td>
       <tr/>

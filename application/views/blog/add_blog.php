@@ -17,7 +17,6 @@
 </head>
 <body>
   
-
 <div class="left" style="float: left;">
   <form action="<?php echo base_url()?>save-blog" method="post" enctype="multipart/form-data">
   <div class="container">
@@ -51,8 +50,6 @@
 </div>
 </div>
 
-
-
 <div id="right" style="float: right;">
 
 <p style="margin-top:20px;margin-right:330px;">
@@ -61,7 +58,7 @@
 
       </p>
     </div>
-</body>
-</html>
+
+
 </body>
 </html>

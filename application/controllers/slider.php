@@ -396,8 +396,16 @@ $this->admin_model->update_all_blog();
   }
   
   
+//test about
+
+	public function add_short_story(){
+$this->load->view('short_story/add_short_story');
+	}
 
   
   
 
 }
+
+
+

@@ -44,6 +44,9 @@
 	   <p style="margin-top:40px;margin-right: 500px;">
 	   	<a  href="<?= base_url();?>add-blog"><button type="button"class="btn btn-light">Add Blog</button></a>
 	   </p>
+	   <p style="margin-top:40px;margin-right: 500px;">
+	   	<a  href="<?= base_url();?>add-short-story"><button type="button"class="btn btn-light">Add short story </button></a>
+	   </p>
 
 	    </div>
 

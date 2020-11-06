@@ -192,3 +192,76 @@ $route['view-footercopyright-list/(.+)']='Admin/view_footercopyright_list/$1';
 
 
 
+
+
+//test about
+
+//short story
+
+$route['add-short-story']='slider/add_short_story';
+$route['save-short-story']='Admin/save_short_story';
+$route['edit-shortstory-list/(.+)']='Admin/edit_shortstory_list/$1';
+$route['update-shortstory-list']='Admin/update_shortstory_list';
+$route['delete-shortstory-list/(.+)']='Admin/delete_shortstory_list/$1';
+$route['view-shortstory-list/(.+)']='Admin/view_shortstory_list/$1';
+
+//foundation
+
+$route['save-foundation']='Admin/save_foundation';
+$route['edit-foundation-list/(.+)']='Admin/edit_foundation_list/$1';
+$route['update-foundation-list']='Admin/update_foundation_list';
+$route['delete-foundation-list/(.+)']='Admin/delete_foundation_list/$1';
+$route['view-foundation-list/(.+)']='Admin/view_foundation_list/$1';
+
+
+//work
+
+$route['save-work']='Admin/save_work';
+$route['edit-work/(.+)']='Admin/edit_work/$1';
+$route['update-work']='Admin/update_work';
+$route['delete-work/(.+)']='Admin/delete_work/$1';
+$route['view-work/(.+)']='Admin/view_work/$1';
+
+//expert
+$route['save-expert']='Admin/save_expert';
+$route['edit-expert/(.+)']='Admin/edit_expert/$1';
+$route['update-expert']='Admin/update_expert';
+$route['delete-expert/(.+)']='Admin/delete_expert/$1';
+$route['view-expert/(.+)']='Admin/view_expert/$1';
+//team
+$route['save-team']='Admin/save_team';
+$route['edit-team/(.+)']='Admin/edit_team/$1';
+$route['update-team']='Admin/update_team';
+$route['delete-team/(.+)']='Admin/delete_team/$1';
+$route['view-team/(.+)']='Admin/view_team/$1';
+//promo
+$route['save-promo']='Admin/save_promo';
+$route['edit-promo/(.+)']='Admin/edit_promo/$1';
+$route['update-promo']='Admin/update_promo';
+$route['view-promo/(.+)']='Admin/view_promo/$1';
+$route['delete-promo/(.+)']='Admin/delete_promo/$1';
+//vision
+$route['save-vision']='Admin/save_vision';
+$route['edit-vision/(.+)']='Admin/edit_vision/$1';
+$route['update-vision']='Admin/update_vision';
+$route['view-vision/(.+)']='Admin/view_vision/$1';
+$route['delete-vision/(.+)']='Admin/delete_vision/$1';
+
+//feedback
+$route['save-feedback']='Admin/save_feedback';
+$route['edit-feedback/(.+)']='Admin/edit_feedback/$1';
+$route['update-feedback']='Admin/update_feedback';
+$route['view-feedback/(.+)']='Admin/view_feedback/$1';
+$route['delete-feedback/(.+)']='Admin/delete_feedback/$1';
+//partner
+$route['save-partner']='Admin/save_partner';
+$route['edit-partner/(.+)']='Admin/edit_partner/$1';
+$route['update-partner']='Admin/update_partner';
+$route['view-partner/(.+)']='Admin/view_partner/$1';
+$route['delete-partner/(.+)']='Admin/delete_partner/$1';
+//partner image
+$route['save-partner-image']='Admin/save_partner_image';
+$route['edit-partner-image/(.+)']='Admin/edit_partner_image/$1';
+$route['update-partner-image']='Admin/update_partner_image';
+$route['view-partner-image/(.+)']='Admin/view_partner_image/$1';
+$route['delete-partner-image/(.+)']='Admin/delete_partner_image/$1';

@@ -3,6 +3,9 @@
 	<!-- Stunning header -->
 
 
+
+
+
 	<div class="stunning-header stunning-header-bg-lightblue"
 	style="background-image: url('<?php echo base_url('assets/images/pattern-bg-lightblue.jpg')?>');">
 		<div class="stunning-header-content" >
@@ -21,34 +24,42 @@
 	</div>
 
 	<!-- End Stunning header -->
-
 	<div class="container">
-		<div class="row pt120">
+		
+	
+		<div class="row pt120" style="margin-top: -100px;">
+			  <?php foreach($all_db_story as $v_story){?>
 			<div class="col-lg-12">
 				<div class="heading mb30">
-					<h4 class="h1 heading-title">Short Story About Our Company</h4>
+					<h4 class="h1 heading-title">
+						<?php echo $v_story->short_story_heading;?>
+					</h4>
 					<div class="heading-line">
 						<span class="short-line"></span>
 						<span class="long-line"></span>
 					</div>
 
-					<h5 class="heading-subtitle">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-						saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+					<h5 class="heading-subtitle">
+						<?php echo $v_story->short_story_title;?>
 					</h5>
 				</div>
 			</div>
 
 			<div class="col-lg-6">
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-					laoreet dolore. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+				<p>
+					<?php echo $v_story->short_story_subtitle1;?>
 				</p>
 			</div>
 
 			<div class="col-lg-6">
-				<p>Mirum est notare quam littera gothica, quam nunc putamus parum, anteposuerit litterarum formas.</p>
+				<p>
+					<?php echo $v_story->short_story_subtitle2;?>
+				</p>
 			</div>
-
+<?php }?>
 		</div>
+	
+	
 	</div>
 
 
@@ -64,7 +75,7 @@
 					<div class="timeline">
 						<div class="events-wrapper">
 							<div class="events">
-								<ol>
+									<ol>
 									<li><a href="#0" data-date="16/12/2011" class="selected">2011</a></li>
 									<li><a href="#0" data-date="28/09/2012">2012</a></li>
 									<li><a href="#0" data-date="05/01/2013">2013</a></li>
@@ -86,30 +97,34 @@
 
 					<div class="events-content">
 						<ol>
+							  <?php foreach($all_foundation as $v_foundation){?>
 							<li class="selected" data-date="16/12/2011">
 								<div class="row">
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
-										<div class="time-line-thumb">
-											<img src="assets/images/time-line-thumb.png" alt="time-line">
-										</div>
+			<div class="time-line-thumb">
+				<img src="<?php echo $v_foundation->foundation_image?>">
+			</div>
 									</div>
 
 									<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-9 col-xs-12 table-cell">
-										<div class="time-line-content">
-											<h6 class="time-line-subtitle">Dec, 2011</h6>
-											<h5 class="time-line-title">Foundation of the Company</h5>
-											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
-											</p>
-										</div>
+			<div class="time-line-content">
+				<h6 class="time-line-subtitle">
+				<?php echo $v_foundation->date;?>	
+				</h6>
+				<h5 class="time-line-title">
+					<?php echo $v_foundation->foundation_title;?>
+				</h5>
+				<p class="time-line-text">
+						<?php echo $v_foundation->foundation_details;?>
+				</p>
+			</div>
 									</div>
 								</div>
 
 							</li>
+							<?php }?>
 
-							<li data-date="28/09/2012">
+								<li data-date="28/09/2012">
 
 								<div class="row">
 									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
@@ -133,99 +148,7 @@
 
 							</li>
 
-							<li data-date="05/01/2013">
-
-								<div class="row">
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
-										<div class="time-line-thumb">
-											<img src="assets/images/time-line-thumb.png" alt="time-line">
-										</div>
-									</div>
-
-									<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-9 col-xs-12 table-cell">
-										<div class="time-line-content">
-											<h6 class="time-line-subtitle">Jan, 2013</h6>
-											<h5 class="time-line-title">Foundation of the Company</h5>
-											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
-											</p>
-										</div>
-									</div>
-								</div>
-
-							</li>
-
-							<li class="" data-date="10/09/2014">
-								<div class="row">
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
-										<div class="time-line-thumb">
-											<img src="assets/images/time-line-thumb.png" alt="time-line">
-										</div>
-									</div>
-
-									<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-9 col-xs-12 table-cell">
-										<div class="time-line-content">
-											<h6 class="time-line-subtitle">Sept, 2014</h6>
-											<h5 class="time-line-title">Foundation of the Company</h5>
-											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
-											</p>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li data-date="07/05/2015">
-
-								<div class="row">
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
-										<div class="time-line-thumb">
-											<img src="assets/images/time-line-thumb.png" alt="time-line">
-										</div>
-									</div>
-
-									<div class="col-lg-8 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 col-lg-offset-1 table-cell">
-										<div class="time-line-content">
-											<h6 class="time-line-subtitle">May, 2015</h6>
-											<h5 class="time-line-title">Foundation of the Company</h5>
-											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
-											</p>
-										</div>
-									</div>
-								</div>
-
-							</li>
-
-							<li data-date="20/12/2016">
-
-								<div class="row">
-									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
-										<div class="time-line-thumb">
-											<img src="assets/images/time-line-thumb.png" alt="time-line">
-										</div>
-									</div>
-
-									<div class="col-lg-8 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 col-lg-offset-1 table-cell">
-										<div class="time-line-content">
-											<h6 class="time-line-subtitle">Dec, 2016</h6>
-											<h5 class="time-line-title">Foundation of the Company</h5>
-											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
-											</p>
-										</div>
-									</div>
-								</div>
-
-							</li>
+							
 
 							<!-- other descriptions here -->
 						</ol>
@@ -253,110 +176,49 @@
 				<div class="swiper-container auto-height pagination-vertical" data-direction="vertical" data-loop="false" data-mouse-scroll="true">
 
 					<div class="swiper-wrapper">
+ <?php foreach($all_work as $v_work){?>
+<div class="slider-profit swiper-slide" style="margin-top:40px;" >
 
-						<div class="slider-profit swiper-slide">
-							<div class="row medium-padding120">
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="heading">
-										<h4 class="h1 heading-title c-white mb30">We Work for Your Profit</h4>
-										<p class="c-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.
-										</p>
-									</div>
+	<div class="row medium-padding120">
+			<div class="swiper-pagination" style="margin-left: -90px;"></div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="heading">
+				<h4 class="h1 heading-title c-white mb30">
+		<?php echo $v_work->title;?>	
+				</h4>
+				<p class="c-white">
+		<?php echo $v_work->details;?>	
+				</p>
+			</div>
 
-									<a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
-										<span class="text">Read More</span>
-										<span class="semicircle"></span>
-									</a>
-								</div>
+			<a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
+				<span class="text">Read More</span>
+				<span class="semicircle"></span>
+			</a>
+		</div>
 
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="slider-profit-thumb">
-										<img src="assets/images/profit.png" alt="profit">
-									</div>
-								</div>
-							</div>
-						</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="slider-profit-thumb">
+		<img src="<?php echo $v_work->image;?>">	
+			</div>
+		</div>
+	</div>
 
-						<div class="slider-profit swiper-slide">
-							<div class="row medium-padding120">
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="heading">
-										<h4 class="h1 heading-title c-white mb30">We Work for Your Profit</h4>
-										<p class="c-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.
-										</p>
-									</div>
+</div>
+	<?php }?>
 
-									<a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
-										<span class="text">Read More</span>
-										<span class="semicircle"></span>
-									</a>
-								</div>
 
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="slider-profit-thumb">
-										<img src="assets/images/profit.png" alt="profit">
-									</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="slider-profit swiper-slide">
-							<div class="row medium-padding120">
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="heading">
-										<h4 class="h1 heading-title c-white mb30">We Work for Your Profit</h4>
-										<p class="c-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.
-										</p>
-									</div>
 
-									<a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
-										<span class="text">Read More</span>
-										<span class="semicircle"></span>
-									</a>
-								</div>
-
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="slider-profit-thumb">
-										<img src="assets/images/profit.png" alt="profit">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="slider-profit swiper-slide">
-							<div class="row medium-padding120">
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="heading">
-										<h4 class="h1 heading-title c-white mb30">We Work for Your Profit</h4>
-										<p class="c-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-											nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.
-										</p>
-									</div>
-
-									<a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
-										<span class="text">Read More</span>
-										<span class="semicircle"></span>
-									</a>
-								</div>
-
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="slider-profit-thumb">
-										<img src="assets/images/profit.png" alt="profit">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+						
 
 					<!-- If we need pagination -->
-					<div class="swiper-pagination"></div>
+					
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
 	<!-- End Slider Profit -->
 
@@ -365,122 +227,69 @@
 
 	<div class="container">
 		<div class="row pt120 mb30">
-
+		<?php foreach($all_expert as $v_expert){?>
 			<div class="col-lg-12">
+		
+  
 				<div class="heading align-center">
-					<h4 class="h1 heading-title">Meet with Our Best Experts</h4>
+					<h4 class="h1 heading-title">
+						<?php echo $v_expert->title;?>
+					</h4>
 					<div class="heading-line">
 						<span class="short-line"></span>
 						<span class="long-line"></span>
 					</div>
-					<p class="heading-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+					<p class="heading-text">
+						<?php echo $v_expert->details;?>
+					</p>
 				</div>
 			</div>
+			<?php }?>
 
 		</div>
 
 		<div class="row pb120">
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="teammembers-item">
-					<img src="assets/images/teammember1.png" alt="team member">
-					<h5 class="teammembers-item-name">Peter Spenser</h5>
-					<p class="teammembers-item-prof">Copywriter</p>
+<?php foreach($all_team as $v_team){?>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"
+			>
+				
+<div class="teammembers-item">
+<img src="<?php echo $v_team->image?>" style="height:160px;width:230px;">
+<h5 class="teammembers-item-name">
+	<?php echo $v_team->name;?>
+</h5>
+<p class="teammembers-item-prof">
+	<?php echo $v_team->post;?>
+</p>
+<div class="socials">
 
-					<div class="socials">
+<a href="#" class="social__item">
+	<img src="<?php echo $v_team->fbimage?>">
+</a>
 
-						<a href="#" class="social__item">
-							<img src="assets/images/circle-facebook.svg" alt="facebook">
-						</a>
+<a href="#" class="social__item">
+	<img src="<?php echo $v_team->yimage?>">
+</a>
 
-						<a href="#" class="social__item">
-							<img src="assets/images/twitter.svg" alt="twitter">
-						</a>
+<a href="#" class="social__item">
+	<img src="<?php echo $v_team->gimage?>">
+</a>
 
-						<a href="#" class="social__item">
-							<img src="assets/images/google.svg" alt="google">
-						</a>
+<a href="#" class="social__item">
+	<img src="<?php echo $v_team->timage?>">
+</a>
 
-						<a href="#" class="social__item">
-							<img src="assets/images/youtube.svg" alt="youtube">
-						</a>
-
-					</div>
+</div>
+					
 				</div>
+				
+
 			</div>
-
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="teammembers-item">
-					<img src="assets/images/teammember2.png" alt="team member">
-					<h5 class="teammembers-item-name">Angelina Johnson</h5>
-					<p class="teammembers-item-prof">SEO Specialist</p>
-
-					<div class="socials">
-
-						<a href="#" class="social__item">
-							<img src="assets/images/circle-facebook.svg" alt="facebook">
-						</a>
-
-						<a href="#" class="social__item">
-							<img src="assets/images/twitter.svg" alt="twitter">
-						</a>
-
-						<a href="#" class="social__item">
-							<img src="assets/images/google.svg" alt="google">
-						</a>
+			<?php }?>
+			
 
 
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="teammembers-item">
-					<img src="assets/images/teammember3.png" alt="team member">
-					<h5 class="teammembers-item-name">Philip Demarco</h5>
-					<p class="teammembers-item-prof">Senior Developer</p>
-
-					<div class="socials">
-
-						<a href="#" class="social__item">
-							<img src="assets/images/circle-facebook.svg" alt="facebook">
-						</a>
-
-						<a href="#" class="social__item">
-							<img src="assets/images/twitter.svg" alt="twitter">
-						</a>
-
-
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="teammembers-item">
-					<img src="assets/images/teammember4.png" alt="team member">
-					<h5 class="teammembers-item-name">James Anderson</h5>
-					<p class="teammembers-item-prof">Business Analyst</p>
-
-					<div class="socials">
-
-						<a href="#" class="social__item">
-							<img src="assets/images/circle-facebook.svg" alt="facebook">
-						</a>
-
-						<a href="#" class="social__item">
-							<img src="assets/images/twitter.svg" alt="twitter">
-						</a>
-
-						<a href="#" class="social__item">
-							<img src="assets/images/google.svg" alt="google">
-						</a>
-
-						<a href="#" class="social__item">
-							<img src="assets/images/youtube.svg" alt="youtube">
-						</a>
-
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 
@@ -494,47 +303,27 @@
 		<div class="row medium-padding120 bg-border-color">
 			<div class="container">
 				<div class="row">
+					<?php foreach($all_promo as $v_promo){?>
 					<div class="col-lg-4 col-md-4 col-sm-12 col-sx-12">
-						<div class="info-box--standard">
-							<div class="info-box-image f-none">
-								<img src="assets/images/info-box20.png" alt="image">
-							</div>
-							<div class="info-box-content">
-								<h5 class="info-box-title">Excellent Support</h5>
-								<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-									sed diam nonummy nibh euismod tincidunt laoreet dolore magna.
-								</p>
-							</div>
-						</div>
+<div class="info-box--standard">
+	<div class="info-box-image f-none">
+<img src="<?php echo $v_promo->image?>">
+	</div>
+	<div class="info-box-content">
+		<h5 class="info-box-title">
+		<?php echo $v_promo->title;?>
+	</h5>
+		<p class="text">
+			<?php echo $v_promo->details;?>
+		</p>
+	</div>
+</div>
 					</div>
+					<?php }?>
 
-					<div class="col-lg-4 col-md-4 col-sm-12 col-sx-12">
-						<div class="info-box--standard">
-							<div class="info-box-image f-none">
-								<img src="assets/images/info-box21.png" alt="image">
-							</div>
-							<div class="info-box-content">
-								<h5 class="info-box-title">Awesome Team</h5>
-								<p class="text">Claritas est etiam processus dynamicus, qui sequitur mutationem
-									consuetudium lectorum investigationes demonstraverunt
-								</p>
-							</div>
-						</div>
-					</div>
+					
 
-					<div class="col-lg-4 col-md-4 col-sm-12 col-sx-12">
-						<div class="info-box--standard">
-							<div class="info-box-image f-none">
-								<img src="assets/images/info-box22.png" alt="image">
-							</div>
-							<div class="info-box-content">
-								<h5 class="info-box-title">Faster Performance</h5>
-								<p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-									sed diam nonummy nibh euismod.
-								</p>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -546,29 +335,32 @@
 
 	<div class="container-fluid">
 		<div class="row bg-orangedark-color">
-
+<?php foreach($all_vision as $v_vision){?>
 			<div class="our-vision scrollme">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-							<div class="heading align-center">
-								<h4 class="h1 heading-title">Our Vision</h4>
-								<div class="heading-line">
-									<span class="short-line bg-yellow-color"></span>
-									<span class="long-line bg-yellow-color"></span>
-								</div>
-								<p class="heading-text c-white">Mirum est notare quam littera gothica, quam nunc putamus parum
-									claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta
-									decima.
-								</p>
-							</div>
+	<div class="heading align-center">
+		<h4 class="h1 heading-title">
+		<?php echo $v_vision->title;?>
+	</h4>
+		<div class="heading-line">
+			<span class="short-line bg-yellow-color"></span>
+			<span class="long-line bg-yellow-color"></span>
+		</div>
+		<p class="heading-text c-white">
+			<?php echo $v_vision->details;?>
+		</p>
+	</div>
 						</div>
 					</div>
 				</div>
 
-				<img src="assets/images/elements.png" class="elements" alt="elements">
-				<img src="assets/images/eye.png" class="eye" alt="eye">
+<img src="<?php echo $v_vision->image1?>" class="element">
+<img src="<?php echo $v_vision->image2?>" class="eye">
 			</div>
+  <?php }?>
+
 		</div>
 	</div>
 
@@ -606,220 +398,75 @@
 						<div class="swiper-container pagination-bottom">
 
 							<div class="swiper-wrapper">
-
+      <?php foreach($all_feedback as $v_feedback){?>
 								<div class="case-slider-item swiper-slide">
 
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Investigationes demonstraverunt lectores legere me lius quod ii legunt.
-											</div>
+<div class="testimonial-item testimonial-arrow mb30">
+	<div class="testimonial-text">
+			<?php echo $v_feedback->description;?>
+	</div>
 
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="assets/images/avatar.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Jonathan Simpson</h6>
-													<div class="author-company c-primary">Envato Market</div>
-												</div>
-											</div>
 
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
+	<div class="author-info-wrap table">
+		<div class="testimonial-img-author table-cell">
+			<img src="<?php echo $v_feedback->image?>">
+		</div>
+		<div class="author-info table-cell">
+			<h6 class="author-name">
+				<?php echo $v_feedback->author;?>
+			</h6>
+			<div class="author-company c-primary">
+				<?php echo $v_feedback->market;?>
+		</div>
+		</div>
+	</div>
 
-										</div>
-									</div>
+	<div class="quote">
+		<i class="seoicon-quotes"></i>
+	</div>
 
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+   <div class="testimonial-item testimonial-arrow mb30">
+	<div class="testimonial-text">
+		<?php echo $v_feedback->description;?>
+	</div>
 
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
-												id quod mazim.
-											</div>
+	<div class="author-info-wrap table">
+		<div class="testimonial-img-author table-cell">
+				<img src="<?php echo $v_feedback->image?>">
+		</div>
+		<div class="author-info table-cell">
+			<h6 class="author-name">
+				<?php echo $v_feedback->author;?>
+			</h6>
+			<div class="author-company c-primary">
+				<?php echo $v_feedback->market;?>
+			</div>
+		</div>
+	</div>
 
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="assets/images/avatar3.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Angelina Johnson</h6>
-													<div class="author-company c-primary">Codecanyon</div>
-												</div>
-											</div>
+	<div class="quote">
+		<i class="seoicon-quotes"></i>
+	</div>
 
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
+</div>
 
-										</div>
-									</div>
+	</div>
 
-								</div>
+	
 
-								<div class="case-slider-item swiper-slide">
+</div>
+ <?php }?>
 
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Investigationes demonstraverunt lectores legere me lius quod ii legunt.
-											</div>
 
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="assets/images/avatar.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Jonathan Simpson</h6>
-													<div class="author-company c-primary">Envato Market</div>
-												</div>
-											</div>
 
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
 
-										</div>
-									</div>
-
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
-												id quod mazim.
-											</div>
-
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="assets/images/avatar3.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Angelina Johnson</h6>
-													<div class="author-company c-primary">Codecanyon</div>
-												</div>
-											</div>
-
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
-
-										</div>
-									</div>
-
-								</div>
-
-								<div class="case-slider-item swiper-slide">
-
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Investigationes demonstraverunt lectores legere me lius quod ii legunt.
-											</div>
-
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="assets/images/avatar.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Jonathan Simpson</h6>
-													<div class="author-company c-primary">Envato Market</div>
-												</div>
-											</div>
-
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
-
-										</div>
-									</div>
-
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
-												id quod mazim.
-											</div>
-
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="img/avatar3.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Angelina Johnson</h6>
-													<div class="author-company c-primary">Codecanyon</div>
-												</div>
-											</div>
-
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
-
-										</div>
-									</div>
-
-								</div>
-
-								<div class="case-slider-item swiper-slide">
-
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Investigationes demonstraverunt lectores legere me lius quod ii legunt.
-											</div>
-
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="assets/images/avatar.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Jonathan Simpson</h6>
-													<div class="author-company c-primary">Envato Market</div>
-												</div>
-											</div>
-
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
-
-										</div>
-									</div>
-
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
-										<div class="testimonial-item testimonial-arrow mb30">
-											<div class="testimonial-text">
-												Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
-												id quod mazim.
-											</div>
-
-											<div class="author-info-wrap table">
-												<div class="testimonial-img-author table-cell">
-													<img src="assets/images/avatar3.png" alt="author">
-												</div>
-												<div class="author-info table-cell">
-													<h6 class="author-name">Angelina Johnson</h6>
-													<div class="author-company c-primary">Codecanyon</div>
-												</div>
-											</div>
-
-											<div class="quote">
-												<i class="seoicon-quotes"></i>
-											</div>
-
-										</div>
-									</div>
-
-								</div>
-
-							</div>
+</div>
 
 							<!-- If we need pagination -->
 							<div class="swiper-pagination"></div>
@@ -840,51 +487,41 @@
 
 	<div class="container">
 		<div class="row medium-padding120">
+			<?php foreach($all_partner as $v_partner){?>
 			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-				<div class="heading">
-					<h4 class="h1 heading-title">Our Valuable Clients</h4>
-					<div class="heading-line">
-						<span class="short-line"></span>
-						<span class="long-line"></span>
-					</div>
-					<p class="heading-text">Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-						anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima
-					</p>
-				</div>
+<div class="heading">
+<h4 class="h1 heading-title">
+<?php echo $v_partner->title;?>
+	
+</h4>
+<div class="heading-line">
+	<span class="short-line"></span>
+	<span class="long-line"></span>
+</div>
+<p class="heading-text">
+	<?php echo $v_partner->details;?>
+</p>
+</div>
 
-				<a href="09_our_clients.html" class="btn btn-medium btn--dark mb30">
+				<a href="#" class="btn btn-medium btn--dark mb30">
 					<span class="text">View all Customers</span>
 					<span class="semicircle"></span>
 				</a>
 			</div>
+			 <?php }?>
 
 			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 				<div class="row">
 					<div class="clients-item-wrap">
+                  <?php foreach($all_partner_image as $v_partner){?>
+	<div class="client-item mb60">
+		<a href="#" class="client-image">
+			<img src="<?php echo $v_partner->image?>" class="hover">
+		</a>
+	</div>
+							 <?php }?>
 
-						<div class="client-item mb60">
-							<a href="09_our_clients.html" class="client-image">
-								<img src="assets/images/client1-hover.png" alt="logo" class="hover">
-							</a>
-						</div>
-
-						<div class="client-item mb60">
-							<a href="09_our_clients.html" class="client-image">
-								<img src="assets/images/client2-hover.png" alt="logo" class="hover">
-							</a>
-						</div>
-
-						<div class="client-item mb60">
-							<a href="09_our_clients.html" class="client-image">
-								<img src="assets/images/client3-hover.png" alt="logo" class="hover">
-							</a>
-						</div>
-
-						<div class="client-item mb60">
-							<a href="09_our_clients.html" class="client-image">
-								<img src="assets/images/client4-hover.png" alt="logo" class="hover">
-							</a>
-						</div>
+						
 					</div>
 				</div>
 			</div>

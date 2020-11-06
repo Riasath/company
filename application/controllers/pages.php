@@ -6,10 +6,23 @@ class Pages extends CI_Controller {
 	public function about(){
 
 
-
 $data['abc']='xyz';
+$data['all_db_story']=$this->admin_model->select_short_story(); 
+$data['all_foundation']=$this->admin_model->select_all_foundation(); 
+$data['all_expert']=$this->admin_model->select_all_expert(); 
+$data['all_work']=$this->admin_model->select_all_work(); 
+$data['all_team']=$this->admin_model->select_all_team(); 
+$data['all_promo']=$this->admin_model->select_all_promo(); 
+$data['all_vision']=$this->admin_model->select_all_vision(); 
+$data['all_feedback']=$this->admin_model->select_all_feedback(); 
+$data['all_partner']=$this->admin_model->select_all_partner(); 
+$data['all_partner_image']=$this->admin_model->select_all_partner_image(); 
+ 
+
 $data['content'] = $this->load->view('pages/about',$data, TRUE);
+
 $data['footer_top']=$this->admin_model->footer_top_info();
+$data['short_stoty_variable']=$this->admin_model->select_short_story();
 $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 $data['footer_icon']=$this->admin_model->footer_icon();
 $data['copyright']=$this->admin_model->copyright_info();

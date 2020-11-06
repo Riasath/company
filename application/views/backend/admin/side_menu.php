@@ -98,6 +98,79 @@
 						
 					</ul>
 				</li>
+				<li class="nav-item has-treeview <?= active_open('about page', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('about page', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+							About page
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/short_story') ?>" class="nav-link <?= active_nav('short_story', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Short Story</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/foundation') ?>" class="nav-link <?= active_nav('foundation', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Foundation</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/work') ?>" class="nav-link <?= active_nav('work', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Our Work</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/expert') ?>" class="nav-link <?= active_nav('expert', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Expert</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/team') ?>" class="nav-link <?= active_nav('team', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Team</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/promo') ?>" class="nav-link <?= active_nav('promo', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Promo</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/vision') ?>" class="nav-link <?= active_nav('vision', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Vision</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/feedback') ?>" class="nav-link <?= active_nav('feedback', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Feedback</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/partner') ?>" class="nav-link <?= active_nav('partner', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Partner</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/partner_image') ?>" class="nav-link <?= active_nav('partner_image', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Partner-Images</p>
+							</a>
+						</li>
+						
+						
+					</ul>
+				</li>
 
 				<li class="nav-item has-treeview <?= active_open('test_main_menu', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('test_main_menu', $main_nav); ?>">

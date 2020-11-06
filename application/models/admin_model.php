@@ -714,6 +714,1127 @@ $query_result=$this->db->get();
  return $result;
 
      }
+     //about page
+     public function save_short_story(){
+
+
+
+    $data=array();
+    $data['short_story_heading']=$this->input->post('short_story_heading',true);
+    $data['short_story_title']=$this->input->post('short_story_title',true);
+    $data['short_story_subtitle1']=$this->input->post('short_story_subtitle1',true);
+    $data['short_story_subtitle2']=$this->input->post('short_story_subtitle2',true);
+  
+
+        $this->db->insert('short_story',$data);
+
+        redirect('Admin/short_story');
+
+      }
+      public function select_short_story(){
+
+
+  $this->db->select('*');
+  $this->db->from('short_story');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+}
+ public function all_shortstory_list_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('short_story');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function update_shortstory_list(){
+
+
+     $data=array();
+   $id=$this->input->post('id',true);
+   $data['short_story_heading']=$this->input->post('short_story_heading',true);
+   $data['short_story_title']=$this->input->post('short_story_title',true);
+    $data['short_story_subtitle1']=$this->input->post('short_story_subtitle1',true);
+     $data['short_story_subtitle2']=$this->input->post('short_story_subtitle2',true);
+
+  $this->db->WHERE('id',$id);
+  $this->db->update('short_story',$data);
+  }
+  public function delete_shortstory_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('short_story');
+
+  }
+  public function all_shortstory_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('short_story');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+  //foundation 
+    public function save_foundation(){
+
+$data=array();
+$data['date']=$this->input->post('date',true);   
+$data['foundation_title']=$this->input->post('foundation_title',true); 
+$data['foundation_details']=$this->input->post('foundation_details',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/foundation_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('foundation_image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['foundation_image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('foundation',$data);
+
+       redirect('Admin/foundation');
+
+
+      }
+       public function select_all_foundation(){
+
+
+  $this->db->select('*');
+  $this->db->from('foundation');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+}
+ public function all_foundation_list_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('foundation');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_foundation_list(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    $data['date']=$this->input->post('date',true);
+    $data['foundation_title']=$this->input->post('foundation_title',true);
+    $data['foundation_details']=$this->input->post('foundation_details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/foundation_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('foundation_image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['foundation_image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('foundation',$data);
+
+  }
+    public function all_foundation_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('foundation');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_foundation_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('foundation');
+
+  }
+
+  //work
+
+   public function save_work(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/work_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('work',$data);
+
+       redirect('Admin/work');
+
+
+      }
+        public function select_all_work(){
+
+
+  $this->db->select('*');
+  $this->db->from('work');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+}
+ public function all_work_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('work');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_work(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/work_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('work',$data);
+
+  }
+   public function all_work_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('work');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_work_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('work');
+
+  }
+   public function save_expert(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+  $this->db->insert('expert',$data);
+ redirect('Admin/expert');
+
+
+      }
+      public function select_all_expert(){
+
+
+  $this->db->select('*');
+  $this->db->from('expert');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+ public function all_expert_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('expert');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_expert(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('expert',$data);
+
+  }
+
+ public function all_expert_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('expert');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_expert_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('expert');
+
+  }
+
+   public function save_team(){
+
+$data=array();
+  
+$data['name']=$this->input->post('name',true); 
+$data['post']=$this->input->post('post',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+                 $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('fbimage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['fbimage']=$config['upload_path'].$sdata['file_name'];
+             }
+                 $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('yimage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['yimage']=$config['upload_path'].$sdata['file_name'];
+             }
+                 $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('gimage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['gimage']=$config['upload_path'].$sdata['file_name'];
+             }
+                 $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('timage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['timage']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('team',$data);
+
+
+       redirect('Admin/team');
+
+
+      }
+       public function select_all_team(){
+
+
+  $this->db->select('*');
+  $this->db->from('team');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+ public function all_team_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('team');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_team(){
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['name']=$this->input->post('name',true);
+    $data['post']=$this->input->post('post',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('fbimage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['fbimage']=$config['upload_path'].$sdata['file_name'];
+             }
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('yimage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['yimage']=$config['upload_path'].$sdata['file_name'];
+             }
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('gimage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['gimage']=$config['upload_path'].$sdata['file_name'];
+             }
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/team_member_img/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('timage')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['timage']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('team',$data);
+
+
+  }
+
+ public function all_team_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('team');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_team_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('team');
+
+  }
+  //promo
+    public function save_promo(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/promo_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('promo',$data);
+             redirect('Admin/promo');
+
+      }
+       public function select_all_promo(){
+
+
+  $this->db->select('*');
+  $this->db->from('promo');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_promo_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('promo');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_promo(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/promo_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('promo',$data);
+
+  }
+  public function delete_promo_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('promo');
+
+  }
+  //vision
+   public function save_vision(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/vision_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image1')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image1']=$config['upload_path'].$sdata['file_name'];
+             }
+              $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/vision_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image2')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image2']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('vision',$data);
+             redirect('Admin/vision');
+
+      }
+         public function select_all_vision(){
+
+
+  $this->db->select('*');
+  $this->db->from('vision');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+
+     public function update_vision(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/vision_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image1')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image1']=$config['upload_path'].$sdata['file_name'];
+             }
+              $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/vision_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image2')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image2']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('vision',$data);
+
+  }
+  public function all_vision_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('vision');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_vision_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('vision');
+
+  }
+  //feedback
+   public function save_feedback(){
+
+           $data=array();
+      $data['description']=$this->input->post('description',true); 
+$data['author']=$this->input->post('author',true); 
+$data['market']=$this->input->post('market',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/feedback_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('feedback',$data);
+             redirect('Admin/feedback');
+
+      }
+      public function select_all_feedback(){
+
+
+  $this->db->select('*');
+  $this->db->from('feedback');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_feedback_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('feedback');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+      public function update_feedback(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['description']=$this->input->post('description',true);
+    $data['author']=$this->input->post('author',true);
+    $data['market']=$this->input->post('market',true);
+
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/feedback_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('feedback',$data);
+
+  }
+   public function all_feedback_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('feedback');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_feedback_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('feedback');
+
+  }
+  //partner
+  public function save_partner(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+  $this->db->insert('partner',$data);
+ redirect('Admin/partner');
+
+
+      }
+        public function select_all_partner(){
+
+
+  $this->db->select('*');
+  $this->db->from('partner');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_partner_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('partner');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function update_partner(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('partner',$data);
+
+  }
+   public function all_partner_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('partner');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_partner_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('partner');
+
+  }
+  //partner image
+   public function save_partner_image(){
+
+          
+             $data=array();
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/partner_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('partner_image',$data);
+             redirect('Admin/partner_image');
+
+      }
+       public function select_all_partner_image(){
+
+
+  $this->db->select('*');
+  $this->db->from('partner_image');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_partner_image_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('partner_image');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_partner_image(){
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    $image=$this->input->post('image',true);
+
+
+    $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/partner_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+  
+   
+    $this->db->WHERE('id',$id);
+    $this->db->update('partner_image',$data);
+  }
+    public function all_partner_image_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('partner_image');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_partner_image_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('partner_image');
+
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

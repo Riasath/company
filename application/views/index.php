@@ -2,11 +2,14 @@
 <div class="content-wrapper">
 
 	<!-- Main Slider -->
+	
 
 	<div class="container-full-width">
 		<div class="swiper-container main-slider" data-effect="fade" data-autoplay="4000">
 
 			<!-- Additional required wrapper -->
+
+			
 			<div class="swiper-wrapper">
 
 				 <?php foreach($all_db_slider as $v_slider){?>
