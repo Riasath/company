@@ -171,6 +171,44 @@
 						
 					</ul>
 				</li>
+				<li class="nav-item has-treeview <?= active_open('eservice', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('eservice', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+						Software  Service
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/eservice_box') ?>" class="nav-link <?= active_nav('eservice', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Service Box</p>
+							</a>
+						</li>
+						
+						
+					</ul>
+				</li>
+				<li class="nav-item has-treeview <?= active_open('dservice', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('dservice', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+						Digital Service
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/dservice_box') ?>" class="nav-link <?= active_nav('dservice', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Service </p>
+							</a>
+						</li>
+						
+						
+					</ul>
+				</li>
 
 				<li class="nav-item has-treeview <?= active_open('test_main_menu', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('test_main_menu', $main_nav); ?>">

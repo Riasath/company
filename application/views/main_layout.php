@@ -157,7 +157,7 @@
 
 			<div class="logo">
 				<a href="#" class="full-block-link"></a>
-				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" style="height:77;width:175px;"alt="RTSOFTBD">
+				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" style="height:77;width:170px;"alt="RTSOFTBD">
 
 			</div>
 
@@ -194,15 +194,24 @@
 							<div class="megamenu-row">
 
 								<div class="col3">
+									
 	<ul>
 		<li class="megamenu-item-info">
 			<h5 class="megamenu-item-info-title">ENTERPRISE SOLUTION</h5>
 
 		</li>
+		<li>
+<a href="<?php echo base_url();?>service">Our Service<i class="seoicon-right-arrow"></i></a>
+		</li>
 
 		<li>
-<a href="<?php echo site_url();?>erpsolutions">ERP Solutions<i class="seoicon-right-arrow"></i></a>
+<a href="<?php echo base_url();?>erpsolutions">ERP Solutions<i class="seoicon-right-arrow"></i></a>
 		</li>
+		
+
+		
+
+		
 		<li>
 <a href="<?php echo base_url();?>micro-finance">Micro finance Solutions<i class="seoicon-right-arrow"></i></a>
 		</li>
@@ -219,6 +228,10 @@
 		<li class="megamenu-item-info">
 			<h5 class="megamenu-item-info-title">Corporate solutions</h5>
 
+		</li>
+		<li>
+<a href="<?php echo base_url();?>e-commerce">Corporate Service<i
+						class="seoicon-right-arrow"></i></a>
 		</li>
 
 		<li>
@@ -294,10 +307,13 @@
 					<li class="">
 						<a href="#">Digital Marketing</a>
 	<ul class="dropdown">
-		<li class="megamenu-item-info">
-			<h5 class="megamenu-item-info-title">List of Services</h5>
-			<p class="megamenu-item-info-text">Choose a Service</p>
+
+		   <li class="hover-ver2">
+			<a href="<?php echo base_url();?>digital-service"><i class="seoicon-search"></i>
+				Our Service
+			</a>
 		</li>
+		
 		<li class="hover-ver2">
 			<a href="<?php echo base_url();?>local-seo"><i class="seoicon-pin-map"></i>
 				Local SEO
@@ -324,12 +340,7 @@
 				Pay Per Click Management
 			</a>
 		</li>
-		<li class="menu-item-has-children hover-ver2">
-			<a href="<?php echo base_url();?>service-promo">
-				<i class="seoicon-pie-graph-split"></i>
-				Services Promo List
-			</a>
-		</li>
+		
 	</ul>
 					</li>
 

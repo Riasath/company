@@ -31,6 +31,42 @@ $this->load->view('main_layout',$data);
 	
 
 	}
+	public function service(){
+
+
+ 
+ $data['abc']='xyz';
+
+$data['content'] = $this->load->view('pages/service',$data, TRUE);
+
+$data['footer_top']=$this->admin_model->footer_top_info();
+
+$data['footer_bottom']=$this->admin_model->footer_bottom_info();
+$data['footer_icon']=$this->admin_model->footer_icon();
+$data['copyright']=$this->admin_model->copyright_info();
+
+$this->load->view('main_layout',$data);
+	
+
+	}
+	public function digital_service(){
+
+
+ 
+ $data['abc']='xyz';
+
+$data['content'] = $this->load->view('pages/digital_service',$data, TRUE);
+
+$data['footer_top']=$this->admin_model->footer_top_info();
+
+$data['footer_bottom']=$this->admin_model->footer_bottom_info();
+$data['footer_icon']=$this->admin_model->footer_icon();
+$data['copyright']=$this->admin_model->copyright_info();
+
+$this->load->view('main_layout',$data);
+	
+
+	}
 
 
 

@@ -5,6 +5,12 @@ class Admin extends CI_Controller
 {
     private $main_layout = 'backend/master_layout';
     private $side_menu = 'backend/admin/side_menu';
+    public function index()
+	{
+       $data = $this->engine->store_nav('dashboard', 'Nothing', 'Welcome to dashboard');
+		$path = 'backend/admin/dashboard';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
     
     public function list_slider()
 	{
@@ -1050,6 +1056,36 @@ public function edit_partner_image($id)
 
 		redirect('Admin/partner_image');
 
+	}
+	//service pages
+	public function eservice_box()
+	{
+        $data = $this->engine->store_nav('eservice', 'eservice_box', 'welcome to eservice page');
+        $data['eserviceList'] = $this->Common->get_data('eservice');
+        $path = 'backend/admin/eservice/eservice_page';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_service()
+	{
+        $data = $this->engine->store_nav('eservice', 'eservice_box', 'Create New eservice');
+		$path = 'backend/admin/eservice/add_eservice';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	//digital service
+	public function dservice()
+	{
+        $data = $this->engine->store_nav('dservice', 'dservice', 'welcome to dservice page');
+        $data['eserviceList'] = $this->Common->get_data('dservice');
+        $path = 'backend/admin/dservice/dservice_page';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_dservice()
+	{
+        $data = $this->engine->store_nav('dservice', 'dservice', 'Create New dservice');
+		$path = 'backend/admin/dservice/add_deservice';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
 	}
 
 

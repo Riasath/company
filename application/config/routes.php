@@ -31,6 +31,9 @@ $route['save-client-image']='slider/save_client_image';
 $route['erpsolutions']='pages/erpsolutions';
 $route['home']='master_controller';
 $route['about']='pages/about';
+$route['service']='pages/service';
+$route['digital-service']='pages/digital_service';
+
 $route['micro-finance']='pages/micro_finance';
 $route['office-mgt']='pages/office_mgt';
 $route['e-commerce']='pages/e_commerce';
