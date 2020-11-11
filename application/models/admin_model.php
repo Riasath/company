@@ -1824,8 +1824,292 @@ $query_result=$this->db->get();
       $this->db->delete('partner_image');
 
   }
+//software development menu
+  //service box
+
+ public function save_eservice(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/eservice_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
 
 
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('eservice',$data);
+
+       redirect('Admin/eservice_box');
+
+
+      }
+       public function select_all_service(){
+
+
+  $this->db->select('*');
+  $this->db->from('eservice');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//quality
+  public function save_quality(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+  $this->db->insert('quality',$data);
+ redirect('Admin/quality');
+
+
+      }
+      public function select_all_quality(){
+
+
+  $this->db->select('*');
+  $this->db->from('agency');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//agency
+  public function save_agency(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+  $this->db->insert('agency',$data);
+ redirect('Admin/agency');
+
+
+      }
+      public function select_all_agency(){
+
+
+  $this->db->select('*');
+  $this->db->from('agency');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//feature
+ public function save_feature(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/feature_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('feature',$data);
+
+       redirect('Admin/feature');
+
+
+      }
+       public function select_all_feature(){
+
+
+  $this->db->select('*');
+  $this->db->from('feature');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//our product
+   public function save_product(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+$data['section1']=$this->input->post('section1',true); 
+$data['section2']=$this->input->post('section2',true); 
+  $this->db->insert('product',$data);
+ redirect('Admin/product');
+
+
+      }
+      public function select_all_product(){
+
+
+  $this->db->select('*');
+  $this->db->from('product');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//tools
+  public function save_tools(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+  $this->db->insert('tools',$data);
+ redirect('Admin/tools');
+
+
+      }
+      public function select_all_tools(){
+
+
+  $this->db->select('*');
+  $this->db->from('tools');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//tools_box
+ public function save_tools_box(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/tools_box_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('tools_box',$data);
+
+       redirect('Admin/tools_box');
+
+
+      }
+       public function select_all_tools_box(){
+
+
+  $this->db->select('*');
+  $this->db->from('tools_box');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//contact
+  public function save_contact(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+  $this->db->insert('contact',$data);
+ redirect('Admin/contact');
+
+
+      }
+      public function select_all_contact(){
+
+
+  $this->db->select('*');
+  $this->db->from('contact');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+//contact form
+public function save_contact_form(){
+
+$data=array();
+  
+$data['permalink']=$this->input->post('permalink',true); 
+$data['name']=$this->input->post('name',true); 
+$data['phone']=$this->input->post('phone',true); 
+$data['email']=$this->input->post('email',true); 
+$data['company']=$this->input->post('company',true); 
+$data['message']=$this->input->post('message',true); 
+
+  $this->db->insert('information',$data);
+ //redirect('Admin/contact');
+
+
+      }
 
 
 

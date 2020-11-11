@@ -268,3 +268,37 @@ $route['edit-partner-image/(.+)']='Admin/edit_partner_image/$1';
 $route['update-partner-image']='Admin/update_partner_image';
 $route['view-partner-image/(.+)']='Admin/view_partner_image/$1';
 $route['delete-partner-image/(.+)']='Admin/delete_partner_image/$1';
+
+
+//Software development menu
+//service
+
+$route['save-eservice']='Admin/save_eservice';
+
+//agency
+$route['save-agency']='Admin/save_agency';
+
+//feature
+$route['save-feature']='Admin/save_feature';
+
+
+
+//product
+$route['save-product']='Admin/save_product';
+//Quality
+$route['save-quality']='Admin/save_quality';
+
+
+//tools
+$route['save-tools']='Admin/save_tools';
+
+
+//tools_box
+$route['save-tools-box']='Admin/save_tools_box';
+
+
+//contact
+$route['save-contact']='Admin/save_contact';
+
+//contact form
+$route['save-contact-form']='Admin/save_contact_form';

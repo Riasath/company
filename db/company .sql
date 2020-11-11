@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2020 at 12:09 PM
+-- Generation Time: Nov 11, 2020 at 07:01 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `company`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `agency`
+--
+
+CREATE TABLE `agency` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `agency`
+--
+
+INSERT INTO `agency` (`id`, `title`, `details`) VALUES
+(1, 'Full Services of Our Digital Agency', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
 
 -- --------------------------------------------------------
 
@@ -72,6 +91,25 @@ INSERT INTO `client_img` (`client_id`, `client_image`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `title`, `details`) VALUES
+(1, 'Tell Us About Your Project', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `copyright`
 --
 
@@ -94,6 +132,30 @@ INSERT INTO `copyright` (`id`, `year`, `company_name`, `design`, `developed`, `o
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `eservice`
+--
+
+CREATE TABLE `eservice` (
+  `id` int(11) NOT NULL,
+  `image` varchar(250) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `eservice`
+--
+
+INSERT INTO `eservice` (`id`, `image`, `title`, `details`) VALUES
+(7, 'assets/eservice_images/services11.png', 'RTSOFTBD WEB TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(9, 'assets/eservice_images/services2.png', 'RTSOFTBD WEB SERVICE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(10, 'assets/eservice_images/services3.png', 'RTSOFTBD SOFTWARE SERVICE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(11, 'assets/eservice_images/services4.png', 'RTSOFTBD Android Application', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(12, 'assets/eservice_images/services5.png', 'RTSOFTBD SOFTWARE TESTING', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `expert`
 --
 
@@ -109,6 +171,30 @@ CREATE TABLE `expert` (
 
 INSERT INTO `expert` (`id`, `title`, `details`) VALUES
 (1, 'Meet with Our Best Experts', 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feature`
+--
+
+CREATE TABLE `feature` (
+  `id` int(11) NOT NULL,
+  `image` varchar(250) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `feature`
+--
+
+INSERT INTO `feature` (`id`, `image`, `title`, `details`) VALUES
+(4, 'assets/feature_images/features11.png', 'RTSOFTBD Awesome', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(5, 'assets/feature_images/features2.png', 'RTSOFTBD WEB TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(6, 'assets/feature_images/features3.png', 'RTSOFTBD APPLICATION TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(7, 'assets/feature_images/features4.png', 'RTSOFTBD TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(8, 'assets/feature_images/features51.png', 'CodeIgniter', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
 
 -- --------------------------------------------------------
 
@@ -219,6 +305,29 @@ INSERT INTO `foundation` (`id`, `foundation_image`, `date`, `foundation_title`, 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `information`
+--
+
+CREATE TABLE `information` (
+  `id` int(11) NOT NULL,
+  `permalink` varchar(250) NOT NULL,
+  `name` varchar(250) NOT NULL,
+  `phone` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `company` varchar(250) NOT NULL,
+  `message` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `information`
+--
+
+INSERT INTO `information` (`id`, `permalink`, `name`, `phone`, `email`, `company`, `message`) VALUES
+(1, 'http://www.rtsoftbd.us/', 'shaown', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', 'TEST');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `partner`
 --
 
@@ -265,6 +374,27 @@ INSERT INTO `partner_image` (`id`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL,
+  `section1` varchar(250) NOT NULL,
+  `section2` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `title`, `details`, `section1`, `section2`) VALUES
+(1, 'Our Product Based Services', 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `promo`
 --
 
@@ -284,7 +414,27 @@ INSERT INTO `promo` (`id`, `image`, `title`, `details`) VALUES
 (3, 'assets/promo_images/info-box21.png', 'Awesome Team', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (4, 'assets/promo_images/info-box23.png', 'RTSOFTBD', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (5, 'assets/promo_images/info-box8.png', 'RTSOFTBD WEB TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
-(6, 'assets/promo_images/features5.png', 'Mobile Application', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
+(6, 'assets/promo_images/features5.png', 'Mobile Application', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(8, 'assets/promo_images/eye.png', 'Meet with Our Best Experts', '4Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quality`
+--
+
+CREATE TABLE `quality` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `quality`
+--
+
+INSERT INTO `quality` (`id`, `title`, `details`) VALUES
+(1, 'Quality Skills', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
 
 -- --------------------------------------------------------
 
@@ -416,6 +566,50 @@ INSERT INTO `testimonials` (`testi_id`, `testi_text`, `testi_author`, `testi_com
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tools`
+--
+
+CREATE TABLE `tools` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tools`
+--
+
+INSERT INTO `tools` (`id`, `title`, `details`) VALUES
+(1, 'Professional Tools for Your Business', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tools_box`
+--
+
+CREATE TABLE `tools_box` (
+  `id` int(11) NOT NULL,
+  `image` varchar(250) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tools_box`
+--
+
+INSERT INTO `tools_box` (`id`, `image`, `title`, `details`) VALUES
+(1, 'assets/tools_box_images/info-box23.png', 'Keyword Research', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(2, 'assets/tools_box_images/info-box24.png', 'Awesome Team', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(3, 'assets/tools_box_images/info-box25.png', 'RTSOFTBD WEB TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(4, 'assets/tools_box_images/info-box26.png', 'Meet with Our Best Experts', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(5, 'assets/tools_box_images/info-box27.png', 'Our Vision', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
+(6, 'assets/tools_box_images/info-box28.png', 'We Work for Your Profit', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -486,6 +680,12 @@ INSERT INTO `work` (`id`, `title`, `details`, `image`) VALUES
 --
 
 --
+-- Indexes for table `agency`
+--
+ALTER TABLE `agency`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `blog`
 --
 ALTER TABLE `blog`
@@ -498,15 +698,33 @@ ALTER TABLE `client_img`
   ADD PRIMARY KEY (`client_id`);
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `copyright`
 --
 ALTER TABLE `copyright`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `eservice`
+--
+ALTER TABLE `eservice`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `expert`
 --
 ALTER TABLE `expert`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `feature`
+--
+ALTER TABLE `feature`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -540,6 +758,12 @@ ALTER TABLE `foundation`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `information`
+--
+ALTER TABLE `information`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `partner`
 --
 ALTER TABLE `partner`
@@ -552,9 +776,21 @@ ALTER TABLE `partner_image`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `promo`
 --
 ALTER TABLE `promo`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `quality`
+--
+ALTER TABLE `quality`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -588,6 +824,18 @@ ALTER TABLE `testimonials`
   ADD PRIMARY KEY (`testi_id`);
 
 --
+-- Indexes for table `tools`
+--
+ALTER TABLE `tools`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tools_box`
+--
+ALTER TABLE `tools_box`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -610,6 +858,12 @@ ALTER TABLE `work`
 --
 
 --
+-- AUTO_INCREMENT for table `agency`
+--
+ALTER TABLE `agency`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
@@ -622,16 +876,34 @@ ALTER TABLE `client_img`
   MODIFY `client_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `copyright`
 --
 ALTER TABLE `copyright`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT for table `eservice`
+--
+ALTER TABLE `eservice`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
 -- AUTO_INCREMENT for table `expert`
 --
 ALTER TABLE `expert`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `feature`
+--
+ALTER TABLE `feature`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `feedback`
@@ -664,6 +936,12 @@ ALTER TABLE `foundation`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `information`
+--
+ALTER TABLE `information`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `partner`
 --
 ALTER TABLE `partner`
@@ -676,10 +954,22 @@ ALTER TABLE `partner_image`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `promo`
 --
 ALTER TABLE `promo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `quality`
+--
+ALTER TABLE `quality`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `short_story`
@@ -710,6 +1000,18 @@ ALTER TABLE `team`
 --
 ALTER TABLE `testimonials`
   MODIFY `testi_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+
+--
+-- AUTO_INCREMENT for table `tools`
+--
+ALTER TABLE `tools`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `tools_box`
+--
+ALTER TABLE `tools_box`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`

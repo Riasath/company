@@ -171,8 +171,8 @@
 						
 					</ul>
 				</li>
-				<li class="nav-item has-treeview <?= active_open('eservice', $main_nav); ?>">
-					<a href="#" class="nav-link <?= active_nav('eservice', $main_nav); ?>">
+				<li class="nav-item has-treeview <?= active_open('software service', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('software service', $main_nav); ?>">
 						<i class="nav-icon fas fa-edit"></i>
 						<p>
 						Software  Service
@@ -181,11 +181,61 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="<?php echo base_url('admin/eservice_box') ?>" class="nav-link <?= active_nav('eservice', $sub_nav); ?>">
+							<a href="<?php echo base_url('admin/agency') ?>" class="nav-link <?= active_nav('agency', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Digital Agency</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/eservice_box') ?>" class="nav-link <?= active_nav('eservice_box', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Service Box</p>
 							</a>
 						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/feature') ?>" class="nav-link <?= active_nav('feature', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Feature</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/product') ?>" class="nav-link <?= active_nav('product', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Our Product</p>
+							</a>
+						</li>
+							<li class="nav-item">
+							<a href="<?php echo base_url('admin/quality') ?>" class="nav-link <?= active_nav('quality', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Quality Skills</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/tools') ?>" class="nav-link <?= active_nav('tools', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p> Tools</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/tools_box') ?>" class="nav-link <?= active_nav('tools_box', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p> Tools Box</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/contact') ?>" class="nav-link <?= active_nav('contact', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p> Contact</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/information') ?>" class="nav-link <?= active_nav('information', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p> Information</p>
+							</a>
+						</li>
+						
+
 						
 						
 					</ul>

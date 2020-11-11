@@ -21,7 +21,7 @@ class Admin extends CI_Controller
 	}
 	public function add_slider()
 	{
-        $data = $this->engine->store_nav('appearance', 'slider', 'Create New Slider');
+        $data = $this->engine->store_nav('appearance', 'slider_list', 'Create New Slider');
 		$path = 'backend/admin/slider/add';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
@@ -145,7 +145,7 @@ class Admin extends CI_Controller
 	
 	public function add_testimonials()
 	{
-        $data = $this->engine->store_nav('appearance', 'tetimonials', 'Create New tetimonials');
+        $data = $this->engine->store_nav('appearance', 'testimonials', 'Create New testimonials');
 		$path = 'backend/admin/testimonials/add_testimonials';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
@@ -1014,7 +1014,7 @@ $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	public function add_partner_image
 	 ()
 	{
-$data = $this->engine->store_nav('about page', 'partner', 'Create New partner');
+$data = $this->engine->store_nav('about page', 'partner_image', 'Create New partner');
 		$path = 'backend/admin/partner_image/add_partner_image';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
@@ -1057,21 +1057,261 @@ public function edit_partner_image($id)
 		redirect('Admin/partner_image');
 
 	}
+	//agency
+	public function agency()
+	{
+        $data = $this->engine->store_nav('software service', 'agency', 'welcome to agency page');
+        $data['agencyList'] = $this->Common->get_data('agency');
+        $path = 'backend/admin/agency/agency';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_agency()
+	{
+        $data = $this->engine->store_nav('software service', 'agency', 'Create New agency');
+		$path = 'backend/admin/agency/add_agency';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+
+
+	public function save_agency()
+	{
+
+
+		$this->admin_model->save_agency();
+	
+
+}
 	//service pages
 	public function eservice_box()
 	{
-        $data = $this->engine->store_nav('eservice', 'eservice_box', 'welcome to eservice page');
+        $data = $this->engine->store_nav('software service', 'eservice_box', 'welcome to eservice page');
         $data['eserviceList'] = $this->Common->get_data('eservice');
         $path = 'backend/admin/eservice/eservice_page';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
 	public function add_service()
 	{
-        $data = $this->engine->store_nav('eservice', 'eservice_box', 'Create New eservice');
+        $data = $this->engine->store_nav('software service', 'eservice_box', 'Create New eservice');
 		$path = 'backend/admin/eservice/add_eservice';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
 	}
+	public function save_eservice()
+	{
+
+
+		$this->admin_model->save_eservice();
+	
+
+}
+//product
+public function product()
+	{
+        $data = $this->engine->store_nav('software service', 'product', 'welcome to product page');
+        $data['productList'] = $this->Common->get_data('product');
+        $path = 'backend/admin/product/product';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_product()
+	{
+        $data = $this->engine->store_nav('software service', 'product', 'Create New product');
+		$path = 'backend/admin/product/add_product';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_product()
+	{
+
+
+		$this->admin_model->save_product();
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//feature 
+
+public function feature()
+	{
+        $data = $this->engine->store_nav('software service', 'feature', 'welcome to feature page');
+        $data['featureList'] = $this->Common->get_data('feature');
+        $path = 'backend/admin/feature/feature';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_feature()
+	{
+        $data = $this->engine->store_nav('software service', 'feature', 'Create New feature');
+		$path = 'backend/admin/feature/add_feature';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_feature()
+	{
+
+
+		$this->admin_model->save_feature();
+	
+
+}
+//quality
+public function quality()
+	{
+        $data = $this->engine->store_nav('software service', 'quality', 'welcome to quality page');
+        $data['qualityList'] = $this->Common->get_data('quality');
+        $path = 'backend/admin/quality/quality';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_quality()
+	{
+        $data = $this->engine->store_nav('software service', 'quality', 'Create New quality');
+		$path = 'backend/admin/quality/add_quality';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_quality()
+	{
+
+
+		$this->admin_model->save_quality();
+	
+
+}
+
+//tools
+	public function tools()
+	{
+        $data = $this->engine->store_nav('software service', 'tools', 'welcome to tools page');
+        $data['toolsList'] = $this->Common->get_data('tools');
+        $path = 'backend/admin/tools/tools';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_tools()
+	{
+        $data = $this->engine->store_nav('software service', 'tools', 'Create New tools');
+		$path = 'backend/admin/tools/add_tools';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_tools()
+	{
+
+
+		$this->admin_model->save_tools();
+	
+
+}
+//tools_box
+	public function tools_box()
+	{
+        $data = $this->engine->store_nav('software service', 'tools_box', 'welcome to tools_box page');
+        $data['toolsboxList'] = $this->Common->get_data('tools_box');
+        $path = 'backend/admin/tools_box/tools_box';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_tools_box()
+	{
+        $data = $this->engine->store_nav('software service', 'tools_box', 'Create New tools_box');
+		$path = 'backend/admin/tools_box/add_tools_box';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+
+	public function save_tools_box()
+	{
+
+
+		$this->admin_model->save_tools_box();
+	
+
+}
+//contact
+	public function contact()
+	{
+        $data = $this->engine->store_nav('software service', 'contact', 'welcome to contact page');
+        $data['contactList'] = $this->Common->get_data('contact');
+        $path = 'backend/admin/contact/contact';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_contact()
+	{
+        $data = $this->engine->store_nav('software service', 'contact', 'Create New contact');
+		$path = 'backend/admin/contact/add_contact';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+
+	
+	public function save_contact()
+	{
+
+
+		$this->admin_model->save_contact();
+	
+
+}
+
+
+
+
+//contact form 
+
+public function information()
+	{
+        $data = $this->engine->store_nav('software service', 'information', 'welcome to information page');
+        $data['informationList'] = $this->Common->get_data('information');
+        $path = 'backend/admin/information/information';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+public function save_contact_form()
+	{
+
+
+	$this->admin_model->save_contact_form();
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//digital service
 	public function dservice()
 	{
@@ -1082,8 +1322,8 @@ public function edit_partner_image($id)
 	}
 	public function add_dservice()
 	{
-        $data = $this->engine->store_nav('dservice', 'dservice', 'Create New dservice');
-		$path = 'backend/admin/dservice/add_deservice';
+        $data = $this->engine->store_nav('dservice_box', 'dservice', 'Create New dservice');
+		$path = 'backend/admin/dservice/add_dservice';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
 	}

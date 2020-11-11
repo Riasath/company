@@ -31,11 +31,19 @@ $this->load->view('main_layout',$data);
 	
 
 	}
-	public function service(){
+public function service(){
 
 
  
  $data['abc']='xyz';
+ $data['all_service']=$this->admin_model->select_all_service(); 
+ $data['all_feature']=$this->admin_model->select_all_feature(); 
+ $data['all_product']=$this->admin_model->select_all_product(); 
+ $data['all_tools']=$this->admin_model->select_all_tools(); 
+ $data['all_tools_box']=$this->admin_model->select_all_tools_box(); 
+ $data['all_contact']=$this->admin_model->select_all_contact(); 
+ $data['all_agency']=$this->admin_model->select_all_agency(); 
+ $data['all_quality']=$this->admin_model->select_all_quality(); 
 
 $data['content'] = $this->load->view('pages/service',$data, TRUE);
 
