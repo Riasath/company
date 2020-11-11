@@ -1081,7 +1081,38 @@ public function edit_partner_image($id)
 		$this->admin_model->save_agency();
 	
 
-}
+    }
+    public function edit_agency($id)
+	{
+        $data = array();
+		$data['all_agency_by_id'] = $this->admin_model->all_agency_by_id($id);
+		$this->load->view('backend/admin/agency/edit_agency', $data);
+
+	}
+	public function update_agency()
+	{
+
+		$this->admin_model->update_agency();
+		redirect('Admin/agency');
+           
+
+	}
+	public function view_agency($id){
+
+         $data = array();
+		$data['all_agency_view_by_id'] = $this->admin_model->all_agency_view_by_id($id);
+		$data['agency_info'] = $this->load->view('backend/admin/agency/view_agency', $data, true);
+		$this->load->view('backend/admin/agency/view_agency', $data);
+		  
+	}
+	public function delete_agency($id)
+	{
+      $data = array();
+		$this->admin_model->delete_agency_by_id($id);
+
+		redirect('Admin/agency');
+
+	}
 	//service pages
 	public function eservice_box()
 	{
@@ -1105,6 +1136,39 @@ public function edit_partner_image($id)
 	
 
 }
+public function edit_eservice($id)
+	{
+        $data = array();
+		$data['all_eservice_by_id'] = $this->admin_model->all_eservice_by_id($id);
+		$this->load->view('backend/admin/eservice/edit_eservice', $data);
+
+	}
+	public function update_eservice()
+	{
+
+		$this->admin_model->update_eservice();
+		redirect('Admin/eservice_box');
+           
+
+	}
+	public function view_eservice($id){
+
+         $data = array();
+		$data['all_eservice_view_by_id'] = $this->admin_model->all_eservice_view_by_id($id);
+		$data['eservice_info'] = $this->load->view('backend/admin/eservice/view_eservice', $data, true);
+		$this->load->view('backend/admin/eservice/view_eservice', $data);
+		  
+	}
+	public function delete_eservice($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_eservice_by_id($id);
+
+		redirect('Admin/eservice_box');
+
+	}
 //product
 public function product()
 	{
@@ -1128,6 +1192,37 @@ public function product()
 	
 
 }
+ public function edit_product($id)
+	{
+        $data = array();
+		$data['all_product_by_id'] = $this->admin_model->all_product_by_id($id);
+		$this->load->view('backend/admin/product/edit_product', $data);
+
+	}
+	public function update_product()
+	{
+
+		$this->admin_model->update_product();
+		redirect('Admin/product');
+           
+
+	}
+	public function view_product($id){
+
+         $data = array();
+		$data['all_product_view_by_id'] = $this->admin_model->all_product_view_by_id($id);
+		$data['product_info'] = $this->load->view('backend/admin/product/view_product', $data, true);
+		$this->load->view('backend/admin/product/view_product', $data);
+		  
+	}
+	public function delete_product($id)
+	{
+      $data = array();
+		$this->admin_model->delete_product_by_id($id);
+
+		redirect('Admin/product');
+
+	}
 
 
 
@@ -1166,6 +1261,40 @@ public function feature()
 	
 
 }
+public function edit_feature($id)
+	{
+        $data = array();
+		$data['all_feature_by_id'] = $this->admin_model->all_feature_by_id($id);
+		$this->load->view('backend/admin/feature/edit_feature', $data);
+
+	}
+	public function update_feature()
+	{
+
+		$this->admin_model->update_feature();
+		redirect('Admin/feature');
+           
+
+	}
+	public function view_feature($id){
+
+         $data = array();
+		$data['all_feature_view_by_id'] = $this->admin_model->all_feature_view_by_id($id);
+		$data['feature_info'] = $this->load->view('backend/admin/feature/view_feature', $data, true);
+		$this->load->view('backend/admin/feature/view_feature', $data);
+		  
+	}
+	public function delete_feature($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_feature_by_id($id);
+
+		redirect('Admin/feature');
+
+	}
+
 //quality
 public function quality()
 	{
@@ -1186,9 +1315,38 @@ public function quality()
 
 
 		$this->admin_model->save_quality();
-	
+	}
+	 public function edit_quality($id)
+	{
+        $data = array();
+		$data['all_quality_by_id'] = $this->admin_model->all_quality_by_id($id);
+		$this->load->view('backend/admin/quality/edit_quality', $data);
 
-}
+	}
+	public function update_quality()
+	{
+
+		$this->admin_model->update_quality();
+		redirect('Admin/quality');
+           
+
+	}
+	public function view_quality($id){
+
+         $data = array();
+		$data['all_quality_view_by_id'] = $this->admin_model->all_quality_view_by_id($id);
+		$data['quality_info'] = $this->load->view('backend/admin/quality/view_quality', $data, true);
+		$this->load->view('backend/admin/quality/view_quality', $data);
+		  
+	}
+	public function delete_quality($id)
+	{
+      $data = array();
+		$this->admin_model->delete_quality_by_id($id);
+
+		redirect('Admin/quality');
+
+	}
 
 //tools
 	public function tools()
@@ -1213,6 +1371,38 @@ public function quality()
 	
 
 }
+public function edit_tools($id)
+	{
+        $data = array();
+		$data['all_tools_by_id'] = $this->admin_model->all_tools_by_id($id);
+		$this->load->view('backend/admin/tools/edit_tools', $data);
+
+	}
+	public function update_tools()
+	{
+
+		$this->admin_model->update_tools();
+		redirect('Admin/tools');
+           
+
+	}
+	public function view_tools($id){
+
+         $data = array();
+		$data['all_tools_view_by_id'] = $this->admin_model->all_tools_view_by_id($id);
+		$data['tools_info'] = $this->load->view('backend/admin/tools/view_tools', $data, true);
+		$this->load->view('backend/admin/tools/view_tools', $data);
+		  
+	}
+	public function delete_tools($id)
+	{
+      $data = array();
+		$this->admin_model->delete_tools_by_id($id);
+
+		redirect('Admin/tools');
+
+	}
+
 //tools_box
 	public function tools_box()
 	{
@@ -1237,6 +1427,39 @@ public function quality()
 	
 
 }
+public function edit_tools_box($id)
+	{
+        $data = array();
+		$data['all_tools_box_by_id'] = $this->admin_model->all_tools_box_by_id($id);
+		$this->load->view('backend/admin/tools_box/edit_tools_box', $data);
+
+	}
+	public function update_tools_box()
+	{
+
+		$this->admin_model->update_tools_box();
+		redirect('Admin/tools_box');
+           
+
+	}
+	public function view_tools_box($id){
+
+         $data = array();
+		$data['all_tools_box_view_by_id'] = $this->admin_model->all_tools_box_view_by_id($id);
+		$data['tools_box_info'] = $this->load->view('backend/admin/tools_box/view_tools_box', $data, true);
+		$this->load->view('backend/admin/tools_box/view_tools_box', $data);
+		  
+	}
+	public function delete_tools_box($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_tools_box_by_id($id);
+
+		redirect('Admin/tools_box');
+
+	}
 //contact
 	public function contact()
 	{
@@ -1262,6 +1485,39 @@ public function quality()
 	
 
 }
+public function edit_contact($id)
+	{
+        $data = array();
+		$data['all_contact_by_id'] = $this->admin_model->all_contact_by_id($id);
+		$this->load->view('backend/admin/contact/edit_contact', $data);
+
+	}
+	public function update_contact()
+	{
+
+		$this->admin_model->update_contact();
+		redirect('Admin/contact');
+           
+
+	}
+	public function view_contact($id){
+
+         $data = array();
+		$data['all_contact_view_by_id'] = $this->admin_model->all_contact_view_by_id($id);
+		$data['contact_info'] = $this->load->view('backend/admin/contact/view_contact', $data, true);
+		$this->load->view('backend/admin/contact/view_contact', $data);
+		  
+	}
+	public function delete_contact($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_contact_by_id($id);
+
+		redirect('Admin/contact');
+
+	}
 
 
 

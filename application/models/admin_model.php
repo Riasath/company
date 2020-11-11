@@ -1873,6 +1873,67 @@ $data['details']=$this->input->post('details',true);
   return $result;
 
 }
+public function all_eservice_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('eservice');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_eservice(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/eservice_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('eservice',$data);
+
+  }
+   public function all_eservice_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('eservice');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_eservice_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('eservice');
+
+  }
 //quality
   public function save_quality(){
 
@@ -1890,7 +1951,7 @@ $data['details']=$this->input->post('details',true);
 
 
   $this->db->select('*');
-  $this->db->from('agency');
+  $this->db->from('quality');
   $query_result=$this->db->get();
   $result=$query_result->result();
 
@@ -1898,6 +1959,48 @@ $data['details']=$this->input->post('details',true);
   return $result;
 
 }
+public function all_quality_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('quality');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function update_quality(){
+ 
+ 
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('quality',$data);
+   
+
+  }
+   public function all_quality_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('quality');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_quality_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('quality');
+
+  }
 //agency
   public function save_agency(){
 
@@ -1923,6 +2026,46 @@ $data['details']=$this->input->post('details',true);
   return $result;
 
 }
+public function all_agency_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('agency');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function update_agency(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('agency',$data);
+
+  }
+   public function all_agency_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('agency');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_agency_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('agency');
+
+  }
 //feature
  public function save_feature(){
 
@@ -1970,6 +2113,67 @@ $data['details']=$this->input->post('details',true);
   return $result;
 
 }
+public function all_feature_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('feature');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_feature(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/feature_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('feature',$data);
+
+  }
+   public function all_feature_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('feature');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_feature_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('feature');
+
+  }
 //our product
    public function save_product(){
 
@@ -1996,6 +2200,49 @@ $data['section2']=$this->input->post('section2',true);
   return $result;
 
 }
+public function all_product_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('product');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function update_product(){
+ 
+ 
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+    $data['section1']=$this->input->post('section1',true);
+    $data['section2']=$this->input->post('section2',true);
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('product',$data);
+   
+
+  }
+   public function all_product_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('product');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_product_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('product');
+
+  }
 //tools
   public function save_tools(){
 
@@ -2021,6 +2268,48 @@ $data['details']=$this->input->post('details',true);
   return $result;
 
 }
+public function all_tools_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('tools');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function update_tools(){
+ 
+ 
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('tools',$data);
+   
+
+  }
+   public function all_tools_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('tools');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_tools_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('tools');
+
+  }
 //tools_box
  public function save_tools_box(){
 
@@ -2068,6 +2357,67 @@ $data['details']=$this->input->post('details',true);
   return $result;
 
 }
+public function all_tools_box_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('tools_box');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_tools_box(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/tools_box_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('tools_box',$data);
+
+  }
+   public function all_tools_box_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('tools_box');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_tools_box_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('tools_box');
+
+  }
 //contact
   public function save_contact(){
 
@@ -2093,6 +2443,48 @@ $data['details']=$this->input->post('details',true);
   return $result;
 
 }
+public function all_contact_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('contact');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function update_contact(){
+ 
+ 
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('contact',$data);
+   
+
+  }
+   public function all_contact_view_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('contact');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_contact_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('contact');
+
+  }
 //contact form
 public function save_contact_form(){
 

@@ -274,31 +274,62 @@ $route['delete-partner-image/(.+)']='Admin/delete_partner_image/$1';
 //service
 
 $route['save-eservice']='Admin/save_eservice';
+$route['edit-eservice/(.+)']='Admin/edit_eservice/$1';
+$route['update-eservice']='Admin/update_eservice';
+$route['view-eservice/(.+)']='Admin/view_eservice/$1';
+$route['delete-eservice/(.+)']='Admin/delete_eservice/$1';
 
 //agency
 $route['save-agency']='Admin/save_agency';
-
+$route['edit-agency/(.+)']='Admin/edit_agency/$1';
+$route['update-agency']='Admin/update_agency';
+$route['view-agency/(.+)']='Admin/view_agency/$1';
+$route['delete-agency/(.+)']='Admin/delete_agency/$1';
 //feature
 $route['save-feature']='Admin/save_feature';
+$route['edit-feature/(.+)']='Admin/edit_feature/$1';
+$route['update-feature']='Admin/update_feature';
+$route['view-feature/(.+)']='Admin/view_feature/$1';
+$route['delete-feature/(.+)']='Admin/delete_feature/$1';
 
 
 
 //product
 $route['save-product']='Admin/save_product';
+$route['edit-product/(.+)']='Admin/edit_product/$1';
+$route['update-product']='Admin/update_product';
+$route['view-product/(.+)']='Admin/view_product/$1';
+$route['delete-product/(.+)']='Admin/delete_product/$1';
 //Quality
 $route['save-quality']='Admin/save_quality';
+$route['edit-quality/(.+)']='Admin/edit_quality/$1';
+$route['update-quality']='Admin/update_quality';
+$route['view-quality/(.+)']='Admin/view_quality/$1';
+$route['delete-quality/(.+)']='Admin/delete_quality/$1';
 
 
 //tools
 $route['save-tools']='Admin/save_tools';
+$route['edit-tools/(.+)']='Admin/edit_tools/$1';
+$route['update-tools']='Admin/update_tools';
+$route['view-tools/(.+)']='Admin/view_tools/$1';
+$route['delete-tools/(.+)']='Admin/delete_tools/$1';
 
 
 //tools_box
 $route['save-tools-box']='Admin/save_tools_box';
+$route['edit-tools-box/(.+)']='Admin/edit_tools_box/$1';
+$route['update-tools_box']='Admin/update_tools_box';
+$route['view-tools-box/(.+)']='Admin/view_tools_box/$1';
+$route['delete-tools-box/(.+)']='Admin/delete_tools_box/$1';
 
 
 //contact
 $route['save-contact']='Admin/save_contact';
+$route['edit-contact/(.+)']='Admin/edit_contact/$1';
+$route['update-contact']='Admin/update_contact';
+$route['view-contact/(.+)']='Admin/view_contact/$1';
+$route['delete-contact/(.+)']='Admin/delete_contact/$1';
 
 //contact form
 $route['save-contact-form']='Admin/save_contact_form';
