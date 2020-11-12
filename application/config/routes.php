@@ -306,6 +306,12 @@ $route['edit-quality/(.+)']='Admin/edit_quality/$1';
 $route['update-quality']='Admin/update_quality';
 $route['view-quality/(.+)']='Admin/view_quality/$1';
 $route['delete-quality/(.+)']='Admin/delete_quality/$1';
+//Qualityitems
+$route['save-qualityitem']='Admin/save_qualityitem';
+$route['edit-qualityitem/(.+)']='Admin/edit_qualityitem/$1';
+$route['update-qualityitem']='Admin/update_qualityitem';
+$route['view-qualityitem/(.+)']='Admin/view_qualityitem/$1';
+$route['delete-qualityitem/(.+)']='Admin/delete_qualityitem/$1';
 
 
 //tools
@@ -333,3 +339,61 @@ $route['delete-contact/(.+)']='Admin/delete_contact/$1';
 
 //contact form
 $route['save-contact-form']='Admin/save_contact_form';
+
+
+//digital marketing menu
+
+//dservice
+$route['save-dservice']='Admin/save_dservice';
+$route['edit-dservice/(.+)']='Admin/edit_dservice/$1';
+$route['update-dservice']='Admin/update_dservice';
+$route['view-dservice/(.+)']='Admin/view_dservice/$1';
+$route['delete-dservice/(.+)']='Admin/delete_dservice/$1';
+
+//description
+$route['save-description']='Admin/save_description';
+$route['edit-description/(.+)']='Admin/edit_description/$1';
+$route['update-description']='Admin/update_description';
+$route['view-description/(.+)']='Admin/view_description/$1';
+$route['delete-description/(.+)']='Admin/delete_description/$1';
+
+//tell us
+$route['save-tell']='Admin/save_tell';
+$route['edit-tell/(.+)']='Admin/edit_tell/$1';
+$route['update-tell']='Admin/update_tell';
+$route['view-tell/(.+)']='Admin/view_tell/$1';
+$route['delete-tell/(.+)']='Admin/delete_tell/$1';
+
+//levels
+$route['save-levels']='Admin/save_levels';
+$route['edit-levels/(.+)']='Admin/edit_levels/$1';
+$route['update-levels']='Admin/update_levels';
+$route['view-levels/(.+)']='Admin/view_levels/$1';
+$route['delete-levels/(.+)']='Admin/delete_levels/$1';
+
+//levelsbox
+$route['save-levelsbox']='Admin/save_levelsbox';
+$route['edit-levelsbox/(.+)']='Admin/edit_levelsbox/$1';
+$route['update-levelsbox']='Admin/update_levelsbox';
+$route['view-levelsbox/(.+)']='Admin/view_levelsbox/$1';
+$route['delete-levelsbox/(.+)']='Admin/delete_levelsbox/$1';
+
+//accordon
+$route['save-accordon']='Admin/save_accordon';
+$route['edit-accordon/(.+)']='Admin/edit_accordon/$1';
+$route['update-accordon']='Admin/update_accordon';
+$route['view-accordon/(.+)']='Admin/view_accordon/$1';
+$route['delete-accordon/(.+)']='Admin/delete_accordon/$1';
+
+//brand
+$route['save-brand']='Admin/save_brand';
+$route['edit-brand/(.+)']='Admin/edit_brand/$1';
+$route['update-brand']='Admin/update_brand';
+$route['view-brand/(.+)']='Admin/view_brand/$1';
+$route['delete-brand/(.+)']='Admin/delete_brand/$1';
+//brandbox
+$route['save-brandbox']='Admin/save_brandbox';
+$route['edit-brandbox/(.+)']='Admin/edit_brandbox/$1';
+$route['update-brandbox']='Admin/update_brandbox';
+$route['view-brandbox/(.+)']='Admin/view_brandbox/$1';
+$route['delete-brandbox/(.+)']='Admin/delete_brandbox/$1';

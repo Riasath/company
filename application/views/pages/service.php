@@ -239,52 +239,23 @@
 
 					<div class="col-lg-7 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 						<div class="skills">
-							<div class="skills-item">
-								<div class="skills-item-info">
-									<span class="skills-item-title">Content Marketing Strategy</span>
-									<span class="skills-item-count"><span class="count-animate" data-speed="1000" data-refresh-interval="50" data-to="62" data-from="0"></span><span class="units">%</span></span>
-								</div>
-								<div class="skills-item-meter">
-                                <span class="skills-item-meter-active bg-orange-color border-orange-color" style="width: 62%">
-                                </span>
-								</div>
-							</div>
+			<?php foreach($all_qualityitem as $v_qualityitem){?>				
+		<div class="skills-item">
+<div class="skills-item-info">
+<span class="skills-item-title">
+<?php echo $v_qualityitem->title;?>	
+</span>
+<span class="skills-item-count"><span class="count-animate" data-speed="1000" data-refresh-interval="50" 
+	data-to="<?php echo $v_qualityitem->value;?>" data-from="0"></span><span class="units">%</span></span>
+</div>
+<div class="skills-item-meter">
+<span class="skills-item-meter-active bg-orange-color border-orange-color" style="width:<?php echo $v_qualityitem->value;?>%">
+</span>
+</div>
+		</div>
+		<?php }?>
 
-							<div class="skills-item">
-								<div class="skills-item-info">
-									<span class="skills-item-title">Digital Consultancy</span>
-									<span class="skills-item-count"><span class="count-animate" data-speed="1000" data-refresh-interval="50" data-to="100" data-from="0"></span><span class="units">%</span></span>
-								</div>
-
-								<div class="skills-item-meter">
-                                <span class="skills-item-meter-active bg-green-color border-green-color" style="width: 100%">
-                                </span>
-								</div>
-							</div>
-
-							<div class="skills-item">
-								<div class="skills-item-info">
-									<span class="skills-item-title">Mobile Marketing</span>
-									<span class="skills-item-count"><span class="count-animate" data-speed="1000" data-refresh-interval="50" data-to="52" data-from="0"></span><span class="units">%</span></span>
-								</div>
-
-								<div class="skills-item-meter">
-                                <span class="skills-item-meter-active bg-secondary-color border-secondary-color" style="width: 52%">
-                                </span>
-								</div>
-							</div>
-
-							<div class="skills-item">
-								<div class="skills-item-info">
-									<span class="skills-item-title">Reputation Management</span>
-									<span class="skills-item-count"><span class="count-animate" data-speed="1000" data-refresh-interval="50" data-to="40" data-from="0"></span><span class="units">%</span></span>
-								</div>
-
-								<div class="skills-item-meter">
-                                <span class="skills-item-meter-active bg-primary-color border-primary-color" style="width: 40%">
-                                </span>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>

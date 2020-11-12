@@ -4,7 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin_model extends CI_model {
 
 
-
 public function save_users_info(){
 
 
@@ -2001,6 +2000,74 @@ $query_result=$this->db->get();
       $this->db->delete('quality');
 
   }
+  //qualityitem
+ public function save_qualityitem(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['value']=$this->input->post('value',true); 
+
+
+
+  $this->db->insert('qualityitem',$data);
+ redirect('Admin/qualityitem');
+
+
+      }
+ public function select_all_qualityitem(){
+
+
+  $this->db->select('*');
+  $this->db->from('qualityitem');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_qualityitem_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('qualityitem');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_qualityitem(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['value']=$this->input->post('value',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('qualityitem',$data);
+
+  }
+   public function all_qualityitem_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('qualityitem');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_qualityitem_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('qualityitem');
+
+  }
 //agency
   public function save_agency(){
 
@@ -2502,6 +2569,638 @@ $data['message']=$this->input->post('message',true);
 
 
       }
+      //digital service menu 
+
+
+      //dservice
+      public function save_dservice(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/dservice_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('dservice',$data);
+
+       redirect('Admin/dservice');
+
+
+      }
+       public function select_all_dservice(){
+
+
+  $this->db->select('*');
+  $this->db->from('dservice');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_dservice_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('dservice');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_dservice(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/dservice_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('dservice',$data);
+
+  }
+   public function all_dservice_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('dservice');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_dservice_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('dservice');
+
+  }
+//description
+ public function save_description(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details1']=$this->input->post('details1',true); 
+$data['details2']=$this->input->post('details2',true); 
+
+  $this->db->insert('description',$data);
+ redirect('Admin/description');
+
+
+      }
+ public function select_all_description(){
+
+
+  $this->db->select('*');
+  $this->db->from('description');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_description_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('description');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_description(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details1']=$this->input->post('details1',true);
+    $data['details2']=$this->input->post('details2',true);
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('description',$data);
+
+  }
+   public function all_description_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('description');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_description_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('description');
+
+  }
+//tell
+ public function save_tell(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+
+  $this->db->insert('tell',$data);
+ redirect('Admin/tell');
+
+
+      }
+ public function select_all_tell(){
+
+
+  $this->db->select('*');
+  $this->db->from('tell');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_tell_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('tell');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_tell(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('tell',$data);
+
+  }
+   public function all_tell_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('tell');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_tell_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('tell');
+
+  }
+
+//levels
+ public function save_levels(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+
+  $this->db->insert('levels',$data);
+ redirect('Admin/levels');
+
+
+      }
+ public function select_all_levels(){
+
+
+  $this->db->select('*');
+  $this->db->from('levels');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_levels_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('levels');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_levels(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('levels',$data);
+
+  }
+   public function all_levels_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('levels');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_levels_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('levels');
+
+  }
+
+      //levelsbox
+      public function save_levelsbox(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/levelsbox_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('levelsbox',$data);
+
+       redirect('Admin/levelsbox');
+
+
+      }
+       public function select_all_levelsbox(){
+
+
+  $this->db->select('*');
+  $this->db->from('levelsbox');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_levelsbox_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('levelsbox');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_levelsbox(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/levelsbox_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('levelsbox',$data);
+
+  }
+   public function all_levelsbox_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('levelsbox');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_levelsbox_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('levelsbox');
+
+  }
+//accordon
+ public function save_accordon(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+$data['idname']=$this->input->post('idname',true); 
+
+
+  $this->db->insert('accordon',$data);
+ redirect('Admin/accordon');
+
+
+      }
+ public function select_all_accordon(){
+
+
+  $this->db->select('*');
+  $this->db->from('accordon');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_accordon_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('accordon');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_accordon(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+    $data['idname']=$this->input->post('idname',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('accordon',$data);
+
+  }
+   public function all_accordon_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('accordon');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_accordon_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('accordon');
+
+  }
+//brand
+ public function save_brand(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+
+
+  $this->db->insert('brand',$data);
+ redirect('Admin/brand');
+
+
+      }
+ public function select_all_brand(){
+
+
+  $this->db->select('*');
+  $this->db->from('brand');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_brand_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('brand');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_brand(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('brand',$data);
+
+  }
+   public function all_brand_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('brand');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_brand_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('brand');
+
+  }
+
+//brandbox
+ public function save_brandbox(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+$data['value']=$this->input->post('value',true); 
+
+
+
+  $this->db->insert('brandbox',$data);
+ redirect('Admin/brandbox');
+
+
+      }
+ public function select_all_brandbox(){
+
+
+  $this->db->select('*');
+  $this->db->from('brandbox');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_brandbox_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('brandbox');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_brandbox(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+    $data['value']=$this->input->post('value',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('brandbox',$data);
+
+  }
+   public function all_brandbox_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('brandbox');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_brandbox_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('brandbox');
+
+  }
+
+
 
 
 

@@ -43,7 +43,8 @@ public function service(){
  $data['all_tools_box']=$this->admin_model->select_all_tools_box(); 
  $data['all_contact']=$this->admin_model->select_all_contact(); 
  $data['all_agency']=$this->admin_model->select_all_agency(); 
- $data['all_quality']=$this->admin_model->select_all_quality(); 
+ $data['all_quality']=$this->admin_model->select_all_quality();
+ $data['all_qualityitem']=$this->admin_model->select_all_qualityitem();  
 
 $data['content'] = $this->load->view('pages/service',$data, TRUE);
 
@@ -57,11 +58,22 @@ $this->load->view('main_layout',$data);
 	
 
 	}
+
 	public function digital_service(){
 
 
  
  $data['abc']='xyz';
+$data['all_dservice']=$this->admin_model->select_all_dservice(); 
+$data['all_description']=$this->admin_model->select_all_description(); 
+$data['all_tell']=$this->admin_model->select_all_tell(); 
+$data['all_levels']=$this->admin_model->select_all_levels(); 
+$data['all_levelsbox']=$this->admin_model->select_all_levelsbox(); 
+$data['all_accordon']=$this->admin_model->select_all_accordon(); 
+$data['all_brand']=$this->admin_model->select_all_brand(); 
+$data['all_brandbox']=$this->admin_model->select_all_brandbox(); 
+
+
 
 $data['content'] = $this->load->view('pages/digital_service',$data, TRUE);
 

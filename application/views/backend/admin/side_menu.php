@@ -211,6 +211,12 @@
 							</a>
 						</li>
 						<li class="nav-item">
+							<a href="<?php echo base_url('admin/qualityitem') ?>" class="nav-link <?= active_nav('qualityitem', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Quality Items</p>
+							</a>
+						</li>
+						<li class="nav-item">
 							<a href="<?php echo base_url('admin/tools') ?>" class="nav-link <?= active_nav('tools', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p> Tools</p>
@@ -250,12 +256,54 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
-							<a href="<?php echo base_url('admin/dservice_box') ?>" class="nav-link <?= active_nav('dservice', $sub_nav); ?>">
+							<a href="<?php echo base_url('admin/dservice') ?>" class="nav-link <?= active_nav('service', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Service </p>
 							</a>
 						</li>
-						
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/description') ?>" class="nav-link <?= active_nav('description', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Description </p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/tell') ?>" class="nav-link <?= active_nav('tell', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Tell Us</p>
+							</a>
+							
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/levels') ?>" class="nav-link <?= active_nav('levels', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Levels</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/levelsbox') ?>" class="nav-link <?= active_nav('levelsbox', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Levelsbox</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/accordon') ?>" class="nav-link <?= active_nav('accordon', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Accordon</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/brand') ?>" class="nav-link <?= active_nav('brand', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Brand</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/brandbox') ?>" class="nav-link <?= active_nav('brandbox', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Brandbox</p>
+							</a>
+						</li>
 						
 					</ul>
 				</li>

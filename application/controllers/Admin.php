@@ -1348,6 +1348,63 @@ public function quality()
 
 	}
 
+	//qualityitem
+public function qualityitem()
+	{
+        $data = $this->engine->store_nav('software service', 'qualityitem', 'welcome to qualityitem page');
+        $data['qualityitemList'] = $this->Common->get_data('qualityitem');
+        $path = 'backend/admin/qualityitem/qualityitem';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_qualityitem()
+	{
+        $data = $this->engine->store_nav('software service', 'qualityitem', 'Create New qualityitem');
+		$path = 'backend/admin/qualityitem/add_qualityitem';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_qualityitem()
+	{
+
+
+		$this->admin_model->save_qualityitem();
+	}
+	public function edit_qualityitem($id)
+	{
+        $data = array();
+		$data['all_qualityitem_by_id'] = $this->admin_model->all_qualityitem_by_id($id);
+		$this->load->view('backend/admin/qualityitem/edit_qualityitem', $data);
+
+	}
+	public function update_qualityitem()
+	{
+
+		$this->admin_model->update_qualityitem();
+		redirect('Admin/qualityitem');
+           
+
+	}
+	public function view_qualityitem($id){
+
+         $data = array();
+		$data['all_qualityitem_view_by_id'] = $this->admin_model->all_qualityitem_view_by_id($id);
+		$data['qualityitem_info'] = $this->load->view('backend/admin/qualityitem/view_qualityitem', $data, true);
+		$this->load->view('backend/admin/qualityitem/view_qualityitem', $data);
+		  
+	}
+	public function delete_qualityitem($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_qualityitem_by_id($id);
+
+		redirect('Admin/qualityitem');
+
+	}
+
+
+
 //tools
 	public function tools()
 	{
@@ -1542,46 +1599,466 @@ public function save_contact_form()
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	//digital service
+//digital service
 	public function dservice()
 	{
-        $data = $this->engine->store_nav('dservice', 'dservice', 'welcome to dservice page');
-        $data['eserviceList'] = $this->Common->get_data('dservice');
-        $path = 'backend/admin/dservice/dservice_page';
+        $data = $this->engine->store_nav('dservice', 'service', 'welcome to dservice page');
+        $data['dserviceList'] = $this->Common->get_data('dservice');
+        $path = 'backend/admin/dservice/dservice';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
 	public function add_dservice()
 	{
-        $data = $this->engine->store_nav('dservice_box', 'dservice', 'Create New dservice');
+        $data = $this->engine->store_nav('dservice', 'service', 'Create New dservice');
 		$path = 'backend/admin/dservice/add_dservice';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
+	}
+	public function save_dservice()
+	{
+
+
+		$this->admin_model->save_dservice();
+	
+
+}
+public function edit_dservice($id)
+	{
+        $data = array();
+		$data['all_dservice_by_id'] = $this->admin_model->all_dservice_by_id($id);
+		$this->load->view('backend/admin/dservice/edit_dservice', $data);
+
+	}
+	public function update_dservice()
+	{
+
+		$this->admin_model->update_dservice();
+		redirect('Admin/dservice');
+           
+
+	}
+	public function view_dservice($id){
+
+         $data = array();
+		$data['all_dservice_view_by_id'] = $this->admin_model->all_dservice_view_by_id($id);
+		$data['dservice_info'] = $this->load->view('backend/admin/dservice/view_dservice', $data, true);
+		$this->load->view('backend/admin/dservice/view_dservice', $data);
+		  
+	}
+	public function delete_dservice($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_dservice_by_id($id);
+
+		redirect('Admin/dservice');
+
+	}
+//description
+public function description()
+	{
+        $data = $this->engine->store_nav('dservice', 'description', 'welcome to description page');
+        $data['descriptionList'] = $this->Common->get_data('description');
+        $path = 'backend/admin/description/description';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	public function add_description()
+	{
+        $data = $this->engine->store_nav('dservice', 'description', 'Create New description');
+		$path = 'backend/admin/description/add_description';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_description()
+	{
+
+
+		$this->admin_model->save_description();
+	
+
+}
+public function edit_description($id)
+	{
+        $data = array();
+		$data['all_description_by_id'] = $this->admin_model->all_description_by_id($id);
+		$this->load->view('backend/admin/description/edit_description', $data);
+
+	}
+	public function update_description()
+	{
+
+		$this->admin_model->update_description();
+		redirect('Admin/description');
+           
+
+	}
+	public function view_description($id){
+
+         $data = array();
+		$data['all_description_view_by_id'] = $this->admin_model->all_description_view_by_id($id);
+		$data['description_info'] = $this->load->view('backend/admin/description/view_description', $data, true);
+		$this->load->view('backend/admin/description/view_description', $data);
+		  
+	}
+	public function delete_description($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_description_by_id($id);
+
+		redirect('Admin/description');
+
+	}
+//Tell Us
+public function tell()
+	{
+        $data = $this->engine->store_nav('dservice', 'tell', 'welcome to tell page');
+        $data['tellList'] = $this->Common->get_data('tell');
+        $path = 'backend/admin/tell/tell';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	public function add_tell()
+	{
+        $data = $this->engine->store_nav('dservice', 'tell', 'Create New tell');
+		$path = 'backend/admin/tell/add_tell';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_tell()
+	{
+
+
+		$this->admin_model->save_tell();
+	
+
+}
+public function edit_tell($id)
+	{
+        $data = array();
+		$data['all_tell_by_id'] = $this->admin_model->all_tell_by_id($id);
+		$this->load->view('backend/admin/tell/edit_tell', $data);
+
+	}
+	public function update_tell()
+	{
+
+		$this->admin_model->update_tell();
+		redirect('Admin/tell');
+           
+
+	}
+	public function view_tell($id){
+
+         $data = array();
+		$data['all_tell_view_by_id'] = $this->admin_model->all_tell_view_by_id($id);
+		$data['tell_info'] = $this->load->view('backend/admin/tell/view_tell', $data, true);
+		$this->load->view('backend/admin/tell/view_tell', $data);
+		  
+	}
+	public function delete_tell($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_tell_by_id($id);
+
+		redirect('Admin/tell');
+
+	}
+//Levels
+public function levels()
+	{
+        $data = $this->engine->store_nav('dservice', 'levels', 'welcome to levels page');
+        $data['levelsList'] = $this->Common->get_data('levels');
+        $path = 'backend/admin/levels/levels';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	public function add_levels()
+	{
+        $data = $this->engine->store_nav('dservice', 'levels', 'Create New levels');
+		$path = 'backend/admin/levels/add_levels';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_levels()
+	{
+
+
+		$this->admin_model->save_levels();
+	
+
+}
+public function edit_levels($id)
+	{
+        $data = array();
+		$data['all_levels_by_id'] = $this->admin_model->all_levels_by_id($id);
+		$this->load->view('backend/admin/levels/edit_levels', $data);
+
+	}
+	public function update_levels()
+	{
+
+		$this->admin_model->update_levels();
+		redirect('Admin/levels');
+           
+
+	}
+	public function view_levels($id){
+
+         $data = array();
+		$data['all_levels_view_by_id'] = $this->admin_model->all_levels_view_by_id($id);
+		$data['levels_info'] = $this->load->view('backend/admin/levels/view_levels', $data, true);
+		$this->load->view('backend/admin/levels/view_levels', $data);
+		  
+	}
+	public function delete_levels($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_levels_by_id($id);
+
+		redirect('Admin/levels');
+
+	}
+//levelsbox
+public function levelsbox()
+	{
+        $data = $this->engine->store_nav('dservice', 'levelsbox', 'welcome to levelsbox page');
+        $data['levelsboxList'] = $this->Common->get_data('levelsbox');
+        $path = 'backend/admin/levelsbox/levelsbox';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	public function add_levelsbox()
+	{
+        $data = $this->engine->store_nav('dservice', 'levelsbox', 'Create New levelsbox');
+		$path = 'backend/admin/levelsbox/add_levelsbox';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_levelsbox()
+	{
+
+
+		$this->admin_model->save_levelsbox();
+	
+
+}
+public function edit_levelsbox($id)
+	{
+        $data = array();
+		$data['all_levelsbox_by_id'] = $this->admin_model->all_levelsbox_by_id($id);
+		$this->load->view('backend/admin/levelsbox/edit_levelsbox', $data);
+
+	}
+	public function update_levelsbox()
+	{
+
+		$this->admin_model->update_levelsbox();
+		redirect('Admin/levelsbox');
+           
+
+	}
+	public function view_levelsbox($id){
+
+         $data = array();
+		$data['all_levelsbox_view_by_id'] = $this->admin_model->all_levelsbox_view_by_id($id);
+		$data['levelsbox_info'] = $this->load->view('backend/admin/levelsbox/view_levelsbox', $data, true);
+		$this->load->view('backend/admin/levelsbox/view_levelsbox', $data);
+		  
+	}
+	public function delete_levelsbox($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_levelsbox_by_id($id);
+
+		redirect('Admin/levelsbox');
+
+	}
+//accordon
+public function accordon()
+	{
+        $data = $this->engine->store_nav('dservice', 'accordon', 'welcome to accordon page');
+        $data['accordonList'] = $this->Common->get_data('accordon');
+        $path = 'backend/admin/accordon/accordon';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	
+	public function add_accordon()
+	{
+        $data = $this->engine->store_nav('dservice', 'accordon', 'Create New accordon');
+		$path = 'backend/admin/accordon/add_accordon';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_accordon()
+	{
+
+
+		$this->admin_model->save_accordon();
+	
+
+}
+public function edit_accordon($id)
+	{
+        $data = array();
+		$data['all_accordon_by_id'] = $this->admin_model->all_accordon_by_id($id);
+		$this->load->view('backend/admin/accordon/edit_accordon', $data);
+
+	}
+	public function update_accordon()
+	{
+
+		$this->admin_model->update_accordon();
+		redirect('Admin/accordon');
+           
+
+	}
+	public function view_accordon($id){
+
+         $data = array();
+		$data['all_accordon_view_by_id'] = $this->admin_model->all_accordon_view_by_id($id);
+		$data['accordon_info'] = $this->load->view('backend/admin/accordon/view_accordon', $data, true);
+		$this->load->view('backend/admin/accordon/view_accordon', $data);
+		  
+	}
+	public function delete_accordon($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_accordon_by_id($id);
+
+		redirect('Admin/accordon');
+
+	}
+//brand
+
+public function brand()
+	{
+        $data = $this->engine->store_nav('dservice', 'brand', 'welcome to brand page');
+        $data['brandList'] = $this->Common->get_data('brand');
+        $path = 'backend/admin/brand/brand';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	
+	public function add_brand()
+	{
+        $data = $this->engine->store_nav('dservice', 'brand', 'Create New brand');
+		$path = 'backend/admin/brand/add_brand';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_brand()
+	{
+
+
+		$this->admin_model->save_brand();
+	
+
+}
+public function edit_brand($id)
+	{
+        $data = array();
+		$data['all_brand_by_id'] = $this->admin_model->all_brand_by_id($id);
+		$this->load->view('backend/admin/brand/edit_brand', $data);
+
+	}
+	public function update_brand()
+	{
+
+		$this->admin_model->update_brand();
+		redirect('Admin/brand');
+           
+
+	}
+	public function view_brand($id){
+
+         $data = array();
+		$data['all_brand_view_by_id'] = $this->admin_model->all_brand_view_by_id($id);
+		$data['brand_info'] = $this->load->view('backend/admin/brand/view_brand', $data, true);
+		$this->load->view('backend/admin/brand/view_brand', $data);
+		  
+	}
+	public function delete_brand($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_brand_by_id($id);
+
+		redirect('Admin/brand');
+
+	}
+//brandbox
+
+public function brandbox()
+	{
+        $data = $this->engine->store_nav('dservice', 'brandbox', 'welcome to brandbox page');
+        $data['brandboxList'] = $this->Common->get_data('brandbox');
+        $path = 'backend/admin/brandbox/brandbox';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	
+	
+	public function add_brandbox()
+	{
+        $data = $this->engine->store_nav('dservice', 'brandbox', 'Create New brandbox');
+		$path = 'backend/admin/brandbox/add_brandbox';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_brandbox()
+	{
+
+
+		$this->admin_model->save_brandbox();
+	
+
+}
+public function edit_brandbox($id)
+	{
+        $data = array();
+		$data['all_brandbox_by_id'] = $this->admin_model->all_brandbox_by_id($id);
+		$this->load->view('backend/admin/brandbox/edit_brandbox', $data);
+
+	}
+	public function update_brandbox()
+	{
+
+		$this->admin_model->update_brandbox();
+		redirect('Admin/brandbox');
+           
+
+	}
+	public function view_brandbox($id){
+
+         $data = array();
+		$data['all_brandbox_view_by_id'] = $this->admin_model->all_brandbox_view_by_id($id);
+		$data['brandbox_info'] = $this->load->view('backend/admin/brandbox/view_brandbox', $data, true);
+		$this->load->view('backend/admin/brandbox/view_brandbox', $data);
+		  
+	}
+	public function delete_brandbox($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_brandbox_by_id($id);
+
+		redirect('Admin/brandbox');
+
 	}
 
 
