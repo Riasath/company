@@ -480,19 +480,18 @@
 
 					<div class="subscribe scrollme">
 
-						<div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-12 col-xs-12">
-							<h4 class="subscribe-title">Email Newsletters!</h4>
-							<form class="subscribe-form" method="post"
-								  action="http://html.crumina.net/html-seosight/import.php">
-								<input class="email input-standard-grey input-white" name="email" required="required"
-									   placeholder="Your Email Address" type="email">
-								<button class="subscr-btn">subscribe
-									<span class="semicircle--right"></span>
-								</button>
-							</form>
-							<div class="sub-title">Sign up for new RTSOFTBD content, updates, surveys & offers.</div>
+	<div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-12 col-xs-12">
+	<h4 class="subscribe-title">Email Newsletters!</h4>
+	
+		<form class="subscribe-form" method="post" action="<?php echo base_url()?>save-subscribe">
+		<input class="email input-standard-grey input-white" name="gmail" required="required" placeholder="Your Email Address" type="text">
+		<button class="subscr-btn">subscribe
+			<span class="semicircle--right"></span>
+		</button>
+	</form>
+	<div class="sub-title">Sign up for new Seosignt content, updates, surveys & offers.</div>
 
-						</div>
+</div>
 
 						<div class="images-block">
 							<img src="<?= base_url('assets/images/subscr-gear.png');?>" alt="gear" class="gear">

@@ -8,7 +8,12 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
 </head>
 <body>
-<div class="left">
+  <div class="content-wrapper">
+
+     
+
+      
+
   <form action="<?php echo base_url()?>update-slider-list" method="post" enctype="multipart/form-data">
   <div class="container">
   
@@ -22,9 +27,9 @@
    
     <input type="hidden" value="<?php echo $all_slider_info_by_id->slider_id ?>"name="slider_id" id="slider_descriptions" ></br>
 
-    <label for="slider_about"><b>Add Slider Details</b></label></br>
-       <input type="text" value="<?php echo $all_slider_info_by_id->slider_about ?>"name="slider_about" id="slider_about" >
-         </br>
+    <label for="textarea" ><b>Add Slider Details</b></label></br>
+    <textarea rows="3" cols="70" value="<?php echo $all_slider_info_by_id->slider_about ?>"name="slider_about"></textarea>
+       </br> </br>
   
     <label for="slider_image"><b>Add NEW Slider Image</b></label></br>
        <input type="file" name="slider_image" id="slider_image" >
@@ -32,17 +37,15 @@
 
     <button type="submit" class="registerbtn">Submit</button></br>
    
-  </div>
+
 </form>
-</div>
-</div>
-
-
-
 
 
 </div>
-</body>
-</html>
+
+
+
+
+
 </body>
 </html>

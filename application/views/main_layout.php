@@ -882,18 +882,18 @@ function loadDoc4() {
 
 <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js" ></script>
 
-    <script>
-        $(document).on("click", "#sure", function(e) {
-        	e.preventDefault();
-        	var link = $(this).attr("href");
-            bootbox.confirm("Are you want to delete permanantly!", function(confirmed) {
-               if (confirmed) {
+<script>
+$(document).on("click", "#del", function(e) {
+e.preventDefault();
+var link = $(this).attr("href");
+bootbox.confirm("Are you want to delete permanantly!", function(confirmed) {
+if (confirmed) {
 
-               window.location.href =link;
-               };
-            });
-        });
-    </script>
+window.location.href =link;
+};
+});
+});
+</script>
 
 </body>
 

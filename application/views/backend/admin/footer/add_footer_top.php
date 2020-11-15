@@ -40,7 +40,9 @@
    <label for="footer_heading"><b>Add Footer Heading</b></label></br>
     <input type="text"  name="footer_heading" id="footer_heading" required></br>
     <label for="text-area"><b>Add Footer  Details</b></label></br>
-    <textarea class="form-control rounded-0"  name="footer_details" id="exampleFormControlTextarea2" rows="3"></textarea>
+  
+     <textarea rows="4" cols="70"  name="footer_details" id="footer_details" ></textarea>
+       </br>
  
     <button type="submit" class="registerbtn">Submit</button></br>
    

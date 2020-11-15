@@ -17,8 +17,10 @@
 	<form action="<?php echo base_url()?>update-testimonials-list" method="post" enctype="multipart/form-data">
   <div class="container">
 
-    <label for="testi_text"><b>Edit Testimonials Text</b></label></br>
-    <input type="text"  name="testi_text" id="testi_text" value="<?php echo $all_testimonials_list_by_id->testi_text?>"></br>
+    <label for="textarea"><b>Edit Testimonials Text</b></label></br>
+    
+      <textarea rows="4" cols="70"  name="testi_text" id="testi_text" value="<?php echo $all_testimonials_list_by_id->testi_text?>"></textarea>
+       </br> 
     
       <label for="testi_text"><b></b></label></br>
     <input type="hidden"  name="testi_id" id="testi_id" value="<?php echo $all_testimonials_list_by_id->testi_id?>"></br>

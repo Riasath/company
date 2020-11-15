@@ -51,7 +51,8 @@
   </br>
   
     <label for="text-area"><b>Add Blog Details</b></label></br>
-    <textarea class="form-control rounded-0"  name="blog_details" id="exampleFormControlTextarea2" rows="3"></textarea>
+  <textarea rows="4" cols="70"  name="blog_details" id="blog_details" ></textarea>
+       </br> 
   </br>
    <label for="avatar"><b>Add Posted Avatar</b></label></br>
     <input type="file"  name="avatar" id="avatar" required>

@@ -25,6 +25,10 @@ $route['add-client']='slider/add_client';
 $route['save-client-image']='slider/save_client_image';
 
 
+//subscribe
+$route['save-subscribe']='Admin/save_subscribe';
+
+
 //------------------------------------------------------------//
 //page_route_start
 

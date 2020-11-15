@@ -30,9 +30,10 @@
      value="<?php echo $all_blog_list_by_id->blog_title?>"></br>
 
     <label for="blog_details"><b>Edit Blog Details</b></label></br>
-    <input type="text" name="blog_details" id="blog_details" 
-     value="<?php echo $all_blog_list_by_id->blog_details?>"></br>
-
+   
+    <textarea rows="4" cols="70"  name="blog_details" id="blog_details"  value="<?php echo $all_blog_list_by_id->blog_details?>"></textarea>
+     </br>
+      </br>
      <label for="avatar"><b>recent  Blog Avatar</b></label></br>
     <img src="<?php echo base_url().$all_blog_list_by_id->avatar ?>"></br>
   </br>

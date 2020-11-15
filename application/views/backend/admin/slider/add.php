@@ -35,17 +35,20 @@
                                
 
 
-                                    <label for="slider_image"><b>Upload Slider Image</b></label></br>
-                                    <input type="file" placeholder="Enter First Name" name="slider_image" id="slider_image" required>
-                                    </br>
-                                    </br>
-                                    </br>
+    <label for="slider_image"><b>Upload Slider Image</b></label></br>
+    <input type="file" placeholder="Enter First Name" name="slider_image" id="slider_image" required>
+    </br>
+    </br>
+    </br>
 
 
-                                    <label for="slider_descriptions"><b>Add Slider Title</b></label></br>
-                                    <input type="text" placeholder="Enter slider title" name="slider_descriptions" id="slider_descriptions" required></br>
-                                    <label for="slider_about"><b>Add Slider Details</b></label></br>
-                                    <input type="text" placeholder="Enter slider details" name="slider_about" id="slider_about" required></br>
+    <label for="slider_descriptions"><b>Add Slider Title</b></label></br>
+    <input type="text" placeholder="Enter slider title" name="slider_descriptions" id="slider_descriptions" required></br>
+    
+    <label for="slider_about"><b>Add Slider Details</b></label></br>
+   
+     <textarea rows="3" cols="70" type="text" name="slider_about" id="slider_about" required></textarea>
+       </br> </br>
 
 
 

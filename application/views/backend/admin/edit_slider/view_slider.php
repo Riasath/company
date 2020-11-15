@@ -11,44 +11,25 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
 </head>
 <body>
-<div class="left">
-	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
-  <div class="container">
+   <div class="content-wrapper">
+
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
 
-  <thead>
-    <tr>
-    <th>Slider Title</th>
-    <th> Slider Details</th>
-    <th>Slider Image</th>
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h1><?php echo $all_slider_view_by_id->slider_descriptions ?></h1>
-  <input type="hidden" value="<?php echo $all_slider_view_by_id->slider_id ?>"name="slider_id" id="slider_id" ></br>
-      </td>
-      <td>
-        <h4>
-          <?php echo $all_slider_view_by_id->slider_about ?>
-        </h4>
-        
-      </td>
-      <td>
-         <label for="slider_image"><b></b></label></br>
-    <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" style="height:300px;width:300px;border:1px solid #FC4136;">
-      </td>
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+
+
+ 
+   
+    <h1 style="background: gray;">Slider Title</h1>
+   <h3><?php echo $all_slider_view_by_id->slider_descriptions ?></h3>
+   <h1 style="background: gray;">Slider Details</h1> 
+    <h3><?php echo $all_slider_view_by_id->slider_about ?> </h3>
+    <h1>Slider Image</h1>
+  <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" style="height:150px;width:200px;border:1px solid #FC4136;">
+    
   
-  </div>
-</form>
-</div>
-</div>
+ 
+
 
 </div>
 </body>

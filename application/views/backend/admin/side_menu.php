@@ -47,6 +47,12 @@
 								<p>Slider</p>
 							</a>
 						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/subscribe') ?>" class="nav-link <?= active_nav('subscribe', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Subscribe</p>
+							</a>
+						</li>
 							<li class="nav-item">
 							<a href="<?php echo base_url('Admin/testimonials') ?>" class="nav-link <?= active_nav('testimonials', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>

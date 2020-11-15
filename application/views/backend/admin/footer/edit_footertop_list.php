@@ -26,8 +26,9 @@
     <input type="hidden"  name="footer_id" id="footer_id" value="<?php echo $all_footertop_list_by_id->footer_id?>"></br>
 
     <label for="footer_details"><b>Edit Footer Details</b></label></br>
-    <input type="text"  name="footer_details" id="footer_details"
-     value="<?php echo $all_footertop_list_by_id->footer_details?>"></br>
+   
+       <textarea rows="4" cols="70"  name="footer_details" id="footer_details"  value="<?php echo $all_footertop_list_by_id->footer_details?>"></textarea>
+     </br>
 
  
 

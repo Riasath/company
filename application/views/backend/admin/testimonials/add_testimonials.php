@@ -37,9 +37,10 @@
   <div class="container">
 
     <label for="testi_text"><b>Add Testimonials Text</b></label></br>
-    <input type="text"  name="testi_text" id="testi_text" required></br>
+   
     
-
+   <textarea rows="3" cols="70" type="text" name="testi_text" id="testi_text" required></textarea>
+       </br> </br>
     <label for="testi_author"><b>Add Testimonials Author</b></label></br>
     <input type="text"  name="testi_author" id="testi_author" required></br>
 

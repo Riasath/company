@@ -63,7 +63,7 @@
 	</button>
 </a>
 <a href="<?php echo base_url()?>delete-slider-list/<?php echo $list->slider_id?>" id="<?= $list->slider_id ?>">
-	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
+	<button type='button' class='btn bg-danger' id="del">Delete<i class='fas fa-times'></i>
 	</button>
 </a>
 

@@ -28,21 +28,27 @@ class Admin extends CI_Controller
 	}
 	public function edit_slider_list($slider_id)
 	{
-        $data = array();
+      
+
+
+		$data = $this->engine->store_nav('appearance', 'slider_list', 'Create New Slider');
 		$data['all_slider_info_by_id'] = $this->Common->all_slider_list_by_id($slider_id);
-		$this->load->view('backend/admin/edit_slider/edit_slider_list', $data);
-
-		
-         // $data = $this->engine->store_nav('appearance', 'slider', 'Create New Slider');
-       
-		//$path = 'backend/admin/edit_slider/edit_slider_list';
-		//$this->engine->render_view($data, $path,$this->side_menu, $this->main_layout);
-
+	   	$path = 'backend/admin/edit_slider/edit_slider_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
         
 		  
 	
 	}
-
+	public function view_slider_list($slider_id){
+        //$data = array();
+		//$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
+		//$this->load->view('backend/admin/edit_slider/view_slider', $data);
+		$data = $this->engine->store_nav('appearance', 'slider_list', 'Create New Slider');
+		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
+		$path = 'backend/admin/edit_slider/view_slider';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
 	public function update_slider_list_info()
 	{
 
@@ -60,16 +66,7 @@ class Admin extends CI_Controller
 		redirect('Admin/list_slider');
 
 	}
-	public function view_slider_list($slider_id){
-        //$data = array();
-		//$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
-		//$this->load->view('backend/admin/edit_slider/view_slider', $data);
-		$data = $this->engine->store_nav('appearance', 'slider_list', 'Create New Slider');
-		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
-		$path = 'backend/admin/edit_slider/view_slider';
-		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
-		  
-	}
+
 	public function save_slider()
 	{
 
@@ -1621,6 +1618,23 @@ public function save_contact_form()
 
 
 	$this->admin_model->save_contact_form();
+	
+
+}
+//subscribe
+public function subscribe()
+	{
+        $data = $this->engine->store_nav('software service', 'subscribe', 'welcome to subscribe page');
+        $data['subscribeList'] = $this->Common->get_data('subscribe');
+        $path = 'backend/admin/subscribe/subscribe';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+public function save_subscribe()
+	{
+
+
+	$this->admin_model->save_subscribe();
 	
 
 }

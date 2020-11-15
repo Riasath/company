@@ -2593,9 +2593,21 @@ $data['message']=$this->input->post('message',true);
 
   $this->db->insert('information',$data);
  //redirect('Admin/contact');
+}
+//Subscribe form
+  public function save_subscribe(){
+
+$data=array();
+  
+$data['gmail']=$this->input->post('gmail',true); 
+ 
+
+  $this->db->insert('subscribe',$data);
+ //redirect('Admin/contact');
 
 
       }
+      
       //digital service menu 
 
 
