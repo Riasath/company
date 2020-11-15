@@ -10,6 +10,8 @@
 
 					<div class="col-md-2">
 						<a href="<?php echo base_url('Admin/add_slider') ?>">
+						
+
 							<button type='button' id="" class='btn bg-success'>Create New Slider</i>
 							</button></a>
 					</div>

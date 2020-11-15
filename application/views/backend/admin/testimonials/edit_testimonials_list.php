@@ -12,8 +12,7 @@
 </head>
 <body>
 	
-<div class="container-fluid">
-<div class="left" style="float: left;">
+<div class="content-wrapper">
 	<form action="<?php echo base_url()?>update-testimonials-list" method="post" enctype="multipart/form-data">
   <div class="container">
 
@@ -54,7 +53,5 @@
 </div>
 
 </div>
-</body>
-</html>
 </body>
 </html>

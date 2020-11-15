@@ -204,10 +204,10 @@ class Admin extends CI_Controller
 	//for testimonials
      public function edit_testimonials_list($testi_id)
 	{
-        $data = array();
+      $data = $this->engine->store_nav('appearance', 'testimonials', 'Create New testimonials');
 		$data['all_testimonials_list_by_id'] = $this->slider_model->all_testimonials_list_by_id($testi_id);
-		$this->load->view('backend/admin/testimonials/edit_testimonials_list', $data);
-
+	   	$path = 'backend/admin/testimonials/edit_testimonials_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	
 	}
 	public function save_testimonials_list()
@@ -227,11 +227,13 @@ class Admin extends CI_Controller
 	}
 	 public function edit_blog_list($id)
 	{
-        $data = array();
+        
+  $data = $this->engine->store_nav('appearance', 'blog', 'Create New blog');
 		$data['all_blog_list_by_id'] = $this->slider_model->all_blog_list_by_id($id);
-		$this->load->view('backend/admin/blog/edit_blog_list', $data);
-
+	   	$path = 'backend/admin/blog/edit_blog_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	
+
 	}
 	public function update_blog_list()
 	{
@@ -249,10 +251,11 @@ class Admin extends CI_Controller
 	}
 	  public function edit_client_list($client_id)
 	{
-        $data = array();
+       
+      $data = $this->engine->store_nav('appearance', 'client', 'Create New client');
 		$data['all_client_list_by_id'] = $this->slider_model->all_client_list_by_id($client_id);
-		$this->load->view('backend/admin/client/edit_client_list', $data);
-
+	   	$path = 'backend/admin/client/edit_client_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	
 	}
 	public function update_client_list()
@@ -271,9 +274,13 @@ class Admin extends CI_Controller
 	}
 	  public function edit_footertop_list($footer_id)
 	{
-        $data = array();
+
+
+
+     $data = $this->engine->store_nav('appearance', 'footer_top', 'Create New Footer');
 		$data['all_footertop_list_by_id'] = $this->slider_model->all_footertop_list_by_id($footer_id);
-		$this->load->view('backend/admin/footer/edit_footertop_list', $data);
+	   	$path = 'backend/admin/footer/edit_footertop_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function save_footertop()
@@ -292,9 +299,11 @@ class Admin extends CI_Controller
 	}
 	 public function edit_footerbottom_list($id)
 	{
-        $data = array();
+        
+		 $data = $this->engine->store_nav('appearance', 'footer_bottom', 'Create New footer_bottom');
 		$data['all_footerbottom_list_by_id'] = $this->slider_model->all_footerbottom_list_by_id($id);
-		$this->load->view('backend/admin/footer/edit_footerbottom_list', $data);
+	   	$path = 'backend/admin/footer/edit_footerbottom_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function save_footerbottom()
@@ -313,9 +322,10 @@ class Admin extends CI_Controller
 	}
 	public function edit_footericon($id)
 	{
-        $data = array();
+       $data = $this->engine->store_nav('appearance', 'footer_icon', 'Create New footer_icon');
 		$data['edit_footericon_by_id'] = $this->slider_model->edit_footericon_by_id($id);
-		$this->load->view('backend/admin/footer/edit_footericon', $data);
+	   	$path = 'backend/admin/footer/edit_footericon';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_footericon()
@@ -334,9 +344,11 @@ class Admin extends CI_Controller
 	}
 	public function edit_footer_copyright($id)
 	{
-        $data = array();
+
+		$data = $this->engine->store_nav('appearance', 'copyright', 'Create New copyright');
 		$data['edit_footer_copyright_by_id'] = $this->slider_model->edit_footer_copyright_by_id($id);
-		$this->load->view('backend/admin/footer/edit_footer_copyright', $data);
+	   	$path = 'backend/admin/footer/edit_footer_copyright';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_footer_copyright()
@@ -436,59 +448,63 @@ class Admin extends CI_Controller
 
 	public function view_testimonials_list($testi_id){
 
-         $data = array();
+
+
+
+   $data = $this->engine->store_nav('appearance', 'testimonials', 'View  testimonials');
 		$data['all_testimonials_view_by_id'] = $this->slider_model->all_testimonials_view_by_id($testi_id);
-		$data['testimonials_info'] = $this->load->view('backend/admin/testimonials/view_testimonials', $data, true);
-		$this->load->view('backend/admin/testimonials/view_testimonials', $data);
+	   	$path = 'backend/admin/testimonials/view_testimonials';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 
 	public function view_blog_list($id){
 
-         $data = array();
+        $data = $this->engine->store_nav('appearance', 'blog', 'Create New blog');
 		$data['all_blog_view_by_id'] = $this->slider_model->all_blog_view_by_id($id);
-		$data['blog_info'] = $this->load->view('backend/admin/blog/view_blog', $data, true);
-		$this->load->view('backend/admin/blog/view_blog', $data);
+	   	$path = 'backend/admin/blog/view_blog';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function view_client_list($client_id){
-
-         $data = array();
+       $data = $this->engine->store_nav('appearance', 'client', 'Create New client');
 		$data['all_client_view_by_id'] = $this->slider_model->all_client_view_by_id($client_id);
-		$data['client_info'] = $this->load->view('backend/admin/client/view_client', $data, true);
-		$this->load->view('backend/admin/client/view_client', $data);
+	   	$path = 'backend/admin/client/view_client';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function view_footertop_list($footer_id){
 
-         $data = array();
+      
+		 
+		 $data = $this->engine->store_nav('appearance', 'footer_top', 'Create New footer_top');
 		$data['all_footertop_view_by_id'] = $this->slider_model->all_footertop_view_by_id($footer_id);
-		$data['footertop_info'] = $this->load->view('backend/admin/footer/view_footertop', $data, true);
-		$this->load->view('backend/admin/footer/view_footertop', $data);
-		  
+	   	$path = 'backend/admin/footer/view_footertop';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout); 
 	}
 	public function view_footerbottom_list($id){
-
-         $data = array();
+     $data = $this->engine->store_nav('appearance', 'footer_bottom', 'Create New footer_bottom');
 		$data['all_footerbottom_view_by_id'] = $this->slider_model->all_footerbottom_view_by_id($id);
-		$data['footerbottom_info'] = $this->load->view('backend/admin/footer/view_footerbottom', $data, true);
-		$this->load->view('backend/admin/footer/view_footerbottom', $data);
+	   	$path = 'backend/admin/footer/view_footerbottom';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+        
 		  
 	}
 	public function view_footericon_list($id){
 
-         $data = array();
+		 $data = $this->engine->store_nav('appearance', 'footer_icon', 'Create New footer_icon');
 		$data['all_footericon_view_by_id'] = $this->slider_model->all_footericon_view_by_id($id);
-		$data['footericon_info'] = $this->load->view('backend/admin/footer/view_footericon', $data, true);
-		$this->load->view('backend/admin/footer/view_footericon', $data);
-		  
+	   	$path = 'backend/admin/footer/view_footericon';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);  
 	}
 	public function view_footercopyright_list($id){
 
-         $data = array();
+      
+
+   $data = $this->engine->store_nav('appearance', 'copyright', 'Create New copyright');
 		$data['all_footercopyright_view_by_id'] = $this->slider_model->all_footercopyright_view_by_id($id);
-		$data['footercopyright_info'] = $this->load->view('backend/admin/footer/view_footercopyright', $data, true);
-		$this->load->view('backend/admin/footer/view_footercopyright', $data);
+	   	$path = 'backend/admin/footer/view_footercopyright';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 

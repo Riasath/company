@@ -12,11 +12,10 @@
 </head>
 <body>
 	
-<div class="container-fluid">
-<div class="left" style="float: left;">
+<div class="content-wrapper">
 	<form action="<?php echo 
 base_url()?>update-footer-copyright" method="post" enctype="multipart/form-data">
-  <div class="container">
+
 
     <label for="year"><b>Edit Year </b></label></br>
     <input type="text"  name="year" id="year" value="<?php echo $edit_footer_copyright_by_id->year?>">
@@ -62,7 +61,5 @@ base_url()?>update-footer-copyright" method="post" enctype="multipart/form-data"
 </div>
 
 </div>
-</body>
-</html>
 </body>
 </html>
