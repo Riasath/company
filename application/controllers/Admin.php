@@ -58,13 +58,13 @@ class Admin extends CI_Controller
 
 	}
 	public function view_slider_list($slider_id){
-
-         $data = array();
-      $data['all_slider_view_by_id'] ='HUH';
-      x_debug($data['all_slider_view_by_id']);
+        //$data = array();
+		//$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
+		//$this->load->view('backend/admin/edit_slider/view_slider', $data);
+		$data = $this->engine->store_nav('appearance', 'slider_list', 'Create New Slider');
 		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
-		$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
-		$this->load->view('backend/admin/edit_slider/view_slider', $data);
+		$path = 'backend/admin/edit_slider/view_slider';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function save_slider()
