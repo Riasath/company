@@ -25,7 +25,7 @@ $route['add-client']='slider/add_client';
 $route['save-client-image']='slider/save_client_image';
 
 
-
+//------------------------------------------------------------//
 //page_route_start
 
 $route['erpsolutions']='pages/erpsolutions';
@@ -52,7 +52,7 @@ $route['media-marketing']='pages/media_marketing';
 $route['blog']='pages/blog';
 $route['contact']='pages/contact';
 $route['service-promo']='pages/service_promo';
-
+//------------------------------------------------------------//
 //footer section route
 
 $route['add-footer']='slider/add_footer';
@@ -65,12 +65,12 @@ $route['add-icon']='slider/add_icon';
 $route['save-footer-icon']='slider/save_footer_icon';
 $route['add-copyright']='slider/add_copyright';
 $route['save-copyright']='slider/save_copyright';
-
+//------------------------------------------------------------//
 //for blog section
 
 $route['add-blog']='slider/add_blog';
 $route['save-blog']='slider/save_blog';
-
+//------------------------------------------------------------//
 
 
 //update & delete FOR testimonials
@@ -81,14 +81,14 @@ $route['delete-testimonials/(.+)']='slider/delete_testimonials/$1';
 $route['view-testimonials/(.+)']='slider/view_testimonials/$1';
 
 
-
+//------------------------------------------------------------//
 //client_image_CRUD
 
 $route['client-image']='slider/client_image';
 $route['edit-client-image/(.+)']='slider/edit_client_image/$1';
 $route['update-client-image']='slider/update_client_image';
 
-
+//------------------------------------------------------------//
 //Footer Section edit
 $route['manage-footer-heading']='slider/manage_footer_heading';
 $route['edit-heading/(.+)']='slider/edit_heading/$1';
@@ -103,7 +103,7 @@ $route['manage-copyright']='slider/manage_copyright';
 $route['edit-copyright/(.+)']='slider/edit_copyright/$1';
 $route['update-copyright']='slider/update_copyright';
 
-
+//------------------------------------------------------------//
 
 // section delete
 
@@ -115,7 +115,7 @@ $route['delete-copyright/(.+)']='slider/delete_copyright/$1';
 
 
 
-
+//------------------------------------------------------------//
 //section delete
 $route['view-client/(.+)']='slider/view_client/$1';
 $route['view-heading/(.+)']='slider/view_heading/$1';
@@ -123,7 +123,7 @@ $route['view-avatar/(.+)']='slider/view_avatar/$1';
 $route['view-fmenu/(.+)']='slider/view_fmenu/$1';
 $route['view-copyright/(.+)']='slider/view_copyright/$1';
 
-
+//------------------------------------------------------------//
 //blog section CRUD 
 $route['manage-blog']='slider/manage_blog';
 $route['edit-blog/(.+)']='slider/edit_blog/$1';
@@ -132,7 +132,7 @@ $route['delete-blog/(.+)']='slider/delete_blog/$1';
 $route['view-blog/(.+)']='slider/view_blog/$1';
 
 
-
+//------------------------------------------------------------//
 // dashboard route area
 
 $route['edit-slider-list/(.+)']='Admin/edit_slider_list/$1';
@@ -143,7 +143,7 @@ $route['view-slider-list/(.+)']='Admin/view_slider_list/$1';
 //footer icon
 
 
-
+//------------------------------------------------------------//
 $route['edit-testimonials-list/(.+)']='Admin/edit_testimonials_list/$1';
 $route['update-testimonials-list']='Admin/update_testimonials_list';
 $route['save-testimonials-list']='Admin/save_testimonials_list';
@@ -162,16 +162,13 @@ $route['update-footerbottom']='Admin/update_footerbottom';
 $route['edit-footericon/(.+)']='Admin/edit_footericon/$1';
 $route['save-footericon']='Admin/save_footericon';
 $route['update-footericon']='Admin/update_footericon';
-
-
-
 $route['edit-footer-copyright/(.+)']='Admin/edit_footer_copyright/$1';
 $route['save-footer-copyright']='Admin/save_footer_copyright';
 $route['update-footer-copyright']='Admin/update_footer_copyright';
 
 //delete all items
 
-
+//------------------------------------------------------------//
 $route['delete-testimonials-list/(.+)']='Admin/delete_testimonials_list/$1';
 $route['delete-blog-list/(.+)']='Admin/delete_blog_list/$1';
 $route['delete-client-list/(.+)']='Admin/delete_client_list/$1';
@@ -182,7 +179,7 @@ $route['delete-footercopyright-list/(.+)']='Admin/delete_footercopyright_list/$1
 
 
 
-
+//------------------------------------------------------------//
 //view items
 $route['view-testimonials-list/(.+)']='Admin/view_testimonials_list/$1';
 $route['view-blog-list/(.+)']='Admin/view_blog_list/$1';
@@ -192,15 +189,17 @@ $route['view-footerbottom-list/(.+)']='Admin/view_footerbottom_list/$1';
 $route['view-footericon-list/(.+)']='Admin/view_footericon_list/$1';
 $route['view-footercopyright-list/(.+)']='Admin/view_footercopyright_list/$1';
 
+//footermenu
 
-
+//------------------------------------------------------------//
+$route['save-footermenu']='Admin/save_footermenu';
 
 
 
 //test about
 
 //short story
-
+//------------------------------------------------------------//
 $route['add-short-story']='slider/add_short_story';
 $route['save-short-story']='Admin/save_short_story';
 $route['edit-shortstory-list/(.+)']='Admin/edit_shortstory_list/$1';
@@ -209,14 +208,14 @@ $route['delete-shortstory-list/(.+)']='Admin/delete_shortstory_list/$1';
 $route['view-shortstory-list/(.+)']='Admin/view_shortstory_list/$1';
 
 //foundation
-
+//------------------------------------------------------------//
 $route['save-foundation']='Admin/save_foundation';
 $route['edit-foundation-list/(.+)']='Admin/edit_foundation_list/$1';
 $route['update-foundation-list']='Admin/update_foundation_list';
 $route['delete-foundation-list/(.+)']='Admin/delete_foundation_list/$1';
 $route['view-foundation-list/(.+)']='Admin/view_foundation_list/$1';
 
-
+//------------------------------------------------------------//
 //work
 
 $route['save-work']='Admin/save_work';

@@ -25,6 +25,7 @@ $data['footer_top']=$this->admin_model->footer_top_info();
 $data['short_stoty_variable']=$this->admin_model->select_short_story();
 $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 $data['footer_icon']=$this->admin_model->footer_icon();
+$data['footermenu']=$this->admin_model->footermenu();
 $data['copyright']=$this->admin_model->copyright_info();
 
 $this->load->view('main_layout',$data);
@@ -49,7 +50,7 @@ public function service(){
 $data['content'] = $this->load->view('pages/service',$data, TRUE);
 
 $data['footer_top']=$this->admin_model->footer_top_info();
-
+$data['footermenu']=$this->admin_model->footermenu();
 $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 $data['footer_icon']=$this->admin_model->footer_icon();
 $data['copyright']=$this->admin_model->copyright_info();
@@ -78,7 +79,7 @@ $data['all_brandbox']=$this->admin_model->select_all_brandbox();
 $data['content'] = $this->load->view('pages/digital_service',$data, TRUE);
 
 $data['footer_top']=$this->admin_model->footer_top_info();
-
+$data['footermenu']=$this->admin_model->footermenu();
 $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 $data['footer_icon']=$this->admin_model->footer_icon();
 $data['copyright']=$this->admin_model->copyright_info();
@@ -119,7 +120,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
      
 		$data['content'] = $this->load->view('pages/micro_finance',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
-
+$data['footermenu']=$this->admin_model->footermenu();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
@@ -135,6 +136,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
    $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/office_mgt',$data, TRUE);
+		$data['footermenu']=$this->admin_model->footermenu();
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
@@ -151,6 +153,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
 		$data['content'] = $this->load->view('pages/e_commerce',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -163,6 +166,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/school_mgt',$data, TRUE);
+		$data['footermenu']=$this->admin_model->footermenu();
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
@@ -179,6 +183,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
 		$data['content'] = $this->load->view('pages/point_sale',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -193,6 +198,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
 		$data['content'] = $this->load->view('pages/storage',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -208,6 +214,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
 		$data['content'] = $this->load->view('pages/testimonials',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -221,6 +228,7 @@ $data['all_db_slider']=$this->slider_model->select_all_slider_info();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/mobile_app',$data, TRUE);
+		$data['footermenu']=$this->admin_model->footermenu();
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
@@ -238,6 +246,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/cloud_app',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -252,6 +261,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/pay_per',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -266,6 +276,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/iot_app',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -280,6 +291,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/local_seo',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -294,6 +306,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/seo',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -308,6 +321,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/media_marketing',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -321,6 +335,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/email_marketing',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -335,6 +350,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/contact',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -350,6 +366,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/blog',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 
@@ -364,6 +381,7 @@ public function cloud_app()
 		$data['content'] = $this->load->view('pages/service_promo',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		     $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 

@@ -60,6 +60,8 @@ class Admin extends CI_Controller
 	public function view_slider_list($slider_id){
 
          $data = array();
+      $data['all_slider_view_by_id'] ='HUH';
+      x_debug($data['all_slider_view_by_id']);
 		$data['all_slider_view_by_id'] = $this->slider_model->all_slider_view_by_id($slider_id);
 		$data['slider_info'] = $this->load->view('backend/admin/edit_slider/view_slider', $data, true);
 		$this->load->view('backend/admin/edit_slider/view_slider', $data);
@@ -489,7 +491,29 @@ class Admin extends CI_Controller
 		$this->load->view('backend/admin/footer/view_footercopyright', $data);
 		  
 	}
-  
+
+  //footer menu 
+	 public function footermenu()
+	{
+        $data = $this->engine->store_nav('appearance', 'footermenu', 'footermenu List');
+        $data['footermenuList'] = $this->Common->get_data('footermenu');
+        $path = 'backend/admin/footermenu/footermenu';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_footermenu()
+	{
+        $data = $this->engine->store_nav('appearance', 'footermenu', 'Create New footermenu');
+		$path = 'backend/admin/footermenu/add_footermenu';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_footermenu()
+	{
+
+
+		$this->admin_model->save_footermenu();
+
+	}
 
 
   //about page

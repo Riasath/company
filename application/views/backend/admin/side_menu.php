@@ -86,7 +86,12 @@
 								<p>Footer Social Icon </p>
 							</a>
 						</li>
-						
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/footermenu') ?>" class="nav-link <?= active_nav('footermenu', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Footer Menu </p>
+							</a>
+						</li>
 							<li class="nav-item">
 							<a href="<?php echo base_url('Admin/footer') ?>" class="nav-link <?= active_nav('footer', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>

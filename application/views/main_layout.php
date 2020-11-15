@@ -502,63 +502,67 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 col-xs-12">
-					<div class="services">
-						<div class="heading">
-							<h3 class="heading-title">Services Provided</h3>
-							<div class="heading-line">
-								<span class="short-line"></span>
-								<span class="long-line"></span>
-							</div>
-						</div>
+<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-12 col-xs-12">
+<div class="services">
+<div class="heading">
+	<h3 class="heading-title">Services Provided</h3>
+	<div class="heading-line">
+		<span class="short-line"></span>
+		<span class="long-line"></span>
+	</div>
+</div>
 
-						<ul class="list list--primary">
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">SEO Services</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Pay-per-click</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Social Media</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Web Analytics</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Web Development</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Content Management</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Blog Management</a>
-							</li>
-						</ul>
+<ul class="list list--primary">
+	 <?php foreach($footermenu as $v_menu){?>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="<?php echo $v_menu->link;?>">
+		<?php echo $v_menu->title;?>
+	</a>
+	</li>
+	<?php }?>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Pay-per-click</a>
+	</li>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Social Media</a>
+	</li>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Web Analytics</a>
+	</li>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Web Development</a>
+	</li>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Content Management</a>
+	</li>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Blog Management</a>
+	</li>
+</ul>
 
-						<ul class="list list--primary">
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Virtual Marketing</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Email Marketing</a>
-							</li>
-							<li>
-								<i class="fa fa-caret-right" aria-hidden="true"></i>
-								<a href="#">Keyword Analytics</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+<ul class="list list--primary">
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Virtual Marketing</a>
+	</li>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Email Marketing</a>
+	</li>
+	<li>
+		<i class="fa fa-caret-right" aria-hidden="true"></i>
+		<a href="#">Keyword Analytics</a>
+	</li>
+</ul>
+</div>
+</div>
 			</div>
 
 		</div>

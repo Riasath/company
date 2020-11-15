@@ -434,6 +434,33 @@ $query_result=$this->db->get();
   $this->db->WHERE('footer_id',$footer_id);
   $this->db->update('footer',$data);
   }
+  //footermenu
+  public function save_footermenu(){
+
+$data=array();
+  
+$data['title']=$this->input->post('title',true); 
+$data['link']=$this->input->post('link',true); 
+
+
+
+  $this->db->insert('footermenu',$data);
+ redirect('Admin/footermenu');
+
+
+      }
+ public function footermenu(){
+
+
+  $this->db->select('*');
+  $this->db->from('footermenu');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
   public function all_saved_icon(){
 
     $this->db->select('*');
