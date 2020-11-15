@@ -37,6 +37,9 @@ class Admin extends CI_Controller
        
 		//$path = 'backend/admin/edit_slider/edit_slider_list';
 		//$this->engine->render_view($data, $path,$this->side_menu, $this->main_layout);
+
+        
+		  
 	
 	}
 
