@@ -29,7 +29,7 @@
 
     <label for="blog_details"><b>Edit Blog Details</b></label></br>
    
-    <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="blog_details" id="blog_details"  value=""><?php echo $all_blog_list_by_id->blog_details?></textarea>
+    <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="blog_details" id="blog_details"  value=""><?php echo $all_blog_list_by_id->blog_details?></textarea>
      </br>
       </br>
      <label for="avatar"><b>recent  Blog Avatar</b></label></br>

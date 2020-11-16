@@ -18,7 +18,7 @@
 
  <label for="description"><b>Add Feedback description</b></label></br>
    
-    <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="description" id="description" value="" >
+    <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="description" id="description" value="" >
          <?php echo $all_feedback_by_id->description ?>
        </textarea>
        </br>

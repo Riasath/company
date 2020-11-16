@@ -46,18 +46,18 @@
   </br>
   <label for="short_story_title"><b>Short Story Title</b></label></br>
     
-<textarea style="background:#DDDDDD;" rows="4" cols="70"  name="short_story_title" id="short_story_title" required ></textarea>
+<textarea style="background:#F1F1F1;" rows="4" cols="70"  name="short_story_title" id="short_story_title" required ></textarea>
        </br>
 
 
   <label for="short_story_subtitle1"><b>Short Story SubTitle1</b></label></br>
     
-  <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="short_story_subtitle1" id="short_story_subtitle1" required ></textarea>
+  <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="short_story_subtitle1" id="short_story_subtitle1" required ></textarea>
        </br>
 
   <label for="short_story_subtitle2"><b>Short Story SubTitle2</b></label></br>
     
-  <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="short_story_subtitle2" id="short_story_subtitle2" required ></textarea>
+  <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="short_story_subtitle2" id="short_story_subtitle2" required ></textarea>
        </br>
     
     

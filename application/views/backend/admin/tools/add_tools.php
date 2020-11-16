@@ -49,7 +49,7 @@
 
       <label for="details"><b>Tools Details</b></label></br>
    
-      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+      <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="details" id="details" required ></textarea>
        </br>
 
    

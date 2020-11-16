@@ -25,7 +25,7 @@
     
           <label for="details"><b>Add Levels Details</b></label></br>
        
-         <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
+         <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
          <?php echo $all_levels_by_id->details ?>
        </textarea>
        </br>

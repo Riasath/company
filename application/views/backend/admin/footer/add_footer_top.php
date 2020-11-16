@@ -41,7 +41,7 @@
     <input type="text"  name="footer_heading" id="footer_heading" required></br>
     <label for="text-area"><b>Add Footer  Details</b></label></br>
   
-     <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="footer_details" id="footer_details" ></textarea>
+     <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="footer_details" id="footer_details" ></textarea>
        </br>
  
     <button type="submit" class="registerbtn">Submit</button></br>

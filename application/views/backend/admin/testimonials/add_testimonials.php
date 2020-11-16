@@ -39,7 +39,7 @@
     <label for="testi_text"><b>Add Testimonials Text</b></label></br>
    
     
-   <textarea style="background:#DDDDDD;" rows="3" cols="70" type="text" name="testi_text" id="testi_text" required></textarea>
+   <textarea style="background:#F1F1F1;" rows="3" cols="70" type="text" name="testi_text" id="testi_text" required></textarea>
        </br> </br>
     <label for="testi_author"><b>Add Testimonials Author</b></label></br>
     <input type="text"  name="testi_author" id="testi_author" required></br>

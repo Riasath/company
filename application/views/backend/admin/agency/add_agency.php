@@ -50,7 +50,7 @@
       <label for="details"><b>Agency Details</b></label></br>
      
 
-       <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details" id="details"required >
+       <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="details" id="details"required >
          
        </textarea></br>
 

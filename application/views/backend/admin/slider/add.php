@@ -47,7 +47,7 @@
     
     <label for="slider_about"><b>Add Slider Details</b></label></br>
    
-     <textarea style="background:#DDDDDD;" rows="3" style="background:#DDDDDD;"cols="70" type="text" name="slider_about" id="slider_about" required></textarea>
+     <textarea  rows="3" style="background:#F1F1F1;"cols="70" type="text" name="slider_about" id="slider_about" required></textarea>
        </br> </br>
 
 

@@ -26,7 +26,7 @@
 
     <label for="footer_details"><b>Edit Footer Details</b></label></br>
    
-       <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="footer_details" id="footer_details"  value="<?php echo $all_footertop_list_by_id->footer_details?>"></textarea>
+       <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="footer_details" id="footer_details"  value="<?php echo $all_footertop_list_by_id->footer_details?>"></textarea>
      </br>
 
  

@@ -31,7 +31,7 @@
   </br>
   
     <label for="text-area"><b>Add Blog Details</b></label></br>
-    <textarea style="background:#DDDDDD;" class="form-control rounded-0"  name="blog_details" id="exampleFormControlTextarea2" rows="3"></textarea>
+    <textarea style="background:#F1F1F1;" class="form-control rounded-0"  name="blog_details" id="exampleFormControlTextarea2" rows="3"></textarea>
   </br>
    <label for="avatar"><b>Add Posted Avatar</b></label></br>
     <input type="file"  name="avatar" id="avatar" required>

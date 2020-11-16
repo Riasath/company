@@ -25,7 +25,7 @@
     
           <label for="details"><b>Add Product Details</b></label></br>
        
-          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
+          <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
          <?php echo $all_product_by_id->details ?>
        </textarea>
        </br>
@@ -33,14 +33,14 @@
           <label for="section1"><b>Add Product Section1</b></label></br>
       
 
-          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="section1" id="section1" value="" >
+          <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="section1" id="section1" value="" >
          <?php echo $all_product_by_id->section1 ?>
        </textarea>
   
 </br>
           <label for="section2"><b>Add Product Section2</b></label></br>
       
-          </br><textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="section2" id="section2" value="" >
+          </br><textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="section2" id="section2" value="" >
          <?php echo $all_product_by_id->section2 ?>
        </textarea>
   

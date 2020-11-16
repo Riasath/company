@@ -57,7 +57,7 @@
       <label for="foundation_details"><b>Foundation Details</b></label></br>
       
 
-      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="foundation_details" id="foundation_details" required ></textarea>
+      <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="foundation_details" id="foundation_details" required ></textarea>
        </br>
     
     

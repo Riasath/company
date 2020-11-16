@@ -17,7 +17,7 @@
     <label for="title"><b>Add Description Title</b></label></br>
      
 
-          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="title" id="title" value="" >
+          <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="title" id="title" value="" >
          <?php echo $all_description_by_id->title ?></textarea>
        </br>
  
@@ -28,14 +28,14 @@
     
           <label for="details1"><b>Add Description Details1</b></label></br>
       
-          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details1" id="details1" value="" >
+          <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="details1" id="details1" value="" >
          <?php echo $all_description_by_id->details1 ?>
        </textarea>
        </br>
   
   <label for="details2"><b>Add Description Details2</b></label></br>
       
-  <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details2" id="details2" value="" >
+  <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="details2" id="details2" value="" >
          <?php echo $all_description_by_id->details2 ?>
        </textarea>
        </br>

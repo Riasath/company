@@ -27,7 +27,7 @@
          </br>
           <label for="foundation_details"><b>Add Foundation Details</b></label></br>
     
-    <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="foundation_details" id="foundation_details" value="" >
+    <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="foundation_details" id="foundation_details" value="" >
          <?php echo $all_foundation_list_by_id->foundation_details ?>
        </textarea>
        </br>
