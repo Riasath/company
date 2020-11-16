@@ -18,7 +18,7 @@
 
     <label for="textarea"><b>Edit Testimonials Text</b></label></br>
     
-      <textarea rows="4" cols="70"  name="testi_text" id="testi_text" value="<?php echo $all_testimonials_list_by_id->testi_text?>"></textarea>
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="testi_text" id="testi_text" value=""><?php echo $all_testimonials_list_by_id->testi_text?></textarea>
        </br> 
     
       <label for="testi_text"><b></b></label></br>

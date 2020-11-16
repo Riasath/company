@@ -28,7 +28,9 @@
     <input type="hidden" value="<?php echo $all_slider_info_by_id->slider_id ?>"name="slider_id" id="slider_descriptions" ></br>
 
     <label for="textarea" ><b>Add Slider Details</b></label></br>
-    <textarea rows="3" cols="70" value="<?php echo $all_slider_info_by_id->slider_about ?>"name="slider_about"></textarea>
+    <textarea style="background:#DDDDDD;" rows="3" cols="70" value=""name="slider_about">
+      <?php echo $all_slider_info_by_id->slider_about ?>
+    </textarea>
        </br> </br>
   
     <label for="slider_image"><b>Add NEW Slider Image</b></label></br>

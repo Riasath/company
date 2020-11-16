@@ -41,7 +41,9 @@
 
    
       <label for="description"><b>Feedback Description</b></label></br>
-      <input type="text" placeholder="" name="description" id="description" required></br>
+   
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="description" id="description" required ></textarea>
+       </br>
 
       <label for="image"><b>Upload Author Image</b></label></br>
       <input type="file" placeholder="" name="image" id="image" required>
@@ -58,7 +60,7 @@
 
     
     
-
+</br></br>
 
 
     <button type="submit" class="registerbtn">Submit</button></br>

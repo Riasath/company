@@ -24,8 +24,11 @@
 
     
           <label for="details"><b>Add Quality Details</b></label></br>
-       <input type="text" value="<?php echo $all_quality_by_id->details ?>"name="details" id="details" >
-         </br>
+       
+          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
+         <?php echo $all_quality_by_id->details ?>
+       </textarea>
+       </br>
   
    
 

@@ -168,14 +168,14 @@ class Admin extends CI_Controller
 	}
 	public function add_footer_top()
 	{
-        $data = $this->engine->store_nav('appearance', 'add_footer_top', 'Create New footer top');
+        $data = $this->engine->store_nav('appearance', 'footer_top', 'Create New footer top');
 		$path = 'backend/admin/footer/add_footer_top';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
 	}
 	public function add_footer_bottom()
 	{
-        $data = $this->engine->store_nav('appearance', 'footer', 'Create New footer top');
+        $data = $this->engine->store_nav('appearance', 'footer_bottom', 'Create New footer top');
 		$path = 'backend/admin/footer/add_footer_bottom';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
@@ -345,7 +345,7 @@ class Admin extends CI_Controller
 	public function edit_footer_copyright($id)
 	{
 
-		$data = $this->engine->store_nav('appearance', 'copyright', 'Create New copyright');
+		$data = $this->engine->store_nav('appearance', 'footer', 'Create New copyright');
 		$data['edit_footer_copyright_by_id'] = $this->slider_model->edit_footer_copyright_by_id($id);
 	   	$path = 'backend/admin/footer/edit_footer_copyright';
       $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
@@ -501,7 +501,7 @@ class Admin extends CI_Controller
 
       
 
-   $data = $this->engine->store_nav('appearance', 'copyright', 'Create New copyright');
+   $data = $this->engine->store_nav('appearance', 'footer', 'Create New copyright');
 		$data['all_footercopyright_view_by_id'] = $this->slider_model->all_footercopyright_view_by_id($id);
 	   	$path = 'backend/admin/footer/view_footercopyright';
       $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
@@ -1690,7 +1690,7 @@ public function save_contact_form()
 //subscribe
 public function subscribe()
 	{
-        $data = $this->engine->store_nav('software service', 'subscribe', 'welcome to subscribe page');
+        $data = $this->engine->store_nav('appearance', 'subscribe', 'welcome to subscribe page');
         $data['subscribeList'] = $this->Common->get_data('subscribe');
         $path = 'backend/admin/subscribe/subscribe';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);

@@ -52,7 +52,10 @@
 
 
       <label for="details"><b> Levelsbox Details</b></label></br>
-      <input type="text" placeholder="" name="details" id="details" required></br>
+    
+
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+       </br>
     
     
 

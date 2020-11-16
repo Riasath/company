@@ -48,14 +48,20 @@
 
 
       <label for="details"><b>Product Details</b></label></br>
-      <input type="text" placeholder="" name="details" id="details" required></br>
+   
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+       </br>
 
       <label for="section1"><b>Product Section1</b></label></br>
-      <input type="text" placeholder="" name="section1" id="section1" required></br>
+      
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="section1" id="section1" required ></textarea>
+       </br>
 
       <label for="section2"><b>Product Section2</b></label></br>
-      <input type="text" placeholder="" name="section2" id="section2" required></br>
-    
+     
+
+    <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="section2" id="section2" required ></textarea>
+       </br>
     
 
     

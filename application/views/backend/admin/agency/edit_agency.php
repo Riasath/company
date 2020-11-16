@@ -24,9 +24,10 @@
 
     
           <label for="details"><b>Add Agency Details</b></label></br>
-       <input type="text" value="<?php echo $all_agency_by_id->details ?>"name="details" id="details" >
-         </br>
-  
+      
+   <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
+         <?php echo $all_agency_by_id->details ?>
+       </textarea></br>
    
 
     <button type="submit" class="registerbtn">Update</button></br>

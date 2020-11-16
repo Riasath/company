@@ -26,9 +26,12 @@
        <input type="text" value="<?php echo $all_foundation_list_by_id->foundation_title ?>"name="foundation_title" id="foundation_title" >
          </br>
           <label for="foundation_details"><b>Add Foundation Details</b></label></br>
-       <input type="text" value="<?php echo $all_foundation_list_by_id->foundation_details ?>"name="foundation_details" id="foundation_details" >
-         </br>
-  
+    
+    <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="foundation_details" id="foundation_details" value="" >
+         <?php echo $all_foundation_list_by_id->foundation_details ?>
+       </textarea>
+       </br>
+        
     <label for="foundation_image"><b>Add NEW Foundation Image</b></label></br>
        <input type="file" name="foundation_image" id="foundation_image" >
          </br>

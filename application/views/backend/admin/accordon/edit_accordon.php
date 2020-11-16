@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
   <title>RTSOFTBD- Software and System Design</title>
 
 <link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
@@ -19,16 +20,20 @@
          </br>
  
    
-   
-    <input type="hidden" value="<?php echo $all_accordon_by_id->id ?>"name="id" id="id" ></br>
-
-    
-          <label for="details"><b>Add Accordon Details</b></label></br>
-       <input type="text" value="<?php echo $all_accordon_by_id->details ?>"name="details" id="details" >
-         </br>
-          <label for="idname"><b>Add Accordon Idname</b></label></br>
+      <label for="idname"><b>Add Accordon Idname</b></label></br>
        <input type="text" value="<?php echo $all_accordon_by_id->idname ?>"name="idname" id="idname" >
          </br>
+    <input type="hidden" value="<?php echo $all_accordon_by_id->id ?>"name="id" id="id" ></br>
+    
+    
+          <label for="details"><b>Add Accordon Details</b></label></br>
+       <label for="textarea" ></label>
+       <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
+         <?php echo $all_accordon_by_id->details ?>
+       </textarea>
+       </br>
+        
+         
   
    
 

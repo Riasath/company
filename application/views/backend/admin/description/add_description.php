@@ -44,15 +44,20 @@
 
 
       <label for="title"><b>Description  Title</b></label></br>
-      <input type="text" placeholder="" name="title" id="title" required></br>
+    
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="title" id="title" required ></textarea>
+       </br>
 
 
       <label for="details1"><b>Description  Details1</b></label></br>
-      <input type="text" placeholder="" name="details1" id="details1" required></br>
+      
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details1" id="details1" required ></textarea>
+       </br>
 
        <label for="details2"><b>Description  Details2</b></label></br>
       <input type="text" placeholder="" name="details2" id="details2" required></br>
-
+  <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details2" id="details2" required ></textarea>
+       </br>
    
     
 

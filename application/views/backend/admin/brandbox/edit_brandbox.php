@@ -24,8 +24,11 @@
 
     
           <label for="details"><b>Add BrandBox Items Details</b></label></br>
-       <input type="text" value="<?php echo $all_brandbox_by_id->details ?>"name="details" id="details" >
-         </br>
+     
+
+
+          <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details" id="details"  value=""><?php echo $all_brandbox_by_id->details?></textarea>
+     </br>
 
          <label for="value"><b>Add BrandBox Items Value</b></label></br>
        <input type="text" value="<?php echo $all_brandbox_by_id->value ?>"name="value" id="value" >

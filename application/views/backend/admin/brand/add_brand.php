@@ -48,7 +48,10 @@
 
 
       <label for="details"><b>Brand Details</b></label></br>
-      <input type="text" placeholder="" name="details" id="details" required></br>
+     
+
+        <textarea style="background:#DDDDDD;" rows="4" cols="70" type="text" name="details" id="details" required></textarea>
+       </br>
      
    
     

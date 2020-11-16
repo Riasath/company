@@ -24,9 +24,12 @@
     <label for="title"><b>Add Tolls Box Item Title</b></label></br>
        <input type="text" value="<?php echo $all_tools_box_by_id->title ?>"name="title" id="title" >
          </br>
-          <label for="details"><b>Add Tolls Box Item Details</b></label></br>
-       <input type="text" value="<?php echo $all_tools_box_by_id->details ?>"name="details" id="details" >
-         </br>
+       <label for="details"><b>Add Tolls Box Item Details</b></label></br>
+     
+          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details" id="details" value="" >
+         <?php echo $all_tools_box_by_id->details ?>
+       </textarea>
+       </br>
   
     <label for="image"><b>Add NEW Tolls Box Item Image</b></label></br>
        <input type="file" name="image" id="image" >

@@ -32,14 +32,14 @@
 
             <?= alert_check() ?>
 <div class="container-fluid">
-<div class="left" style="float: right;margin-right: 150px;">
+
 	<form action="<?php echo base_url()?>save-testimonials-list" method="post" enctype="multipart/form-data">
   <div class="container">
 
     <label for="testi_text"><b>Add Testimonials Text</b></label></br>
    
     
-   <textarea rows="3" cols="70" type="text" name="testi_text" id="testi_text" required></textarea>
+   <textarea style="background:#DDDDDD;" rows="3" cols="70" type="text" name="testi_text" id="testi_text" required></textarea>
        </br> </br>
     <label for="testi_author"><b>Add Testimonials Author</b></label></br>
     <input type="text"  name="testi_author" id="testi_author" required></br>

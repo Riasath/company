@@ -29,7 +29,10 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 
+input[textarea]{
 
+  background: red;
+}
 
 .registerbtn {
   background-color: #4CAF50;

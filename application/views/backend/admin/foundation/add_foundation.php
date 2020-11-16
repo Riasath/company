@@ -55,7 +55,10 @@
 
 
       <label for="foundation_details"><b>Foundation Details</b></label></br>
-      <input type="text" placeholder="" name="foundation_details" id="foundation_details" required></br>
+      
+
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="foundation_details" id="foundation_details" required ></textarea>
+       </br>
     
     
 

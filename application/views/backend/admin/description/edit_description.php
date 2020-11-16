@@ -15,8 +15,11 @@
 
 
     <label for="title"><b>Add Description Title</b></label></br>
-       <input type="text" value="<?php echo $all_description_by_id->title ?>"name="title" id="title" >
-         </br>
+     
+
+          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="title" id="title" value="" >
+         <?php echo $all_description_by_id->title ?></textarea>
+       </br>
  
    
    
@@ -24,13 +27,19 @@
 
     
           <label for="details1"><b>Add Description Details1</b></label></br>
-       <input type="text" value="<?php echo $all_description_by_id->details1 ?>"name="details1" id="details1" >
-         </br>
+      
+          <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details1" id="details1" value="" >
+         <?php echo $all_description_by_id->details1 ?>
+       </textarea>
+       </br>
   
   <label for="details2"><b>Add Description Details2</b></label></br>
-       <input type="text" value="<?php echo $all_description_by_id->details2 ?>"name="details2" id="details2" >
-         </br>
-  
+      
+  <textarea style="background:#DDDDDD;" type="text" rows="4" cols="70"  name="details2" id="details2" value="" >
+         <?php echo $all_description_by_id->details2 ?>
+       </textarea>
+       </br>
+        
    
 
     <button type="submit" class="registerbtn">Update</button></br>

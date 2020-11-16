@@ -48,7 +48,8 @@
 
 
       <label for="details"><b>Brandbox Details</b></label></br>
-      <input type="text" placeholder="" name="details" id="details" required></br>
+    <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+       </br>
      
    
      <label for="value"><b>Brandbox Percentage Value(Example 10% / 50% / 100%)</b></label></br>

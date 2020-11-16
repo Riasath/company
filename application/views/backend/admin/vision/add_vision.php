@@ -47,7 +47,9 @@
 
 
       <label for="details"><b>Vision Details</b></label></br>
-      <input type="text" placeholder="" name="details" id="details" required></br>
+    
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+       </br>
 
      <label for="image1"><b>Upload Vision Image1</b></label></br>
       <input type="file" placeholder="" name="image1" id="image1" required>

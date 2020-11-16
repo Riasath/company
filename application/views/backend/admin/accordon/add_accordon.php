@@ -48,7 +48,9 @@
 
 
       <label for="details"><b>Accordon Details</b></label></br>
-      <input type="text" placeholder="" name="details" id="details" required></br>
+     
+      <textarea style="background:#DDDDDD;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+       </br>
       <label for="idname"><b>Accordon IDname</b></label></br>
       <input type="text" placeholder="" name="idname" id="idname" required></br>
 
