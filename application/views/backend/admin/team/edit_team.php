@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
 </head>
 <body>
-<div class="left">
+<div class="content-wrapper">
   <form action="<?php echo base_url()?>update-team" method="post" enctype="multipart/form-data">
   <div class="container">
   

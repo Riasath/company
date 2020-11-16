@@ -14,7 +14,7 @@
 
 </head>
 <body>
-<div class="left">
+<div class="content-wrapper">
   <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data">
   <div class="container">
   

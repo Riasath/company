@@ -120,7 +120,7 @@ class Admin extends CI_Controller
         $data = $this->engine->store_nav('appearance', 'footer_top', 'Welcome to footer top');
         $data['footertopList'] = $this->Common->get_data('footer');
         $path = 'backend/admin/footer/footer_top';
-
+           
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
  public function footer_bottom ()
@@ -168,7 +168,7 @@ class Admin extends CI_Controller
 	}
 	public function add_footer_top()
 	{
-        $data = $this->engine->store_nav('appearance', 'footer', 'Create New footer top');
+        $data = $this->engine->store_nav('appearance', 'add_footer_top', 'Create New footer top');
 		$path = 'backend/admin/footer/add_footer_top';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
@@ -560,9 +560,14 @@ class Admin extends CI_Controller
 	}
 	 public function edit_shortstory_list($id)
 	{
-        $data = array();
+        //$data = array();
+		//$data['all_shortstory_list_by_id'] = $this->admin_model->all_shortstory_list_by_id($id);
+		//$this->load->view('backend/admin/short_story/edit_shortstory_list', $data);
+
+		$data = $this->engine->store_nav('about page', 'short_story', 'Create New Short Story');
 		$data['all_shortstory_list_by_id'] = $this->admin_model->all_shortstory_list_by_id($id);
-		$this->load->view('backend/admin/short_story/edit_shortstory_list', $data);
+	   	$path = 'backend/admin/short_story/edit_shortstory_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_shortstory_list()
@@ -585,10 +590,11 @@ class Admin extends CI_Controller
 	}
 	public function view_shortstory_list($id){
 
-         $data = array();
+        
+			$data = $this->engine->store_nav('about page', 'short_story', 'Create New Short Story');
 		$data['all_shortstory_view_by_id'] = $this->admin_model->all_shortstory_view_by_id($id);
-		$data['shortstory_info'] = $this->load->view('backend/admin/short_story/view_shortstory', $data, true);
-		$this->load->view('backend/admin/short_story/view_shortstory', $data);
+	   	$path = 'backend/admin/short_story/view_shortstory';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 
@@ -619,9 +625,13 @@ $data = $this->engine->store_nav('about page', 'foundation', 'Create New foundat
 	}
 	 public function edit_foundation_list($id)
 	{
-        $data = array();
+       
+
+     $data = $this->engine->store_nav('about page', 'foundation', 'Create New foundation');
 		$data['all_foundation_list_by_id'] = $this->admin_model->all_foundation_list_by_id($id);
-		$this->load->view('backend/admin/foundation/edit_foundation_list', $data);
+	   	$path = 'backend/admin/foundation/edit_foundation_list';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
 
 	}
 	public function update_foundation_list()
@@ -634,10 +644,12 @@ $data = $this->engine->store_nav('about page', 'foundation', 'Create New foundat
 	}
 	public function view_foundation_list($id){
 
-         $data = array();
+       
+
+		$data = $this->engine->store_nav('about page', 'foundation', 'New foundation');
 		$data['all_foundation_view_by_id'] = $this->admin_model->all_foundation_view_by_id($id);
-		$data['foundation_info'] = $this->load->view('backend/admin/foundation/view_foundation', $data, true);
-		$this->load->view('backend/admin/foundation/view_foundation', $data);
+	   	$path = 'backend/admin/foundation/view_foundation';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_foundation_list($id)
@@ -677,9 +689,15 @@ $data = $this->engine->store_nav('about page', 'work', 'Create New work');
 	}
 	public function edit_work($id)
 	{
-        $data = array();
+    
+
+		$data = $this->engine->store_nav('about page', 'work', 'New work');
 		$data['all_work_by_id'] = $this->admin_model->all_work_by_id($id);
-		$this->load->view('backend/admin/work/edit_work', $data);
+	   	$path = 'backend/admin/work/edit_work';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+
+
 
 	}
 	public function update_work()
@@ -692,10 +710,11 @@ $data = $this->engine->store_nav('about page', 'work', 'Create New work');
 	}
 	public function view_work($id){
 
-         $data = array();
+
+		$data = $this->engine->store_nav('about page', 'work', 'New work');
 		$data['all_work_view_by_id'] = $this->admin_model->all_work_view_by_id($id);
-		$data['work_info'] = $this->load->view('backend/admin/work/view_work', $data, true);
-		$this->load->view('backend/admin/work/view_work', $data);
+	   	$path = 'backend/admin/work/view_work';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_work($id)
@@ -734,9 +753,11 @@ $data = $this->engine->store_nav('about page', 'expert', 'Create New expert');
 }
 public function edit_expert($id)
 	{
-        $data = array();
+       
+   $data = $this->engine->store_nav('about page', 'expert', 'New expert');
 		$data['all_expert_by_id'] = $this->admin_model->all_expert_by_id($id);
-		$this->load->view('backend/admin/expert/edit_expert', $data);
+	   	$path = 'backend/admin/expert/edit_expert';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_expert()
@@ -749,10 +770,10 @@ public function edit_expert($id)
 	}
 	public function view_expert($id){
 
-         $data = array();
+      $data = $this->engine->store_nav('about page', 'expert', 'New expert');
 		$data['all_expert_view_by_id'] = $this->admin_model->all_expert_view_by_id($id);
-		$data['expert_info'] = $this->load->view('backend/admin/expert/view_expert', $data, true);
-		$this->load->view('backend/admin/expert/view_expert', $data);
+	   	$path = 'backend/admin/expert/view_expert';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_expert($id)
@@ -790,9 +811,12 @@ public function save_team()
 }
 public function edit_team($id)
 	{
-        $data = array();
+       
+
+      $data = $this->engine->store_nav('about page', 'team', 'New team');
 		$data['all_team_by_id'] = $this->admin_model->all_team_by_id($id);
-		$this->load->view('backend/admin/team/edit_team', $data);
+	   	$path = 'backend/admin/team/edit_team';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_team()
@@ -804,11 +828,10 @@ public function edit_team($id)
 
 	}
 	public function view_team($id){
-
-         $data = array();
+     $data = $this->engine->store_nav('about page', 'team', 'New team');
 		$data['all_team_view_by_id'] = $this->admin_model->all_team_view_by_id($id);
-		$data['team_info'] = $this->load->view('backend/admin/team/view_team', $data, true);
-		$this->load->view('backend/admin/team/view_team', $data);
+	   	$path = 'backend/admin/team/view_team';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_team($id)
@@ -847,9 +870,10 @@ $data = $this->engine->store_nav('about page', 'promo', 'Create New promo');
 }
 public function edit_promo($id)
 	{
-        $data = array();
+     $data = $this->engine->store_nav('about page', 'promo', 'New promo');
 		$data['all_promo_by_id'] = $this->admin_model->all_promo_by_id($id);
-		$this->load->view('backend/admin/promo/edit_promo', $data);
+	   	$path = 'backend/admin/promo/edit_promo';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_promo()
@@ -862,10 +886,12 @@ public function edit_promo($id)
 	}
 	public function view_promo($id){
 
-         $data = array();
+         
+
+		 $data = $this->engine->store_nav('about page', 'promo', 'New promo');
 		$data['all_promo_view_by_id'] = $this->admin_model->all_promo_by_id($id);
-		$data['promo_info'] = $this->load->view('backend/admin/promo/view_promo', $data, true);
-		$this->load->view('backend/admin/promo/view_promo', $data);
+	   	$path = 'backend/admin/promo/view_promo';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_promo($id)
@@ -903,9 +929,11 @@ $data = $this->engine->store_nav('about page', 'vision', 'Create New vision');
 }
 public function edit_vision($id)
 	{
-        $data = array();
+     
+    $data = $this->engine->store_nav('about page', 'vision', 'New vision');
 		$data['all_vision_by_id'] = $this->admin_model->all_vision_by_id($id);
-		$this->load->view('backend/admin/vision/edit_vision', $data);
+	   	$path = 'backend/admin/vision/edit_vision';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_vision()
@@ -918,10 +946,12 @@ public function edit_vision($id)
 	}
 	public function view_vision($id){
 
-         $data = array();
+
+
+    $data = $this->engine->store_nav('about page', 'vision', 'New vision');
 		$data['all_vision_view_by_id'] = $this->admin_model->all_vision_by_id($id);
-		$data['vision_info'] = $this->load->view('backend/admin/vision/view_vision', $data, true);
-		$this->load->view('backend/admin/vision/view_vision', $data);
+	   	$path = 'backend/admin/vision/view_vision';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_vision($id)
@@ -959,9 +989,11 @@ $data = $this->engine->store_nav('about page', 'feedback', 'Create New feedback'
 }
 public function edit_feedback($id)
 	{
-        $data = array();
+       
+    $data = $this->engine->store_nav('about page', 'feedback', 'New feedback');
 		$data['all_feedback_by_id'] = $this->admin_model->all_feedback_by_id($id);
-		$this->load->view('backend/admin/feedback/edit_feedback', $data);
+	   	$path = 'backend/admin/feedback/edit_feedback';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_feedback()
@@ -973,11 +1005,11 @@ public function edit_feedback($id)
 
 	}
 	public function view_feedback($id){
-
-         $data = array();
+  $data = $this->engine->store_nav('about page', 'feedback', 'New feedback');
 		$data['all_feedback_view_by_id'] = $this->admin_model->all_feedback_view_by_id($id);
-		$data['feedback_info'] = $this->load->view('backend/admin/feedback/view_feedback', $data, true);
-		$this->load->view('backend/admin/feedback/view_feedback', $data);
+	   	$path = 'backend/admin/feedback/view_feedback';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
 		  
 	}
 	public function delete_feedback($id)
@@ -1013,9 +1045,11 @@ $data = $this->engine->store_nav('about page', 'partner', 'Create New partner');
 }
 public function edit_partner($id)
 	{
-        $data = array();
+        
+		 $data = $this->engine->store_nav('about page', 'partner', 'New partner');
 		$data['all_partner_by_id'] = $this->admin_model->all_partner_by_id($id);
-		$this->load->view('backend/admin/partner/edit_partner', $data);
+	   	$path = 'backend/admin/partner/edit_partner';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_partner()
@@ -1028,10 +1062,10 @@ public function edit_partner($id)
 	}
 	public function view_partner($id){
 
-         $data = array();
+        $data = $this->engine->store_nav('about page', 'partner', 'New partner');
 		$data['all_partner_view_by_id'] = $this->admin_model->all_partner_view_by_id($id);
-		$data['partner_info'] = $this->load->view('backend/admin/partner/view_partner', $data, true);
-		$this->load->view('backend/admin/partner/view_partner', $data);
+	   	$path = 'backend/admin/partner/view_partner';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_partner($id)
@@ -1068,9 +1102,10 @@ $data = $this->engine->store_nav('about page', 'partner_image', 'Create New part
 }
 public function edit_partner_image($id)
 	{
-        $data = array();
+       $data = $this->engine->store_nav('about page', 'partner_image', 'New partner_image');
 		$data['all_partner_image_by_id'] = $this->admin_model->all_partner_image_by_id($id);
-		$this->load->view('backend/admin/partner_image/edit_partner_image', $data);
+	   	$path = 'backend/admin/partner_image/edit_partner_image';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_partner_image()
@@ -1083,10 +1118,10 @@ public function edit_partner_image($id)
 	}
 	public function view_partner_image($id){
 
-         $data = array();
+         $data = $this->engine->store_nav('about page', 'partner_image', 'New partner_image');
 		$data['all_partner_image_view_by_id'] = $this->admin_model->all_partner_image_view_by_id($id);
-		$data['partner_image_info'] = $this->load->view('backend/admin/partner_image/view_partner_image', $data, true);
-		$this->load->view('backend/admin/partner_image/view_partner_image', $data);
+	   	$path = 'backend/admin/partner_image/view_partner_image';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_partner_image($id)
@@ -1124,9 +1159,10 @@ public function edit_partner_image($id)
     }
     public function edit_agency($id)
 	{
-        $data = array();
+           $data = $this->engine->store_nav('software service', 'agency', 'New agency');
 		$data['all_agency_by_id'] = $this->admin_model->all_agency_by_id($id);
-		$this->load->view('backend/admin/agency/edit_agency', $data);
+	   	$path = 'backend/admin/agency/edit_agency';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_agency()
@@ -1138,11 +1174,10 @@ public function edit_partner_image($id)
 
 	}
 	public function view_agency($id){
-
-         $data = array();
+      $data = $this->engine->store_nav('software service', 'agency', 'New agency');
 		$data['all_agency_view_by_id'] = $this->admin_model->all_agency_view_by_id($id);
-		$data['agency_info'] = $this->load->view('backend/admin/agency/view_agency', $data, true);
-		$this->load->view('backend/admin/agency/view_agency', $data);
+	   	$path = 'backend/admin/agency/view_agency';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_agency($id)
@@ -1178,9 +1213,11 @@ public function edit_partner_image($id)
 }
 public function edit_eservice($id)
 	{
-        $data = array();
-		$data['all_eservice_by_id'] = $this->admin_model->all_eservice_by_id($id);
-		$this->load->view('backend/admin/eservice/edit_eservice', $data);
+      
+$data = $this->engine->store_nav('software service', 'eservice_box', 'welcome to our Service ');
+$data['all_eservice_by_id'] = $this->admin_model->all_eservice_by_id($id);
+	   	$path = 'backend/admin/eservice/edit_eservice';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_eservice()
@@ -1192,11 +1229,10 @@ public function edit_eservice($id)
 
 	}
 	public function view_eservice($id){
-
-         $data = array();
-		$data['all_eservice_view_by_id'] = $this->admin_model->all_eservice_view_by_id($id);
-		$data['eservice_info'] = $this->load->view('backend/admin/eservice/view_eservice', $data, true);
-		$this->load->view('backend/admin/eservice/view_eservice', $data);
+  $data = $this->engine->store_nav('software service', 'eservice_box', 'welcome to our Service ');
+$data['all_eservice_view_by_id'] = $this->admin_model->all_eservice_view_by_id($id);
+	   	$path = 'backend/admin/eservice/view_eservice';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_eservice($id)
@@ -1234,9 +1270,11 @@ public function product()
 }
  public function edit_product($id)
 	{
-        $data = array();
-		$data['all_product_by_id'] = $this->admin_model->all_product_by_id($id);
-		$this->load->view('backend/admin/product/edit_product', $data);
+
+		$data = $this->engine->store_nav('software service', 'product', 'welcome to our product ');
+$data['all_product_by_id'] = $this->admin_model->all_product_by_id($id);
+	   	$path = 'backend/admin/product/edit_product';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_product()
@@ -1249,10 +1287,10 @@ public function product()
 	}
 	public function view_product($id){
 
-         $data = array();
-		$data['all_product_view_by_id'] = $this->admin_model->all_product_view_by_id($id);
-		$data['product_info'] = $this->load->view('backend/admin/product/view_product', $data, true);
-		$this->load->view('backend/admin/product/view_product', $data);
+		$data = $this->engine->store_nav('software service', 'product', 'welcome to our product ');
+$data['all_product_view_by_id'] = $this->admin_model->all_product_view_by_id($id);
+	   	$path = 'backend/admin/product/view_product';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_product($id)
@@ -1303,9 +1341,10 @@ public function feature()
 }
 public function edit_feature($id)
 	{
-        $data = array();
-		$data['all_feature_by_id'] = $this->admin_model->all_feature_by_id($id);
-		$this->load->view('backend/admin/feature/edit_feature', $data);
+       $data = $this->engine->store_nav('software service', 'feature', 'welcome to our feature ');
+$data['all_feature_by_id'] = $this->admin_model->all_feature_by_id($id);
+	   	$path = 'backend/admin/feature/edit_feature';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_feature()
@@ -1317,11 +1356,10 @@ public function edit_feature($id)
 
 	}
 	public function view_feature($id){
-
-         $data = array();
-		$data['all_feature_view_by_id'] = $this->admin_model->all_feature_view_by_id($id);
-		$data['feature_info'] = $this->load->view('backend/admin/feature/view_feature', $data, true);
-		$this->load->view('backend/admin/feature/view_feature', $data);
+ $data = $this->engine->store_nav('software service', 'feature', 'welcome to our feature ');
+$data['all_feature_view_by_id'] = $this->admin_model->all_feature_view_by_id($id);
+	   	$path = 'backend/admin/feature/view_feature';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_feature($id)
@@ -1358,9 +1396,11 @@ public function quality()
 	}
 	 public function edit_quality($id)
 	{
-        $data = array();
-		$data['all_quality_by_id'] = $this->admin_model->all_quality_by_id($id);
-		$this->load->view('backend/admin/quality/edit_quality', $data);
+
+		$data = $this->engine->store_nav('software service', 'quality', 'welcome to our quality ');
+$data['all_quality_by_id'] = $this->admin_model->all_quality_by_id($id);
+	   	$path = 'backend/admin/quality/edit_quality';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_quality()
@@ -1372,11 +1412,10 @@ public function quality()
 
 	}
 	public function view_quality($id){
-
-         $data = array();
-		$data['all_quality_view_by_id'] = $this->admin_model->all_quality_view_by_id($id);
-		$data['quality_info'] = $this->load->view('backend/admin/quality/view_quality', $data, true);
-		$this->load->view('backend/admin/quality/view_quality', $data);
+  $data = $this->engine->store_nav('software service', 'quality', 'welcome to our quality ');
+$data['all_quality_view_by_id'] = $this->admin_model->all_quality_view_by_id($id);
+	   	$path = 'backend/admin/quality/view_quality';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_quality($id)
@@ -1411,9 +1450,11 @@ public function qualityitem()
 	}
 	public function edit_qualityitem($id)
 	{
-        $data = array();
-		$data['all_qualityitem_by_id'] = $this->admin_model->all_qualityitem_by_id($id);
-		$this->load->view('backend/admin/qualityitem/edit_qualityitem', $data);
+      
+ $data = $this->engine->store_nav('software service', 'qualityitem', 'welcome to our qualityitem ');
+$data['all_qualityitem_by_id'] = $this->admin_model->all_qualityitem_by_id($id);
+	   	$path = 'backend/admin/qualityitem/edit_qualityitem';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_qualityitem()
@@ -1426,10 +1467,10 @@ public function qualityitem()
 	}
 	public function view_qualityitem($id){
 
-         $data = array();
-		$data['all_qualityitem_view_by_id'] = $this->admin_model->all_qualityitem_view_by_id($id);
-		$data['qualityitem_info'] = $this->load->view('backend/admin/qualityitem/view_qualityitem', $data, true);
-		$this->load->view('backend/admin/qualityitem/view_qualityitem', $data);
+ $data = $this->engine->store_nav('software service', 'qualityitem', 'welcome to our qualityitem ');
+$data['all_qualityitem_view_by_id'] = $this->admin_model->all_qualityitem_view_by_id($id);
+	   	$path = 'backend/admin/qualityitem/view_qualityitem';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_qualityitem($id)
@@ -1470,9 +1511,11 @@ public function qualityitem()
 }
 public function edit_tools($id)
 	{
-        $data = array();
-		$data['all_tools_by_id'] = $this->admin_model->all_tools_by_id($id);
-		$this->load->view('backend/admin/tools/edit_tools', $data);
+      
+ $data = $this->engine->store_nav('software service', 'tools', 'welcome to our tools ');
+$data['all_tools_by_id'] = $this->admin_model->all_tools_by_id($id);
+	   	$path = 'backend/admin/tools/edit_tools';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_tools()
@@ -1485,11 +1528,11 @@ public function edit_tools($id)
 	}
 	public function view_tools($id){
 
-         $data = array();
-		$data['all_tools_view_by_id'] = $this->admin_model->all_tools_view_by_id($id);
-		$data['tools_info'] = $this->load->view('backend/admin/tools/view_tools', $data, true);
-		$this->load->view('backend/admin/tools/view_tools', $data);
 		  
+$data = $this->engine->store_nav('software service', 'tools', 'welcome to our tools ');
+$data['all_tools_view_by_id'] = $this->admin_model->all_tools_view_by_id($id);
+	   	$path = 'backend/admin/tools/view_tools';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
 	public function delete_tools($id)
 	{
@@ -1526,9 +1569,12 @@ public function edit_tools($id)
 }
 public function edit_tools_box($id)
 	{
-        $data = array();
-		$data['all_tools_box_by_id'] = $this->admin_model->all_tools_box_by_id($id);
-		$this->load->view('backend/admin/tools_box/edit_tools_box', $data);
+       
+
+$data = $this->engine->store_nav('software service', 'tools_box', 'welcome to our tools_box ');
+$data['all_tools_box_by_id'] = $this->admin_model->all_tools_box_by_id($id);
+	   	$path = 'backend/admin/tools_box/edit_tools_box';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_tools_box()
@@ -1541,10 +1587,10 @@ public function edit_tools_box($id)
 	}
 	public function view_tools_box($id){
 
-         $data = array();
-		$data['all_tools_box_view_by_id'] = $this->admin_model->all_tools_box_view_by_id($id);
-		$data['tools_box_info'] = $this->load->view('backend/admin/tools_box/view_tools_box', $data, true);
-		$this->load->view('backend/admin/tools_box/view_tools_box', $data);
+$data = $this->engine->store_nav('software service', 'tools_box', 'welcome to our tools_box ');
+$data['all_tools_box_view_by_id'] = $this->admin_model->all_tools_box_view_by_id($id);
+	   	$path = 'backend/admin/tools_box/view_tools_box';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_tools_box($id)
@@ -1584,9 +1630,11 @@ public function edit_tools_box($id)
 }
 public function edit_contact($id)
 	{
-        $data = array();
-		$data['all_contact_by_id'] = $this->admin_model->all_contact_by_id($id);
-		$this->load->view('backend/admin/contact/edit_contact', $data);
+        
+$data = $this->engine->store_nav('software service', 'contact', 'welcome to our contact ');
+$data['all_contact_by_id'] = $this->admin_model->all_contact_by_id($id);
+	   	$path = 'backend/admin/contact/edit_contact';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_contact()
@@ -1599,10 +1647,12 @@ public function edit_contact($id)
 	}
 	public function view_contact($id){
 
-         $data = array();
-		$data['all_contact_view_by_id'] = $this->admin_model->all_contact_view_by_id($id);
-		$data['contact_info'] = $this->load->view('backend/admin/contact/view_contact', $data, true);
-		$this->load->view('backend/admin/contact/view_contact', $data);
+       
+
+		$data = $this->engine->store_nav('software service', 'contact', 'welcome to our contact ');
+$data['all_contact_view_by_id'] = $this->admin_model->all_contact_view_by_id($id);
+	   	$path = 'backend/admin/contact/view_contact';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_contact($id)
@@ -1681,10 +1731,12 @@ public function save_subscribe()
 }
 public function edit_dservice($id)
 	{
-        $data = array();
-		$data['all_dservice_by_id'] = $this->admin_model->all_dservice_by_id($id);
-		$this->load->view('backend/admin/dservice/edit_dservice', $data);
+        
 
+ $data = $this->engine->store_nav('dservice', 'service', 'welcome to our Digital service ');
+$data['all_dservice_by_id'] = $this->admin_model->all_dservice_by_id($id);
+	   	$path = 'backend/admin/dservice/edit_dservice';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
 	public function update_dservice()
 	{
@@ -1696,10 +1748,10 @@ public function edit_dservice($id)
 	}
 	public function view_dservice($id){
 
-         $data = array();
-		$data['all_dservice_view_by_id'] = $this->admin_model->all_dservice_view_by_id($id);
-		$data['dservice_info'] = $this->load->view('backend/admin/dservice/view_dservice', $data, true);
-		$this->load->view('backend/admin/dservice/view_dservice', $data);
+        $data = $this->engine->store_nav('dservice', 'service', 'welcome to our Digital service ');
+$data['all_dservice_view_by_id'] = $this->admin_model->all_dservice_view_by_id($id);
+	   	$path = 'backend/admin/dservice/view_dservice';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_dservice($id)
@@ -1738,9 +1790,11 @@ public function description()
 }
 public function edit_description($id)
 	{
-        $data = array();
-		$data['all_description_by_id'] = $this->admin_model->all_description_by_id($id);
-		$this->load->view('backend/admin/description/edit_description', $data);
+    
+ $data = $this->engine->store_nav('dservice', 'description', 'welcome to our  description ');
+$data['all_description_by_id'] = $this->admin_model->all_description_by_id($id);
+	   	$path = 'backend/admin/description/edit_description';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_description()
@@ -1753,10 +1807,12 @@ public function edit_description($id)
 	}
 	public function view_description($id){
 
-         $data = array();
-		$data['all_description_view_by_id'] = $this->admin_model->all_description_view_by_id($id);
-		$data['description_info'] = $this->load->view('backend/admin/description/view_description', $data, true);
-		$this->load->view('backend/admin/description/view_description', $data);
+        
+
+		$data = $this->engine->store_nav('dservice', 'description', 'welcome to our  description ');
+$data['all_description_view_by_id'] = $this->admin_model->all_description_view_by_id($id);
+	   	$path = 'backend/admin/description/view_description';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_description($id)
@@ -1795,9 +1851,10 @@ public function tell()
 }
 public function edit_tell($id)
 	{
-        $data = array();
-		$data['all_tell_by_id'] = $this->admin_model->all_tell_by_id($id);
-		$this->load->view('backend/admin/tell/edit_tell', $data);
+       $data = $this->engine->store_nav('dservice', 'tell', 'welcome to our  tell ');
+$data['all_tell_by_id'] = $this->admin_model->all_tell_by_id($id);
+	   	$path = 'backend/admin/tell/edit_tell';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_tell()
@@ -1810,10 +1867,12 @@ public function edit_tell($id)
 	}
 	public function view_tell($id){
 
-         $data = array();
-		$data['all_tell_view_by_id'] = $this->admin_model->all_tell_view_by_id($id);
-		$data['tell_info'] = $this->load->view('backend/admin/tell/view_tell', $data, true);
-		$this->load->view('backend/admin/tell/view_tell', $data);
+       
+
+		 $data = $this->engine->store_nav('dservice', 'tell', 'welcome to our  tell ');
+$data['all_tell_view_by_id'] = $this->admin_model->all_tell_view_by_id($id);
+	   	$path = 'backend/admin/tell/view_tell';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_tell($id)
@@ -1852,9 +1911,12 @@ public function levels()
 }
 public function edit_levels($id)
 	{
-        $data = array();
-		$data['all_levels_by_id'] = $this->admin_model->all_levels_by_id($id);
-		$this->load->view('backend/admin/levels/edit_levels', $data);
+       
+
+		$data = $this->engine->store_nav('dservice', 'levels', 'welcome to our  levels ');
+$data['all_levels_by_id'] = $this->admin_model->all_levels_by_id($id);
+	   	$path = 'backend/admin/levels/edit_levels';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_levels()
@@ -1867,10 +1929,10 @@ public function edit_levels($id)
 	}
 	public function view_levels($id){
 
-         $data = array();
-		$data['all_levels_view_by_id'] = $this->admin_model->all_levels_view_by_id($id);
-		$data['levels_info'] = $this->load->view('backend/admin/levels/view_levels', $data, true);
-		$this->load->view('backend/admin/levels/view_levels', $data);
+$data = $this->engine->store_nav('dservice', 'levels', 'welcome to our  levels ');
+$data['all_levels_view_by_id'] = $this->admin_model->all_levels_view_by_id($id);
+	   	$path = 'backend/admin/levels/view_levels';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_levels($id)
@@ -1909,9 +1971,10 @@ public function levelsbox()
 }
 public function edit_levelsbox($id)
 	{
-        $data = array();
-		$data['all_levelsbox_by_id'] = $this->admin_model->all_levelsbox_by_id($id);
-		$this->load->view('backend/admin/levelsbox/edit_levelsbox', $data);
+       $data = $this->engine->store_nav('dservice', 'levelsbox', 'welcome to our  levelsbox ');
+$data['all_levelsbox_by_id'] = $this->admin_model->all_levelsbox_by_id($id);
+	   	$path = 'backend/admin/levelsbox/edit_levelsbox';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_levelsbox()
@@ -1923,11 +1986,10 @@ public function edit_levelsbox($id)
 
 	}
 	public function view_levelsbox($id){
-
-         $data = array();
-		$data['all_levelsbox_view_by_id'] = $this->admin_model->all_levelsbox_view_by_id($id);
-		$data['levelsbox_info'] = $this->load->view('backend/admin/levelsbox/view_levelsbox', $data, true);
-		$this->load->view('backend/admin/levelsbox/view_levelsbox', $data);
+  $data = $this->engine->store_nav('dservice', 'levelsbox', 'welcome to our  levelsbox ');
+$data['all_levelsbox_view_by_id'] = $this->admin_model->all_levelsbox_view_by_id($id);
+	   	$path = 'backend/admin/levelsbox/view_levelsbox';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		  
 	}
 	public function delete_levelsbox($id)
@@ -1967,10 +2029,11 @@ public function accordon()
 }
 public function edit_accordon($id)
 	{
-        $data = array();
-		$data['all_accordon_by_id'] = $this->admin_model->all_accordon_by_id($id);
-		$this->load->view('backend/admin/accordon/edit_accordon', $data);
-
+	 $data = $this->engine->store_nav('dservice', 'accordon', 'welcome to our  accordon ');
+$data['all_accordon_by_id'] = $this->admin_model->all_accordon_by_id($id);
+	   	$path = 'backend/admin/accordon/edit_accordon';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
 	}
 	public function update_accordon()
 	{
@@ -1982,11 +2045,10 @@ public function edit_accordon($id)
 	}
 	public function view_accordon($id){
 
-         $data = array();
-		$data['all_accordon_view_by_id'] = $this->admin_model->all_accordon_view_by_id($id);
-		$data['accordon_info'] = $this->load->view('backend/admin/accordon/view_accordon', $data, true);
-		$this->load->view('backend/admin/accordon/view_accordon', $data);
-		  
+ $data = $this->engine->store_nav('dservice', 'accordon', 'welcome to our  accordon ');
+$data['all_accordon_view_by_id'] = $this->admin_model->all_accordon_view_by_id($id);
+	   	$path = 'backend/admin/accordon/view_accordon';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);  
 	}
 	public function delete_accordon($id)
 	{
@@ -2026,9 +2088,12 @@ public function brand()
 }
 public function edit_brand($id)
 	{
-        $data = array();
-		$data['all_brand_by_id'] = $this->admin_model->all_brand_by_id($id);
-		$this->load->view('backend/admin/brand/edit_brand', $data);
+       $data = $this->engine->store_nav('dservice', 'brand', 'welcome to our  brand ');
+$data['all_brand_by_id'] = $this->admin_model->all_brand_by_id($id);
+	   	$path = 'backend/admin/brand/edit_brand';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+
 
 	}
 	public function update_brand()
@@ -2041,10 +2106,11 @@ public function edit_brand($id)
 	}
 	public function view_brand($id){
 
-         $data = array();
-		$data['all_brand_view_by_id'] = $this->admin_model->all_brand_view_by_id($id);
-		$data['brand_info'] = $this->load->view('backend/admin/brand/view_brand', $data, true);
-		$this->load->view('backend/admin/brand/view_brand', $data);
+         $data = $this->engine->store_nav('dservice', 'brand', 'welcome to our  brand ');
+$data['all_brand_view_by_id'] = $this->admin_model->all_brand_view_by_id($id);
+	   	$path = 'backend/admin/brand/view_brand';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
 		  
 	}
 	public function delete_brand($id)
@@ -2086,9 +2152,10 @@ public function brandbox()
 }
 public function edit_brandbox($id)
 	{
-        $data = array();
-		$data['all_brandbox_by_id'] = $this->admin_model->all_brandbox_by_id($id);
-		$this->load->view('backend/admin/brandbox/edit_brandbox', $data);
+       $data = $this->engine->store_nav('dservice', 'brandbox', 'welcome to our  brandbox ');
+$data['all_brandbox_by_id'] = $this->admin_model->all_brandbox_by_id($id);
+	   	$path = 'backend/admin/brandbox/edit_brandbox';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
 	}
 	public function update_brandbox()
@@ -2101,11 +2168,10 @@ public function edit_brandbox($id)
 	}
 	public function view_brandbox($id){
 
-         $data = array();
-		$data['all_brandbox_view_by_id'] = $this->admin_model->all_brandbox_view_by_id($id);
-		$data['brandbox_info'] = $this->load->view('backend/admin/brandbox/view_brandbox', $data, true);
-		$this->load->view('backend/admin/brandbox/view_brandbox', $data);
-		  
+ $data = $this->engine->store_nav('dservice', 'brandbox', 'welcome to our  brandbox ');
+$data['all_brandbox_view_by_id'] = $this->admin_model->all_brandbox_view_by_id($id);
+	   	$path = 'backend/admin/brandbox/view_brandbox';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);  
 	}
 	public function delete_brandbox($id)
 	{
