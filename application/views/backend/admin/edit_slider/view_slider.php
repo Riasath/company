@@ -13,19 +13,12 @@
 <body>
    <div class="content-wrapper">
 
-  
-
-
-
+   <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" style="height:400px;width:700px;border:1px solid #000000;">
+    
+   <h3><?php echo $all_slider_view_by_id->slider_descriptions ?></h3>
+  <h3><?php echo $all_slider_view_by_id->slider_about ?> </h3>
 
  
-   
-    <h1 style="background: gray;">Slider Title</h1>
-   <h3><?php echo $all_slider_view_by_id->slider_descriptions ?></h3>
-   <h1 style="background: gray;">Slider Details</h1> 
-    <h3><?php echo $all_slider_view_by_id->slider_about ?> </h3>
-    <h1>Slider Image</h1>
-  <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" style="height:150px;width:200px;border:1px solid #FC4136;">
     
   
  
