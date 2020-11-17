@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2020 at 06:32 AM
+-- Generation Time: Nov 17, 2020 at 12:42 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -39,12 +39,31 @@ CREATE TABLE `accordon` (
 --
 
 INSERT INTO `accordon` (`id`, `title`, `details`, `idname`) VALUES
-(6, 'RTSOFTBD WEB TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'first'),
+(6, 'RTSOFTBD WEB TEAM ', '0Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'first'),
 (7, 'Meet with Our Best Experts', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'second'),
 (8, 'Our Vision', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'third'),
 (9, 'Keyword Research', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'fourth'),
 (10, 'We Work for Your Profit', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'fifth'),
 (11, 'Awesome Team', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'sixth');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `username`, `password`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
 
 -- --------------------------------------------------------
 
@@ -350,6 +369,25 @@ INSERT INTO `footer` (`footer_id`, `footer_heading`, `footer_details`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `footermenu`
+--
+
+CREATE TABLE `footermenu` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `link` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `footermenu`
+--
+
+INSERT INTO `footermenu` (`id`, `title`, `link`) VALUES
+(1, 'RTSOFTBD WEB TEAM ', 'www.google.com');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `footer_bottom`
 --
 
@@ -431,7 +469,21 @@ CREATE TABLE `information` (
 --
 
 INSERT INTO `information` (`id`, `permalink`, `name`, `phone`, `email`, `company`, `message`) VALUES
-(1, 'http://www.rtsoftbd.us/', 'shaown', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', 'TEST');
+(1, 'http://www.rtsoftbd.us/', 'shaown', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', 'TEST'),
+(2, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', '54', '65'),
+(3, 'http://www.rtsoftbd.us/', 'admin', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', '1323'),
+(4, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', '45'),
+(5, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', '45'),
+(6, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', '45'),
+(7, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', '45'),
+(8, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', '45'),
+(9, 'http://www.rtsoftbd.us/', 'arifulhaquecse', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', 'gj'),
+(10, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', 'fhfgh'),
+(11, '', '', '', '', '', ''),
+(12, '', '', '', '', '', ''),
+(13, '', '', '', '', '', ''),
+(14, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', 'edtgd'),
+(15, 'http://www.rtsoftbd.us/', 'arifulhaquecse2016@gmail.com', '01641698269', 'arifulhaquecse2016@gmail.com', 'RTSOFTBD', 'ett');
 
 -- --------------------------------------------------------
 
@@ -657,8 +709,7 @@ INSERT INTO `slider` (`slider_id`, `slider_image`, `slider_descriptions`, `slide
 (43, 'assets/slider_images/slider21.png', 'Corporate Solutions', 'We thrive to satisfy 1         your organizational needs by delivering robust, scalable business-oriented          solutions'),
 (44, 'assets/slider_images/slider32.png', 'Corporate Solutions', 'We thrive to satisfy 1         your organizational needs by delivering robust, scalable business-oriented          solutions'),
 (45, 'assets/slider_images/slider56.png', 'Mobile App & IoT Services', 'We thrive to satisfy  your organizational needs by delivering robust, scalable business-oriented          solutions'),
-(46, 'assets/slider_images/21slidee1.png', 'RTSOFTBD', 'We thrive to satisfy 1         your organizational needs by delivering robust, scalable business-oriented          solutions'),
-(47, 'assets/slider_images/slider125.png', 'shaownit solution', 'jdhgasdhasilkud ASKIUJDHFAsiklhjikl asijkhdfLSAJKHFDs asjkhdfliajkSHFDLJKsad jkaSHDLisajhlik asJDBJUKHLas');
+(46, 'assets/slider_images/21slidee1.png', 'RTSOFTBD', 'We thrive to satisfy 1         your organizational needs by delivering robust, scalable business-oriented          solutions');
 
 -- --------------------------------------------------------
 
@@ -685,6 +736,38 @@ INSERT INTO `slides_item` (`slides_id`, `slides_title`, `slides_number`) VALUES
 (9, 'Web Development', 6),
 (88, 'fghdfh', 1),
 (89, 'fghdfh', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subscribe`
+--
+
+CREATE TABLE `subscribe` (
+  `id` int(11) NOT NULL,
+  `gmail` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `subscribe`
+--
+
+INSERT INTO `subscribe` (`id`, `gmail`) VALUES
+(1, 'rtsoftbd@gmail.com'),
+(2, 'rtsoftbd@gmail.com'),
+(3, 'rtsoftbd@gmail.com'),
+(4, 'rtsoftbd@gmail.com'),
+(5, 'rtsoftbd@gmail.com'),
+(6, 'rtsoftbd@gmail.com'),
+(7, 'rtsoftbd@gmail.com'),
+(8, 'rtsoftbd@gmail.com'),
+(9, 'contact-form'),
+(10, 'rtsoftbd@gmail.com'),
+(11, 'rtsoftbd@gmail.com'),
+(12, 'rtsoftbd@gmail.com'),
+(13, 'rtsoftbd@gmail.com'),
+(14, 'rtsoftbd@gmail.com'),
+(15, 'arifulhaquecse2016@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -755,8 +838,8 @@ CREATE TABLE `testimonials` (
 --
 
 INSERT INTO `testimonials` (`testi_id`, `testi_text`, `testi_author`, `testi_company`) VALUES
-(42, 'We help people make the most out of their business by offering custom software development according', 'RTSOFTBD_WEB_TEAM', 'RTSOFTBD'),
-(43, 'RTSOFTBD WEB APPLICATION BETTER', 'RTSOFTBD_WEB_TEAM', 'sahed jony');
+(42, 'We help people make the most out of their business by offering custom software development accordin', 'RTSOFTBD_WEB_TEAM', 'RTSOFTBD'),
+(54, 'RTSOFTBD AWESOME', 'SHAOWN', 'NONAME');
 
 -- --------------------------------------------------------
 
@@ -881,6 +964,12 @@ ALTER TABLE `accordon`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `agency`
 --
 ALTER TABLE `agency`
@@ -963,6 +1052,12 @@ ALTER TABLE `feedback`
 --
 ALTER TABLE `footer`
   ADD PRIMARY KEY (`footer_id`);
+
+--
+-- Indexes for table `footermenu`
+--
+ALTER TABLE `footermenu`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `footer_bottom`
@@ -1055,6 +1150,12 @@ ALTER TABLE `slides_item`
   ADD PRIMARY KEY (`slides_id`);
 
 --
+-- Indexes for table `subscribe`
+--
+ALTER TABLE `subscribe`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `team`
 --
 ALTER TABLE `team`
@@ -1111,6 +1212,12 @@ ALTER TABLE `work`
 --
 ALTER TABLE `accordon`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `agency`
@@ -1197,6 +1304,12 @@ ALTER TABLE `footer`
   MODIFY `footer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+-- AUTO_INCREMENT for table `footermenu`
+--
+ALTER TABLE `footermenu`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `footer_bottom`
 --
 ALTER TABLE `footer_bottom`
@@ -1218,7 +1331,7 @@ ALTER TABLE `foundation`
 -- AUTO_INCREMENT for table `information`
 --
 ALTER TABLE `information`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `levels`
@@ -1278,13 +1391,19 @@ ALTER TABLE `short_story`
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `slider_id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `slider_id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `slides_item`
 --
 ALTER TABLE `slides_item`
   MODIFY `slides_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+
+--
+-- AUTO_INCREMENT for table `subscribe`
+--
+ALTER TABLE `subscribe`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `team`
@@ -1302,7 +1421,7 @@ ALTER TABLE `tell`
 -- AUTO_INCREMENT for table `testimonials`
 --
 ALTER TABLE `testimonials`
-  MODIFY `testi_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `testi_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `tools`

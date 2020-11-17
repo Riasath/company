@@ -73,15 +73,15 @@
 						</td>
                       <td >
 <a href="<?php echo base_url()?>edit-team/<?php echo $list->id?>" id="">
-	<button type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
+	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
 <a href="<?php echo base_url()?>view-team/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
+	<button style="margin:10px;" type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
 <a href="<?php echo base_url()?>delete-team/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button type='button' class='btn bg-danger'>Delete<i class='fas fa-times'></i>
+	<button style="margin:10px;" type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>
 </a>
 

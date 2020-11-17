@@ -482,14 +482,14 @@
 
 	<div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-12 col-xs-12">
 	<h4 class="subscribe-title">Email Newsletters!</h4>
-	
-		<form class="subscribe-form" method="post" action="<?php echo base_url()?>save-subscribe">
-		<input class="email input-standard-grey input-white" name="gmail" required="required" placeholder="Your Email Address" type="text">
-		<button class="subscr-btn">subscribe
+	<form  action="<?php echo base_url()?>save-subscribe" method="post" enctype="multipart/form-data">
+<input required class="email input-standard-grey input-white" name="gmail"  placeholder="Your Email Address" type="text">
+		<button  style="background:#2F2C2C;color: #ffffff;height: 50px;width: 100px;border-radius: 10px;margin-top: -100PX; "class="subscr-btn">subscribe
 			<span class="semicircle--right"></span>
 		</button>
-	</form>
-	<div class="sub-title">Sign up for new Seosignt content, updates, surveys & offers.</div>
+</form>
+		
+	<div class="sub-title">Sign up for new RTSOFTBD content, updates, surveys & offers.</div>
 
 </div>
 

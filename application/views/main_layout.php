@@ -800,13 +800,36 @@
 <script src="<?php echo base_url('assets/') ?>js/js-plugins/MarkerClusterGroup.js"></script>
 
 <script src="<?php echo base_url('assets/') ?>js/main.js"></script>
-<script  src="<?php echo base_url('assets/js/custom.js');?>"></script>
+<script  src="<?php echo base_url('assets/js/custom1.js');?>"></script>
+		
+	
+	
+	
+	
+
+	
+	
+		
+	
+	
+	
+		
+
+		<script src="js/custom.js"></script>
 
 
 
 <!-- ...end JS Script -->
 
 <script>
+	function ConfirmDelete()
+{
+  var x = confirm("Are you sure you want to delete?");
+  if (x)
+      return true;
+  else
+    return false;
+}
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -894,7 +917,16 @@ window.location.href =link;
 });
 });
 </script>
-
+<script>
+$("#delete-button").click(function(){
+    if(confirm("Are you sure you want to delete this?")){
+        $("#delete-button").attr("href", "query.php?ACTION=delete&ID='1'");
+    }
+    else{
+        return false;
+    }
+});
+</script>
 </body>
 
 

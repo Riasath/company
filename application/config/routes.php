@@ -24,6 +24,22 @@ $route['save-testimonials']='slider/save_testimonials';
 $route['add-client']='slider/add_client';
 $route['save-client-image']='slider/save_client_image';
 
+//------------------------------------------------//
+//admin login
+//------------------------------------------------//
+
+$route['admin-login']='Admin/admin_login';
+
+
+
+
+
+
+
+
+
+
+
 
 //subscribe
 $route['save-subscribe']='Admin/save_subscribe';

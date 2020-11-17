@@ -7,11 +7,36 @@ class Admin extends CI_Controller
     private $side_menu = 'backend/admin/side_menu';
     public function index()
 	{
-       $data = $this->engine->store_nav('dashboard', 'Nothing', 'Welcome to dashboard');
+ 
+		$this->load->view('admin_login');
+	}
+	public function admin_view(){
+ $data = $this->engine->store_nav('dashboard', 'Nothing', 'Welcome to dashboard');
 		$path = 'backend/admin/dashboard';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
 	}
     
+    public function admin_login(){
+
+
+$username=$this->input->post('username',true);
+$password=$this->input->post('password',true);
+$this->load->model('admin_model');
+$result=$this->admin_model->admin_model_data($username,$password);
+if($result){
+
+	redirect('Admin/admin_view');
+}else{
+
+	echo "Your username or password invalid";
+}
+
+
+
+
+
+    }
     public function list_slider()
 	{
         $data = $this->engine->store_nav('appearance', 'slider_list', 'Slider List');

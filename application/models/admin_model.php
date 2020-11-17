@@ -4,6 +4,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin_model extends CI_model {
 
 
+
+//admin login
+public function admin_model_data($username,$password){
+
+$this->db->select('*');
+$this->db->from('admin');
+$this->db->where('username',$username);
+$this->db->where('password',md5($password));
+$query_result=$this->db->get();
+
+$result=$query_result->row();
+return $result;
+}
+
+
+
+
+
 public function save_users_info(){
 
 
@@ -2603,7 +2621,7 @@ $data['gmail']=$this->input->post('gmail',true);
  
 
   $this->db->insert('subscribe',$data);
- //redirect('Admin/contact');
+ redirect('');
 
 
       }
