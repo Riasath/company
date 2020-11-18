@@ -17,46 +17,22 @@
 <div class="content-wrapper">
   <form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
+<h1><?php echo $all_testimonials_view_by_id->testi_text ?></h1>
+<br>
+
+    <h4>Testimonial AUTHOR</h4>
+
+    
+
+    <h2><?php echo $all_testimonials_view_by_id->testi_author ?></h2>
+
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
+    <h4>Testimonial COMPANY</h4>
+  
+     <h2><?php echo $all_testimonials_view_by_id->testi_company ?></h2> 
 
 
-  <thead>
-    <tr>
-    <th>Testimonial ID</th>
-    <th> Testimonial TEXT</th>
-    <th>Testimonial AUTHOR</th>
-    <th>Testimonial COMPANY</th>
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_testimonials_view_by_id->testi_id ?></h4>
-  <input type="hidden" value="<?php echo $all_testimonials_view_by_id->testi_text ?>"name="testi_text" id="testi_text" ></br>
-      </td>
-      <td>
-        <h4>
-          <?php echo $all_testimonials_view_by_id->testi_text ?>
-        </h4>
-        
-      </td>
-      <td>
-        <h4>
-          <?php echo $all_testimonials_view_by_id->testi_author ?>
-        </h4>
-      </td>
-      <td>
-        <h4>
-          <?php echo $all_testimonials_view_by_id->testi_company ?>
-        </h4>
-      </td>
-      <tr/>
-    </tbody>
-  </thead>
-</table>
  
-  </div>
-</form>
 </div>
 </div>
 
