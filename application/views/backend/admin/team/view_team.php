@@ -18,69 +18,35 @@
   <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data">
   <div class="container">
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th>Member ID</th>
-    
-    <th>Team Member Name</th>
-    <th>Team Member Post</th>
-    <th>Team Member Image</th>
-    <th>Team Member Facebook Image</th>
-    <th>Team Member Youtube Image</th>
-    <th>Team Member Google Image</th>
-    <th>Team Member Twitter Image</th>
-    
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_team_view_by_id->id ?></h4>
-  
-      </td>
-     
-      <td>
-        <h4>
+        <h1>
           <?php echo $all_team_view_by_id->name ?>
-        </h4>
-      </td>
-       <td>
-        <h4>
+        </h1><br>
+
+<img src=" <?php echo base_url().$all_team_view_by_id->image ?>"style="height: 170px;width: 300px;"><br>
+      
+        <h1>
           <?php echo $all_team_view_by_id->post?>
-        </h4>
-      </td>
-      <td>
+        </h1>
+        <br>
+    
+
        
-<img src=" <?php echo base_url().$all_team_view_by_id->image ?>"style="height: 80px;width: 100px;">
-       
-      </td>
-      <td>
+   
        
 <img src=" <?php echo base_url().$all_team_view_by_id->fbimage ?>"style="height: 80px;width: 100px;">
        
-      </td>
-      <td>
-       
+   
 <img src=" <?php echo base_url().$all_team_view_by_id->yimage ?>"style="height: 80px;width: 100px;">
        
-      </td>
-      <td>
+     
        
 <img src=" <?php echo base_url().$all_team_view_by_id->gimage ?>"style="height: 80px;width: 100px;">
-       
-      </td>
-      <td>
+   
        
 <img src=" <?php echo base_url().$all_team_view_by_id->timage ?>"style="height: 80px;width: 100px;">
        
-      </td>
-      
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+     
  
   </div>
 </form>

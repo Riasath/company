@@ -14,48 +14,24 @@
 <div class="content-wrapper">
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th>Vision Id</th>
-    <th>Vision Title</th>
-    <th> Vision Details</th>
-    <th>Vision Image1</th>
-    <th>Vision Image2</th>
-  </tr>
-    <tbody>
-      <tr>
-    <td>
-        <h4>
-          <?php echo $all_vision_view_by_id->id ?>
-        </h4>
-        
-      </td>
-      <td>
       <h1><?php echo $all_vision_view_by_id->title ?></h1>
        </br>
-      </td>
-      <td>
+    
         <h4>
           <?php echo $all_vision_view_by_id->details ?>
         </h4>
+        </br>
         
-      </td>
-      <td>
+    
+    
          <label for="slider_image"><b></b></label></br>
-    <img src="<?php echo base_url().$all_vision_view_by_id->image1?>" style="height:100px;width:180px;border:1px solid #FC4136;">
-      </td>
-      <td>
+    <img src="<?php echo base_url().$all_vision_view_by_id->image1?>" style="height:190px;width:380px;border:1px solid #000000;">
+    </br>
+      
          <label for="slider_image"><b></b></label></br>
-    <img src="<?php echo base_url().$all_vision_view_by_id->image2?>" style="height:100px;width:180px;border:1px solid #FC4136;">
-      </td>
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+    <img src="<?php echo base_url().$all_vision_view_by_id->image2?>" style="height:190px;width:380px;border:1px solid #000000;">
+     
   
   </div>
 </form>

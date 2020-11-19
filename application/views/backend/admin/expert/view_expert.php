@@ -17,42 +17,15 @@
 <div class="content-wrapper">
   <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th>Expert ID</th>
-    
-    
-    <th>Expert Title</th>
-    <th>Expert Details</th>
-    
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_expert_view_by_id->id ?></h4>
-  
-      </td>
      
       
-      <td>
-        <h4>
-          <?php echo $all_expert_view_by_id->title ?>
-        </h4>
-      </td>
-       <td>
-        <h4>
-          <?php echo $all_expert_view_by_id->details?>
-        </h4>
-      </td>
+     
+          <h1><?php echo $all_expert_view_by_id->title ?></h1>
       
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+         <h3><?php echo $all_expert_view_by_id->details?></h3> 
+      
+    
  
   </div>
 </form>

@@ -14,51 +14,20 @@
 <div class="content-wrapper">
   <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
-
-
-  <thead>
-    <tr>
-    <th>Id</th>
-    <th>Feedback description</th>
-    <th> Author Name</th>
-    <th>Author Market</th>
-    <th>Author Image</th>
-  </tr>
-    <tbody>
-      <tr>
-    <td>
-        <h4>
-          <?php echo $all_feedback_view_by_id->id ?>
-        </h4>
-        
-      </td>
-      <td>
-      <h1><?php echo $all_feedback_view_by_id->description ?></h1>
-       </br>
-      </td>
-      <td>
-        <h4>
-          <?php echo $all_feedback_view_by_id->author ?>
-        </h4>
-        
-      </td>
-      <td>
-        <h4>
-          <?php echo $all_feedback_view_by_id->market ?>
-        </h4>
-        
-      </td>
-      <td>
-         <label for="slider_image"><b></b></label></br>
-    <img src="<?php echo base_url().$all_feedback_view_by_id->image?>" style="height:120px;width:180px;border:1px solid #FC4136;">
-      </td>
-      <tr/>
-    </tbody>
-  </thead>
-</table>
-  
+   
+</br>
+<h1>
+  <?php echo $all_feedback_view_by_id->author ?>
+</h1>
+<br>
+ <h2>
+  <?php echo $all_feedback_view_by_id->market ?>
+</h2>  <br>
+  <label for="slider_image"><b></b></label>
+<img src="<?php echo base_url().$all_feedback_view_by_id->image?>" style="height:190px;width:300px;border:1px solid #000000;">
+<br>
+<h2><?php echo $all_feedback_view_by_id->description ?></h2>
+</br>
   </div>
 </form>
 </div>

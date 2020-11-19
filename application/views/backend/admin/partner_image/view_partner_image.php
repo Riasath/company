@@ -17,33 +17,12 @@
 <div class="content-wrapper">
 	<form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
-
-
-  <thead>
-    <tr>
-    <th>Partner ID</th>
-    <th> Partner IMAGE</th>
-   
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_partner_image_view_by_id->id ?></h4>
-
-      </td>
-      <td>
-        <h4>
+ <h1>
+   Partner Image
+ </h1>
+ <br>
           <img src="<?php echo base_url().$all_partner_image_view_by_id->image ?>">
-        </h4>
-        
-      </td>
-    
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+      
  
   </div>
 </form>

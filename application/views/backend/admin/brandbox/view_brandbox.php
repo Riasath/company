@@ -18,39 +18,16 @@
 
   <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th>ID</th>
-    
-    
-    <th>Brand Box section Title</th>
-    <th>Brand Box section Details</th>
-    <th>Brand Box section Value</th>
-    
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_brandbox_view_by_id->id ?></h4>
-  
-      </td>
-     
-      
-      <td>
-        <h4>
+        <h1>
           <?php echo $all_brandbox_view_by_id->title ?>
-        </h4>
-      </td>
-       <td>
+        </h1>
+     <br>
         <h4>
           <?php echo $all_brandbox_view_by_id->details?>
         </h4>
-      </td>
-      <td>
+      <br>
+      <h2>Inseted Unique Id Value</h2>
         <h4>
           <?php echo $all_brandbox_view_by_id->value?>
         </h4>

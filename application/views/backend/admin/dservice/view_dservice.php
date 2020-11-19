@@ -17,47 +17,17 @@
 <div class="content-wrapper">
   <form action="<?php echo base_url()?>" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
-
-
-  <thead>
-    <tr>
-    <th>Service ID</th>
-    
-    <th>Service image</th>
-    <th>Service Title</th>
-    <th>Service Details</th>
-    
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_dservice_view_by_id->id ?></h4>
-  
-      </td>
-     
-      <td>
-        <h4>
-<img src=" <?php echo base_url().$all_dservice_view_by_id->image ?>"style="height: 300px;width: 200px;">
-        </h4>
-      </td>
-      <td>
-        <h4>
+ 
+        <h1>
           <?php echo $all_dservice_view_by_id->title ?>
-        </h4>
-      </td>
-       <td>
-        <h4>
+        </h1>
+        <br>
+       
+       <h4>
           <?php echo $all_dservice_view_by_id->details?>
         </h4>
-      </td>
-      
-      <tr/>
-    </tbody>
-  </thead>
-</table>
- 
+<img src=" <?php echo base_url().$all_dservice_view_by_id->image ?>"style="height: 230px;width: 300px;">
+       
   </div>
 </form>
 </div>

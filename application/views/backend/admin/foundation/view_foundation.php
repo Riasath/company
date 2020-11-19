@@ -17,51 +17,22 @@
 <div class="content-wrapper">
   <form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
+        
 
-
-  <thead>
-    <tr>
-    <th>Foundation ID</th>
-    <th> Date</th>
-    <th>Foundation image</th>
-    <th>Foundation Title</th>
-    <th>Foundation Details</th>
-    
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_foundation_view_by_id->id ?></h4>
-  
-      </td>
-      <td>
         <h4>
           <?php echo $all_foundation_view_by_id->date ?>
         </h4>
-        
-      </td>
-      <td>
-        <h4>
-<img src=" <?php echo base_url().$all_foundation_view_by_id->foundation_image ?>"style="height: 300px;width: 200px;">
-        </h4>
-      </td>
-      <td>
-        <h4>
+         <h4>
           <?php echo $all_foundation_view_by_id->foundation_title ?>
         </h4>
-      </td>
-       <td>
+    
+        <img src=" <?php echo base_url().$all_foundation_view_by_id->foundation_image ?>"style="height: 300px;width: 200px;">
+        
+       
         <h4>
           <?php echo $all_foundation_view_by_id->foundation_details?>
         </h4>
-      </td>
-      
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+   
  
   </div>
 </form>

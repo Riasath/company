@@ -18,48 +18,25 @@
   <form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
+   
+    <h2> Shortstory Heading</h2>
+    <h4><?php echo $all_shortstory_view_by_id->short_story_heading ?></h4><br>
+    <h2>Shortstory Title</h2>
 
-  <thead>
-    <tr>
-    <th>Short Story ID</th>
-    <th> Shortstory Heading</th>
-    <th>Shortstory Title</th>
-    <th>Testimonial Sub Title1</th>
-    <th>Testimonial Sub Title2</th>
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_shortstory_view_by_id->id ?></h4>
-  
-      </td>
-      <td>
-        <h4>
-          <?php echo $all_shortstory_view_by_id->short_story_heading ?>
-        </h4>
-        
-      </td>
-      <td>
-        <h4>
+        <h5>
           <?php echo $all_shortstory_view_by_id->short_story_title ?>
-        </h4>
-      </td>
-      <td>
-        <h4>
+        </h5><br>
+    <h2>Testimonial Sub Title1</h2>
+      <h5>
           <?php echo $all_shortstory_view_by_id->short_story_subtitle1 ?>
-        </h4>
-      </td>
-      <td>
-        <h4>
+        </h5><br>
+    <h2>Testimonial Sub Title2</h2>
+      <h5>
           <?php echo $all_shortstory_view_by_id->short_story_subtitle2 ?>
-        </h4>
-      </td>
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+        </h5>
+  
+    
  
   </div>
 </form>
