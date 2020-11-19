@@ -18,32 +18,13 @@
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th> ID</th>
-    <th>SOCIAL IMAGE</th>
-   
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_footericon_view_by_id->id ?></h4>
-
-      </td>
-      <td>
-        <h4>
+   <h1>Footer Social Icon</h1>
+      
           <img src="<?php echo base_url().$all_footericon_view_by_id->footer_images ?>">
-        </h4>
         
-      </td>
+        
     
-      <tr/>
-    </tbody>
-  </thead>
-</table>
  
   </div>
 </form>

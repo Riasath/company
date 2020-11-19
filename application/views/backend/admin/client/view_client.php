@@ -18,32 +18,14 @@
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
+      <h4>Our Valueable Client</h4>
 
-  <thead>
-    <tr>
-    <th>CLIENT ID</th>
-    <th> CLIENT IMAGE</th>
-   
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_client_view_by_id->client_id ?></h4>
+  
 
-      </td>
-      <td>
-        <h4>
+      
           <img src="<?php echo base_url().$all_client_view_by_id->client_image ?>">
-        </h4>
-        
-      </td>
-    
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+     
  
   </div>
 </form>

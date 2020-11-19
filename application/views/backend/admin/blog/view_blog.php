@@ -18,54 +18,18 @@
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th> Blog ID</th>
-    <th> Date</th>
-    <th>Blog title</th>
-    <th> Blog Details</th>
-    <th>Avatar </th>
-    <th> Posted By</th>
-   
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_blog_view_by_id->id ?></h4>
-
-      </td>
-      <td>
-        <h4>
+      
           <?php echo $all_blog_view_by_id->date ?>
-        </h4>
-        
-      </td>
-      <td>
-      <h4><?php echo $all_blog_view_by_id->blog_title ?></h4>
+          
+       <h1><?php echo $all_blog_view_by_id->blog_title ?></h1>
 
-      </td>
-      <td>
+      
       <h4><?php echo $all_blog_view_by_id->blog_details ?></h4>
+    <img src="<?php echo  base_url().$all_blog_view_by_id->avatar ?>"></h4>
 
-      </td>
-      <td>
-      <h4><img src="<?php echo  base_url().$all_blog_view_by_id->avatar ?>"></h4>
-
-      </td>
+     <h4><?php echo $all_blog_view_by_id->posted_by ?></h4>
     
-    <td>
-      <h4><?php echo $all_blog_view_by_id->posted_by ?></h4>
-
-      </td>
-    
-    
-      <tr/>
-    </tbody>
-  </thead>
-</table>
  
   </div>
 </form>

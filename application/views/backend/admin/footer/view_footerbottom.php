@@ -17,43 +17,24 @@
 <div class="content-wrapper">
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
+  <h3> Footer MOBILE</h3>
 
-  <thead>
-    <tr>
-    <th> Footer Menu ID</th>
-    <th>Footer MOBILE</th>
-    <th> Footer GMAIL</th>
-    <th> Footer ADDRESS</th>
-   
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_footerbottom_view_by_id->id ?></h4>
-
-      </td>
-      <td>
-        <h4>
+        <h1>
           <?php echo $all_footerbottom_view_by_id->mobile ?>
-        </h4>
-        
-      </td>
-      <td>
-      <h4><?php echo $all_footerbottom_view_by_id->gmail ?></h4>
+        </h1><br>
 
-      </td>
-      <td>
-      <h4><?php echo $all_footerbottom_view_by_id->address ?></h4>
+    <h3>Footer GMAIL</h3>
 
-      </td>
-    
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+      <h1><?php echo $all_footerbottom_view_by_id->gmail ?></h1><br>
+
+
+   <h3>Footer ADDRESS</h3> 
+  
+     
+ <h1><?php echo $all_footerbottom_view_by_id->address ?></h1>
+
+     
  
   </div>
 </form>

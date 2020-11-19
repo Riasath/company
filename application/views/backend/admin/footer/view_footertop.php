@@ -17,38 +17,15 @@
 <div class="content-wrapper">
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
-  
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th> FOOTER ID</th>
-    <th>FOOTER HEADING</th>
-    <th> FOOTER DETAILS</th>
-   
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_footertop_view_by_id->footer_id ?></h4>
-
-      </td>
-      <td>
-        <h4>
+     
+        <h1>
           <?php echo $all_footertop_view_by_id->footer_heading ?>
-        </h4>
-        
-      </td>
-      <td>
-      <h4><?php echo $all_footertop_view_by_id->footer_details ?></h4>
+        </h1>
+     
+      <h3><?php echo $all_footertop_view_by_id->footer_details ?></h3>
 
-      </td>
-    
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+     
  
   </div>
 </form>

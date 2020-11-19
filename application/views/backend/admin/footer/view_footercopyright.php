@@ -18,60 +18,27 @@
 	<form action="<?php echo base_url()?>update-slider" method="post" enctype="multipart/form-data">
   <div class="container">
   
-<table style="margin-top: 40px;" class="table table-striped table-bordered bootstarp-datatale datatable">
 
-
-  <thead>
-    <tr>
-    <th> COPYRIGHT ID</th>
-    <th> YEAR</th>
-    <th>COMPANY NAME</th>
-    <th> DESIGN</th>
-    <th>DEVELOPED </th>
-    <th> ONLY ON</th>
-   
-  </tr>
-    <tbody>
-      <tr>
-      <td>
-      <h4><?php echo $all_footercopyright_view_by_id
-        ->id ?></h4>
-
-      </td>
-      <td>
-        <h4>
+    
+    <h4> YEAR</h4>
+    <h1>
           <?php echo $all_footercopyright_view_by_id
           ->year ?>
-        </h4>
-        
-      </td>
-      <td>
-      <h4><?php echo $all_footercopyright_view_by_id
-        ->company_name ?></h4>
-
-      </td>
-      <td>
-      <h4><?php echo $all_footercopyright_view_by_id
-        ->design ?></h4>
-
-      </td>
-      <td>
-      <h4><?php echo $all_footercopyright_view_by_id
-        ->developed ?></h4>
-
-      </td>
-    
-    <td>
-      <h4><?php echo $all_footercopyright_view_by_id
-        ->only_on ?></h4>
-
-      </td>
-    
-    
-      <tr/>
-    </tbody>
-  </thead>
-</table>
+        </h1><br>
+    <h4>COMPANY NAME</h4>
+    <h1><?php echo $all_footercopyright_view_by_id
+        ->company_name ?></h1><br>
+    <h4> DESIGN</h4>
+      <h1><?php echo $all_footercopyright_view_by_id
+        ->design ?></h1><br>
+    <h4>DEVELOPED </h4>
+        <h1><?php echo $all_footercopyright_view_by_id
+        ->developed ?></h1><br>
+    <h4> ONLY ON</h4>
+          <h1><?php echo $all_footercopyright_view_by_id
+        ->only_on ?></h1>
+   
+ 
  
   </div>
 </form>
