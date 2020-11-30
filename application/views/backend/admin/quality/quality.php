@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Our Quality</h3>
+						<h3 class="card-title">Our Quality  section place in main menu software development menu->our service page->after the our product section</h3>
 					</div>
 
 					<div class="col-md-2">

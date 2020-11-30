@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Our Brandbox</h3>
+						<h3 class="card-title">Our Brandbox,this section show in main menu->digital marketing menu->our service page before the email newsletter section</h3>
 					</div>
 
 					<div class="col-md-2">

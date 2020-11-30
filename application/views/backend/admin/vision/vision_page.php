@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Vision</h3>
+						<h3 class="card-title">Vision section place after the promo box section in about page</h3>
 					</div>
 
 					<div class="col-md-2">

@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Service</h3>
+						<h3 class="card-title">This section show in main menu->digital marketing menu->our service page below the menu section</h3>
 					</div>
 
 					<div class="col-md-2">

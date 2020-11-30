@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Our Expert</h3>
+						<h3 class="card-title">Our Expert section include a title and a description for our main expert details section place is in about page below the our work slider section</h3>
 					</div>
 
 					<div class="col-md-2">

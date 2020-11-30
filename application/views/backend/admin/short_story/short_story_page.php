@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Short Story</h3>
+						<h3 class="card-title">Short Story Location in about pagebelow the main menu</h3>
 					</div>
 
 					<div class="col-md-2">

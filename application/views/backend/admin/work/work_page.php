@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Our Work</h3>
+						<h3 class="card-title">Our Work section place in about page below the our foundation history section</h3>
 					</div>
 
 					<div class="col-md-2">

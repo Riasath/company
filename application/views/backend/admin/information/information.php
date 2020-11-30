@@ -6,7 +6,8 @@
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title" style="margin-left: 200px;">
-						User Contact Information
+						User Contact Information</br>
+						This section  place in main menu software development menu->our service page->before  the email newsletter section
 					</h3>
 					</div>
 

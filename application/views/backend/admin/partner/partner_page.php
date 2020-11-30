@@ -6,7 +6,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Our Partner</h3>
+						<h3 class="card-title">Our Partner section place up of the email newsletter section in about page</h3>
 					</div>
 
 					<div class="col-md-2">
