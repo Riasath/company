@@ -4,8 +4,10 @@
 		<div class="card card-primary">
 			<div class="card-header">
 				<div class="row">
-					<div class="col-md-10">
-						<h3 class="card-title">Slider</h3>
+					<div class="card-title">
+				
+         <h1>Homepage Slider After Menubar </h1>
+						
 					</div>
 
 					<div class="col-md-2">

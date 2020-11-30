@@ -4,7 +4,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Testimonials </h3>
+						<h1 >Testimonials Before blog section </h1>
 					</div>
 
 					<div class="col-md-2">

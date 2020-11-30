@@ -5,7 +5,7 @@
 			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Footer Bottom Area</h3>
+						<h3 class="card-title">Footer Section Before Copyright Area</h3>
 					</div>
 
 					<div class="col-md-2">
