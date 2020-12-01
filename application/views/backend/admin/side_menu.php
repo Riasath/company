@@ -42,6 +42,19 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/popup') ?>" class="nav-link <?= active_nav('popup', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>PopUp</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/signup') ?>" class="nav-link <?= active_nav('signup', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>User Signup</p>
+							</a>
+						</li>
+						
+						<li class="nav-item">
 							<a href="<?php echo base_url('Admin/list_slider') ?>" class="nav-link <?= active_nav('slider_list', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Slider</p>

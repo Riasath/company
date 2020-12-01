@@ -20,26 +20,22 @@
   <div class="container">
 
         <h1>
-          <?php echo $all_brandbox_view_by_id->title ?>
+          <?php echo $all_popup_view_by_id->mobile ?>
         </h1>
      <br>
         <h4>
-          <?php echo $all_brandbox_view_by_id->details?>
+          <?php echo $all_popup_view_by_id->gmail?>
         </h4>
       <br>
-      <h2>Set Unique Id Value</h2>
-        <h4>
-          <?php echo $all_brandbox_view_by_id->value?>
-        </h4>
-      </td>
       
-      <tr/>
-    </tbody>
-  </thead>
-</table>
- 
-  </div>
-</form>
+        <h4>
+          <?php echo $all_popup_view_by_id->day?>
+        </h4>
+      </br>
+        <h4>
+          <?php echo $all_popup_view_by_id->time?>
+        </h4>
+   
 </div>
 </div>
 

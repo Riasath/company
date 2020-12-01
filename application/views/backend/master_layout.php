@@ -153,12 +153,12 @@
 						<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
 					</div>
 				</li>
-				<li class="nav-item">
-					<a href="<?php echo base_url('logout') ?>">
-						<button type="button" class="btn btn-block btn-danger">Logout</button>
-					</a>
-				</li>
-			</ul>
+<li class="nav-item">
+<a href="<?php echo base_url()?>logout">
+	<button type="button" class="btn btn-block btn-danger">Logout</button>
+</a>
+</li>
+</ul>
 		</nav>
 		<!-- /.navbar -->
 		<!-- Main Sidebar Container -->

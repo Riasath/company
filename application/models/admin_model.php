@@ -2,7 +2,92 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin_model extends CI_model {
+  public function save_popup(){
 
+ $data=array();
+$data['mobile']=$this->input->post('mobile',true);   
+$data['gmail']=$this->input->post('gmail',true);   
+$data['day']=$this->input->post('day',true);   
+$data['time']=$this->input->post('time',true);   
+   
+
+
+   $this->db->insert('popup',$data);
+
+  }
+  public function select_popup(){
+
+
+  $this->db->select('*');
+  $this->db->from('popup');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+}
+public function all_popup_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('popup');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_popup(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['mobile']=$this->input->post('mobile',true);
+    $data['gmail']=$this->input->post('gmail',true);
+    $data['day']=$this->input->post('day',true);
+    $data['day']=$this->input->post('day',true);
+    $data['time']=$this->input->post('time',true);
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('popup',$data);
+
+  }
+   public function all_popup_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('popup');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_popup_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('popup');
+
+  }
+  //signup
+   public function save_signup(){
+
+ $data=array();
+$data['fname']=$this->input->post('fname',true);   
+$data['lname']=$this->input->post('lname',true);   
+$data['gmail']=$this->input->post('gmail',true);   
+$data['password']=$this->input->post('password',true);   
+$data['gender']=$this->input->post('gender',true);   
+$data['terms']=$this->input->post('terms',true);   
+   
+   
+   
+
+
+   $this->db->insert('signup',$data);
+
+  }
 
 
 //admin login

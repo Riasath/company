@@ -37,6 +37,90 @@ if($result){
 
 
     }
+    //logout
+    public function logout()
+	{
+ 
+		$this->load->view('admin_login');
+	}
+
+    //popup
+     public function popup()
+	{
+        $data = $this->engine->store_nav('appearance', 'popup', 'popup List');
+        $data['popupList'] = $this->Common->get_data('popup');
+        $path = 'backend/admin/popup/popup';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_popup()
+	{
+        $data = $this->engine->store_nav('appearance', 'popup', 'Create New popup');
+		$path = 'backend/admin/popup/add_popup';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+
+public function save_popup()
+	{
+
+
+		$this->admin_model->save_popup();
+		redirect('Admin/popup');
+	
+
+}
+public function edit_popup($id)
+	{
+       $data = $this->engine->store_nav('appearance', 'popup', 'welcome to our  popup ');
+$data['all_popup_by_id'] = $this->admin_model->all_popup_by_id($id);
+	   	$path = 'backend/admin/popup/edit_popup';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_popup()
+	{
+
+		$this->admin_model->update_popup();
+		redirect('Admin/popup');
+           
+
+	}
+	public function view_popup($id){
+
+ $data = $this->engine->store_nav('appearance', 'popup', 'welcome to our  popup ');
+$data['all_popup_view_by_id'] = $this->admin_model->all_popup_view_by_id($id);
+	   	$path = 'backend/admin/popup/view_popup';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);  
+	}
+	public function delete_popup($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_popup_by_id($id);
+
+		redirect('Admin/popup');
+
+	}
+	//signup
+	public function save_signup()
+	{
+
+
+		$this->admin_model->save_signup();
+		redirect('');
+	
+
+}
+public function signup()
+	{
+        $data = $this->engine->store_nav('appearance', 'signup', 'welcome to signup page');
+        $data['signupList'] = $this->Common->get_data('signup');
+        $path = 'backend/admin/signup/signup';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+
     public function list_slider()
 	{
         $data = $this->engine->store_nav('appearance', 'slider_list', 'Slider List');

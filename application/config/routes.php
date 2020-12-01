@@ -31,13 +31,24 @@ $route['save-client-image']='slider/save_client_image';
 $route['admin-login']='Admin/admin_login';
 
 
+//logout
+
+
+$route['logout']='Admin/logout';
 
 
 
 
+//popup
+$route['save-popup']='Admin/save_popup';
+$route['edit-popup/(.+)']='Admin/edit_popup/$1';
+$route['update-popup']='Admin/update_popup';
+$route['view-popup/(.+)']='Admin/view_popup/$1';
+$route['delete-popup/(.+)']='Admin/delete_popup/$1';
 
 
-
+//signup
+$route['save-signup']='Admin/save_signup';
 
 
 

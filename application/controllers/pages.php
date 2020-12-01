@@ -7,6 +7,7 @@ class Pages extends CI_Controller {
 
 
 $data['abc']='xyz';
+ $data['popup']=$this->admin_model->select_popup();
 $data['all_db_story']=$this->admin_model->select_short_story(); 
 $data['all_foundation']=$this->admin_model->select_all_foundation(); 
 $data['all_expert']=$this->admin_model->select_all_expert(); 
@@ -37,6 +38,7 @@ public function service(){
 
  
  $data['abc']='xyz';
+  $data['popup']=$this->admin_model->select_popup();
  $data['all_service']=$this->admin_model->select_all_service(); 
  $data['all_feature']=$this->admin_model->select_all_feature(); 
  $data['all_product']=$this->admin_model->select_all_product(); 
@@ -65,6 +67,7 @@ $this->load->view('main_layout',$data);
 
  
  $data['abc']='xyz';
+  $data['popup']=$this->admin_model->select_popup();
 $data['all_dservice']=$this->admin_model->select_all_dservice(); 
 $data['all_description']=$this->admin_model->select_all_description(); 
 $data['all_tell']=$this->admin_model->select_all_tell(); 
@@ -100,7 +103,7 @@ $this->load->view('main_layout',$data);
 
       $data['abc']='xyz';
 
-     
+      $data['popup']=$this->admin_model->select_popup();
 		$data['content'] = $this->load->view('pages/erp',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
@@ -115,6 +118,7 @@ $this->load->view('main_layout',$data);
 		
 
  $data['abc']='xyz';
+  $data['popup']=$this->admin_model->select_popup();
 $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
      
@@ -132,7 +136,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 		
 		
  $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
    $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/office_mgt',$data, TRUE);
@@ -147,7 +151,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function e_commerce()
 	{
 	   $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/e_commerce',$data, TRUE);
@@ -162,7 +166,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function school_mgt()
 	{
 	    $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/school_mgt',$data, TRUE);
@@ -177,7 +181,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function point_sale()
 	{
 	    $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/point_sale',$data, TRUE);
@@ -192,7 +196,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function storage()
 	{
 		$data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/storage',$data, TRUE);
@@ -208,7 +212,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function testimonials()
 	{
 		$data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/testimonials',$data, TRUE);
@@ -224,7 +228,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function mobile_app()
 	{
 	   $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/mobile_app',$data, TRUE);
@@ -240,7 +244,7 @@ $data['footermenu']=$this->admin_model->footermenu();
 public function cloud_app()
 	{
 	      $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/cloud_app',$data, TRUE);
@@ -255,7 +259,7 @@ public function cloud_app()
 	public function pay_per()
 	{
 	   $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/pay_per',$data, TRUE);
@@ -270,7 +274,7 @@ public function cloud_app()
 	public function iot_app()
 	{
 	  $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/iot_app',$data, TRUE);
@@ -285,7 +289,7 @@ public function cloud_app()
 	public function local_seo()
 	{
 	   $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/local_seo',$data, TRUE);
@@ -300,7 +304,7 @@ public function cloud_app()
 	public function seo()
 	{
 	    $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/seo',$data, TRUE);
@@ -315,7 +319,7 @@ public function cloud_app()
 	public function media_marketing()
 	{
 	    $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/media_marketing',$data, TRUE);
@@ -329,7 +333,7 @@ public function cloud_app()
 	}
 	public function email_marketing()
 	{  $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/email_marketing',$data, TRUE);
@@ -344,7 +348,7 @@ public function cloud_app()
 	public function contact()
 	{
 	   $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/contact',$data, TRUE);
@@ -360,7 +364,7 @@ public function cloud_app()
 	{
 	  
 	   $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/blog',$data, TRUE);
@@ -375,7 +379,7 @@ public function cloud_app()
 	public function service_promo()
 	{
 	    	   $data['abc']='xyz';
-
+ $data['popup']=$this->admin_model->select_popup();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/service_promo',$data, TRUE);

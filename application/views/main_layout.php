@@ -86,64 +86,70 @@
 <!-- Header -->
 
 <div class="top-bar top-bar-dark">
-	<div class="container">
-		<div class="top-bar-contact">
-			<div class="contact-item">
-				<img src="<?= base_url('assets/images/')?>united-states-of-america.png" class="flags" alt="flag">
-				<select>
-					<option>Global</option>
-					<option value="2">Farmgate,Dhaka</option>
-					<option value="3">Bonosree,Dhaka</option>
-				</select>
-			</div>
+<div class="container">
+<div class="top-bar-contact">
+<div class="contact-item">
+<img src="<?= base_url('assets/images/')?>united-states-of-america.png" class="flags" alt="flag">
+<select>
+<option>Global</option>
+<option value="2">Farmgate,Dhaka</option>
+<option value="3">Bonosree,Dhaka</option>
+</select>
+</div>
+			  <?php foreach($popup as $v_popup){?>
+<div class="contact-item">
+			<?php echo $v_popup->mobile;?>
+</div>
 
-			<div class="contact-item">
-				01775-373737
-			</div>
+<div class="contact-item">
+<a href="#">
+		<?php echo $v_popup->gmail;?>
+</a>
+</div>
 
-			<div class="contact-item">
-				<a href="#">info@rtsoftbd.com</a>
-			</div>
+<div class="contact-item">
+<span>
+	<?php echo $v_popup->day;?>
+</span>
+ 	<?php echo $v_popup->time;?>
+</div>
+<?php }?>
+</div>
 
-			<div class="contact-item">
-				<span>Mon. - Sat.</span> 10:00 - 21:00
-			</div>
-		</div>
+<div class="login-block">
+<img src="<?= base_url('assets/images/')?>signin_dark.png" class="sign-in">
+<a class="js-window-popup" href="#">Sign up</a>
+</div>
 
-		<div class="login-block">
-			<img src="<?= base_url('assets/images/')?>signin_dark.png" class="sign-in">
-			<a class="js-window-popup" href="#">Sign up</a>
-		</div>
+<div class="follow_us">
+<span>Follow us:</span>
+<div class="socials">
 
-		<div class="follow_us">
-			<span>Follow us:</span>
-			<div class="socials">
+<a href="#" class="social__item">
+<img src="<?= base_url('assets/images/')?>circle-facebook.svg" alt="facebook">
+</a>
 
-				<a href="#" class="social__item">
-					<img src="<?= base_url('assets/images/')?>circle-facebook.svg" alt="facebook">
-				</a>
+<a href="#" class="social__item">
+<img src="<?= base_url('assets/images/')?>twitter.svg" alt="twitter">
+</a>
 
-				<a href="#" class="social__item">
-					<img src="<?= base_url('assets/images/')?>twitter.svg" alt="twitter">
-				</a>
+<a href="#" class="social__item">
+<img src="<?= base_url('assets/images/')?>google.svg" alt="google">
+</a>
 
-				<a href="#" class="social__item">
-					<img src="<?= base_url('assets/images/')?>google.svg" alt="google">
-				</a>
+<a href="#" class="social__item">
+<img src="<?= base_url('assets/images/')?>youtube.svg" alt="youtube">
+</a>
 
-				<a href="#" class="social__item">
-					<img src="<?= base_url('assets/images/')?>youtube.svg" alt="youtube">
-				</a>
+</div>
+</div>
 
-			</div>
-		</div>
+<a href="#" class="top-bar-close" id="top-bar-close-js">
+<span></span>
+<span></span>
+</a>
 
-		<a href="#" class="top-bar-close" id="top-bar-close-js">
-			<span></span>
-			<span></span>
-		</a>
-
-	</div>
+</div>
 </div>
 
 <header class="header" id="site-header">
@@ -664,46 +670,47 @@
 <!-- Sign-in Form Popup -->
 
 <div class="window-popup">
-	<a href="#" class="popup-close js-popup-close cd-nav-trigger">
-		<i class="seosight-icon seoicon-delete"></i>
-	</a>
+<a href="#" class="popup-close js-popup-close cd-nav-trigger">
+<i class="seosight-icon seoicon-delete"></i>
+</a>
 
-	<div class="sign-in-popup">
-		<h5 class="title">Register to RTSOFTBD</h5>
-		<p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnais.</p>
-		<form class="form-validate contact-form">
-			<div class="row">
+<div class="sign-in-popup">
+<h5 class="title">Register to RTSOFTBD</h5>
+<p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magnais.</p>
+<form  method="post" 
+action="<?php echo base_url()?>save-signup">
+<div class="row">
 
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input class="input-standard-grey" placeholder="First Name" type="text">
-				</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<input class="input-standard-grey" name="fname" placeholder="First Name" type="text">
+</div>
 
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<input class="input-standard-grey" placeholder="Last Name" type="text">
-				</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<input class="input-standard-grey" name="lname"placeholder="Last Name" type="text">
+</div>
 
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<input class="input-standard-grey" placeholder="Your Email" type="email">
-					<input class="input-standard-grey" placeholder="Your Password" type="password">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<input class="input-standard-grey" name="gmail" placeholder="Your Email" type="email">
+<input class="input-standard-grey" name="password" placeholder="Your Password" type="password">
 
-					<select>
-						<option value="MA">Male</option>
-						<option value="FE">Female</option>
-					</select>
+<select name="gender">
+<option name="gender" value="Male">Male</option>
+<option  name="gender"value="Female">Female</option>
+</select>
 
-					<div class="remember-wrap">
-						<div class="checkbox">
-							<input id="terms" type="checkbox" name="terms" value="terms">
-							<label for="terms">I accept the Terms and Conditions</label>
-						</div>
-					</div>
+<div class="remember-wrap">
+<div class="checkbox">
+	<input id="terms" type="checkbox" name="terms" value="Accept Terms">
+	<label for="terms">I accept the Terms and Conditions</label>
+</div>
+</div>
 
-					<a href="#" class="btn btn-large btn--primary">Complete Registration!</a>
-				</div>
+<button class="btn btn-large btn--primary">Complete Registration!</button> >
+</div>
 
-			</div>
-		</form>
-	</div>
+</div>
+</form>
+</div>
 </div>
 
 <!-- Sign-in Form Popup -->
