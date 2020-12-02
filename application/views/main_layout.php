@@ -404,7 +404,7 @@
 <!-- Right-menu -->
 
 <div class="mCustomScrollbar" data-mcs-theme="dark">
-
+  <?php foreach($sidebar as $v_sidebar){?>
 	<div class="popup right-menu">
 
 		<div class="right-menu-wrap">
@@ -416,52 +416,60 @@
 				</a>
 			</div>
 
-			<div class="logo">
-				<a href="#" class="full-block-link"></a>
-				<img src="<?php echo base_url('assets/');?>images/rtsoftbd_logo.png" alt="RTSOFTBD">
+<div class="logo">
+	<a href="#" class="full-block-link"></a>
+		<img src="<?php echo $v_sidebar->image?>">
 
-			</div>
+</div>
 
 
 		</div>
 
 
-		<div class="widget contacts">
+<div class="widget contacts">
 
-			<h4 class="contacts-title">Get In Touch</h4>
-			<p class="contacts-text">RTSOFTBD is an incredibly SOFTWARE Farm for corporate and creative
-				professionals.Focused on helping clients to build a successful business on web and mobile application.
-				It works on all major software sector.
-			</p>
-			<br>
+<h4 class="contacts-title">
+			<?php echo $v_sidebar->title;?>
+</h4>
+<p class="contacts-text">
+		<?php echo $v_sidebar->details;?>
+</p>
+<br>
 
-          <div class="contacts-item">
-				<img src="<?php echo base_url('assets/');?>images/contact4.png" alt="phone">
-				<div class="content">
-					<a href="#" class="title">+8801775-373737</a>
-					<p class="sub-title">Mon-Sat 9am-6pm</p>
-				</div>
-			</div>
+<div class="contacts-item">
+<img src="<?php echo base_url('assets/');?>images/contact4.png" alt="phone">
+<div class="content">
+	<a href="#" class="title">
+		<?php echo $v_sidebar->mobile;?>
+	</a>
+	<p class="sub-title">Monday-Saturday 10am-6pm</p>
+</div>
+</div>
 
-			<div class="contacts-item">
-				<img src="<?php echo base_url('assets/');?>images/contact5.png" alt="phone">
-				<div class="content">
-					<a href="#" class="title">info@rtsoftbd.com</a>
-					<p class="sub-title">online/offline support</p>
-				</div>
-			</div>
+<div class="contacts-item">
+<img src="<?php echo base_url('assets/');?>images/contact5.png" alt="phone">
+<div class="content">
+	<a href="#" class="title">
+				<?php echo $v_sidebar->gmail;?>
+</a>
+	<p class="sub-title">online/offline support</p>
+</div>
+</div>
 
-			<div class="contacts-item">
-				<img src="<?php echo base_url('assets/');?>images/contact6.png" alt="phone">
-				<div class="content">
-					<a href="#" class="title">House # 41, Flat # B3, Road # 8, Block # E,</a>
-					<p class="sub-title">Banasree, Rampura, Dhaka-1219</p>
-				</div>
-			</div>
+<div class="contacts-item">
+<img src="<?php echo base_url('assets/');?>images/contact6.png" alt="phone">
+<div class="content">
+	<a href="#" class="title">
+					<?php echo $v_sidebar->address;?>
+	</a>
+	<p class="sub-title">Address</p>
+</div>
+</div>
 
-		</div>
+</div>
 
 	</div>
+	<?php }?>
 
 </div>
 

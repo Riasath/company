@@ -119,6 +119,64 @@ public function signup()
         $path = 'backend/admin/signup/signup';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
+	  //sidebar
+     public function sidebar()
+	{
+        $data = $this->engine->store_nav('appearance', 'sidebar', 'sidebar List');
+        $data['sidebarList'] = $this->Common->get_data('sidebar');
+        $path = 'backend/admin/sidebar/sidebar';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_sidebar()
+	{
+        $data = $this->engine->store_nav('appearance', 'sidebar', 'Create New sidebar');
+		$path = 'backend/admin/sidebar/add_sidebar';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_sidebar()
+	{
+
+		$this->admin_model->save_sidebar();
+		redirect('Admin/sidebar');
+	}
+	public function edit_sidebar($id)
+	{
+     $data = $this->engine->store_nav('appearance', 'sidebar', 'New sidebar');
+		$data['all_sidebar_by_id'] = $this->admin_model->all_sidebar_by_id($id);
+	   	$path = 'backend/admin/sidebar/edit_sidebar';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_sidebar()
+	{
+
+		$this->admin_model->update_sidebar();
+		redirect('Admin/sidebar');
+           
+
+	}
+	public function view_sidebar($id){
+
+         
+
+		 $data = $this->engine->store_nav('appearance', 'sidebar', 'New sidebar');
+		$data['all_sidebar_view_by_id'] = $this->admin_model->all_sidebar_by_id($id);
+	   	$path = 'backend/admin/sidebar/view_sidebar';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_sidebar($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_sidebar_by_id($id);
+
+		redirect('Admin/sidebar');
+
+	}
+	//slider
 
 
     public function list_slider()

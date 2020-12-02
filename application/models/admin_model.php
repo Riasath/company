@@ -88,6 +88,108 @@ $data['terms']=$this->input->post('terms',true);
    $this->db->insert('signup',$data);
 
   }
+  //sidebar
+   
+    public function save_sidebar(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+$data['mobile']=$this->input->post('mobile',true); 
+$data['gmail']=$this->input->post('gmail',true); 
+$data['address']=$this->input->post('address',true); 
+
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/sidebar_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('sidebar',$data);
+             redirect('Admin/sidebar');
+
+      }
+       public function select_sidebar(){
+
+
+  $this->db->select('*');
+  $this->db->from('sidebar');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_sidebar_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('sidebar');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_sidebar(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+    $data['mobile']=$this->input->post('mobile',true);
+    $data['gmail']=$this->input->post('gmail',true);
+    $data['address']=$this->input->post('address',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/sidebar_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('sidebar',$data);
+
+  }
+  public function delete_sidebar_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('sidebar');
+
+  }
 
 
 //admin login

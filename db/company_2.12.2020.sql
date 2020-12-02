@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2020 at 12:42 PM
+-- Generation Time: Dec 02, 2020 at 01:03 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -104,7 +104,7 @@ CREATE TABLE `blog` (
 --
 
 INSERT INTO `blog` (`id`, `date`, `blog_title`, `blog_details`, `avatar`, `posted_by`) VALUES
-(9, '2020-11-03', 'WELCOME TO RTSOFTBD10', '1Why do compromises when RTSOFTBD can make your website the way you want?Just sit and relax, we are here to take care your virtual appearance the best way', 'assets/blog_avatar/avatar6.png', 'RTSOFTBD1'),
+(9, '0000-00-00', 'WELCOME TO RTSOFTBD', 'Why do compromises when RTSOFTBD can make your website the way you want?Just sit and relax, we are here to take care your virtual appearance the best way', 'assets/blog_avatar/avatar6.png', 'RTSOFTBD'),
 (10, '0000-00-00', 'Web Application', 'Awesome applocation made by RTSOFTBD Web Application TEAM.Visit our website gather information.', 'assets/blog_avatar/download_(1).png', 'shaown'),
 (11, '2020-10-29', 'think positive', 'Awesome applocation made by RTSOFTBD Web Application TEAM.', 'assets/blog_avatar/avatar32.png', 'admin'),
 (12, '2020-10-29', 'Another blog12', '12 Awesome applocation made by RTSOFTBD Web Application TEAM.', 'assets/blog_avatar/avatar231.png', 'admin12');
@@ -150,7 +150,8 @@ INSERT INTO `brandbox` (`id`, `title`, `details`, `value`) VALUES
 (2, 'Social Media Contests', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 40),
 (3, 'Social Media Management', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 50),
 (4, 'Meet with Our Best Experts', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 90),
-(5, 'Meet with Our Best Experts', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 70);
+(5, 'Meet with Our Best Experts', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 70),
+(7, 'RTSOFTBD WEB TEAM ', 'RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM RTSOFTBD WEB TEAM ', 99);
 
 -- --------------------------------------------------------
 
@@ -546,7 +547,7 @@ CREATE TABLE `partner` (
 --
 
 INSERT INTO `partner` (`id`, `title`, `details`) VALUES
-(1, 'Our Valuable Partner', 'Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima');
+(1, 'Our Valueable Partner', '         Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima       ');
 
 -- --------------------------------------------------------
 
@@ -574,6 +575,27 @@ INSERT INTO `partner_image` (`id`, `image`) VALUES
 (9, 'assets/partner_images/30.png'),
 (10, 'assets/partner_images/iso-header-logo.png'),
 (11, 'assets/partner_images/4.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `popup`
+--
+
+CREATE TABLE `popup` (
+  `id` int(11) NOT NULL,
+  `mobile` varchar(250) NOT NULL,
+  `gmail` varchar(250) NOT NULL,
+  `day` varchar(250) NOT NULL,
+  `time` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `popup`
+--
+
+INSERT INTO `popup` (`id`, `mobile`, `gmail`, `day`, `time`) VALUES
+(1, '01832780099', 'shaown@gmail.com', 'Monday-Saturday', '10am-6pm');
 
 -- --------------------------------------------------------
 
@@ -688,6 +710,53 @@ INSERT INTO `short_story` (`id`, `short_story_heading`, `short_story_title`, `sh
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `sidebar`
+--
+
+CREATE TABLE `sidebar` (
+  `id` int(11) NOT NULL,
+  `title` varchar(250) NOT NULL,
+  `details` varchar(250) NOT NULL,
+  `image` varchar(250) NOT NULL,
+  `mobile` varchar(250) NOT NULL,
+  `gmail` varchar(250) NOT NULL,
+  `address` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `sidebar`
+--
+
+INSERT INTO `sidebar` (`id`, `title`, `details`, `image`, `mobile`, `gmail`, `address`) VALUES
+(1, 'Get In Touch', '                           RTSOFTBD is an incredibly SOFTWARE Farm for corporate and creative\r\nprofessionals.Focused on helping clients to build a successful business on web and mobile application.\r\nIt works on all major software sector.             ', 'assets/sidebar_images/rtsoftbd_logo1.png', '+88017000000', 'rtsoftbd@gmail.com', '132,Jahanara garden,green road,dhaka-1205');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `signup`
+--
+
+CREATE TABLE `signup` (
+  `id` int(11) NOT NULL,
+  `fname` varchar(250) NOT NULL,
+  `lname` varchar(250) NOT NULL,
+  `gmail` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `gender` varchar(250) NOT NULL,
+  `terms` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `signup`
+--
+
+INSERT INTO `signup` (`id`, `fname`, `lname`, `gmail`, `password`, `gender`, `terms`) VALUES
+(4, 'ariful ', 'haque', 'admin@gmail.com', 'admin', 'Male', 'Accept Terms'),
+(5, 'Enayet', 'Mazhar', 'admin@gmail.com', 'admin', 'Male', 'Accept Terms');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `slider`
 --
 
@@ -767,7 +836,9 @@ INSERT INTO `subscribe` (`id`, `gmail`) VALUES
 (12, 'rtsoftbd@gmail.com'),
 (13, 'rtsoftbd@gmail.com'),
 (14, 'rtsoftbd@gmail.com'),
-(15, 'arifulhaquecse2016@gmail.com');
+(15, 'arifulhaquecse2016@gmail.com'),
+(16, 'rtsoftbd@gmail.com'),
+(17, 'ytrfty');
 
 -- --------------------------------------------------------
 
@@ -1108,6 +1179,12 @@ ALTER TABLE `partner_image`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `popup`
+--
+ALTER TABLE `popup`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -1135,6 +1212,18 @@ ALTER TABLE `qualityitem`
 -- Indexes for table `short_story`
 --
 ALTER TABLE `short_story`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `sidebar`
+--
+ALTER TABLE `sidebar`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `signup`
+--
+ALTER TABLE `signup`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1241,7 +1330,7 @@ ALTER TABLE `brand`
 -- AUTO_INCREMENT for table `brandbox`
 --
 ALTER TABLE `brandbox`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `client_img`
@@ -1358,6 +1447,12 @@ ALTER TABLE `partner_image`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
+-- AUTO_INCREMENT for table `popup`
+--
+ALTER TABLE `popup`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
@@ -1388,6 +1483,18 @@ ALTER TABLE `short_story`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT for table `sidebar`
+--
+ALTER TABLE `sidebar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `signup`
+--
+ALTER TABLE `signup`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
@@ -1403,7 +1510,7 @@ ALTER TABLE `slides_item`
 -- AUTO_INCREMENT for table `subscribe`
 --
 ALTER TABLE `subscribe`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `team`

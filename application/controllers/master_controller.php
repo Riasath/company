@@ -12,6 +12,7 @@ class Master_controller extends CI_Controller
          $data['abc']='xyz';
 
    $data['popup']=$this->admin_model->select_popup();
+   $data['sidebar']=$this->admin_model->select_sidebar();
           $data['all_db_slider']=$this->slider_model->select_all_slider_info();	
 		  $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		  $data['all_db_testimonials']=$this->admin_model->select_all_testimonials_info(); 

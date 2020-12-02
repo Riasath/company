@@ -50,6 +50,12 @@ $route['delete-popup/(.+)']='Admin/delete_popup/$1';
 //signup
 $route['save-signup']='Admin/save_signup';
 
+//sidebar
+$route['save-sidebar']='Admin/save_sidebar';
+$route['edit-sidebar/(.+)']='Admin/edit_sidebar/$1';
+$route['update-sidebar']='Admin/update_sidebar';
+$route['view-sidebar/(.+)']='Admin/view_sidebar/$1';
+$route['delete-sidebar/(.+)']='Admin/delete_sidebar/$1';
 
 
 //subscribe
