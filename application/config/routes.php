@@ -433,3 +433,12 @@ $route['edit-brandbox/(.+)']='Admin/edit_brandbox/$1';
 $route['update-brandbox']='Admin/update_brandbox';
 $route['view-brandbox/(.+)']='Admin/view_brandbox/$1';
 $route['delete-brandbox/(.+)']='Admin/delete_brandbox/$1';
+//contact page
+$route['contactform']='Admin/save_contactform';
+
+//contact address
+$route['save-address']='Admin/save_address';
+$route['edit-address/(.+)']='Admin/edit_address/$1';
+$route['update-address']='Admin/update_address';
+$route['view-address/(.+)']='Admin/view_address/$1';
+$route['delete-address/(.+)']='Admin/delete_address/$1';

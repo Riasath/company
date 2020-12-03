@@ -364,6 +364,7 @@ public function cloud_app()
 	   $data['abc']='xyz';
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
+  $data['contact_address']=$this->admin_model->select_contact_address();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
 		$data['content'] = $this->load->view('pages/contact',$data, TRUE);

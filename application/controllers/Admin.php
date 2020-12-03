@@ -2350,7 +2350,96 @@ $data['all_brandbox_view_by_id'] = $this->admin_model->all_brandbox_view_by_id($
 		redirect('Admin/brandbox');
 
 	}
+//contactform
+public function contactform()
+	{
+        $data = $this->engine->store_nav('contact', 'contactform', 'welcome to contactform page');
+        $data['contactformList'] = $this->Common->get_data('contactform');
+        $path = 'backend/admin/contactform/contactform';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+	
 
+	
+	public function add_contactform()
+	{
+        $data = $this->engine->store_nav('contact', 'contactform', 'Create New contactform');
+		$path = 'backend/admin/contactform/add_contactform';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_contactform()
+	{
+
+
+		$this->admin_model->save_contactform();
+		redirect('');
+	}
+	//Contact address
+
+public function address()
+	{
+        $data = $this->engine->store_nav('contact', 'address', 'welcome to address page');
+        $data['addressList'] = $this->Common->get_data('address');
+        $path = 'backend/admin/address/address';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+
+	
+
+	
+	public function add_address()
+	{
+        $data = $this->engine->store_nav('contact', 'address', 'Create New address');
+		$path = 'backend/admin/address/add_address';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_address()
+	{
+
+
+		$this->admin_model->save_address();
+		
+	}
+	public function edit_address($id)
+	{
+       $data = $this->engine->store_nav('contact', 'address', 'welcome to our  address ');
+$data['all_address_by_id'] = $this->admin_model->all_address_by_id($id);
+	   	$path = 'backend/admin/address/edit_address';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_address()
+	{
+
+		$this->admin_model->update_address();
+		redirect('Admin/address');
+           
+
+	}
+	public function view_address($id){
+
+ $data = $this->engine->store_nav('contact', 'address', 'welcome to our  address ');
+$data['all_address_view_by_id'] = $this->admin_model->all_address_view_by_id($id);
+	   	$path = 'backend/admin/address/view_address';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);  
+	}
+	public function delete_address($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_address_by_id($id);
+
+		redirect('Admin/address');
+
+	}
+	
 
 
 }
+
+

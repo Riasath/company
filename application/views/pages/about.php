@@ -4,6 +4,8 @@
 
 
 
+
+
 	<div class="stunning-header stunning-header-bg-lightblue"
 	style="background-image: url('<?php echo base_url('assets/images/pattern-bg-lightblue.jpg')?>');">
 		<div class="stunning-header-content" >

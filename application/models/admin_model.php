@@ -45,7 +45,7 @@ $query_result=$this->db->get();
     $data['mobile']=$this->input->post('mobile',true);
     $data['gmail']=$this->input->post('gmail',true);
     $data['day']=$this->input->post('day',true);
-    $data['day']=$this->input->post('day',true);
+   
     $data['time']=$this->input->post('time',true);
 
    
@@ -3443,8 +3443,109 @@ $query_result=$this->db->get();
       $this->db->delete('brandbox');
 
   }
+  //contact page
+  //contact form
+
+public function save_contactform(){
+
+ $data=array();
+   
+$data['name']=$this->input->post('name',true);   
+$data['gmail']=$this->input->post('gmail',true);   
+$data['phone']=$this->input->post('phone',true);   
+$data['message']=$this->input->post('message',true);   
+  
+   
+   
+   
 
 
+   $this->db->insert('contactform',$data);
+
+  }
+    //contact address
+
+public function save_address(){
+
+ $data=array();
+   
+$data['title']=$this->input->post('title',true);   
+$data['house']=$this->input->post('house',true);   
+$data['cellnum']=$this->input->post('cellnum',true);   
+$data['officenum']=$this->input->post('officenum',true);   
+$data['supportnum']=$this->input->post('supportnum',true);   
+$data['gmail']=$this->input->post('gmail',true);   
+$data['address']=$this->input->post('address',true);   
+  
+   
+   
+   
+
+
+   $this->db->insert('address',$data);
+   redirect('Admin/address');
+
+  }
+   public function select_contact_address(){
+
+
+  $this->db->select('*');
+  $this->db->from('address');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_address_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('address');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_address(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['house']=$this->input->post('house',true);
+    $data['cellnum']=$this->input->post('cellnum',true);
+    $data['officenum']=$this->input->post('officenum',true);
+    $data['supportnum']=$this->input->post('supportnum',true);
+    $data['gmail']=$this->input->post('gmail',true);
+    $data['address']=$this->input->post('address',true);
+    $data['cellnum']=$this->input->post('cellnum',true);
+
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('address',$data);
+
+  }
+   public function all_address_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('address');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_address_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('address');
+
+  }
 
 
 

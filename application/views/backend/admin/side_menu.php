@@ -338,6 +338,31 @@
 					</ul>
 				</li>
 
+					<li class="nav-item has-treeview <?= active_open('contact', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('contact', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+							Contact
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/contactform') ?>" class="nav-link <?= active_nav('contactform', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>User Form </p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/address') ?>" class="nav-link <?= active_nav('address', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Address</p>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
+
 				<li class="nav-item has-treeview <?= active_open('test_main_menu', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('test_main_menu', $main_nav); ?>">
 						<i class="nav-icon fas fa-edit"></i>
