@@ -362,6 +362,50 @@
 						
 					</ul>
 				</li>
+					<li class="nav-item has-treeview <?= active_open('portfolio', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('portfolio', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+							Portfolio
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/android') ?>" class="nav-link <?= active_nav('android', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Android</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/web_development') ?>" class="nav-link <?= active_nav('web_development', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Web Development</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/web_design') ?>" class="nav-link <?= active_nav('web_design', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Web Design</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/software') ?>" class="nav-link <?= active_nav('software', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Software Development</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/demo') ?>" class="nav-link <?= active_nav('demo', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Demo</p>
+							</a>
+						</li>
+						
+						
+					</ul>
+				</li>
+					
 
 				<li class="nav-item has-treeview <?= active_open('test_main_menu', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('test_main_menu', $main_nav); ?>">

@@ -91,22 +91,34 @@ $this->load->view('main_layout',$data);
 	
 
 	}
-
-
-
-
-	public function erpsolutions()
+public function portfolio()
 	{
-		
-		
+	 $data['abc']='xyz';
+$data['sidebar']=$this->admin_model->select_sidebar();
+      $data['popup']=$this->admin_model->select_popup();
+      $data['android_items']=$this->admin_model->select_android_items();
+      $data['web_development']=$this->admin_model->select_web_development_items();
+       $data['web_design']=$this->admin_model->select_web_design_items();
+       $data['software']=$this->admin_model->select_software_items();
+       $data['demo']=$this->admin_model->select_demo_items();
+		$data['content'] = $this->load->view('pages/portfolio',$data, TRUE);
+		  $data['footer_top']=$this->admin_model->footer_top_info();
+		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		       $data['footermenu']=$this->admin_model->footermenu();
+		      $data['footer_icon']=$this->admin_model->footer_icon();
+		       $data['copyright']=$this->admin_model->copyright_info();
 
-
-      $data['abc']='xyz';
+		$this->load->view('main_layout',$data);
+	}
+public function erpsolutions()
+	{
+	 $data['abc']='xyz';
 $data['sidebar']=$this->admin_model->select_sidebar();
       $data['popup']=$this->admin_model->select_popup();
 		$data['content'] = $this->load->view('pages/erp',$data, TRUE);
 		  $data['footer_top']=$this->admin_model->footer_top_info();
 		     $data['footer_bottom']=$this->admin_model->footer_bottom_info();
+		       $data['footermenu']=$this->admin_model->footermenu();
 		      $data['footer_icon']=$this->admin_model->footer_icon();
 		       $data['copyright']=$this->admin_model->copyright_info();
 

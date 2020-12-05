@@ -70,6 +70,7 @@ $route['home']='master_controller';
 $route['about']='pages/about';
 $route['service']='pages/service';
 $route['digital-service']='pages/digital_service';
+$route['portfolio']='pages/portfolio';
 
 $route['micro-finance']='pages/micro_finance';
 $route['office-mgt']='pages/office_mgt';
@@ -442,3 +443,41 @@ $route['edit-address/(.+)']='Admin/edit_address/$1';
 $route['update-address']='Admin/update_address';
 $route['view-address/(.+)']='Admin/view_address/$1';
 $route['delete-address/(.+)']='Admin/delete_address/$1';
+
+//portfolio page
+
+//android items
+$route['save-android']='Admin/save_android';
+$route['edit-android/(.+)']='Admin/edit_android/$1';
+$route['update-android']='Admin/update_android';
+$route['view-android/(.+)']='Admin/view_android/$1';
+$route['delete-android/(.+)']='Admin/delete_android/$1';
+
+//web-development items
+$route['save-web-development']='Admin/save_web_development';
+$route['edit-web-development/(.+)']='Admin/edit_web_development/$1';
+$route['update-web-development']='Admin/update_web_development';
+$route['view-web-development/(.+)']='Admin/view_web_development/$1';
+$route['delete-web-development/(.+)']='Admin/delete_web_development/$1';
+
+//web-design items
+$route['save-web-design']='Admin/save_web_design';
+$route['edit-web-design/(.+)']='Admin/edit_web_design/$1';
+$route['update-web-design']='Admin/update_web_design';
+$route['view-web-design/(.+)']='Admin/view_web_design/$1';
+$route['delete-web-design/(.+)']='Admin/delete_web_design/$1';
+
+
+//Software development items
+$route['save-software']='Admin/save_software';
+$route['edit-software/(.+)']='Admin/edit_software/$1';
+$route['update-software']='Admin/update_software';
+$route['view-software/(.+)']='Admin/view_software/$1';
+$route['delete-software/(.+)']='Admin/delete_software/$1';
+
+//Demo items
+$route['save-demo']='Admin/save_demo';
+$route['edit-demo/(.+)']='Admin/edit_demo/$1';
+$route['update-demo']='Admin/update_demo';
+$route['view-demo/(.+)']='Admin/view_demo/$1';
+$route['delete-demo/(.+)']='Admin/delete_demo/$1';

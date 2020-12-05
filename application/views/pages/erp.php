@@ -40,158 +40,107 @@
 
 				<ul class="cat-list align-center sorting-menu">
 
-					<li class="cat-list__item active" data-filter="*"><a href="#" class="">All Projects</a></li>
-					<li class="cat-list__item" data-filter=".ecommerce"><a href="#" class="">Ecommerce</a></li>
-					<li class="cat-list__item" data-filter=".smm"><a href="#" class="">SMM</a></li>
-					<li class="cat-list__item" data-filter=".technology"><a href="#" class="">Technology</a></li>
-					<li class="cat-list__item" data-filter=".b2b"><a href="#" class="">B2B Services</a></li>
-					<li class="cat-list__item" data-filter=".seo"><a href="#" class="">SEO</a></li>
+	<li class="cat-list__item active" data-filter="*"><a href="#" class="">All Projects</a></li>
+	<li class="cat-list__item" data-filter=".android"><a href="#" class="">Android</a></li>
+	<li class="cat-list__item" data-filter=".web_development"><a href="#" class="">Web Development</a></li>
+	<li class="cat-list__item" data-filter=".web_design"><a href="#" class="">Web Design</a></li>
+	<li class="cat-list__item" data-filter=".software_development"><a href="#" class="">Software Development</a></li>
+	<li class="cat-list__item" data-filter=".demo"><a href="#" class="">Demo</a></li>
 
 				</ul>
 
 
 				<div class="row sorting-container" data-layout="fitRows">
 					<div class="grid-sizer col-lg-4 col-md-4"></div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 sorting-item ecommerce seo smm">
-						<div class="case-item align-center big mb60">
-							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-								<img src="assets/images/30.png" alt="our case">
-							</div>
-							<h5 class="case-item__title">Mirum est notare</h5>
-							<div class="case-item__cat">
-								<a href="#">Ecommerce,</a>
-								<a href="#">SEO,</a>
-								<a href="#">SMM</a>
-							</div>
-						</div>
-					</div>
 
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 sorting-item seo smm">
+	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item android ">
+		<div class="case-item align-center mb60">
+			<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
+				<img src="assets/images/32.png" alt="our case">
+			</div>
+			<h6 class="case-item__title">
+		Client Managment System
+
+		</h6>
+			<div class="case-item__cat">
+				<h5>
+					Developed by RTsoftBD Android devlopment Team
+				</h5>
+			
+			</div>
+		</div>
+	</div>
+
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 sorting-item web_development ">
+<div class="case-item align-center big mb60">
+	<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
+		<img src="assets/images/30.png" alt="our case">
+	</div>
+	<h5 class="case-item__title">
+	62nd CPC Conference
+	</h5>
+	<div class="case-item__cat">
+     <h5>
+	Developed by RTsoftBD Web devlopment Team
+	</h5>
+	</div>
+</div>
+</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 sorting-item web_design">
 						<div class="case-item align-center big  mb60">
 							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
 								<img src="assets/images/31.png" alt="our case">
 							</div>
-							<h5 class="case-item__title">Claritas processus</h5>
+							<h5 class="case-item__title">
+							136th IPU ASSEMBLY, Bangladesh
+
+						</h5>
 							<div class="case-item__cat">
-								<a href="#">SEO,</a>
-								<a href="#">SMM</a>
+							<h5>
+								Developed by RTsoftBD Web devlopment Team
+							</h5>
+								
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item  b2b smm technology">
-						<div class="case-item align-center mb60">
-							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-								<img src="assets/images/32.png" alt="our case">
-							</div>
-							<h6 class="case-item__title">Investigationes legere</h6>
-							<div class="case-item__cat">
-								<a href="#">B2B Services,</a>
-								<a href="#">Featured,</a>
-								<a href="#">SMM</a>
-							</div>
-						</div>
-					</div>
 
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item b2b seo">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item software_development ">
 						<div class="case-item align-center mb60">
 							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
 								<img src="assets/images/33.png" alt="our case">
 							</div>
-							<h6 class="case-item__title">Mirum est notare</h6>
+							<h6 class="case-item__title">
+						Barisal City Corporation
+                         </h6>
 							<div class="case-item__cat">
-								<a href="#">B2B Services,</a>
-								<a href="#">SEO</a>
+								<h5>
+									Developed by RTsoftBD Software devlopment Team
+                                </h5>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item ecommerce seo smm">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item demo">
 						<div class="case-item align-center mb60">
 							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
 								<img src="assets/images/34.png" alt="our case">
 							</div>
-							<h6 class="case-item__title">Eodem modo typi qui</h6>
+							<h6 class="case-item__title">
+								Zajira (জাজিরা)
+							</h6>
 							<div class="case-item__cat">
-								<a href="#">Ecommerce,</a>
-								<a href="#">SEO,</a>
-								<a href="#">SMM</a>
+								<h5>Developed by RTsoftBD Android devlopment Team</h5>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item smm technology">
-						<div class="case-item align-center mb60">
-							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-								<img src="assets/images/35.png" alt="our case">
-							</div>
-							<h6 class="case-item__title">Investigationes legere</h6>
-							<div class="case-item__cat">
-								<a href="#">SMM,</a>
-								<a href="#">Technology</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item ecommerce seo smm">
-						<div class="case-item align-center mb60">
-							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-								<img src="assets/images/36.png" alt="our case">
-							</div>
-							<h6 class="case-item__title">Investigationes legere</h6>
-							<div class="case-item__cat">
-								<a href="#">Ecommerce,</a>
-								<a href="#">SEO,</a>
-								<a href="#">SMM</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 sorting-item b2b smm technology">
-						<div class="case-item align-center mb60">
-							<div class="case-item__thumb mouseover lightbox shadow animation-disabled">
-								<img src="assets/images/37.png" alt="our case">
-							</div>
-							<h6 class="case-item__title">Investigationes legere</h6>
-							<div class="case-item__cat">
-								<a href="#">B2B Services,</a>
-								<a href="#">Featured,</a>
-								<a href="#">SMM</a>
-							</div>
-						</div>
-					</div>
+					
 
 				</div>
 
-				<div class="row">
-
-					<div class="col-lg-12">
-
-						<nav class="navigation align-center">
-
-							<a href="#" class="page-numbers prev">
-								<svg class="btn-prev">
-									<use xlink:href="#arrow-left"></use>
-								</svg>
-							</a>
-
-							<a href="#" class="page-numbers bg-border-color current"><span>1</span></a>
-							<a href="#" class="page-numbers bg-border-color"><span>2</span></a>
-							<a href="#" class="page-numbers bg-border-color"><span>3</span></a>
-							<a href="#" class="page-numbers bg-border-color"><span>4</span></a>
-							<a href="#" class="page-numbers bg-border-color"><span>5</span></a>
-
-							<a href="#" class="page-numbers next">
-								<svg class="btn-next">
-									<use xlink:href="#arrow-right"></use>
-								</svg>
-							</a>
-
-						</nav>
-
-					</div>
-
-				</div>
+			
 
 			</div>
 

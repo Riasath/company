@@ -211,6 +211,10 @@
 		</li>
 
 		<li>
+<a href="<?php echo base_url();?>portfolio">Portfolio<i class="seoicon-right-arrow"></i></a>
+		</li>
+
+		<li>
 <a href="<?php echo base_url();?>erpsolutions">ERP Solutions<i class="seoicon-right-arrow"></i></a>
 		</li>
 		

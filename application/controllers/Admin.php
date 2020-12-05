@@ -2437,6 +2437,346 @@ $data['all_address_view_by_id'] = $this->admin_model->all_address_view_by_id($id
 		redirect('Admin/address');
 
 	}
+		//Portfolio
+
+	//android items
+
+public function android()
+	{
+        $data = $this->engine->store_nav('portfolio', 'android', 'welcome to android page');
+        $data['androidList'] = $this->Common->get_data('android');
+        $path = 'backend/admin/android/android';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+
+	
+
+	
+	public function add_android()
+	{
+        $data = $this->engine->store_nav('portfolio', 'android', 'Create New android');
+		$path = 'backend/admin/android/add_android';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	
+	
+	public function save_android()
+	{
+
+
+		$this->admin_model->save_android();
+	
+
+}
+public function edit_android($id)
+	{
+     $data = $this->engine->store_nav('portfolio', 'android', 'New android');
+		$data['all_android_by_id'] = $this->admin_model->all_android_by_id($id);
+	   	$path = 'backend/admin/android/edit_android';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_android()
+	{
+
+		$this->admin_model->update_android();
+		redirect('Admin/android');
+           
+
+	}
+	public function view_android($id){
+
+         
+
+		 $data = $this->engine->store_nav('portfolio', 'android', 'New android');
+		$data['all_android_view_by_id'] = $this->admin_model->all_android_by_id($id);
+	   	$path = 'backend/admin/android/view_android';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_android($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_android_by_id($id);
+
+		redirect('Admin/android');
+
+	}
+		//web_development
+
+public function web_development()
+	{
+        $data = $this->engine->store_nav('portfolio', 'web_development', 'welcome to web_development page');
+        $data['web_developmentList'] = $this->Common->get_data('web_development');
+        $path = 'backend/admin/web_development/web_development';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+
+	
+
+	
+	public function add_web_development()
+	{
+        $data = $this->engine->store_nav('portfolio', 'web_development', 'Create New web_development');
+		$path = 'backend/admin/web_development/add_web_development';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	
+	
+	public function save_web_development()
+	{
+
+
+		$this->admin_model->save_web_development();
+	
+
+}
+public function edit_web_development($id)
+	{
+     $data = $this->engine->store_nav('portfolio', 'web_development', 'New web_development');
+		$data['all_web_development_by_id'] = $this->admin_model->all_web_development_by_id($id);
+	   	$path = 'backend/admin/web_development/edit_web_development';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_web_development()
+	{
+
+		$this->admin_model->update_web_development();
+		redirect('Admin/web_development');
+           
+
+	}
+	public function view_web_development($id){
+
+         
+
+		 $data = $this->engine->store_nav('portfolio', 'web_development', 'New web_development');
+		$data['all_web_development_view_by_id'] = $this->admin_model->all_web_development_by_id($id);
+	   	$path = 'backend/admin/web_development/view_web_development';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_web_development($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_web_development_by_id($id);
+
+		redirect('Admin/web_development');
+
+	}
+		//web_design
+
+public function web_design()
+	{
+        $data = $this->engine->store_nav('portfolio', 'web_design', 'welcome to web_design page');
+        $data['web_designList'] = $this->Common->get_data('web_design');
+        $path = 'backend/admin/web_design/web_design';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+
+	
+
+	
+	public function add_web_design()
+	{
+        $data = $this->engine->store_nav('portfolio', 'web_design', 'Create New web_design');
+		$path = 'backend/admin/web_design/add_web_design';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	
+	
+	public function save_web_design()
+	{
+
+
+		$this->admin_model->save_web_design();
+	
+
+}
+public function edit_web_design($id)
+	{
+     $data = $this->engine->store_nav('portfolio', 'web_design', 'New web_design');
+		$data['all_web_design_by_id'] = $this->admin_model->all_web_design_by_id($id);
+	   	$path = 'backend/admin/web_design/edit_web_design';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_web_design()
+	{
+
+		$this->admin_model->update_web_design();
+		redirect('Admin/web_design');
+           
+
+	}
+	public function view_web_design($id){
+
+         
+
+		 $data = $this->engine->store_nav('portfolio', 'web_design', 'New web_design');
+		$data['all_web_design_view_by_id'] = $this->admin_model->all_web_design_by_id($id);
+	   	$path = 'backend/admin/web_design/view_web_design';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_web_design($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_web_design_by_id($id);
+
+		redirect('Admin/web_design');
+
+	}
+		//Software Development
+
+public function software()
+	{
+        $data = $this->engine->store_nav('portfolio', 'software', 'welcome to software page');
+        $data['softwareList'] = $this->Common->get_data('software');
+        $path = 'backend/admin/software/software';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+
+	
+
+	
+	public function add_software()
+	{
+        $data = $this->engine->store_nav('portfolio', 'software', 'Create New software');
+		$path = 'backend/admin/software/add_software';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	
+	
+	public function save_software()
+	{
+
+
+		$this->admin_model->save_software();
+	
+
+}
+public function edit_software($id)
+	{
+     $data = $this->engine->store_nav('portfolio', 'software', 'New software');
+		$data['all_software_by_id'] = $this->admin_model->all_software_by_id($id);
+	   	$path = 'backend/admin/software/edit_software';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_software()
+	{
+
+		$this->admin_model->update_software();
+		redirect('Admin/software');
+           
+
+	}
+	public function view_software($id){
+
+         
+
+		 $data = $this->engine->store_nav('portfolio', 'software', 'New software');
+		$data['all_software_view_by_id'] = $this->admin_model->all_software_by_id($id);
+	   	$path = 'backend/admin/software/view_software';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_software($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_software_by_id($id);
+
+		redirect('Admin/software');
+
+	}
+		//Demo
+
+public function demo()
+	{
+        $data = $this->engine->store_nav('portfolio', 'demo', 'welcome to demo page');
+        $data['demoList'] = $this->Common->get_data('demo');
+        $path = 'backend/admin/demo/demo';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+
+	
+
+	
+	public function add_demo()
+	{
+        $data = $this->engine->store_nav('portfolio', 'demo', 'Create New demo');
+		$path = 'backend/admin/demo/add_demo';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	
+	
+	public function save_demo()
+	{
+
+
+		$this->admin_model->save_demo();
+	
+
+}
+public function edit_demo($id)
+	{
+     $data = $this->engine->store_nav('portfolio', 'demo', 'New demo');
+		$data['all_demo_by_id'] = $this->admin_model->all_demo_by_id($id);
+	   	$path = 'backend/admin/demo/edit_demo';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_demo()
+	{
+
+		$this->admin_model->update_demo();
+		redirect('Admin/demo');
+           
+
+	}
+	public function view_demo($id){
+
+         
+
+		 $data = $this->engine->store_nav('portfolio', 'demo', 'New demo');
+		$data['all_demo_view_by_id'] = $this->admin_model->all_demo_by_id($id);
+	   	$path = 'backend/admin/demo/view_demo';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_demo($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_demo_by_id($id);
+
+		redirect('Admin/demo');
+
+	}
+	
+	
+	
 	
 
 

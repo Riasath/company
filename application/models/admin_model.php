@@ -3521,7 +3521,7 @@ $query_result=$this->db->get();
     $data['supportnum']=$this->input->post('supportnum',true);
     $data['gmail']=$this->input->post('gmail',true);
     $data['address']=$this->input->post('address',true);
-    $data['cellnum']=$this->input->post('cellnum',true);
+  
 
 
    
@@ -3544,6 +3544,480 @@ $query_result=$this->db->get();
 
    $this->db->where('id',$id);
       $this->db->delete('address');
+
+  }
+  //portfolio page
+  //android items
+  
+    public function save_android(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/android_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('android',$data);
+             redirect('Admin/android');
+
+      }
+       public function select_android_items(){
+
+
+  $this->db->select('*');
+  $this->db->from('android');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_android_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('android');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_android(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/android_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('android',$data);
+
+  }
+  public function delete_android_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('android');
+
+  }
+  //Web development
+    public function save_web_development(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/web_development_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('web_development',$data);
+             redirect('Admin/web_development');
+
+      }
+       public function select_web_development_items(){
+
+
+  $this->db->select('*');
+  $this->db->from('web_development');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_web_development_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('web_development');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_web_development(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/web_development_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('web_development',$data);
+
+  }
+  public function delete_web_development_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('web_development');
+
+  }
+
+
+   //Web design
+    public function save_web_design(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/web_design_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('web_design',$data);
+             redirect('Admin/web_design');
+
+      }
+       public function select_web_design_items(){
+
+
+  $this->db->select('*');
+  $this->db->from('web_design');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_web_design_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('web_design');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_web_design(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/web_design_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('web_design',$data);
+
+  }
+  public function delete_web_design_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('web_design');
+
+  }
+   //software
+    public function save_software(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/software_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('software',$data);
+             redirect('Admin/software');
+
+      }
+       public function select_software_items(){
+
+
+  $this->db->select('*');
+  $this->db->from('software');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_software_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('software');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_software(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/software_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('software',$data);
+
+  }
+  public function delete_software_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('software');
+
+  }
+   //demo
+    public function save_demo(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+             
+             $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/demo_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+            $this->db->insert('demo',$data);
+             redirect('Admin/demo');
+
+      }
+       public function select_demo_items(){
+
+
+  $this->db->select('*');
+  $this->db->from('demo');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_demo_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('demo');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_demo(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+
+
+         $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/demo_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('demo',$data);
+
+  }
+  public function delete_demo_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('demo');
 
   }
 
