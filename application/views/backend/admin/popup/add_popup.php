@@ -45,7 +45,7 @@
     <label for="mobile"><b>Add Mobile Number</b></label></br>
     <input type="text"  name="mobile" id="mobile" required></br>
 
-    <label for="gmail"><b>Add Footer Gmail </b></label></br>
+    <label for="gmail"><b>Add Gmail </b></label></br>
     <input type="text"  name="gmail" id="gmail" required></br>
 
     <label for="day"><b>Add Day </b></label></br>

@@ -10,7 +10,7 @@
 
 					<div class="col-md-2">
 						<a href="<?php echo base_url('Admin/add_popup') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Footer PopUp</i>
+							<button type='button' id="" class='btn bg-success'>Create New PopUp</i>
 							</button></a>
 					</div>
 				</div>
