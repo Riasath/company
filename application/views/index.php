@@ -4,6 +4,8 @@
 	<!-- Main Slider -->
 	
 
+
+
 	<div class="container-full-width">
 		<div class="swiper-container main-slider" data-effect="fade" data-autoplay="4000">
 
@@ -439,16 +441,6 @@
 
                  		 <?php } ?>
 	
-
-
-
-		
-	
-			
-
-	
-	
-
 	
 
 </div>

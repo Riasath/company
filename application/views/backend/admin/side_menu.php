@@ -128,6 +128,37 @@
 						
 					</ul>
 				</li>
+
+				<li class="nav-item has-treeview <?= active_open('menu', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('menu', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+							Menu
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/mainmenu') ?>" class="nav-link <?= active_nav('mainmenu', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Main Menu</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/dropdown') ?>" class="nav-link <?= active_nav('dropdown', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Dropdown Items</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/test_sub_menu_two') ?>" class="nav-link <?= active_nav('test_sub_menu_two', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>A 1 . 2</p>
+							</a>
+						</li>
+						
+					</ul>
+				</li>
 				<li class="nav-item has-treeview <?= active_open('about page', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('about page', $main_nav); ?>">
 						<i class="nav-icon fas fa-edit"></i>

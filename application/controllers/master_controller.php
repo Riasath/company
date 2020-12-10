@@ -3,13 +3,24 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Master_controller extends CI_Controller
 {
+public function __construct(){
 
+  parent::__construct();
+  $this->load->model('Dropdown_model','menu_model','TRUE');
+}
 
 	public function index()
 	{
 
 
-         $data['abc']='xyz';
+  $data['abc']='xyz';
+//dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
+
+
+
+
 
    $data['popup']=$this->admin_model->select_popup();
    $data['sidebar']=$this->admin_model->select_sidebar();

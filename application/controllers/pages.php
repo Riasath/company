@@ -2,11 +2,18 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pages extends CI_Controller {
+public function __construct(){
 
+  parent::__construct();
+  $this->load->model('Dropdown_model','menu_model','TRUE');
+}
 	public function about(){
 
 
 $data['abc']='xyz';
+//dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
 $data['all_db_story']=$this->admin_model->select_short_story(); 
 $data['all_foundation']=$this->admin_model->select_all_foundation(); 
@@ -38,6 +45,9 @@ public function service(){
 
  
  $data['abc']='xyz';
+ //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
   $data['popup']=$this->admin_model->select_popup();
  $data['all_service']=$this->admin_model->select_all_service(); 
  $data['all_feature']=$this->admin_model->select_all_feature(); 
@@ -67,6 +77,9 @@ $this->load->view('main_layout',$data);
 
  
  $data['abc']='xyz';
+ //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
   $data['popup']=$this->admin_model->select_popup();
 $data['all_dservice']=$this->admin_model->select_all_dservice(); 
 $data['all_description']=$this->admin_model->select_all_description(); 
@@ -94,6 +107,9 @@ $this->load->view('main_layout',$data);
 public function portfolio()
 	{
 	 $data['abc']='xyz';
+	 //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
 $data['sidebar']=$this->admin_model->select_sidebar();
       $data['popup']=$this->admin_model->select_popup();
       $data['android_items']=$this->admin_model->select_android_items();
@@ -113,6 +129,9 @@ $data['sidebar']=$this->admin_model->select_sidebar();
 public function erpsolutions()
 	{
 	 $data['abc']='xyz';
+	 //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
 $data['sidebar']=$this->admin_model->select_sidebar();
       $data['popup']=$this->admin_model->select_popup();
 		$data['content'] = $this->load->view('pages/erp',$data, TRUE);
@@ -130,6 +149,9 @@ $data['sidebar']=$this->admin_model->select_sidebar();
 		
 
  $data['abc']='xyz';
+ //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
   $data['popup']=$this->admin_model->select_popup();
 $data['all_db_slider']=$this->slider_model->select_all_slider_info();
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
@@ -148,6 +170,9 @@ $data['footermenu']=$this->admin_model->footermenu();
 		
 		
  $data['abc']='xyz';
+ //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
    $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -164,6 +189,9 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function e_commerce()
 	{
 	   $data['abc']='xyz';
+	   //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -180,6 +208,9 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function school_mgt()
 	{
 	    $data['abc']='xyz';
+	    //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -196,6 +227,9 @@ $data['footermenu']=$this->admin_model->footermenu();
 	public function point_sale()
 	{
 	    $data['abc']='xyz';
+	    //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
 $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -212,6 +246,9 @@ $data['sidebar']=$this->admin_model->select_sidebar();
 	public function storage()
 	{
 		$data['abc']='xyz';
+		//dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -229,6 +266,9 @@ $data['sidebar']=$this->admin_model->select_sidebar();
 	public function testimonials()
 	{
 		$data['abc']='xyz';
+		//dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -246,6 +286,9 @@ $data['sidebar']=$this->admin_model->select_sidebar();
 	public function mobile_app()
 	{
 	   $data['abc']='xyz';
+	   //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -263,6 +306,9 @@ $data['sidebar']=$this->admin_model->select_sidebar();
 public function cloud_app()
 	{
 	      $data['abc']='xyz';
+	      //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -279,6 +325,9 @@ public function cloud_app()
 	public function pay_per()
 	{
 	   $data['abc']='xyz';
+	   //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -295,6 +344,9 @@ public function cloud_app()
 	public function iot_app()
 	{
 	  $data['abc']='xyz';
+	  //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -311,6 +363,9 @@ public function cloud_app()
 	public function local_seo()
 	{
 	   $data['abc']='xyz';
+	   //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -327,6 +382,9 @@ public function cloud_app()
 	public function seo()
 	{
 	    $data['abc']='xyz';
+	    //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -343,6 +401,9 @@ public function cloud_app()
 	public function media_marketing()
 	{
 	    $data['abc']='xyz';
+	    //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -358,6 +419,9 @@ public function cloud_app()
 	}
 	public function email_marketing()
 	{  $data['abc']='xyz';
+	//dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -374,6 +438,9 @@ public function cloud_app()
 	public function contact()
 	{
 	   $data['abc']='xyz';
+	   //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
   $data['contact_address']=$this->admin_model->select_contact_address();
@@ -392,6 +459,9 @@ public function cloud_app()
 	{
 	  
 	   $data['abc']='xyz';
+	   //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();
@@ -408,6 +478,9 @@ public function cloud_app()
 	public function service_promo()
 	{
 	    	   $data['abc']='xyz';
+	    	   //dropdown
+  $data['dropdowns']=$this->menu_model->dropdown_menu();
+  $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
  $data['popup']=$this->admin_model->select_popup();
  $data['sidebar']=$this->admin_model->select_sidebar();
      $data['all_db_slider']=$this->slider_model->select_all_slider_info();

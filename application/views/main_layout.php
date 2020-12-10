@@ -185,6 +185,47 @@
 
 
 				<!-- menu-icon-wrapper -->
+	           <ul class="primary-menu-menu">
+<?php foreach ($dropdowns as $menu): ?>
+   <?php if($menu->menu_id !=$menu->m_id):?>
+     
+	<li class="menu-item-has-children">
+		<a href="<?php echo base_url().$menu->m_url;?>">
+			<?php echo $menu->m_name;?>
+		</a>
+	</li>
+	<?php else:?>
+
+
+<li class=""><a href="#"><?php echo $menu->m_name;?></a>
+	<ul class="dropdown">
+<?php foreach ($dropdown_items as $item): ?>
+
+	<?php if($menu->menu_id ==$item->m_id):?>
+     
+	<li class="menu-item-has-children">
+		<a href="<?php echo base_url().$menu->m_item_url;?>">
+			<?php echo $item->m_item_name;?>
+		</a>
+	</li>
+	<?php endif;?>
+		   
+   <?php endforeach;?>	
+		
+		
+	</ul>
+</li>
+   <?php endif;?>
+
+
+<?php endforeach;?>			
+					
+	
+
+				</ul>
+
+		
+
 
 				<ul class="primary-menu-menu">
 					
@@ -365,6 +406,9 @@
 					</li>
 				</ul>
 			</nav>
+
+
+
 
 			<ul class="nav-add">
 				<li class="cart">

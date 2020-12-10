@@ -2774,7 +2774,117 @@ public function edit_demo($id)
 		redirect('Admin/demo');
 
 	}
+	//menu
+	//main menu
+	public function mainmenu()
+	{
+        $data = $this->engine->store_nav('menu', 'mainmenu', 'welcome to mainmenu page');
+        $data['mainmenuList'] = $this->Common->get_data('menu');
+        $path = 'backend/admin/mainmenu/mainmenu';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
 	
+
+
+	
+
+	
+	public function add_mainmenu()
+	{
+        $data = $this->engine->store_nav('menu', 'mainmenu', 'Create New mainmenu');
+		$path = 'backend/admin/mainmenu/add_mainmenu';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	
+	
+	public function save_mainmenu()
+	{
+
+
+		$this->admin_model->save_mainmenu();
+	
+
+}
+public function edit_mainmenu($m_id)
+	{
+     $data = $this->engine->store_nav('menu', 'mainmenu', 'New mainmenu');
+		$data['all_mainmenu_by_id'] = $this->admin_model->all_mainmenu_by_id($m_id);
+	   	$path = 'backend/admin/mainmenu/edit_mainmenu';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_mainmenu()
+	{
+
+		$this->admin_model->update_mainmenu();
+		redirect('Admin/mainmenu');
+           
+
+	}
+	public function view_mainmenu($m_id){
+
+  $data = $this->engine->store_nav('menu', 'mainmenu', 'New mainmenu');
+		$data['all_mainmenu_view_by_id'] = $this->admin_model->all_mainmenu_by_id($m_id);
+	   	$path = 'backend/admin/mainmenu/view_mainmenu';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_mainmenu($m_id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_mainmenu_by_id($m_id);
+
+		redirect('Admin/mainmenu');
+
+	}
+  //dropdown menu items
+	public function dropdown()
+	{
+        $data = $this->engine->store_nav('menu', 'dropdown', 'welcome to dropdown page');
+        $data['dropdownList'] = $this->Common->get_data('menu_item');
+        $path = 'backend/admin/dropdown/dropdown';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	
+
+
+	
+
+	
+	public function add_dropdown()
+	{
+        $data = $this->engine->store_nav('menu', 'dropdown', 'Create New dropdown');
+		$path = 'backend/admin/dropdown/add_dropdown';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	
+	
+	public function save_dropdown()
+	{
+
+
+		$this->admin_model->save_dropdown();
+	
+
+}
+public function edit_dropdown($m_item_id)
+	{
+      
+
+
+		$data = $this->engine->store_nav('menu', 'dropdown', 'Create New dropdown');
+		$data['all_dropdown_info_by_id'] = $this->admin_model->all_dropdown_list_by_id($m_item_id);
+	   	$path = 'backend/admin/dropdown/edit_dropdown';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+        
+		  
+	
+	}
+
 	
 	
 	

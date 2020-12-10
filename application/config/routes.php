@@ -37,7 +37,20 @@ $route['admin-login']='Admin/admin_login';
 $route['logout']='Admin/logout';
 
 
+//menu
+//main menu
+$route['save-mainmenu']='Admin/save_mainmenu';
+$route['edit-mainmenu/(.+)']='Admin/edit_mainmenu/$1';
+$route['update-mainmenu']='Admin/update_mainmenu';
+$route['view-mainmenu/(.+)']='Admin/view_mainmenu/$1';
+$route['delete-mainmenu/(.+)']='Admin/delete_mainmenu/$1';
 
+//Dropdown
+$route['save-dropdown']='Admin/save_dropdown';
+$route['edit-dropdown/(.+)']='Admin/edit_dropdown/$1';
+$route['update-dropdown']='Admin/update_dropdown';
+$route['view-dropdown/(.+)']='Admin/view_dropdown/$1';
+$route['delete-dropdown/(.+)']='Admin/delete_dropdown/$1';
 
 //popup
 $route['save-popup']='Admin/save_popup';
@@ -474,6 +487,7 @@ $route['edit-software/(.+)']='Admin/edit_software/$1';
 $route['update-software']='Admin/update_software';
 $route['view-software/(.+)']='Admin/view_software/$1';
 $route['delete-software/(.+)']='Admin/delete_software/$1';
+
 
 //Demo items
 $route['save-demo']='Admin/save_demo';

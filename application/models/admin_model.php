@@ -4020,9 +4020,95 @@ $query_result=$this->db->get();
       $this->db->delete('demo');
 
   }
+//menu
+  //main menu
+
+ public function save_mainmenu(){
+
+$data=array();
+  
+$data['m_name']=$this->input->post('m_name',true); 
+$data['m_url']=$this->input->post('m_url',true); 
+$data['m_desc']=$this->input->post('m_desc',true); 
+
+  $this->db->insert('menu',$data);
+ redirect('Admin/mainmenu');
+
+
+      }
+      public function select_all_mainmenu(){
+
+
+  $this->db->select('*');
+  $this->db->from('menu');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_mainmenu_by_id($m_id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('menu');
+$this->db->WHERE('m_id',$m_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+     public function update_mainmenu(){
+
+
+    $data=array();
+    $m_id=$this->input->post('m_id',true);
+    
+    $data['m_name']=$this->input->post('m_name',true);
+    $data['m_url']=$this->input->post('m_url',true);
+    $data['m_desc']=$this->input->post('m_desc',true);
+   
+
+    $this->db->WHERE('m_id',$m_id);
+  $this->db->update('menu',$data);
+
+  }
+  public function delete_mainmenu_by_id($m_id){
+
+   $this->db->where('m_id',$m_id);
+      $this->db->delete('menu');
+
+  }
+
+  //dropdown menu items
+
+ public function save_dropdown(){
+
+$data=array();
+  $data['m_id']=$this->input->post('m_id',true); 
+$data['m_item_name']=$this->input->post('m_item_name',true); 
+$data['m_item_url']=$this->input->post('m_item_url',true); 
+$data['m_item_desc']=$this->input->post('m_item_desc',true); 
+
+
+  $this->db->insert('menu_item',$data);
+ redirect('Admin/dropdown');
+
+
+      }
+    public function all_dropdown_list_by_id($m_item_id){
+
+$this->db->SELECT('*');
+$this->db->FROM('menu_item');
+$this->db->WHERE('m_item_id',$m_item_id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
 
 
 
+  }
+      
 
 
 
