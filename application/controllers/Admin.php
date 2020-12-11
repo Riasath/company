@@ -2884,6 +2884,32 @@ public function edit_dropdown($m_item_id)
 		  
 	
 	}
+	public function update_dropdown()
+	{
+
+		$this->admin_model->update_dropdown();
+		redirect('Admin/dropdown');
+           
+
+	}
+	public function view_dropdown($m_item_id){
+
+  $data = $this->engine->store_nav('menu', 'dropdown', 'New dropdown');
+		$data['all_dropdown_view_by_id'] = $this->admin_model->all_dropdown_list_by_id($m_item_id);
+	   	$path = 'backend/admin/dropdown/view_dropdown';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_dropdown($m_item_id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_dropdown_by_id($m_item_id);
+
+		redirect('Admin/dropdown');
+
+	}
 
 	
 	

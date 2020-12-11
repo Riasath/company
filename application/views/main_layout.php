@@ -187,7 +187,7 @@
 				<!-- menu-icon-wrapper -->
 	           <ul class="primary-menu-menu">
 <?php foreach ($dropdowns as $menu): ?>
-   <?php if($menu->menu_id !=$menu->m_id):?>
+  <?php if($menu->menu_id !=$menu->m_id):?>
      
 	<li class="menu-item-has-children">
 		<a href="<?php echo base_url().$menu->m_url;?>">

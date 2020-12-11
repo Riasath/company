@@ -4108,6 +4108,41 @@ $query_result=$this->db->get();
 
 
   }
+     public function select_all_dropdown(){
+
+
+  $this->db->select('*');
+  $this->db->from('menu_item');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+
+     public function update_dropdown(){
+
+
+    $data=array();
+    $m_item_id=$this->input->post('m_item_id',true);
+    
+    $data['m_id']=$this->input->post('m_id',true);
+    $data['m_item_name']=$this->input->post('m_item_name',true);
+    $data['m_item_url']=$this->input->post('m_item_url',true);
+    $data['m_item_desc']=$this->input->post('m_item_desc',true);
+   
+
+    $this->db->WHERE('m_item_id',$m_item_id);
+  $this->db->update('menu_item',$data);
+
+  }
+  public function delete_dropdown_by_id($m_item_id){
+
+   $this->db->where('m_item_id',$m_item_id);
+      $this->db->delete('menu_item');
+
+  }
       
 
 

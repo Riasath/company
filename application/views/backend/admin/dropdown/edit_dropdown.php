@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="content-wrapper">
-  <form action="<?php echo base_url()?>update-levels" method="post" enctype="multipart/form-data">
+  <form action="<?php echo base_url()?>update-dropdown" method="post" enctype="multipart/form-data">
   <div class="container">
   
 
