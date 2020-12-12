@@ -204,7 +204,7 @@
 	<?php if($menu->menu_id ==$item->m_id):?>
      
 	<li class="menu-item-has-children">
-		<a href="<?php echo base_url().$menu->m_item_url;?>">
+		<a href="<?php echo base_url().$menu->m_item_url;?>" class="seoicon-right-arrow">
 			<?php echo $item->m_item_name;?>
 		</a>
 	</li>

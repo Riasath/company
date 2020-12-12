@@ -63,15 +63,15 @@
                         	<td><?= $list->m_item_created_at ?></td>
                         	
                       <td >
-<a href="<?php echo base_url()?>edit-dropdown/<?php echo $list->m_id?>" id="">
+<a href="<?php echo base_url()?>edit-dropdown/<?php echo $list->m_item_id?>" id="">
 	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-dropdown/<?php echo $list->m_id?>" id="<?= $list->m_id ?>">
+<a href="<?php echo base_url()?>view-dropdown/<?php echo $list->m_item_id?>" id="<?= $list->m_id ?>">
 	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>delete-dropdown/<?php echo $list->m_id?>" id="<?= $list->m_id ?>">
+<a href="<?php echo base_url()?>delete-dropdown/<?php echo $list->m_item_id?>" id="<?= $list->m_id ?>">
 	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>
 </a>

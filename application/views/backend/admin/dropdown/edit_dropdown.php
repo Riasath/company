@@ -32,7 +32,7 @@
          </br>
          <label for="desc"><b>Add Dropdown Menu Description</b></label></br>
        
-         <input type="text" value="<?php echo $all_dropdown_info_by_id->m_item_url ?>"name="m_item_url" id="m_item_url" >
+         <input type="text" value="<?php echo $all_dropdown_info_by_id->m_item_desc ?>"name="m_item_desc" id="m_item_desc" >
          </br>
          <label for="time"><b>Add Dropdown Menu Created Time</b></label></br>
        
