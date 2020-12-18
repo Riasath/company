@@ -1,11 +1,10 @@
-
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#138496; ">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title" style="margin-left: 200px;">
+						<h3 class="card-title">
 						User Contact Information</br>
 						This section  place in main menu software development menu->our service page->before  the email newsletter section
 					</h3>

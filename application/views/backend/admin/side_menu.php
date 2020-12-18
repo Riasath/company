@@ -72,6 +72,18 @@
 								<p>Subscribe</p>
 							</a>
 						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/counter') ?>" class="nav-link <?= active_nav('counter', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Counter Item</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/testimonial_head') ?>" class="nav-link <?= active_nav('testimonial_head', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Testimonials Heading</p>
+							</a>
+						</li>
 							<li class="nav-item">
 							<a href="<?php echo base_url('Admin/testimonials') ?>" class="nav-link <?= active_nav('testimonials', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
@@ -79,10 +91,17 @@
 							</a>
 						</li>
 						
+						
 							<li class="nav-item">
 							<a href="<?php echo base_url('Admin/blog') ?>" class="nav-link <?= active_nav('blog', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>Blog</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/client_head') ?>" class="nav-link <?= active_nav('client_head', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Client Heading</p>
 							</a>
 						</li>
 							<li class="nav-item">
@@ -151,14 +170,16 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="<?php echo base_url('admin/test_sub_menu_two') ?>" class="nav-link <?= active_nav('test_sub_menu_two', $sub_nav); ?>">
+							<a href="<?php echo base_url('admin/logo') ?>" class="nav-link <?= active_nav('logo', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
-								<p>A 1 . 2</p>
+								<p>Menu Logo</p>
 							</a>
 						</li>
 						
 					</ul>
 				</li>
+
+				
 				<li class="nav-item has-treeview <?= active_open('about page', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('about page', $main_nav); ?>">
 						<i class="nav-icon fas fa-edit"></i>
@@ -379,11 +400,25 @@
 					</a>
 					<ul class="nav nav-treeview">
 						<li class="nav-item">
+							<a href="<?php echo base_url('admin/contact_head') ?>" class="nav-link <?= active_nav('contact_head', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Contact Page Heading</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="<?php echo base_url('admin/form_head') ?>" class="nav-link <?= active_nav('form_head', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>Contact Form Heading </p>
+							</a>
+						</li>
+						<li class="nav-item">
 							<a href="<?php echo base_url('admin/contactform') ?>" class="nav-link <?= active_nav('contactform', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>User Form </p>
 							</a>
 						</li>
+						
+
 						<li class="nav-item">
 							<a href="<?php echo base_url('admin/address') ?>" class="nav-link <?= active_nav('address', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>

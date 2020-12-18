@@ -51,6 +51,7 @@ $route['edit-dropdown/(.+)']='Admin/edit_dropdown/$1';
 $route['update-dropdown']='Admin/update_dropdown';
 $route['view-dropdown/(.+)']='Admin/view_dropdown/$1';
 $route['delete-dropdown/(.+)']='Admin/delete_dropdown/$1';
+$route['link/(.+)']='Admin/link/$1';
 
 //popup
 $route['save-popup']='Admin/save_popup';
@@ -244,6 +245,10 @@ $route['view-footercopyright-list/(.+)']='Admin/view_footercopyright_list/$1';
 
 //------------------------------------------------------------//
 $route['save-footermenu']='Admin/save_footermenu';
+$route['edit-footermenu/(.+)']='Admin/edit_footermenu/$1';
+$route['update-footermenu']='Admin/update_footermenu';
+$route['view-footermenu/(.+)']='Admin/view_footermenu/$1';
+$route['delete-footermenu/(.+)']='Admin/delete_footermenu/$1';
 
 
 
@@ -495,3 +500,53 @@ $route['edit-demo/(.+)']='Admin/edit_demo/$1';
 $route['update-demo']='Admin/update_demo';
 $route['view-demo/(.+)']='Admin/view_demo/$1';
 $route['delete-demo/(.+)']='Admin/delete_demo/$1';
+
+
+//extra section random
+//testimonial heading
+$route['save-testimonial-head']='Admin/save_testimonial_head';
+$route['edit-testimonial-head/(.+)']='Admin/edit_testimonial_head/$1';
+$route['update-testimonial-head']='Admin/update_testimonial_head';
+$route['view-testimonial-head/(.+)']='Admin/view_testimonial_head/$1';
+$route['delete-testimonial-head/(.+)']='Admin/delete_testimonial_head/$1';
+//client_heading
+$route['save-client-head']='Admin/save_client_head';
+$route['edit-client-head/(.+)']='Admin/edit_client_head/$1';
+$route['update-client-head']='Admin/update_client_head';
+$route['view-client-head/(.+)']='Admin/view_client_head/$1';
+$route['delete-client-head/(.+)']='Admin/delete_client_head/$1';
+
+//contact_heading
+$route['save-contact-head']='Admin/save_contact_head';
+$route['edit-contact-head/(.+)']='Admin/edit_contact_head/$1';
+$route['update-contact-head']='Admin/update_contact_head';
+$route['view-contact-head/(.+)']='Admin/view_contact_head/$1';
+$route['delete-contact-head/(.+)']='Admin/delete_contact_head/$1';
+
+//contact form heading
+$route['save-form-head']='Admin/save_form_head';
+$route['edit-form-head/(.+)']='Admin/edit_form_head/$1';
+$route['update-form-head']='Admin/update_form_head';
+$route['view-form-head/(.+)']='Admin/view_form_head/$1';
+$route['delete-form-head/(.+)']='Admin/delete_form_head/$1';
+
+//counter
+$route['save-counter']='Admin/save_counter';
+$route['edit-counter/(.+)']='Admin/edit_counter/$1';
+$route['update-counter']='Admin/update_counter';
+$route['view-counter/(.+)']='Admin/view_counter/$1';
+$route['delete-counter/(.+)']='Admin/delete_counter/$1';
+
+//infobox1
+$route['save-infobox1']='Admin/save_infobox1';
+$route['edit-infobox1/(.+)']='Admin/edit_infobox1/$1';
+$route['update-infobox1']='Admin/update_infobox1';
+$route['view-infobox1/(.+)']='Admin/view_infobox1/$1';
+$route['delete-infobox1/(.+)']='Admin/delete_infobox1/$1';
+
+//logo
+$route['save-logo']='Admin/save_logo';
+$route['edit-logo/(.+)']='Admin/edit_logo/$1';
+$route['update-logo']='Admin/update_logo';
+$route['view-logo/(.+)']='Admin/view_logo/$1';
+$route['delete-logo/(.+)']='Admin/delete_logo/$1';

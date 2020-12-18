@@ -160,12 +160,15 @@
 	<div class="container">
 
 		<div class="header-content-wrapper">
+  <?php foreach($mainlogo as $v_logo){?>
+<div class="logo">
+<a href="<?= base_url()?>home" class="full-block-link"></a>
 
-			<div class="logo">
-				<a href="#" class="full-block-link"></a>
-				<img src="<?= base_url('assets/images/rtsoftbd_logo.png');?>" style="height:77;width:170px;"alt="RTSOFTBD">
+<img src="<?php echo $v_logo->image?>"
+style="height:50px;width:150px;" class="img-fluid" alt="RTSOFTBD">
 
-			</div>
+</div>
+<?php }?>
 
 			<nav id="primary-menu" class="primary-menu">
 
@@ -204,7 +207,7 @@
 	<?php if($menu->menu_id ==$item->m_id):?>
      
 	<li class="menu-item-has-children">
-		<a href="<?php echo base_url().$menu->m_item_url;?>" class="seoicon-right-arrow">
+		<a href="<?php echo base_url().$item->m_item_url;?>" class="seoicon-right-arrow">
 			<?php echo $item->m_item_name;?>
 		</a>
 	</li>
@@ -222,188 +225,6 @@
 					
 	
 
-				</ul>
-
-		
-
-
-				<ul class="primary-menu-menu">
-					
-					<li class="menu-item-has-children">
-						<a href="<?php base_url();?>home">Home</a>
-					</li>
-					<li class="menu-item-has-children">
-						<a href="<?php base_url();?>about">About</a>
-					</li>
-
-					<li class="has-megamenu menu-item-has-children">
-						<a href="#">Software Development</a>
-
-						<div class="megamenu" style="background-image: url('<?= base_url('assets/images/menu-bg.png');?>');">
-							<div class="megamenu-row">
-
-								<div class="col3">
-									
-	<ul>
-		<li class="megamenu-item-info">
-			<h5 class="megamenu-item-info-title">ENTERPRISE SOLUTION</h5>
-
-		</li>
-		<li>
-<a href="<?php echo base_url();?>service">Our Service<i class="seoicon-right-arrow"></i></a>
-		</li>
-
-		<li>
-<a href="<?php echo base_url();?>portfolio">Portfolio<i class="seoicon-right-arrow"></i></a>
-		</li>
-
-		<li>
-<a href="<?php echo base_url();?>erpsolutions">ERP Solutions<i class="seoicon-right-arrow"></i></a>
-		</li>
-		
-
-		
-
-		
-		<li>
-<a href="<?php echo base_url();?>micro-finance">Micro finance Solutions<i class="seoicon-right-arrow"></i></a>
-		</li>
-
-		<li>
-<a href="<?php base_url();?>office-mgt">Office Management Solutions
-				<i class="seoicon-right-arrow"></i></a>
-		</li>
-
-	</ul>
-								</div>
-								<div class="col3">
-	<ul>
-		<li class="megamenu-item-info">
-			<h5 class="megamenu-item-info-title">Corporate solutions</h5>
-
-		</li>
-		<li>
-<a href="<?php echo base_url();?>e-commerce">Corporate Service<i
-						class="seoicon-right-arrow"></i></a>
-		</li>
-
-		<li>
-<a href="<?php echo base_url();?>e-commerce">E-commerce Solutions<i
-						class="seoicon-right-arrow"></i></a>
-		</li>
-		<li>
-<a href="<?php echo base_url();?>school-mgt">School Management System<i
-						class="seoicon-right-arrow"></i></a>
-		</li>
-
-		<li>
-<a href="<?php echo base_url();?>point-sale">Point of Sale<i
-						class="seoicon-right-arrow"></i></a>
-		</li>
-
-		<li>
-<a href="<?php echo base_url();?>storage">Storage Management System<i
-						class="seoicon-right-arrow"></i></a>
-		</li>
-
-		<li>
-<a href="<?php echo base_url();?>testimonials">Our Testimonials<i
-						class="seoicon-right-arrow"></i></a>
-		</li>
-
-	</ul>
-</div>
-								<div class="col3">
-	<ul>
-
-		<li class="megamenu-item-info">
-			<h5 class="megamenu-item-info-title">Mobile App & IoT</h5>
-
-		</li>
-
-		<li>
-<a href="<?php base_url();?>mobile-app">Mobile App development & maintenance<i
-						class="seoicon-right-arrow"></i></a>
-		</li>
-		<li>
-<a href="<?php base_url();?>iot-app">IoT<i class="seoicon-right-arrow"></i></a>
-		</li>
-		<li>
-<a href="<?php base_url();?>cloud-app">Enterprise & Cloud<i class="seoicon-right-arrow"></i></a>
-		</li>
-
-
-	</ul>
-								</div>
-
-
-								<div class="col3">
-									<ul>
-										<li>
-											<div class="google-logo">
-												<img src="<?php echo base_url('assets/')?>images/basis.png" alt="logo">
-												<img src="<?php echo base_url('assets/');?>images/iso-header-logo.png" alt="logo">
-											</div>
-
-											<p class="google-text">Our company is a member of BASIS.
-												and our E-commerce Solution is ISO 9001 certified.
-											</p>
-										</li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-					</li>
-
-
-					<li class="">
-						<a href="#">Digital Marketing</a>
-	<ul class="dropdown">
-
-		   <li class="hover-ver2">
-			<a href="<?php echo base_url();?>digital-service"><i class="seoicon-search"></i>
-				Our Service
-			</a>
-		</li>
-		
-		<li class="hover-ver2">
-			<a href="<?php echo base_url();?>local-seo"><i class="seoicon-pin-map"></i>
-				Local SEO
-			</a>
-		</li>
-		<li class="hover-ver2">
-			<a href="<?php echo base_url();?>email-marketing"><i class="seoicon-mail-send"></i>
-				Email Marketing
-			</a>
-		</li>
-		<li class="hover-ver2">
-			<a href="<?php echo base_url();?>media-marketing"><i class="seoicon-chat-comment"></i>
-				Social Media Marketing
-			</a>
-		</li>
-		<li class="menu-item-has-children hover-ver2">
-			<a href="<?php echo base_url();?>seo">
-				<i class="seoicon-search"></i>
-				Search Engine Optimization
-			</a>
-		</li>
-		<li class="hover-ver2">
-			<a href="<?php echo base_url();?>pay-per"><i class="seoicon-button"></i>
-				Pay Per Click Management
-			</a>
-		</li>
-		
-	</ul>
-					</li>
-
-
-					<li class="">
-						<a href="<?php echo base_url();?>blog">Blog</a>
-					</li>
-					<li class="#">
-						<a href="<?php echo base_url();?>contact">Contacts</a>
-					</li>
 				</ul>
 			</nav>
 
@@ -580,50 +401,12 @@
 	 <?php foreach($footermenu as $v_menu){?>
 	<li>
 		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="<?php echo $v_menu->link;?>">
-		<?php echo $v_menu->title;?>
-	</a>
+		<a href="<?= base_url().$v_menu->link;?>">
+			<?php echo $v_menu->title;?>
+		</a>
 	</li>
 	<?php }?>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Pay-per-click</a>
-	</li>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Social Media</a>
-	</li>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Web Analytics</a>
-	</li>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Web Development</a>
-	</li>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Content Management</a>
-	</li>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Blog Management</a>
-	</li>
-</ul>
-
-<ul class="list list--primary">
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Virtual Marketing</a>
-	</li>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Email Marketing</a>
-	</li>
-	<li>
-		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="#">Keyword Analytics</a>
-	</li>
+	
 </ul>
 </div>
 </div>
@@ -895,7 +678,7 @@ action="<?php echo base_url()?>save-signup">
   else
     return false;
 }
-function loadDoc() {
+function loadDoc1() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -909,21 +692,6 @@ function loadDoc() {
 
 
 $(document).ready(function() { $('#auto').click(); });
-
-
-
-function loadDoc1() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById("testw").innerHTML = xhttp.responseText;
-    }
-  };
-  xhttp.open("GET", "application/views/infopage/infobox.php", true);
-  xhttp.send();
-}
-
-
 
 
 
@@ -941,6 +709,7 @@ function loadDoc2() {
 
 
 
+
 function loadDoc3() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -953,6 +722,8 @@ function loadDoc3() {
 }
 
 
+
+
 function loadDoc4() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -961,6 +732,18 @@ function loadDoc4() {
     }
   };
   xhttp.open("GET", "application/views/infopage/infobox4.php", true);
+  xhttp.send();
+}
+
+
+function loadDoc5() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("testw").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "application/views/infopage/infobox5.php", true);
   xhttp.send();
 }
 
@@ -983,6 +766,9 @@ window.location.href =link;
 });
 </script>
 <script>
+	function locationPage(url) {
+		window.location = url;
+	}
 $("#delete-button").click(function(){
     if(confirm("Are you sure you want to delete this?")){
         $("#delete-button").attr("href", "query.php?ACTION=delete&ID='1'");

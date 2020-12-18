@@ -4,9 +4,6 @@
 	<title></title>
 
 
-
-
-
 <link rel="stylesheet" href="<?php echo base_url('assets/css/stylelogin1.css');?>" media='all'>
 <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css
 ');?>" media='all'>

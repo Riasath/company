@@ -17,15 +17,17 @@ public function __construct(){
 //dropdown
   $data['dropdowns']=$this->menu_model->dropdown_menu();
   $data['dropdown_items']=$this->menu_model->dropdown_menu_item();
-
-
-
-
-
+//hompage infobox
+  $data['infobox1']=$this->admin_model->select_infobox1();
+ $data['mainlogo']=$this->admin_model->select_logo();
    $data['popup']=$this->admin_model->select_popup();
    $data['sidebar']=$this->admin_model->select_sidebar();
 
-  $data['all_db_slider']=$this->slider_model->select_all_slider_info();	
+  $data['all_db_slider']=$this->slider_model->select_all_slider_info();
+  	
+  $data['testimonial_heading']=$this->admin_model->select_testimonial_heading(); 
+   $data['client_heading']=$this->admin_model->select_client_heading(); 
+   $data['counter']=$this->admin_model->select_counter(); 
   $data['all_db_slides']=$this->slider_model->select_all_slides_info();
   $data['all_db_testimonials']=$this->admin_model->select_all_testimonials_info(); 
    $data['all_client_image']=$this->admin_model->all_client_image_info();

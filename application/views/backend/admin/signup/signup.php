@@ -2,7 +2,7 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#C82333; ">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title" style="margin-left: 200px;">

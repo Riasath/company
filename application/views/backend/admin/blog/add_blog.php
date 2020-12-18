@@ -1,80 +1,82 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>RTSOFTBD</title>
 
-
-
-
-<link rel="stylesheet" href="<?php echo base_url('assets/css/stylelogin1.css')?>" media='all'>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css')?>" media='all'>
-</head>
-<body>
-  
 <div class="content-wrapper">
     <div class="card-body">
         <div class="card card-primary">
-            <div class="card-header">
+            <div class="card-header" style="background:#DC3545; ">
                 <div class="row">
                     <div class="col-md-10">
-                        <h3 class="card-title">Add New Blog</h3>
+                        <h3 class="card-title">Create Blog</h3>
                     </div>
-
                     <div class="col-md-2">
-                        <a href="<?php echo base_url('Admin/blog') ?>">
-                            <button type='button' id="" class='btn bg-success'>All Blog</i>
-                            </button></a>
+            <a href="<?php echo base_url('Admin/blog') ?>">
+              <button type='button' id="" class='btn bg-info'>All Blog</i>
+              </button></a>
+          </div>
+                </div>
+
+            </div>
+
+            <?= alert_check() ?>
+            <section class="content" style="margin-top:20px">
+             
+        <form action="<?php echo base_url() ?>save-blog-list" method="post" enctype="multipart/form-data">
+                               
+
+   <div class="row">
+     <div class="col-md-6">
+        <h4>Add Upload Date</h4>
+         <input type="date" class="form-control" name="date" id="date" required>
+     </div> 
+
+
+     <div class="col-md-6">
+        <h4>Add Blog Title</h4>
+         <input type="text" class="form-control"placeholder="Enter Title " name="blog_title" id="blog_title" required>
+     </div> 
+      <div class="col-md-6">
+        <h4>Add Blog Details</h4>
+        <textarea style="background:;" rows="4" cols="60" class="form-control"  name="blog_details" id="blog_details" ></textarea>
+     </div>
+     <div class="col-md-6">
+        <h4>Add Blog Avatar(Maximum height 64px and width 52px)</h4>
+         <input type="file" class="form-control" name="avatar" id="avatar" required>
+     </div>
+
+      <div class="col-md-6">
+        <h4>Add Posted Person Name</h4>
+         <input type="text" class="form-control" name="posted_by" id="posted_by" required>
+     </div>
+       
+
+   
+
+        </div>  
+         <button type="submit" style="margin:15px;" class="btn btn-danger">Submit</button></br>                      
+         </form>
+                        
+                    
+
+               
+            </section>
+       
+        <div class="card-header" style="background:#DC3545; ">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h3 class="card-title">Easy Way To Understand</h3>
                     </div>
                 </div>
 
 
             </div>
+          <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/blog.png">
+          
 
-            <?= alert_check() ?>
-<div class="left" style="float:right;margin-right:460px;">
-  <form action="<?php echo base_url()?>save-blog-list" method="post" enctype="multipart/form-data">
-  <div class="container">
-   
+          
+        </div>
 
+          
+    </div>
 
-
-    <label for="date"><b>Blog Upload Time</b></label></br>
-    <input type="date"  name="date" id="date" required></br>
-    <label for="blog_title"><b>Blog Title</b></label></br>
-    <input type="text"  name="blog_title" id="blog_title" required>
-  </br>
-  
-    <label for="text-area"><b>Add Blog Details</b></label></br>
-  <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="blog_details" id="blog_details" ></textarea>
-       </br> 
-  </br>
-   <label for="avatar"><b>Add Posted Avatar</b></label></br>
-    <input type="file"  name="avatar" id="avatar" required>
-  </br>
-   <label for="posted_by"><b>Posted By</b></label></br>
-    <input type="text"  name="posted_by" id="posted_by" required>
-  </br>
-    
-
-
-
-    <button type="submit" class="registerbtn">Submit</button></br>
-   
-  </div>
-</form>
-</div>
 </div>
 
-
-
-
-</body>
-</html>
-</body>
-</html>
+<!-- /.card-body -->

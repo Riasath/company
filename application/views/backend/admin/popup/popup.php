@@ -2,97 +2,80 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background: #218637;">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Popup section place top of the header in homepage</h3>
-					</div>
-
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_popup') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New PopUp</i>
-							</button></a>
+						<h3 class="card-title">Popup Section place every pages in the top of Header</h3>
 					</div>
 				</div>
+                   </div>
+	                 <?= alert_check() ?>
 
-
-			</div>
-
-			<?= alert_check() ?>
-			<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										<th > Mobile Number</th>
-										<th >Gmail</th>
-										<th >Day</th>
-										<th >Time</th>
-									
-									
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
+	                                 <?php
 									if ($popupList) {
-										$serial = 0;
+									
 										foreach ($popupList->result() as $list) {
-											$serial++;
+											
 
 
 									?>
-											<tr>
-												<td><?= $serial ?></td>
-												<td ><?= $list->mobile ?>
-													
-												</td>
-												<td><?= $list->gmail ?>
-													
-												</td>
-												<td><?= $list->day ?>
-													
-												</td>
-												<td><?= $list->time ?>
-													
-												</td>
+ <form action="<?php echo base_url()?>update-sidebar" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>Popup Mobile</h4>
+					<input type="text" class="form-control" value="<?php echo $list->mobile?>" name="mobile" id="mobile">
+				</div>
 
-                                                
+    <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
+  
+    	<div class="col-md-6">
+						<h4>Popup Gmail</h4>
+					<input type="text" class="form-control" value="<?php echo $list->gmail?>" name="gmail" id="gmail">
+				</div>
+			<div class="col-md-6">
+						<h4>Popup Day</h4>
+					<input type="text" class="form-control" value="<?php echo $list->day?>" name="day" id="day">
+				</div>
+				<div class="col-md-6">
+						<h4>Popup Time</h4>
+					<input type="text" class="form-control" value="<?php echo $list->time?>" name="time" id="time">
+				</div>
+            	</div>
+				
+		
+				
+				
+				
+				<button type="submit" style="margin-top:20px; " class="btn btn-success">Update</button>
 
-
-												<td >
-<a href="<?php echo base_url()?>edit-popup/<?php echo $list->id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-popup/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-popup/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
-
-												</td>
-											</tr>
+				</form>
+			
+					
+  					
+						
 									<?php
 										}
 									}
 									?>
-
-								</tbody>
-							</table>
-						</div>
+		</div>	
+		<div class="card-header" style="background: #218637;">
+				<div class="row">
+					<div class="col-md-10">
+						<h3 class="card-title">Easy Way To Understand</h3>
 					</div>
 
+					
 				</div>
-			</section>
+                   </div>
+                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/popup.png">		
 		</div>
-	</div>
-</div>
+
+		</div>
+
+
+
+		
+
+
 
 <!-- /.card-body -->

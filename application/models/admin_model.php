@@ -666,6 +666,60 @@ $data['link']=$this->input->post('link',true);
   return $result;
 
 }
+public function select_all_footermenu(){
+
+
+  $this->db->select('*');
+  $this->db->from('footermenu');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_footermenu_list_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('footermenu');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_footermenu(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['link']=$this->input->post('link',true);
+    
+
+   
+
+    $this->db->WHERE('id',$id);
+  $this->db->update('footermenu',$data);
+
+  }
+   public function all_footermenu_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('footermenu');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_footermenu_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('footermenu');
+
+  }
   public function all_saved_icon(){
 
     $this->db->select('*');
@@ -4144,6 +4198,475 @@ $query_result=$this->db->get();
       $this->db->delete('menu_item');
 
   }
+
+  //extra section add
+   //testimonial heading
+   
+    public function save_testimonial_head(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+ 
+   $this->db->insert('testimonial_head',$data);
+             redirect('Admin/testimonial_head');
+
+      }
+       public function select_testimonial_heading(){
+
+
+  $this->db->select('*');
+  $this->db->from('testimonial_head');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_testimonial_head_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('testimonial_head');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+     public function update_testimonial_head(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+   $this->db->WHERE('id',$id);
+  $this->db->update('testimonial_head',$data);
+
+  }
+  public function delete_testimonial_head_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('testimonial_head');
+
+  }
+  //client heading
+   public function save_client_head(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+ 
+   $this->db->insert('client_head',$data);
+             redirect('Admin/client_head');
+
+      }
+       public function select_client_heading(){
+
+
+  $this->db->select('*');
+  $this->db->from('client_head');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_client_head_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('client_head');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+     public function update_client_head(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+   $this->db->WHERE('id',$id);
+  $this->db->update('client_head',$data);
+
+  }
+  public function delete_client_head_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('client_head');
+
+  }
+   //contact heading
+   public function save_contact_head(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+ 
+   $this->db->insert('contact_head',$data);
+             redirect('Admin/contact_head');
+
+      }
+       public function select_contact_heading(){
+
+
+  $this->db->select('*');
+  $this->db->from('contact_head');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_contact_head_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('contact_head');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+     public function update_contact_head(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+   $this->db->WHERE('id',$id);
+  $this->db->update('contact_head',$data);
+
+  }
+  public function delete_contact_head_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('contact_head');
+
+  }
+    //Contact form heading
+   public function save_form_head(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+ 
+   $this->db->insert('form_head',$data);
+             redirect('Admin/form_head');
+
+      }
+       public function select_form_heading(){
+
+
+  $this->db->select('*');
+  $this->db->from('form_head');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_form_head_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('form_head');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+     public function update_form_head(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+   
+   $this->db->WHERE('id',$id);
+  $this->db->update('form_head',$data);
+
+  }
+  public function delete_form_head_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('form_head');
+
+  }
+  //counter
+   public function save_counter(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['value']=$this->input->post('value',true); 
+$data['data']=$this->input->post('data',true); 
+$data['units']=$this->input->post('units',true); 
+ 
+   $this->db->insert('counter',$data);
+             redirect('Admin/counter');
+
+      }
+       public function select_counter(){
+
+
+  $this->db->select('*');
+  $this->db->from('counter');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_counter_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('counter');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+     public function update_counter(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['value']=$this->input->post('value',true);
+    $data['data']=$this->input->post('data',true);
+    $data['units']=$this->input->post('units',true);
+  
+   
+   $this->db->WHERE('id',$id);
+  $this->db->update('counter',$data);
+
+  }
+  public function delete_counter_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('counter');
+
+  }
+//infobox1
+   public function save_infobox1(){
+
+           $data=array();
+      $data['title']=$this->input->post('title',true); 
+$data['details']=$this->input->post('details',true); 
+
+$sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/infobox1_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+
+ 
+   $this->db->insert('infobox1',$data);
+             redirect('Admin/infobox1');
+
+      }
+       public function select_infobox1(){
+
+
+  $this->db->select('*');
+  $this->db->from('infobox1');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_infobox1_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('infobox1');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+     public function update_infobox1(){
+
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    
+    $data['title']=$this->input->post('title',true);
+    $data['details']=$this->input->post('details',true);
+
+     $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/infobox1_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+   
+  
+   
+   $this->db->WHERE('id',$id);
+  $this->db->update('infobox1',$data);
+
+  }
+  public function delete_infobox1_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('infobox1');
+
+  }
+
+  //logo
+   public function save_logo(){
+
+           $data=array();
+      
+
+$sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/logo_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+
+
+ 
+   $this->db->insert('logo',$data);
+             redirect('Admin/logo');
+
+      }
+       public function select_logo(){
+
+
+  $this->db->select('*');
+  $this->db->from('logo');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+
+}
+public function all_logo_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('logo');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+
+     public function update_logo(){
+
+
+
+     $data=array();
+    $id=$this->input->post('id',true);
+    $image=$this->input->post('image',true);
+
+    $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/logo_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+   
+  
+   
+   $this->db->WHERE('id',$id);
+  $this->db->update('logo',$data);
+
+  }
+  public function delete_logo_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('logo');
+
+  }
+
+
       
 
 

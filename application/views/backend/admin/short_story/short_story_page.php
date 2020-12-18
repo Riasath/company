@@ -2,86 +2,78 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background: #218637;">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Short Story Location in about pagebelow the main menu</h3>
 					</div>
-
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_short_story') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Short Story</i>
-							</button></a>
-					</div>
 				</div>
+                   </div>
+	                 <?= alert_check() ?>
 
-
-			</div>
-
-			<?= alert_check() ?>
-	
-			<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										<th >Short Story Heading</th>
-										<th >Short Story Title</th>
-										<th >Short Story SubTitle1</th>
-										<th >Short Story SubTitle2</th>
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
+	                                 <?php
 									if ($shortstoryList) {
-										$serial = 0;
+									
 										foreach ($shortstoryList->result() as $list) {
-											$serial++;
+											
 
 
 									?>
-											<tr>
-												<td><?= $serial ?></td>
-												<td ><?= $list->short_story_heading ?></td>
-												<td><?= $list->short_story_title ?></td>
-                                               
-                                                	<td><?= $list->short_story_subtitle1 ?></td>
-                                               
-                                                	<td><?= $list->short_story_subtitle2 ?></td>
-                                              <td >
-<a href="<?php echo base_url()?>edit-shortstory-list/<?php echo $list->id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-shortstory-list/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-shortstory-list/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
+ <form action="<?php echo base_url()?>update-shortstory-list" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>short Story Heading</h4>
+					<input type="text" class="form-control" value="<?php echo $list->short_story_heading?>" name="short_story_heading" id="short_story_heading">
+				</div>
 
-												</td>
-											</tr>
-									<?php
+    <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
+  
+    	<div class="col-md-8">
+			<h4>short Story Title </h4>
+			<textarea style=""  name="short_story_title" class="form-control" id="short_story_title" required >
+		     <?php echo $list->short_story_title?>
+	        </textarea>
+	         </div>
+			<div class="col-md-8">
+			<h4>short Story Subtitle1</h4>
+			<textarea style=""  name="short_story_subtitle1" class="form-control" id="short_story_subtitle1" required >
+		          <?php echo $list->short_story_subtitle1?>
+	         </textarea>
+	         </div>
+			<div class="col-md-8">
+					<h4>short Story Subtitle2</h4>
+			<textarea style="" class="form-control"  name="short_story_subtitle2" id="short_story_subtitle2" required >
+				   <?php echo $list->short_story_subtitle2?>
+			</textarea>
+			</div>
+            	</div>
+				<button type="submit" style="margin:20px; " class="btn btn-success">Update</button>
+
+				</form>
+			
+					<?php
 										}
 									}
 									?>
-
-								</tbody>
-							</table>
-						</div>
+		</div>	
+		<div class="card-header" style="background: #218637;">
+				<div class="row">
+					<div class="col-md-10">
+						<h3 class="card-title">Easy Way To Understand</h3>
 					</div>
 
+					
 				</div>
-			</section>
+                   </div>
+                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/shortstory.png">		
 		</div>
-	</div>
-</div>
+
+		</div>
+
+
+
+		
+
+
 
 <!-- /.card-body -->

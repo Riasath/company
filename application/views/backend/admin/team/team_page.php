@@ -2,16 +2,14 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#BD2130;">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Our Team section location in about page after the expert introduction section</h3>
 					</div>
 
 					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_team') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Team</i>
-							</button></a>
+						
 					</div>
 				</div>
 
@@ -21,6 +19,9 @@
 			<?= alert_check() ?>
 	
 		<section class="content" style="margin-top:20px">
+			<a href="<?php echo base_url('Admin/add_team') ?>">
+							<button style="margin:20px; "type='button' id="" class='btn bg-danger'>Create New Team</i>
+							</button></a>
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">
@@ -35,6 +36,10 @@
 										<th >Team Member Facebook Image</th>
 										<th >Team Member Youtube Image</th>
 										<th >Team Member Google Image</th>
+										<th >Team Member TWitter Image</th>
+										<th >Team Member facebook Image</th>
+										<th >Team Member youtube Image</th>
+										<th >Team Member google Image</th>
 										<th >Team Member TWitter Image</th>
                                         <th >Action</th>
 									</tr>
@@ -57,20 +62,24 @@
                        
                         	<td><?= $list->post ?></td>
                         	<td >
-<img src="<?php echo base_url().$list->image?>" style="height: 200px;width: 200px;">					
+<img src="<?php echo base_url().$list->image?>" style="height:90px;width:100px;">					
 						</td>
 						<td >
-<img src="<?php echo base_url().$list->fbimage?>" style="height: 200px;width: 200px;">					
+<img src="<?php echo base_url().$list->fbimage?>" style="height:50px;width:50px;">					
 						</td>
 						<td >
-<img src="<?php echo base_url().$list->yimage?>" style="height: 200px;width: 200px;">					
+<img src="<?php echo base_url().$list->yimage?>" style="height: 50px;width: 50px;">					
 						</td>
 						<td >
-<img src="<?php echo base_url().$list->gimage?>" style="height: 200px;width: 200px;">					
+<img src="<?php echo base_url().$list->gimage?>" style="height: 50px;width: 50px;">					
 						</td>
 						<td >
-<img src="<?php echo base_url().$list->timage?>" style="height: 200px;width: 200px;">					
+<img src="<?php echo base_url().$list->timage?>" style="height: 50px;width: 50px;">					
 						</td>
+						<td><?= $list->fblink ?></td>
+						<td><?= $list->ylink ?></td>
+						<td><?= $list->glink ?></td>
+						<td><?= $list->tlink ?></td>
                       <td >
 <a href="<?php echo base_url()?>edit-team/<?php echo $list->id?>" id="">
 	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>

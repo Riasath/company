@@ -37,11 +37,12 @@
 
 									<div class="main-slider-btn-wrap" data-swiper-parallax="-300">
 
-										<a href="#"
-										   class="btn btn-medium btn--dark btn-hover-shadow">
-											<span class="text">learn more</span>
-											<span class="semicircle"></span>
-										</a>
+					<a href="<?php echo base_url()?>about"
+					   class="btn btn-medium btn--dark btn-hover-shadow">
+						<span class="text">
+						learn more</span>
+						<span class="semicircle"></span>
+					</a>
 
 
 									</div>
@@ -52,7 +53,7 @@
 							<div class="col-lg-7 table-cell">
 								<div class="slider-thumb" data-swiper-parallax="-300"
 									 data-swiper-parallax-duration="500">
-		<img src="<?php echo base_url().$v_slider->slider_image;?>" alt="slider">
+		<img style="width:1000px;height: 370px;" src="<?php echo base_url().$v_slider->slider_image;?>" alt="slider">
 								</div>
 							</div>
 
@@ -76,7 +77,7 @@
 			<!--Pagination tabs-->
 
               	<div class="slider-slides" >
-              			<a  id="auto" onclick="loadDoc()" href=""  class="slides-item bg-border-color main-slider-bg-light">
+              			<a  id="auto" onclick="loadDoc1()" href=""  class="slides-item bg-border-color main-slider-bg-light">
 
 					<div class="content">
 						<div class="text-wrap">
@@ -87,7 +88,7 @@
 					
 				</a>
 
-				<a onclick="loadDoc1()" href="" class="slides-item bg-primary-color" id="button2">
+				<a onclick="loadDoc2()" href="" class="slides-item bg-primary-color" id="button2">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Corporate solutions</h4>
@@ -97,7 +98,7 @@
 					</div>
 				</a>
 
-				<a onclick="loadDoc2()" href="#" class="slides-item bg-secondary-color" id="button3">
+				<a onclick="loadDoc3()" href="#" class="slides-item bg-secondary-color" id="button3">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Mobile App & IoT</h4>
@@ -106,7 +107,7 @@
 					</div>
 				</a>
 
-				<a onclick="loadDoc3()" href="" class="slides-item bg-orange-color" id="button4">
+				<a onclick="loadDoc4()" href="" class="slides-item bg-orange-color" id="button4">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Digital Marketing</h4>
@@ -115,7 +116,7 @@
 					</div>
 				</a>
 
-				<a  onclick="loadDoc4()"href="#" class="slides-item bg-green-color" id="button5">
+				<a  onclick="loadDoc5()"href="#" class="slides-item bg-green-color" id="button5">
 					<div class="content">
 						<div class="text-wrap">
 							<h4 class="slides-title">Security</h4>
@@ -155,64 +156,32 @@
 			<div class="container">
 				<div class="row">
 					<div class="counters">
+		<?php foreach($counter as $v_head){?>				
 						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-							<div class="counter-item">
-								<div class="counter-numbers counter">
-									<span data-speed="2000" data-refresh-interval="3" data-to="96"
-										  data-from="2">96%</span>
-									<div class="units">%</div>
-								</div>
-								<span class="counter-title">Client Retention</span>
-								<div class="counter-line">
-									<span class="short-line"></span>
-									<span class="long-line"></span>
-								</div>
-							</div>
+							
+		<div class="counter-item">
+			<div class="counter-numbers counter">
+				<span data-speed="2000" data-refresh-interval="3" data-to="<?php echo $v_head->data;?>"
+					  data-from="2">
+					<?php echo $v_head->value;?>
+				</span>
+				<div class="units">
+				<?php echo $v_head->units;?>
+			</div>
+			</div>
+			<span class="counter-title">
+			<?php echo $v_head->title;?>
+		</span>
+			<div class="counter-line">
+				<span class="short-line"></span>
+				<span class="long-line"></span>
+			</div>
+		</div>
+		
 						</div>
+						<?php }?>
 
-						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-							<div class="counter-item">
-								<div class="counter-numbers counter">
-									<span data-speed="2000" data-refresh-interval="3" data-to="10"
-										  data-from="0">10</span>
-								</div>
-								<span class="counter-title">Years of Service</span>
-								<div class="counter-line">
-									<span class="short-line"></span>
-									<span class="long-line"></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-							<div class="counter-item">
-								<div class="counter-numbers counter">
-									<span data-speed="2000" data-refresh-interval="3" data-to="70"
-										  data-from="2">230+</span>
-									<div class="units">+</div>
-								</div>
-								<span class="counter-title">Professionals</span>
-								<div class="counter-line">
-									<span class="short-line"></span>
-									<span class="long-line"></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-							<div class="counter-item">
-								<div class="counter-numbers counter">
-									<span data-speed="2000" data-refresh-interval="3" data-to="690"
-										  data-from="400">690+</span>
-									<div class="units">+</div>
-								</div>
-								<span class="counter-title">Satisfied Clients</span>
-								<div class="counter-line">
-									<span class="short-line"></span>
-									<span class="long-line"></span>
-								</div>
-							</div>
-						</div>
+						
 
 					</div>
 				</div>
@@ -231,16 +200,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-							<div class="heading">
-								<h4 class="h1 heading-title">Happy Clients
-									About Us</h4>
-								<div class="heading-line">
-									<span class="short-line bg-yellow-color"></span>
-									<span class="long-line bg-yellow-color"></span>
-								</div>
-								<p class="heading-text c-white">Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD
-								</p>
-							</div>
+	<?php foreach($testimonial_heading as $v_head){?>
+	<div class="heading">
+		<h4 class="h1 heading-title">
+			<?php echo $v_head->title;?>
+		
+		</h4>
+		<div class="heading-line">
+			<span class="short-line bg-yellow-color"></span>
+			<span class="long-line bg-yellow-color"></span>
+		</div>
+		<p class="heading-text c-white">
+			<?php echo $v_head->details;?>
+		</p>
+	</div>
+	<?php }?>
 							<div class="signature js-animate-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60">
 									<path fill="none" stroke="#2f2c2c" stroke-width="1.4"
@@ -339,9 +313,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="heading">
 						<h4 class="h1 heading-title">Latest Activity</h4>
-						<a href="14_blog.html" class="read-more">Read Our Blog
-							<i class="seoicon-right-arrow"></i>
-						</a>
+						
 						<div class="heading-line">
 							<span class="short-line"></span>
 							<span class="long-line"></span>
@@ -411,14 +383,20 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-						<div class="heading align-center">
-							<h4 class="h1 heading-title">Our Valuable Partners</h4>
-							<div class="heading-line">
-								<span class="short-line"></span>
-								<span class="long-line"></span>
-							</div>
-							<p class="heading-text">Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD </p>
-						</div>
+		<?php foreach($client_heading as $v_client){?>
+		<div class="heading align-center">
+			<h4 class="h1 heading-title">
+			<?php echo $v_client->title?>
+		</h4>
+			<div class="heading-line">
+				<span class="short-line"></span>
+				<span class="long-line"></span>
+			</div>
+			<p class="heading-text">
+			<?php echo $v_client->details?> 
+		</p>
+		</div>
+		 <?php } ?>
 					</div>
 				</div>
 
@@ -429,9 +407,7 @@
 						<div class="swiper-wrapper">
 
 
-<?php 
-				foreach($all_client_image as $v_client){
-?>
+     <?php foreach($all_client_image as $v_client){?>
                  <div class="swiper-slide client-item" style="float: left;">
    
    <a href="#" class="client-image">

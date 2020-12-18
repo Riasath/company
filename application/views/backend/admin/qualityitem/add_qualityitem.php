@@ -1,66 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-
-
-
-
-
-<link rel="stylesheet" href="<?php echo base_url('assets/css/stylelogin1.css');?>" media='all'>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css');?>" media='all'>
-</head>
-<body>
-  
-
 <div class="content-wrapper">
-  <div class="card-body">
-    <div class="card card-primary">
-      <div class="card-header">
-        <div class="row">
-          <div class="col-md-10">
-            <h3 class="card-title">Qualityitem</h3>
-          </div>
+    <div class="card-body">
+        <div class="card card-primary">
+            <div class="card-header" style="background:#DC3545; ">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h3 class="card-title">Create Quality Items</h3>
+                    </div>
+                </div>
+            </div>
 
-          <div class="col-md-2">
-            <a href="<?php echo base_url('Admin/qualityitem') ?>">
-              <button type='button' id="" class='btn bg-success'>Our Qualityitem</i>
-              </button></a>
-          </div>
+            <?= alert_check() ?>
+            <section class="content" style="margin-top:20px">
+                <div class="container-fluid">
+                    
+                        
+    <form action="<?php echo base_url() ?>save-qualityitem" method="post" enctype="multipart/form-data">
+                               
+
+   
+     <div class="row">
+     <div class="col-md-6">
+        <h4>Qualityitem Title</h4>
+         <input type="text"  class="form-control" placeholder="Enter Qualityitem title" name="title" id="title" required>
+     </div>
+
+     <div class="col-md-6">
+        <h4>  Qualityitem Value(Example 10/ 50/ 90)</h4>
+         <input type="text"  class="form-control" placeholder="Enter Qualityitem Value" name="value" id="value" required>
+     </div>
+   
+    </div>  
+         <button type="submit" style="margin:20px; " class="btn btn-danger">Submit</button></br>                      
+         </form>
+                        
+                    
+
+               
+            </section>
+        </div>
+        <div class="card-header" style="background:#DC3545; ">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h3 class="card-title">Easy Way To Understand</h3>
+                    </div>
+                </div>
+
+
+            </div>
+             <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/qualityitem.png">
         </div>
 
+    </div>
 
-      </div>
-
-      <?= alert_check() ?>
-
-<div class="left" >
-  <form action="<?php echo base_url()?>save-qualityitem" method="post" enctype="multipart/form-data">
-  <div class="container">
-   
-
-
-      
-
-
-      <label for="title"><b>Qualityitem Title</b></label></br>
-      <input type="text" placeholder="" name="title" id="title" required></br>
-
-
-      <label for="value"><b>Qualityitem Value(Example 10/ 50/ 90)</b></label></br>
-      <input type="text" placeholder="" name="value" id="value" required></br>
-     
-   
-    
-
-    
-
-
-
-    <button type="submit" class="registerbtn">Submit</button></br>
-   
-  </div>
-</form>
 </div>
-</body>
-</html>
+
+<!-- /.card-body -->

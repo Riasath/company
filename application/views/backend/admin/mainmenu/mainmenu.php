@@ -1,93 +1,76 @@
 
-
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#117A8B; ">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">This is the main menu section.Simplly add new menu items</h3>
+						<h3 class="card-title">Create Menu section show main menu item like home,contact,about etc</h3>
 					</div>
 
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_mainmenu') ?>">
-							<button type='button' id="" class='btn bg-success'>Add New Menu</i>
-							</button></a>
-					</div>
 				</div>
-
 
 			</div>
 
 			<?= alert_check() ?>
+				<a href="<?php echo base_url('Admin/add_mainmenu') ?>">
+				<button type='button' id="" style="margin:20px; "class='btn bg-info'>Create New Mainmenu</i>
+				</button></a>
 	
-		<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										
-										<th >Menu Id</th>
-										<th >Menu Name</th>
-										<th >Menu URL</th>
-										<th >Menu Description</th>
-										<th >Menu Created Time</th>
-										
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
-									if ($mainmenuList) {
-										$serial = 0;
-										foreach ($mainmenuList->result() as $list) {
-											$serial++;
+		
+								
+
+           <?php
+			if ($mainmenuList) {
+				$serial = 0;
+				foreach ($mainmenuList->result() as $list) {
+					$serial++;
 
 
-									?>
-					<tr>
-						<td><?= $serial ?></td>
-						
-						
-                       
-                        	<td><?= $list->m_id ?></td>
-                       
-                        	<td><?= $list->m_name ?></td>
-                        	<td><?= $list->m_url ?></td>
-                        	<td><?= $list->m_desc ?></td>
-                        	<td><?= $list->m_created_at ?></td>
-                        	
-                      <td >
-<a href="<?php echo base_url()?>edit-mainmenu/<?php echo $list->m_id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-mainmenu/<?php echo $list->m_id?>" id="<?= $list->m_id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-mainmenu/<?php echo $list->m_id?>" id="<?= $list->m_id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
+			?>
 
-												</td>
-											</tr>
-									<?php
-										}
-									}
-									?>
+	 <form action="<?php echo base_url()?>update-mainmenu" method="post" enctype="multipart/form-data">
+			<div class="row">
+					
 
-								</tbody>
-							</table>
-						</div>
-					</div>
-
+				<div class="col-md-5">
+					<h4>Menu Name <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->m_name?>" name="m_name" id="m_name">
 				</div>
-			</section>
+				  <input type="hidden" value="<?php echo $list->m_id ?>"name="m_id" id="m_id" >
+
+				<div class="col-md-5">
+					<h4>Menu URL <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->m_url?>" name="m_url" id="m_url" required>
+				</div>
+
+				<div class="col-md-5">
+					<h4>Menu Created Time <?= $serial ?></h4>
+					<input type="time" class="form-control" value="<?php echo $list->m_created_at?>" name="m_created_at" id="m_created_at">
+				</div>
+
+				<div class="col-md-5">
+					<h4>Menu Description <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->m_desc?>" name="m_desc" id="m_desc">
+				</div>
+
+  
+  
+			
+	
+			</div>
+
+
+
+	   <button type="submit" style="margin:20px; " class="btn btn-info">Update</button>
+
+				</form>
+				                  <?php
+										
+									  }}
+									?>
+
+				       
 		</div>
 	</div>
 </div>

@@ -1,16 +1,10 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#1D2124; ">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Partner image section place up of the email newsletter section in about page</h3>
-					</div>
-
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_partner_image') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Partner Image</i>
-							</button></a>
 					</div>
 				</div>
 
@@ -19,6 +13,10 @@
 
 			<?= alert_check() ?>
 		<section class="content" style="margin-top:20px">
+	<a href="<?php echo base_url('Admin/add_partner_image') ?>">
+	<button style="margin:20px; "type='button' id="" class='btn bg-dark'>Create New Partner Image</i>
+	</button>
+	</a>		
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">

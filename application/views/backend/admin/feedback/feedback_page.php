@@ -2,17 +2,13 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#117A8B; ">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Feedback section place after the our vision section in about page</h3>
 					</div>
 
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_feedback') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Feedback</i>
-							</button></a>
-					</div>
+					
 				</div>
 
 
@@ -21,6 +17,10 @@
 			<?= alert_check() ?>
 	
 		<section class="content" style="margin-top:20px">
+	<a href="<?php echo base_url('Admin/add_feedback') ?>">
+							<button style="margin:20px; "type='button' id="" class='btn bg-info'>Create New Feedback</i>
+							</button></a>
+									
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">

@@ -37,27 +37,27 @@
 
 
       <label for="title"><b>Title</b></label></br>
-      <input type="text" placeholder="" name="title" id="title" required></br>
+      <input type="text"  class="form-control"placeholder="" name="title" id="title" required></br>
 
 
       <label for="details"><b> Details</b></label></br>
     
-      <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+      <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="details" id="details" class="form-control" required ></textarea>
        </br>
 
    <label for="image"><b>Upload Company Logo</b></label></br>
-      <input type="file" placeholder="" name="image" id="image" required>
+      <input type="file" class="form-control" placeholder="" name="image" id="image" required>
       </br>
       </br>
 
        <label for="mobile"><b>Mobile</b></label></br>
-      <input type="text" placeholder="" name="mobile" id="mobile" required></br>
+      <input type="text" class="form-control" placeholder="" name="mobile" id="mobile" required></br>
 
        <label for="gmail"><b>Gmail</b></label></br>
-      <input type="text" placeholder="" name="gmail" id="gmail" required></br>
+      <input type="text" class="form-control" placeholder="" name="gmail" id="gmail" required></br>
 
        <label for="address"><b>Address</b></label></br>
-      <input type="text" placeholder="" name="address" id="address" required></br>
+      <input type="text" class="form-control" placeholder="" name="address" id="address" required></br>
     
     
     

@@ -1,95 +1,84 @@
 
-
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#117A8B; ">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">
-						If you add dropdown please first 
-						</h3>
+						<h3 class="card-title">Create Dropdown menu must be specify the mainmenu where the branch or sub menu located</h3>
 					</div>
 
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_dropdown') ?>">
-							<button type='button' id="" class='btn bg-success'>Add Dropdown Item</i>
-							</button></a>
-					</div>
 				</div>
-
 
 			</div>
 
 			<?= alert_check() ?>
+				<a href="<?php echo base_url('Admin/add_dropdown') ?>">
+				<button type='button' id="" style="margin:20px; "class='btn bg-info'>Create New Dropdown</i>
+				</button></a>
 	
-		<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										
-										<th >Main Menu Id</th>
-										<th >Dropdown Menu Item Name</th>
-										<th >Dropdown Menu Item URL</th>
-										<th >Dropdown Menu Item Description</th>
-										<th >Dropdown Menu Item Created Time</th>
-										
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
-									if ($dropdownList) {
-										$serial = 0;
-										foreach ($dropdownList->result() as $list) {
-											$serial++;
+		
+								
+
+           <?php
+			if ($dropdownList) {
+				$serial = 0;
+				foreach ($dropdownList->result() as $list) {
+					$serial++;
 
 
-									?>
-					<tr>
-						<td><?= $serial ?></td>
-						
-						
-                       
-                        	<td><?= $list->m_id ?></td>
-                       
-                        	<td><?= $list->m_item_name ?></td>
-                        	<td><?= $list->m_item_url ?></td>
-                        	<td><?= $list->m_item_desc ?></td>
-                        	<td><?= $list->m_item_created_at ?></td>
-                        	
-                      <td >
-<a href="<?php echo base_url()?>edit-dropdown/<?php echo $list->m_item_id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-dropdown/<?php echo $list->m_item_id?>" id="<?= $list->m_id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-dropdown/<?php echo $list->m_item_id?>" id="<?= $list->m_id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
+			?>
 
-												</td>
-											</tr>
-									<?php
-										}
-									}
-									?>
+	 <form action="<?php echo base_url()?>update-dropdown" method="post" enctype="multipart/form-data">
+			<div class="row">
+					
 
-								</tbody>
-							</table>
-						</div>
-					</div>
-
+				<div class="col-md-5">
+					<h4>Dropdown Menu Item Name <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->m_item_name?>" name="m_item_name" id="m_item_name">
 				</div>
-			</section>
+				  <input type="hidden" value="<?php echo $list->m_item_id ?>"name="m_item_id" id="m_item_id" >
+				  <div class="col-md-5">
+			<h2><span class="text-danger">Must select MainMenu Name</span>  </h2>	  	
+                     <select required class="form-control" name="m_id" id="m_id">
+                     <option value="" disabled>Select a parent menu</option>
+                     <?php foreach ($main_menu as $key => $value): ?>
+                     <option value="<?=$value->m_id?>"><?=$value->m_name?></option>
+                     <?php endforeach ?>
+                     </select>
+                 </div>
+				<div class="col-md-5">
+					<h4>Dropdown Menu Item UR <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->m_item_url?>" name="m_item_url" id="m_item_url" required>
+				</div>
+
+				<div class="col-md-5">
+					<h4>Dropdown Menu Item Description <?= $serial ?></h4>
+					<input type="time" class="form-control" value="<?php echo $list->m_item_desc?>" name="m_item_desc" id="m_item_desc">
+				</div>
+
+				<div class="col-md-5">
+					<h4>Dropdown Menu Item Created Time<?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->m_item_created_at?>" name="m_item_created_at" id="m_item_created_at">
+				</div>
+
+  
+  
+			
+	
+			</div>
+
+
+
+	   <button type="submit" style="margin:20px; " class="btn btn-info">Update</button>
+
+				</form>
+				                  <?php
+										
+									  }}
+									?>
+
+				       
 		</div>
 	</div>
 </div>

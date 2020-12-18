@@ -47,17 +47,17 @@
       <input type="text" placeholder="" name="title" id="title" required></br>
 
 
-      <label for="details"><b>Product Details</b></label></br>
+      <label for="details"><b>Product Details(Max 250digit)</b></label></br>
    
       <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="details" id="details" required ></textarea>
        </br>
 
-      <label for="section1"><b>Product Section1</b></label></br>
+      <label for="section1"><b>Product Section1 (Max 250digit)</b></label></br>
       
       <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="section1" id="section1" required ></textarea>
        </br>
 
-      <label for="section2"><b>Product Section2</b></label></br>
+      <label for="section2"><b>Product Section2 (Max 250digit)</b></label></br>
      
 
     <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="section2" id="section2" required ></textarea>

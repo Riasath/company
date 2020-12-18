@@ -2,90 +2,81 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background: #138294;">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Tell Us Section,
-							this section show in main menu->digital marketing menu->our service page below the digital service description section</h3>
+              this section show in main menu->digital marketing menu->our service page below the digital service description section</h3>
 					</div>
 
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_tell') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Tell</i>
-							</button></a>
-					</div>
+					
 				</div>
-
-
-			</div>
+                   </div>
 
 			<?= alert_check() ?>
+
 	
-		<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										
-										<th >Tell Title</th>
-										<th >Tell Details</th>
-										
-										
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
 									<?php
 									if ($tellList) {
-										$serial = 0;
+									
 										foreach ($tellList->result() as $list) {
-											$serial++;
+											
 
 
 									?>
-					<tr>
-						<td><?= $serial ?></td>
-						
-						
-                       
-                        	<td><?= $list->title ?></td>
-                       
-                        	<td><?= $list->details ?></td>
-                        	
-                        	
-                      <td >
-<a href="<?php echo base_url()?>edit-tell/<?php echo $list->id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-tell/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-tell/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
+ <form action="<?php echo base_url()?>update-tell" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-7">
+					<h4>Tell Title</h4>
+					<input type="text" class="form-control" value="<?php echo $list->title?>" name="title" id="title">
+				</div>
 
-												</td>
-											</tr>
+    <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
+  
+			
+				<div class="col-md-8">
+						<h4>Tell  Details</h4>
+
+					<textarea style="background:#FFFFFF;"  type="text" class="form-control" rows="4" cols="60"  name="details" id="details" value="" >
+                 <?php echo $list->details ?>
+                </textarea>
+				</div>
+				
+			
+			</div>
+					<button type="submit" style="margin:20px; " class="btn btn-info">Update</button>
+
+			</form>
+					
+  					
+						
 									<?php
 										}
 									}
 									?>
-
-								</tbody>
-							</table>
-						</div>
-					</div>
-
-				</div>
-			</section>
+								
+					
 		</div>
+		 <div class="card-header" style="background:#138294; ">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h3 class="card-title">Easy Way To Understand</h3>
+                    </div>
+                </div>
+ 
+              </div>
+           
+ <img style="width:720px;" class="img-fluid" src="<?php echo base_url('assets')?>/images/dtell.png">
 	</div>
+
 </div>
+
+
+  </div>
+
+
+		
+
+
 
 <!-- /.card-body -->

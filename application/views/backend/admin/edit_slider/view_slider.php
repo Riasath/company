@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-
-<link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
-<link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
-</head>
-<body>
    <div class="content-wrapper">
+   	<div class="card-body">
+		<div class="card card-info">
+			<div class="card-header" >
+				<div class="row">
+						<div class="col-md-10">
+					<div class="card-title">
+				
+             <h4>Homepage Slider After Menubar </h4>
+						
+					</div>
+				</div>
+                   </div>
 
-   <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" style="height:400px;width:700px;border:1px solid #000000;">
+
+			</div>
+
+   <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" class="img-fluid" style="height:350px;width:720px;border:1px solid #000000;">
     
-   <h3><?php echo $all_slider_view_by_id->slider_descriptions ?></h3>
-  <h3><?php echo $all_slider_view_by_id->slider_about ?> </h3>
+   <h4><span class="text-primary">Slider Title:</span> Slider Title:<?php echo $all_slider_view_by_id->slider_descriptions ?></h4>
+  <h4> <span class="text-primary">Slider Description:</span> <?php echo $all_slider_view_by_id->slider_about ?> </h4>
 
  
     
@@ -24,6 +27,7 @@
  
 
 
+  </div>
 </div>
-</body>
-</html>
+</div>
+

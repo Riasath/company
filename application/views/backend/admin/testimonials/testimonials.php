@@ -1,17 +1,12 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background: #138294;">
 				<div class="row">
 					<div class="col-md-10">
-						<h1 >Testimonials Before blog section </h1>
+						<h4 >Testimonials Before blog section </h4>
 					</div>
 
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_testimonials') ?>">
-							<button type='button' id="" class='btn bg-danger'>Create New Testimonials</i>
-							</button></a>
-					</div>
 				</div>
 
 
@@ -21,6 +16,10 @@
 
 			<?= alert_check() ?>
 			<section class="content" style="margin-top:20px">
+				<a href="<?php echo base_url('Admin/add_testimonials') ?>">
+				<button type="button" style="margin-bottom:10px; " 
+				href="" class="btn btn-info">Create Testimonials</button>
+				</a>
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">
@@ -58,10 +57,7 @@
 	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
+
 <a href="<?php echo base_url()?>delete-testimonials-list/<?php echo $list->testi_id?>" id="<?= $list->testi_id ?>">
 	<button  style="margin:10px;"type='button' class='btn bg-danger'  onclick="return confirm('Are you sure you want to delete this item?');" >Delete<i class='fas fa-times'></i>
 	</button>

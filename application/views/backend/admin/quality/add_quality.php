@@ -44,12 +44,12 @@
 
 
       <label for="title"><b>Quality Skills Title</b></label></br>
-      <input type="text" placeholder="" name="title" id="title" required></br>
+      <input type="text"class="form-control" placeholder="" name="title" id="title" required></br>
 
 
       <label for="details"><b>Quality Skills Details</b></label></br>
       
-      <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="details" id="details" required ></textarea>
+      <textarea style="background:#F1F1F1;" class="form-control"rows="4" cols="70"  name="details" id="details" required ></textarea>
        </br>
 
    

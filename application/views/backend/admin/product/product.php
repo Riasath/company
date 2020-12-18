@@ -2,91 +2,78 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background: #138496;">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Our Product section place in main menu software development menu->our service page->after the feature item section</h3>
 					</div>
-
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_product') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Product</i>
-							</button></a>
-					</div>
 				</div>
+                   </div>
+	                 <?= alert_check() ?>
 
-
-			</div>
-
-			<?= alert_check() ?>
-	
-		<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										
-										<th >Product Title</th>
-										<th >Product Details</th>
-										<th >Product Section1</th>
-										<th >Product Section2</th>
-										
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
+	                                 <?php
 									if ($productList) {
-										$serial = 0;
+									
 										foreach ($productList->result() as $list) {
-											$serial++;
+											
 
 
 									?>
-					<tr>
-						<td><?= $serial ?></td>
-						
-						
-                       
-                        	<td><?= $list->title ?></td>
-                       
-                        	<td><?= $list->details ?></td>
-                        	<td><?= $list->section1 ?></td>
-                        	<td><?= $list->section2 ?></td>
-                        	
-                      <td >
-<a href="<?php echo base_url()?>edit-product/<?php echo $list->id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-product/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-product/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
+ <form action="<?php echo base_url()?>update-product" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-5">
+					<h4>Product Title</h4>
+					<input type="text" class="form-control" value="<?php echo $list->title?>" name="title" id="title">
+				</div>
 
-												</td>
-											</tr>
-									<?php
+    <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
+  
+    	<div class="col-md-7">
+			<h4>Product Details(Max 250digit) </h4>
+			<textarea style="" rows="4" cols="50"  name="details" id="details" required >
+		     <?php echo $list->details?>
+	        </textarea>
+	         </div>
+			<div class="col-md-8">
+			<h4>Product Section1(Max 250digit)</h4>
+			<textarea style="" rows="4" cols="50"  name="section1" id="section1" required >
+		          <?php echo $list->section1?>
+	         </textarea>
+	         </div>
+			<div class="col-md-8">
+					<h4>Product Section2(Max 250digit)</h4>
+			<textarea style="" rows="3" cols="50"  name="section2" id="section2" required >
+				   <?php echo $list->section2?>
+			</textarea>
+			</div>
+            	</div>
+				<button type="submit" style="margin:20px; " class="btn btn-info">Update</button>
+
+				</form>
+			
+					<?php
 										}
 									}
 									?>
-
-								</tbody>
-							</table>
-						</div>
+		</div>	
+		<div class="card-header" style="background: #138496;">
+				<div class="row">
+					<div class="col-md-10">
+						<h3 class="card-title">Easy Way To Understand</h3>
 					</div>
 
+					
 				</div>
-			</section>
+                   </div>
+                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/product.png">		
 		</div>
-	</div>
-</div>
+
+		</div>
+
+
+
+		
+
+
 
 <!-- /.card-body -->

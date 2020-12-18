@@ -2,95 +2,72 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#117A8B; ">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Feature section place in main menu software development menu->our service page->after the service box item section</h3>
 					</div>
 
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_feature
-
-						') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Feature</i>
-							</button></a>
-					</div>
 				</div>
-
 
 			</div>
 
 			<?= alert_check() ?>
+				<a href="<?php echo base_url('Admin/add_feature') ?>">
+				<button type='button' id="" style="margin:20px; "class='btn bg-info'>Create New Feature</i>
+				</button></a>
 	
-		<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										<th >Feature Image</th>
-									
-										<th >Feature Title</th>
-										<th >Feature Details</th>
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
-									if ($featureList) {
-										$serial = 0;
-										foreach ($featureList->result() as $list) {
-											$serial++;
+		
+								
+
+           <?php
+			if ($featureList) {
+				$serial = 0;
+				foreach ($featureList->result() as $list) {
+					$serial++;
 
 
-									?>
-	
+			?>
 
-
-					<tr>
-						<td><?= $serial ?></td>
-
-		                   <td >
-                            <img src="<?php echo base_url().$list->image?>"
-                            style="height:100px;width:150px;" >
-                            
-                            </td>
-						
-					
-                       
-                        	<td><?= $list->title ?></td>
-                       
-                        	<td><?= $list->details ?></td>
-                      <td >
-<a href="<?php echo base_url()?>edit-feature/<?php echo $list->id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-feature/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-feature/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
-
-												</td>
-											</tr>
-									<?php
-										}
-									}
-									?>
-
-								</tbody>
-							</table>
-						</div>
-					</div>
-
+	 <form action="<?php echo base_url()?>update-feature" method="post" enctype="multipart/form-data">
+			<div class="row">
+					            
+					<div class="col-md-6">
+					<h4>Feature Title <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->title?>" name="title" id="title">
 				</div>
-			</section>
+
+    <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
+  
+    	<div class="col-md-6">
+	  <h4>Feature Details <?= $serial ?></h4>
+			<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="4" cols="50"  name="details" id="details" value="" >
+            <?php echo $list->details ?>
+            </textarea>
+		</div>
+			
+		<div class="col-md-6">
+			<h4>Feature Photo <?= $serial ?> </h4>
+			 <img  style="height: 200px;width: 300px;"src="<?php echo base_url().$list->image?>">
+			</div>
+		<div class="col-md-6">
+			<h4>Upload New Feature Photo <?= $serial ?></h4>
+				 <input type="file" name="image" class="form-control">
+			</div>
+			
+			</div>
+
+
+
+	   <button type="submit" style="margin:20px; " class="btn btn-info">Update</button>
+
+				</form>
+				                  <?php
+										
+									  }}
+									?>
+
+				       
 		</div>
 	</div>
 </div>

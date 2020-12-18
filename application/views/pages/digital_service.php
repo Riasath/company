@@ -124,8 +124,8 @@ y</h4>
 	</div>
 
 	<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 table-cell">
-		<a href="#" class="btn btn-medium btn--dark btn-hover-shadow">
-			<span class="text">Get a Free SEO Audit</span>
+		<a href="<?php echo base_url()?>contact" class="btn btn-medium btn--dark btn-hover-shadow">
+			<span class="text">Get a Free Service</span>
 			<span class="semicircle"></span>
 		</a>
 	</div>
@@ -189,14 +189,14 @@ y</h4>
 
 		<div class="row pb120">
 			<div class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
-				<a href="22_contacts.html" class="btn btn-medium btn--blue btn-hover-shadow mb30">
+				<a href="<?= base_url()?>portfolio" class="btn btn-medium btn--blue btn-hover-shadow mb30">
 					<span class="text">Free Design</span>
 					<span class="semicircle"></span>
 				</a>
 			</div>
 
 			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-				<a href="22_contacts.html" class="btn btn-medium btn--yellow btn-hover-shadow">
+				<a href="<?= base_url()?>portfolio" class="btn btn-medium btn--yellow btn-hover-shadow">
 					<span class="text">Request a Free Sample Work</span>
 					<span class="semicircle"></span>
 				</a>
@@ -278,7 +278,7 @@ y</h4>
 		<p class="pie-chart-content-text">
 			<?php echo $v_brandbox->details;?>
 		</p>
-		<a href="#" class="more">Read More
+		<a href="<?= base_url()?>about" class="more">Read More
 			<i class="seoicon-right-arrow"></i>
 		</a>
 	</div>
@@ -307,12 +307,13 @@ y</h4>
 
 						<div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-12 col-xs-12">
 							<h4 class="subscribe-title">Email Newsletters!</h4>
-							<form class="subscribe-form" method="post" action="http://html.crumina.net/html-seosight/import.php">
-								<input class="email input-standard-grey input-white" name="email" required="required" placeholder="Your Email Address" type="email">
-								<button class="subscr-btn">subscribe
-									<span class="semicircle--right"></span>
-								</button>
-							</form>
+<form  action="<?php echo base_url()?>save-subscribe" method="post" enctype="multipart/form-data">
+<input required class="email input-standard-grey input-white" name="gmail"  placeholder="Your Email Address" type="text">
+		<button  style="background:#2F2C2C;color: #ffffff;height: 50px;width: 100px;border-radius: 10px;margin-top: -100PX; "class="subscr-btn">subscribe
+			<span class="semicircle--right"></span>
+		</button>
+</form>
+		
 							<div class="sub-title">Sign up for new Seosignt content, updates, surveys & offers.</div>
 
 						</div>

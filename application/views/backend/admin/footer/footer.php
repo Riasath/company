@@ -1,93 +1,85 @@
+
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background: #218637;">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Copyright </h3>
-					</div>
-
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_footer') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Copyright</i>
-							</button></a>
+						<h3 class="card-title">Homepage Footer Area Copyright Section</h3>
 					</div>
 				</div>
+                   </div>
+	                 <?= alert_check() ?>
 
-
-			</div>
-
-			<?= alert_check() ?>
-			<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										<th >Year</th>
-										<th >Company Name</th>
-										<th >Design By</th>
-                                        <th >Developed By</th>
-                                        <th >Only On</th>
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
+	                                 <?php
 									if ($footerList) {
-										$serial = 0;
+									
 										foreach ($footerList->result() as $list) {
-											$serial++;
+											
 
 
 									?>
-											<tr>
-												<td><?= $serial ?></td>
-												<td ><?= $list->year ?></td>
-												<td ><?= $list->company_name ?></td>
-                                                <td >
-                                               <?= $list->design?>
-                                                
-                                                </td>
+ <form action="<?php echo base_url()?>update-footer-copyright" method="post" enctype="multipart/form-data">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>Year</h4>
+					<input type="text" class="form-control" value="<?php echo $list->year?>" name="year" id="year">
+				</div>
 
+    <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
+  
+    	<div class="col-md-6">
+						<h4>Company Name</h4>
+					<input type="text" class="form-control" value="<?php echo $list->company_name?>" name="company_name" id="company_name">
+				</div>
+			<div class="col-md-6">
+						<h4>Degin By Name</h4>
+					<input type="text" class="form-control" value="<?php echo $list->design?>" name="design" id="design">
+				</div>
+				<div class="col-md-6">
+						<h4>Developed By Name</h4>
+					<input type="text" class="form-control" value="<?php echo $list->developed?>" name="developed" id="developed">
+				</div>
+				<div class="col-md-6">
+						<h4>Only On</h4>
+					<input type="text" class="form-control" value="<?php echo $list->only_on?>" name="only_on" id="only_on">
+				</div>
+            	</div>
+				
+		
+				
+				
+				
+				<button type="submit" style="margin:20px; " class="btn btn-success">Update</button>
 
-												<td >
-													  <?= $list->developed ?>
-												</td>
-												<td >
-													  <?= $list->only_on?>
-												</td>
-	<td >
-		<a href="<?php echo base_url()?>edit-footer-copyright/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-footercopyright-list/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button style="margin:10px;" type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-footercopyright-list/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
-	</td>
-											</tr>
+				</form>
+			
+					
+  					
+						
 									<?php
 										}
 									}
 									?>
-
-								</tbody>
-							</table>
-						</div>
+		</div>	
+		<div class="card-header" style="background: #218637;">
+				<div class="row">
+					<div class="col-md-10">
+						<h3 class="card-title">Easy Way To Understand</h3>
 					</div>
 
+					
 				</div>
-			</section>
+                   </div>
+                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/copyright.png">		
 		</div>
-	</div>
-</div>
+
+		</div>
+
+
+
+		
+
+
 
 <!-- /.card-body -->

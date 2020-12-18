@@ -2,16 +2,14 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#218838; ">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Our Qualityitem section place in main menu software development menu->our service page->after the our quality skills title  section</h3>
 					</div>
 
 					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_qualityitem') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Qualityitem</i>
-							</button></a>
+					
 					</div>
 				</div>
 
@@ -21,6 +19,9 @@
 			<?= alert_check() ?>
 	
 		<section class="content" style="margin-top:20px">
+			<a href="<?php echo base_url('Admin/add_qualityitem') ?>">
+			<button type='button' style="margin:20px;" id="" class='btn bg-success'>Create New Qualityitem</i>
+			</button></a>	
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">

@@ -1,29 +1,30 @@
 
 <div class="content-wrapper">
 	<div class="card-body">
-		<div class="card card-primary">
-			<div class="card-header">
+		<div class="card card-info">
+			<div class="card-header" >
 				<div class="row">
+						<div class="col-md-10">
 					<div class="card-title">
 				
-         <h1>Homepage Slider After Menubar </h1>
+                   <h4>Homepage Slider After Menubar </h4>
 						
-					</div>
-
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_slider') ?>">
-						
-
-							<button type='button' id="" class='btn bg-success'>Create New Slider</i>
-							</button></a>
 					</div>
 				</div>
+				  
+                   </div>
 
 
 			</div>
 
 			<?= alert_check() ?>
+
 			<section class="content" style="margin-top:20px">
+				<a href="<?php echo base_url('Admin/add_slider') ?>">
+				<button type="button" style="margin:20px; " 
+				href="" class="btn btn-info">Create Slider</button>
+				</a>
+			
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-12">
@@ -31,8 +32,8 @@
 								<thead>
 									<tr>
 										<th >Serial</th>
-										<th >Description</th>
-										<th >About</th>
+										<th >Title</th>
+										<th >Short Description</th>
 										<th >Image</th>
                                         <th >Action</th>
 									</tr>

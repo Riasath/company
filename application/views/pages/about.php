@@ -191,7 +191,7 @@
 				</p>
 			</div>
 
-			<a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
+			<a href="<?= base_url()?>portfolio" class="btn btn-medium btn--dark btn-hover-shadow">
 				<span class="text">Read More</span>
 				<span class="semicircle"></span>
 			</a>
@@ -263,19 +263,19 @@
 </p>
 <div class="socials">
 
-<a href="#" class="social__item">
+<a href="<?=$v_team->fblink?>" class="social__item">
 	<img src="<?php echo $v_team->fbimage?>">
 </a>
 
-<a href="#" class="social__item">
+<a href="<?=$v_team->ylink?>" class="social__item">
 	<img src="<?php echo $v_team->yimage?>">
 </a>
 
-<a href="#" class="social__item">
+<a href="<?=$v_team->glink?>" class="social__item">
 	<img src="<?php echo $v_team->gimage?>">
 </a>
 
-<a href="#" class="social__item">
+<a href="<?=$v_team->tlink?>" class="social__item">
 	<img src="<?php echo $v_team->timage?>">
 </a>
 
@@ -382,9 +382,7 @@
 						<div class="col-lg-12">
 							<div class="heading">
 								<h4 class="h1 heading-title">Our Customers Say</h4>
-								<a href="#" class="read-more">Read All Testimonial
-									<i class="seoicon-right-arrow"></i>
-								</a>
+								
 								<div class="heading-line">
 									<span class="short-line"></span>
 									<span class="long-line"></span>
@@ -503,10 +501,6 @@
 </p>
 </div>
 
-				<a href="#" class="btn btn-medium btn--dark mb30">
-					<span class="text">View all Customers</span>
-					<span class="semicircle"></span>
-				</a>
 			</div>
 			 <?php }?>
 
@@ -543,12 +537,13 @@
 
 						<div class="col-lg-6 col-lg-offset-5 col-md-6 col-md-offset-5 col-sm-12 col-xs-12">
 							<h4 class="subscribe-title">Email Newsletters!</h4>
-							<form class="subscribe-form" method="post" action="http://html.crumina.net/html-seosight/import.php">
-								<input class="email input-standard-grey input-white" name="email" required="required" placeholder="Your Email Address" type="email">
-								<button class="subscr-btn">subscribe
-									<span class="semicircle--right"></span>
-								</button>
-							</form>
+		<form  action="<?php echo base_url()?>save-subscribe" method="post" enctype="multipart/form-data">
+<input required class="email input-standard-grey input-white" name="gmail"  placeholder="Your Email Address" type="text">
+		<button  style="background:#2F2C2C;color: #ffffff;height: 50px;width: 100px;border-radius: 10px;margin-top: -100PX; "class="subscr-btn">subscribe
+			<span class="semicircle--right"></span>
+		</button>
+</form>
+		
 							<div class="sub-title">Sign up for new Seosignt content, updates, surveys & offers.</div>
 
 						</div>

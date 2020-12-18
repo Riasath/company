@@ -2,91 +2,62 @@
 <div class="content-wrapper">
 	<div class="card-body">
 		<div class="card card-primary">
-			<div class="card-header">
+			<div class="card-header" style="background:#117A8B; ">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Our Footermenu</h3>
+						<h3 class="card-title">Footermenu,this section show in every pages footer section right part</h3>
 					</div>
 
-					<div class="col-md-2">
-						<a href="<?php echo base_url('Admin/add_footermenu') ?>">
-							<button type='button' id="" class='btn bg-success'>Create New Footermenu</i>
-							</button></a>
-					</div>
 				</div>
-
 
 			</div>
 
 			<?= alert_check() ?>
+				<a href="<?php echo base_url('Admin/add_footermenu') ?>">
+				<button type='button' id="" style="margin:20px; "class='btn bg-info'>Create New footermenu</i>
+				</button></a>
 	
-		<section class="content" style="margin-top:20px">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-12">
-							<table id="example1" class="table table-bordered table-hover">
-								<thead>
-									<tr>
-										<th >Serial</th>
-										
-										<th >Footermenu Title</th>
-										<th >Footermenu Details</th>
+		
 								
-									
-										
-										
-                                        <th >Action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<?php
-									if ($footermenuList) {
-										$serial = 0;
-										foreach ($footermenuList->result() as $list) {
-											$serial++;
+
+           <?php
+			if ($footermenuList) {
+				$serial = 0;
+				foreach ($footermenuList->result() as $list) {
+					$serial++;
 
 
-									?>
-					<tr>
-						<td><?= $serial ?></td>
-						
-						
-                       
-                        	<td><?= $list->title ?></td>
-                       
-                        	<td><?= $list->link ?></td>
-                       
-                        
-                        	
-                        	
-                      <td >
-<a href="<?php echo base_url()?>edit-footermenu/<?php echo $list->id?>" id="">
-	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>view-footermenu/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
-<a href="<?php echo base_url()?>delete-footermenu/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button style="margin:10px;" type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
-	</button>
-</a>
+			?>
 
-												</td>
-											</tr>
-									<?php
-										}
-									}
-									?>
-
-								</tbody>
-							</table>
-						</div>
-					</div>
-
+	 <form action="<?php echo base_url()?>update-footermenu" method="post" enctype="multipart/form-data">
+			<div class="row">
+					            
+					<div class="col-md-5">
+					<h4>Footermenu Title <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->title?>" name="title" id="title">
 				</div>
-			</section>
+
+    <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
+  
+    	<div class="col-md-5">
+					<h4>Footermenu Link <?= $serial ?></h4>
+					<input type="text" class="form-control" value="<?php echo $list->link?>" name="link" id="link">
+				</div>
+			
+	
+			</div>
+
+
+
+	   <button type="submit" style="margin:20px; " class="btn btn-info">Update</button>
+
+				</form>
+				                  <?php
+										
+									  }}
+									?>
+
+				       
 		</div>
 	</div>
 </div>

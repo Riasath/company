@@ -124,6 +124,7 @@ public function signup()
 	{
         $data = $this->engine->store_nav('appearance', 'sidebar', 'sidebar List');
         $data['sidebarList'] = $this->Common->get_data('sidebar');
+        //$data['all_sidebar_by_id'] = $this->admin_model->all_sidebar_by_id($id);
         $path = 'backend/admin/sidebar/sidebar';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
@@ -696,6 +697,41 @@ public function signup()
 
 		$this->admin_model->save_footermenu();
 
+	}
+	 public function edit_footermenu($id)
+	{
+       $data = $this->engine->store_nav('appearance', 'footermenu', 'Create New menu');
+		$data['all_footermenu_list_by_id'] = $this->admin_model->all_footermenu_list_by_id($id);
+	   	$path = 'backend/admin/footermenu/edit_footermenu';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_footermenu()
+	{
+
+		$this->admin_model->update_footermenu();
+		redirect('Admin/footermenu');
+           
+
+	}
+	public function delete_footermenu($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_footermenu_by_id($id);
+
+		redirect('Admin/footermenu');
+
+	}
+	public function view_footermenu($id){
+
+        
+			$data = $this->engine->store_nav('appearance', 'footermenu', 'Create New footermenu');
+		$data['all_footermenu_view_by_id'] = $this->admin_model->all_footermenu_view_by_id($id);
+	   	$path = 'backend/admin/footermenu/view_footermenu';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
 	}
 
 
@@ -2845,18 +2881,15 @@ public function edit_mainmenu($m_id)
 	{
         $data = $this->engine->store_nav('menu', 'dropdown', 'welcome to dropdown page');
         $data['dropdownList'] = $this->Common->get_data('menu_item');
+        $data['main_menu'] = $this->Dropdown_model->main_menu_select();
         $path = 'backend/admin/dropdown/dropdown';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 	}
 	
-
-
-	
-
-	
-	public function add_dropdown()
+    public function add_dropdown()
 	{
         $data = $this->engine->store_nav('menu', 'dropdown', 'Create New dropdown');
+        $data['main_menu'] = $this->Dropdown_model->main_menu_select();
 		$path = 'backend/admin/dropdown/add_dropdown';
 		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 		
@@ -2910,6 +2943,430 @@ public function edit_dropdown($m_item_id)
 		redirect('Admin/dropdown');
 
 	}
+	//add extra  section
+
+	  //Testimonial heading
+     public function testimonial_head()
+	{
+        $data = $this->engine->store_nav('appearance', 'testimonial_head', 'testimonial_head List');
+        $data['testimonial_headList'] = $this->Common->get_data('testimonial_head');
+        
+        $path = 'backend/admin/testimonial_head/testimonial_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_testimonial_head()
+	{
+        $data = $this->engine->store_nav('appearance', 'testimonial_head', 'Create New testimonial_head');
+		$path = 'backend/admin/testimonial_head/add_testimonial_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_testimonial_head()
+	{
+
+		$this->admin_model->save_testimonial_head();
+		redirect('Admin/testimonial_head');
+	}
+	public function edit_testimonial_head($id)
+	{
+     $data = $this->engine->store_nav('appearance', 'testimonial_head', 'testimonial_head');
+		$data['all_testimonial_head_by_id'] = $this->admin_model->all_testimonial_head_by_id($id);
+	   	$path = 'backend/admin/testimonial_head/edit_testimonial_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_testimonial_head()
+	{
+
+		$this->admin_model->update_testimonial_head();
+		redirect('Admin/testimonial_head');
+           
+
+	}
+	public function view_testimonial_head($id){
+
+         
+
+		 $data = $this->engine->store_nav('appearance', 'testimonial_head', ' testimonial_head');
+		$data['all_testimonial_head_view_by_id'] = $this->admin_model->all_testimonial_head_by_id($id);
+	   	$path = 'backend/admin/testimonial_head/view_testimonial_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_testimonial_head($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_testimonial_head_by_id($id);
+
+		redirect('Admin/testimonial_head');
+
+	}
+	  //Client heading
+     public function client_head()
+	{
+        $data = $this->engine->store_nav('appearance', 'client_head', 'client_head List');
+        $data['client_headList'] = $this->Common->get_data('client_head');
+        
+        $path = 'backend/admin/client_head/client_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_client_head()
+	{
+        $data = $this->engine->store_nav('appearance', 'client_head', 'Create New client_head');
+		$path = 'backend/admin/client_head/add_client_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_client_head()
+	{
+
+		$this->admin_model->save_client_head();
+		redirect('Admin/client_head');
+	}
+	public function edit_client_head($id)
+	{
+     $data = $this->engine->store_nav('appearance', 'client_head', 'client_head');
+		$data['all_client_head_by_id'] = $this->admin_model->all_client_head_by_id($id);
+	   	$path = 'backend/admin/client_head/edit_client_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_client_head()
+	{
+
+		$this->admin_model->update_client_head();
+		redirect('Admin/client_head');
+           
+
+	}
+	public function view_client_head($id){
+
+         
+
+		 $data = $this->engine->store_nav('appearance', 'client_head', ' client_head');
+		$data['all_client_head_view_by_id'] = $this->admin_model->all_client_head_by_id($id);
+	   	$path = 'backend/admin/client_head/view_client_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_client_head($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_client_head_by_id($id);
+
+		redirect('Admin/client_head');
+
+	}
+	  //Contact heading
+     public function contact_head()
+	{
+        $data = $this->engine->store_nav('contact', 'contact_head', 'contact_head List');
+        $data['contact_headList'] = $this->Common->get_data('contact_head');
+        
+        $path = 'backend/admin/contact_head/contact_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+	public function add_contact_head()
+	{
+        $data = $this->engine->store_nav('contact', 'contact_head', 'Create New contact_head');
+		$path = 'backend/admin/contact_head/add_contact_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_contact_head()
+	{
+
+		$this->admin_model->save_contact_head();
+		redirect('Admin/contact_head');
+	}
+	public function edit_contact_head($id)
+	{
+     $data = $this->engine->store_nav('contact', 'contact_head', 'contact_head');
+		$data['all_contact_head_by_id'] = $this->admin_model->all_contact_head_by_id($id);
+	   	$path = 'backend/admin/contact_head/edit_contact_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_contact_head()
+	{
+
+		$this->admin_model->update_contact_head();
+		redirect('Admin/contact_head');
+           
+
+	}
+	public function view_contact_head($id){
+
+         
+
+		 $data = $this->engine->store_nav('contact', 'contact_head', ' contact_head');
+		$data['all_contact_head_view_by_id'] = $this->admin_model->all_contact_head_by_id($id);
+	   	$path = 'backend/admin/contact_head/view_contact_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+	public function delete_contact_head($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_contact_head_by_id($id);
+
+		redirect('Admin/contact_head');
+
+	}
+	//Contact form heading
+     public function form_head()
+	{
+        $data = $this->engine->store_nav('contact', 'form_head', 'form_head List');
+        $data['form_headList'] = $this->Common->get_data('form_head');
+        
+        $path = 'backend/admin/form_head/form_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+	public function add_form_head()
+	{
+        $data = $this->engine->store_nav('contact', 'form_head', 'Create New form_head');
+		$path = 'backend/admin/form_head/add_form_head';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_form_head()
+	{
+
+		$this->admin_model->save_form_head();
+		redirect('Admin/form_head');
+	}
+	public function edit_form_head($id)
+	{
+     $data = $this->engine->store_nav('contact', 'form_head', 'form_head');
+		$data['all_form_head_by_id'] = $this->admin_model->all_form_head_by_id($id);
+	   	$path = 'backend/admin/form_head/edit_form_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_form_head()
+	{
+
+		$this->admin_model->update_form_head();
+		redirect('Admin/form_head');
+           
+
+	}
+	public function view_form_head($id){
+
+         
+
+		 $data = $this->engine->store_nav('contact', 'form_head', ' form_head');
+		$data['all_form_head_view_by_id'] = $this->admin_model->all_form_head_by_id($id);
+	   	$path = 'backend/admin/form_head/view_form_head';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+
+
+	public function delete_form_head($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_form_head_by_id($id);
+
+		redirect('Admin/form_head');
+
+	}
+	//counter
+     public function counter()
+	{
+        $data = $this->engine->store_nav('appearance', 'counter', 'counter List');
+        $data['counterList'] = $this->Common->get_data('counter');
+        
+        $path = 'backend/admin/counter/counter';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+	public function add_counter()
+	{
+        $data = $this->engine->store_nav('appearance', 'counter', 'Create New counter');
+		$path = 'backend/admin/counter/add_counter';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_counter()
+	{
+
+		$this->admin_model->save_counter();
+		redirect('Admin/counter');
+	}
+	public function edit_counter($id)
+	{
+     $data = $this->engine->store_nav('appearance', 'counter', 'counter');
+		$data['all_counter_by_id'] = $this->admin_model->all_counter_by_id($id);
+	   	$path = 'backend/admin/counter/edit_counter';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_counter()
+	{
+
+		$this->admin_model->update_counter();
+		redirect('Admin/counter');
+           
+
+	}
+	public function view_counter($id){
+
+         
+
+		 $data = $this->engine->store_nav('contact', 'counter', ' counter');
+		$data['all_counter_view_by_id'] = $this->admin_model->all_counter_by_id($id);
+	   	$path = 'backend/admin/counter/view_counter';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+
+
+	public function delete_counter($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_counter_by_id($id);
+
+		redirect('Admin/counter');
+
+	}
+	//infobox1
+	public function infobox1()
+	{
+        $data = $this->engine->store_nav('infobox', 'infobox1', 'infobox1 List');
+        $data['infobox1List'] = $this->Common->get_data('infobox1');
+        
+        $path = 'backend/admin/infobox1/infobox1';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+	public function add_infobox1()
+	{
+        $data = $this->engine->store_nav('infobox', 'infobox1', 'Create New infobox1');
+		$path = 'backend/admin/infobox1/add_infobox1';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_infobox1()
+	{
+
+		$this->admin_model->save_infobox1();
+		redirect('Admin/infobox1');
+	}
+	public function edit_infobox1($id)
+	{
+     $data = $this->engine->store_nav('infobox', 'infobox1', 'infobox1');
+		$data['all_infobox1_by_id'] = $this->admin_model->all_infobox1_by_id($id);
+	   	$path = 'backend/admin/infobox1/edit_infobox1';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_infobox1()
+	{
+
+		$this->admin_model->update_infobox1();
+		redirect('Admin/infobox1');
+           
+
+	}
+	public function view_infobox1($id){
+
+         
+
+		 $data = $this->engine->store_nav('infobox', 'infobox1', ' infobox');
+		$data['all_infobox1_view_by_id'] = $this->admin_model->all_infobox1_by_id($id);
+	   	$path = 'backend/admin/infobox1/view_infobox1';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+
+
+	public function delete_infobox1($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_infobox1_by_id($id);
+
+		redirect('Admin/infobox1');
+
+	}
+	//menu header logo
+	public function logo()
+	{
+        $data = $this->engine->store_nav('menu', 'logo', 'logo List');
+        $data['logoList'] = $this->Common->get_data('logo');
+        
+        $path = 'backend/admin/logo/logo';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+	public function add_logo()
+	{
+        $data = $this->engine->store_nav('menu', 'logo', 'Create New logo');
+		$path = 'backend/admin/logo/add_logo';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+	public function save_logo()
+	{
+
+		$this->admin_model->save_logo();
+		redirect('Admin/logo');
+	}
+	public function edit_logo($id)
+	{
+     $data = $this->engine->store_nav('menu', 'logo', 'logo');
+		$data['all_logo_by_id'] = $this->admin_model->all_logo_by_id($id);
+	   	$path = 'backend/admin/logo/edit_logo';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_logo()
+	{
+
+		$this->admin_model->update_logo();
+		redirect('Admin/logo');
+           
+
+	}
+	public function view_logo($id){
+
+         
+
+		 $data = $this->engine->store_nav('menu', 'logo', 'logo');
+		$data['all_logo_view_by_id'] = $this->admin_model->all_logo_by_id($id);
+	   	$path = 'backend/admin/logo/view_logo';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		  
+	}
+
+
+	public function delete_logo($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_logo_by_id($id);
+
+		redirect('Admin/logo');
+
+	}
+
+
+
 
 	
 	

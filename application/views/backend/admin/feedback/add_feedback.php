@@ -1,72 +1,71 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-
-
-
-
-
-<link rel="stylesheet" href="<?php echo base_url('assets/css/stylelogin1.css');?>" media='all'>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css');?>" media='all'>
-</head>
-<body>
-  
-
 <div class="content-wrapper">
-  <div class="card-body">
-    <div class="card card-primary">
-      <div class="card-header">
-        <div class="row">
-          <div class="col-md-10">
-            <h3 class="card-title">Promo</h3>
-          </div>
+    <div class="card-body">
+        <div class="card card-primary">
+            <div class="card-header" style="background:#DC3545; ">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h3 class="card-title">
+                            Create Feedback  
+                            </h3>                
+                        </div>
+                </div>
+            </div>
 
-          <div class="col-md-2">
-            <a href="<?php echo base_url('Admin/promo') ?>">
-              <button type='button' id="" class='btn bg-success'>All Promo</i>
-              </button></a>
-          </div>
+            <?= alert_check() ?>
+            <section class="content" style="margin-top:20px">
+                <div class="container-fluid">
+                    
+                        
+    <form action="<?php echo base_url() ?>save-feedback" method="post" enctype="multipart/form-data">
+                               
+
+   
+ <div class="row">
+     <div class="col-md-6">
+        <h4>Add Feedback  Description</h4>
+         <input type="text"  class="form-control" placeholder="Enter feedback description" name="description" id="description" required>
+     </div>
+       <div class="col-md-6">
+        <h4>Add Feedback  Author Name </h4>
+         <textarea  rows="3" style="background:;"cols="60" type="text" class="form-control"  name="author" placeholder="Enter author" id="author" required></textarea>
+     </div>
+
+      <div class="col-md-6">
+        <h4>Add Feedback  Author Market </h4>
+         <textarea  rows="3" style="background:;"cols="60" type="text" class="form-control"  name="market" placeholder="Enter market" id="market" required></textarea>
+     </div>
+
+   
+     <div class="col-md-6">
+        <h4>Upload Feedback Author Photo(Maximum 52px width,64px height )</h4>
+         <input type="file" name="image" id="image" required>
+     </div>
+     
+    
+
+        </div>  
+         <button type="submit" style="margin:20px; " class="btn btn-danger">Submit</button></br>                      
+         </form>
+                        
+                    
+
+               
+            </section>
+        </div>
+        <div class="card-header" style="background:#DC3545; ">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h3 class="card-title">Easy Way To Understand</h3>
+                    </div>
+                </div>
+
+
+            </div>
+             <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/feedback.png">
         </div>
 
+    </div>
 
-      </div>
-
-      <?= alert_check() ?>
-
-<div class="left" >
-  <form action="<?php echo base_url()?>save-feedback" method="post" enctype="multipart/form-data">
-  <div class="container">
-   
-
-   
-      <label for="description"><b>Feedback Description</b></label></br>
-   
-      <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="description" id="description" required ></textarea>
-       </br>
-
-      <label for="image"><b>Upload Author Image</b></label></br>
-      <input type="file" placeholder="" name="image" id="image" required>
-      </br>
-      </br>
-      <label for="author"><b>Author Name</b></label></br>
-      <input type="text" placeholder="" name="author" id="author" required></br>
-       <label for="market"><b>Author Market</b></label></br>
-      <input type="text" placeholder="" name="market" id="market" required>
-
-    
-    
-
-
-    
-    
-</br></br>
-
-
-    <button type="submit" class="registerbtn">Submit</button></br>
-   
-  </div>
-</form>
 </div>
-</body>
-</html>
+
+<!-- /.card-body -->
