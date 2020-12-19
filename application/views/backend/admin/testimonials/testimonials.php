@@ -4,7 +4,7 @@
 			<div class="card-header" style="background: #138294;">
 				<div class="row">
 					<div class="col-md-10">
-						<h4 >Testimonials Before blog section </h4>
+						<h4 >In homepage ->Testimonials section place  before blog section </h4>
 					</div>
 
 				</div>

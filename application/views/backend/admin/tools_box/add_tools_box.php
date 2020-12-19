@@ -32,7 +32,7 @@
         <h4>Tools Box  Title</h4>
          <input type="text"  class="form-control" placeholder="Enter title" name="title" id="title" required>
      </div>
-       <div class="col-md-6">
+       <div class="col-md-9">
         <h4>Tools Box Details</h4>
          <textarea  rows="3" style="background:;"cols="60" type="text" class="form-control"  name="details" placeholder="Enter Details" id="details" required></textarea>
      </div>

@@ -8,11 +8,11 @@
 			<h1 class="stunning-header-title">Our Services</h1>
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item">
-					<a href="index-2.html">Home</a>
+					<a href="<?= base_url()?>home">Home</a>
 					<i class="seoicon-right-arrow"></i>
 				</li>
 				<li class="breadcrumbs-item active">
-					<span href="#">Our Services</span>
+					<span href="<?= base_url()?>service">Our Services</span>
 					<i class="seoicon-right-arrow"></i>
 				</li>
 			</ul>
@@ -63,8 +63,8 @@
 </p>
 </div>
 
-<a href="#" class="btn btn-medium btn--dark btn-hover-shadow">
-<span class="text">Free SEO Analysis</span>
+<a href="<?= base_url()?>portfolio" class="btn btn-medium btn--dark btn-hover-shadow">
+<span class="text">Free Project</span>
 <span class="semicircle"></span>
 </a>
 </div>
@@ -87,7 +87,7 @@
 	</p>
 </div>
 
-		<a href="04_service_detail_seo.html" class="read-more"><i class="seoicon-right-arrow"></i></a>
+		<a href="<?= base_url()?>about" class="read-more"><i class="seoicon-right-arrow"></i></a>
 
 	</div>
 </div>
@@ -128,7 +128,7 @@
 			</p>
 		</div>
 
-		<a class="read-more" href="#">Read More
+		<a class="read-more" href="<?= base_url()?>about">Read More
 			<i class="seoicon-right-arrow"></i>
 		</a>
 
@@ -192,14 +192,15 @@
 
 		<div class="row">
 			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
-				<a href="#" class="btn btn-medium btn--blue">
-					<span class="text">Free SEO Consultation</span>
+				<a href="<?= base_url()?>portfolio" class="btn btn-medium btn--blue">
+					<span class="text">
+					Free dESIGN</span>
 					<span class="semicircle"></span>
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
-				<a href="#" class="btn btn-medium btn--yellow">
-					<span class="text">Request a Free Quote</span>
+				<a href="<?= base_url()?>portfolio" class="btn btn-medium btn--yellow">
+					<span class="text">Request a Free Project</span>
 					<span class="semicircle"></span>
 				</a>
 			</div>

@@ -404,7 +404,7 @@ public function  save_footer_menu(){
 
            $data=array();
 
-             
+                $data['link']=$this->input->post('link',true);
              $sdata=array();
              $error="";
              $config['upload_path']             = 'assets/footer_images/';
@@ -745,6 +745,7 @@ $query_result=$this->db->get();
 
     $data=array();
     $id=$this->input->post('id',true);
+      $data['link']=$this->input->post('link',true);
     $footer_images=$this->input->post('footer_images',true);
 
 

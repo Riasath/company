@@ -30,7 +30,7 @@
   
     	<div class="col-md-7">
 			<h4>Agency Details </h4>
-			<textarea style="" rows="4" cols="50"  name="details" id="details" required >
+			<textarea style="" rows="4" cols="55"  name="details" id="details" required >
 		     <?php echo $list->details?>
 	        </textarea>
 	         </div>

@@ -35,7 +35,7 @@
      </div> 
       <div class="col-md-6">
         <h4>Add Blog Details</h4>
-        <textarea style="background:;" rows="4" cols="60" class="form-control"  name="blog_details" id="blog_details" ></textarea>
+        <textarea style="background:;" rows="4" cols="60" class="form-control" placeholder="Enter blog details" name="blog_details" id="blog_details" ></textarea>
      </div>
      <div class="col-md-6">
         <h4>Add Blog Avatar(Maximum height 64px and width 52px)</h4>
@@ -68,7 +68,7 @@
 
 
             </div>
-          <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/blog.png">
+          <img class="img-fluid" src="<?php echo base_url('assets')?>/images/blog.png">
           
 
           

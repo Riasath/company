@@ -39,9 +39,9 @@
 
     <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
   
-    	<div class="col-md-6">
+    	<div class="col-md-10">
 	  <h4>Work Details <?= $serial ?></h4>
-			<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="4" cols="50"  name="details" id="details" value="" >
+			<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="5" cols="60"  name="details" id="details" value="" >
             <?php echo $list->details ?>
             </textarea>
 		</div>

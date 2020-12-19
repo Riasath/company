@@ -4,7 +4,7 @@
 			<div class="card-header" style="background: #138294;">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Sidebar button place every pages in the bottom of main menu right position</h3>
+						<h3 class="card-title">Footertop section place in hompage footer area first part</h3>
 					</div>
 				</div>
                    </div>
@@ -20,16 +20,16 @@
 									?>
  <form action="<?php echo base_url()?>update-footertop-list" method="post" enctype="multipart/form-data">
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-md-6">
 					<h4>Footer Area Heading</h4>
 					<input type="text" class="form-control" value="<?php echo $list->footer_heading?>" name="footer_heading" id="footer_heading">
 				</div>
 
     <input type="hidden" value="<?php echo $list->footer_id ?>"name="footer_id" id="footer_id" ></br>
   
-    	<div class="col-md-7">
+    	<div class="col-md-10">
 			<h4>Footer Area Details Content</h4>
-			    <textarea style="background:;" rows="4" cols="50" class="form-control"  name="footer_details" id="footer_details" >
+			    <textarea style="background:;" rows="5" cols="60" class="form-control"  name="footer_details" id="footer_details" >
 			    	<?php echo $list->footer_details?>
 			    </textarea>
 				</div>
@@ -60,7 +60,7 @@
 					
 				</div>
                    </div>
-                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/footertop.png">		
+                    <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/footertop.png">		
 		</div>
 
 		</div>

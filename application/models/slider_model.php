@@ -434,6 +434,7 @@ $query_result=$this->db->get();
     $data=array();
     $id=$this->input->post('id',true);
     $footer_images=$this->input->post('footer_images',true);
+     $data['link']=$this->input->post('link',true);
 
 
     $sdata=array();
@@ -464,7 +465,7 @@ $query_result=$this->db->get();
   public function save_footericon(){
 
            $data=array();
-
+            $data['link']=$this->input->post('link',true);
              
              $sdata=array();
              $error="";

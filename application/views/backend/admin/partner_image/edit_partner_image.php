@@ -1,46 +1,39 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>RTSOFTBD- Software and System Design</title>
-
-<link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
-<link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
-</head>
-<body>
 <div class="content-wrapper">
-	<form action="<?php echo base_url()?>update-partner-image" method="post" enctype="multipart/form-data">
-  <div class="container">
-  
-<label for="image"><b>Recent Partner Image</b></label></br>
-    <img src="<?php echo base_url().$all_partner_image_by_id->image?>" style="height:110px;width:220px;border:1px solid #000000;">
-     </br>
-     
-   
+  <div class="card-body">
+    <div class="card card-primary">
+      <div class="card-header" style="background:#117A8B; ">
+        <div class="row">
+          <div class="col-md-10">
+            <h3 class="card-title">Edit Partner</h3>
+          </div>
 
+        </div>
 
-   
-   
-    <input type="hidden" value="<?php echo $all_partner_image_by_id->id ?>"name="id" id="id" ></br>
+      </div>
+  <form action="<?php echo base_url()?>update-partner-image" method="post" enctype="multipart/form-data">
 
-   </br>
-   </br>
-  
-    <label for="image"><b>Add NEW Partner Image</label></br>
-       <input type="file" name="image" id="image" >
-         </br>
-
-    <button type="submit" class="registerbtn">Update</button></br>
-   
+  <div class="row">
+   <div class="col-md-6">
+       <h4>Recent Partner Image</h4> 
+    <img src="<?php echo base_url().$all_partner_image_by_id->image ?>">
+    </div>
+      <input type="hidden"  name="id" id="id" value="<?php echo $all_partner_image_by_id->id?>">
+    <div class="col-md-6">
+      <h4>Add NEW Partner Image(maximum width170px and height 120px;)</h4>  
+    <input type="file" class="form-control" name="image" id="image" 
+     >
+    </div>
+    
   </div>
-</form>
+   
+  <button type="submit" class="btn btn-info" style="margin:20px; ">Update</button></br>
+   
+
+  </form>
+
+</div>
 </div>
 </div>
 
 
-
-
-
-</div>
-</body>
-</html>

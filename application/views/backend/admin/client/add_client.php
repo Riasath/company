@@ -53,7 +53,7 @@
 
 
             </div>
-          <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/client.png">
+          <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/client.png">
           
 
           

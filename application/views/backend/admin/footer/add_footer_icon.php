@@ -30,7 +30,11 @@
         <h4>Add Social Media Icon(Maximum height 100px and width 100px)</h4>
          <input type="file" class="form-control" name="footer_images" id="footer_images" required>
      </div>
-
+  
+  <div class="col-md-6">
+        <h4>Add Social Media Link</h4>
+         <input type="text" class="form-control" name="link" id="link" required>
+     </div>
      
 
    
@@ -53,7 +57,7 @@
 
 
             </div>
-          <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/socialicon.png">
+          <img class="img-fluid" src="<?php echo base_url('assets')?>/images/socialicon.png">
           
 
           

@@ -42,14 +42,14 @@
 				</div>
 				<div class="col-md-7">
 						<h4>Sidebar Address</h4>
-					<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="3" cols="50"  name="address" id="address" value="" >
+					<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="4" cols="60"  name="address" id="address" value="" >
                  <?php echo $list->address ?>
                 </textarea>
 				</div>
    
 				<div class="col-md-8">
 					<h4>Sidebar Details</h4>
-					<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="4" cols="50"  name="details" id="details" value="" >
+					<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="4" cols="60"  name="details" id="details" value="" >
                  <?php echo $list->details ?>
                </textarea>
 				</div>
@@ -91,10 +91,10 @@
  
               </div>
            
- <img style="width:720px;" class="img-fluid" src="<?php echo base_url('assets')?>/images/sidebar.png">
+ <img class="img-fluid" src="<?php echo base_url('assets')?>/images/sidebar.png">
 	</div>
 
-</div>
+
 
 
   </div>

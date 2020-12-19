@@ -232,22 +232,7 @@ style="height:50px;width:150px;" class="img-fluid" alt="RTSOFTBD">
 
 
 			<ul class="nav-add">
-				<li class="cart">
-
-					<a href="#" class="js-cart-animate">
-						<i class="seoicon-basket"></i>
-						<span class="cart-count">0</span>
-					</a>
-
-					<div class="cart-popup-wrap">
-						<div class="popup-cart">
-							<h4 class="title-cart">No products in the cart!</h4>
-							<p class="subtitle">Please make your choice.</p>
-							<div class="btn btn-small btn--dark">
-								<span class="text">view all catalog</span>
-							</div>
-						</div>
-					</div>
+				
 
 				</li>
 
@@ -289,7 +274,7 @@ style="height:50px;width:150px;" class="img-fluid" alt="RTSOFTBD">
 
 <div class="logo">
 	<a href="#" class="full-block-link"></a>
-		<img src="<?php echo $v_sidebar->image?>">
+		<img style="height:50px;width:150px;"src="<?php echo $v_sidebar->image?>">
 
 </div>
 
@@ -378,7 +363,7 @@ style="height:50px;width:150px;" class="img-fluid" alt="RTSOFTBD">
 
 					<div class="socials">
 						<?php foreach($footer_icon as $v_icon){?>
-						<a href="#" class="social__item">
+			<a href="<?php echo $v_icon->link?>" class="social__item">
 							<img src="<?php echo $v_icon->footer_images?>"
 							style="height: 30px;width:25px;">
 						</a>

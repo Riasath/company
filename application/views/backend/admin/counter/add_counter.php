@@ -61,7 +61,7 @@
 
 
             </div>
-             <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/counter.png">
+             <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/counter.png">
         </div>
 
     </div>

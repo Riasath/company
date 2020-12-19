@@ -24,13 +24,8 @@
                                
 
    <div class="row">
-     <div class="col-md-6">
-        <h4>Add Text</h4>
-         <input type="text" class="form-control" placeholder="Enter Testimonials Text " name="testi_text" id="testi_text" required>
-     </div> 
-
-
-     <div class="col-md-6">
+     
+ <div class="col-md-6">
         <h4>Add Author Name</h4>
          <input type="text" class="form-control"placeholder="Enter Testimonials Author Name " name="testi_author" id="testi_author" required>
      </div> 
@@ -38,6 +33,12 @@
         <h4>Add Company Name</h4>
          <input type="text" class="form-control" placeholder="Company Name " name="testi_company" id="testi_company" required>
      </div>
+     <div class="col-md-8">
+        <h4>Add Text</h4>
+         <textarea type="text" rows="4" cols="60" class="form-control"  name="testi_text" id="testi_text" placeholder="Enter testimonial text" required ></textarea>
+             
+      </div>
+        
        
 
    

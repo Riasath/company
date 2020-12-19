@@ -32,7 +32,7 @@
         <h4>Add Service Title</h4>
          <input type="text"  class="form-control" placeholder="Enter Service title" name="title" id="title" required>
      </div>
-       <div class="col-md-6">
+       <div class="col-md-8">
         <h4>Add Service Details</h4>
          <textarea  rows="3" style="background:;"cols="60" type="text" class="form-control"  name="details" placeholder="Enter Details" id="details" required></textarea>
      </div>
@@ -57,7 +57,7 @@
 
 
             </div>
-             <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/service.png">
+             <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/service.png">
         </div>
 
     </div>

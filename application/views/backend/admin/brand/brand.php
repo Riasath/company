@@ -54,7 +54,7 @@
 					
 				</div>
                    </div>
-                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/brand.png">		
+                    <img class="img-fluid" src="<?php echo base_url('assets')?>/images/brand.png">		
 		</div>
 
 		</div>

@@ -27,7 +27,7 @@
   
     	<div class="col-md-7">
 			<h4>Contact Details </h4>
-			<textarea style="" rows="4" cols="50"  name="details" id="details" required >
+			<textarea style="" rows="4" cols="55"  name="details" id="details" required >
 		     <?php echo $list->details?>
 	        </textarea>
 	         </div>
@@ -53,7 +53,7 @@
 					
 				</div>
                    </div>
-                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/tellus.png">		
+                    <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/tellus.png">		
 		</div>
 
 		</div>

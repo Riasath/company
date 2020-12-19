@@ -49,7 +49,7 @@
 						<td><?= $serial ?></td>
 						<td><?= $list->description ?></td>
 						<td >
-<img src="<?php echo base_url().$list->image?>" style="height: 200px;width: 200px;">					
+<img src="<?php echo base_url().$list->image?>" style="height:80pxpx;width:50px;">					
 						</td>
 						
                        
@@ -62,10 +62,7 @@
 	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-feedback/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button style="margin:10px;" type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
+
 <a href="<?php echo base_url()?>delete-feedback/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button style="margin:10px;" type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>

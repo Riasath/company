@@ -28,21 +28,21 @@
 
     <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
   
-    	<div class="col-md-8">
+    	<div class="col-md-10">
 			<h4>short Story Title </h4>
-			<textarea style=""  name="short_story_title" class="form-control" id="short_story_title" required >
+			<textarea rows="5" cols="60"  name="short_story_title" class="form-control" id="short_story_title" required >
 		     <?php echo $list->short_story_title?>
 	        </textarea>
 	         </div>
-			<div class="col-md-8">
+			<div class="col-md-10">
 			<h4>short Story Subtitle1</h4>
-			<textarea style=""  name="short_story_subtitle1" class="form-control" id="short_story_subtitle1" required >
+			<textarea rows="5" cols="60"  name="short_story_subtitle1" class="form-control" id="short_story_subtitle1" required >
 		          <?php echo $list->short_story_subtitle1?>
 	         </textarea>
 	         </div>
-			<div class="col-md-8">
+			<div class="col-md-10">
 					<h4>short Story Subtitle2</h4>
-			<textarea style="" class="form-control"  name="short_story_subtitle2" id="short_story_subtitle2" required >
+			<textarea rows="5" cols="60" class="form-control"  name="short_story_subtitle2" id="short_story_subtitle2" required >
 				   <?php echo $list->short_story_subtitle2?>
 			</textarea>
 			</div>
@@ -65,7 +65,7 @@
 					
 				</div>
                    </div>
-                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/shortstory.png">		
+              <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/shortstory.png">		
 		</div>
 
 		</div>

@@ -5,7 +5,7 @@
 			<div class="card-header" style="background: #218637;">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Homepage Footer Area Copyright Section</h3>
+						<h3 class="card-title">In everypage footer  Copyright Section place bottom of the footer section</h3>
 					</div>
 				</div>
                    </div>
@@ -71,7 +71,7 @@
 					
 				</div>
                    </div>
-                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/copyright.png">		
+                    <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/copyright.png">		
 		</div>
 
 		</div>

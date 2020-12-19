@@ -26,7 +26,7 @@
      
     <div class="col-md-6">
          <h2><span class="text-danger">Must select MainMenu Name</span>  </h2>
-        <select name="m_id" id="m_id">
+        <select class="form-control" name="m_id" id="m_id">
         <option value="" disabled>Select a parent menu</option>
       <?php foreach ($main_menu as $key => $value): ?>
         <option value="<?=$value->m_id?>"><?=$value->m_name?></option>
@@ -64,7 +64,7 @@
 
 
             </div>
-             <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/dropdown.png">
+             <img class="img-fluid" src="<?php echo base_url('assets')?>/images/dropdown.png">
         </div>
 
     </div>

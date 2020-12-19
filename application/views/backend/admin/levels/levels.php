@@ -66,7 +66,7 @@
  
               </div>
            
- <img style="width:720px;" class="img-fluid" src="<?php echo base_url('assets')?>/images/levels.png">
+ <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/levels.png">
 	</div>
 
 </div>

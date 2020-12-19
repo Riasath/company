@@ -1,8 +1,8 @@
 
 <div class="content-wrapper">
 	<div class="card-body">
-		<div class="card card-primary">
-			<div class="card-header" style="background: #218637;">
+		<div class="card card-info">
+			<div class="card-header">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Popup Section place every pages in the top of Header</h3>
@@ -46,7 +46,7 @@
 				
 				
 				
-				<button type="submit" style="margin-top:20px; " class="btn btn-success">Update</button>
+				<button type="submit" style="margin-top:20px; " class="btn btn-info">Update</button>
 
 				</form>
 			
@@ -58,7 +58,7 @@
 									}
 									?>
 		</div>	
-		<div class="card-header" style="background: #218637;">
+		<div class="card-header" style="background: #17A2B8;">
 				<div class="row">
 					<div class="col-md-10">
 						<h3 class="card-title">Easy Way To Understand</h3>

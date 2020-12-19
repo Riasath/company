@@ -27,9 +27,9 @@
         <h4>Add Work Title</h4>
          <input type="text"  class="form-control" placeholder="Enter Work title" name="title" id="title" required>
      </div>
-       <div class="col-md-6">
+       <div class="col-md-10">
         <h4>Add Work Details</h4>
-         <textarea  rows="3" style="background:;"cols="60" type="text" class="form-control"  name="details" placeholder="Enter Details" id="details" required></textarea>
+         <textarea  rows="4" style="background:;"cols="60" type="text" class="form-control"  name="details" placeholder="Enter Details" id="details" required></textarea>
      </div>
 
    

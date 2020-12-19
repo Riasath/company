@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-
-
-<link rel="stylesheet" href="<?php echo base_url('assets/css/stylelogin1.css');?>" media='all'>
-<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css');?>" media='all'>
-</head>
-<body>
-  
-
 <div class="content-wrapper">
   <div class="card-body">
     <div class="card card-primary">
@@ -42,7 +30,7 @@
 
       <label for="details"><b> Details</b></label></br>
     
-      <textarea style="background:#F1F1F1;" rows="4" cols="70"  name="details" id="details" class="form-control" required ></textarea>
+      <textarea style="background:#F1F1F1;" rows="4" cols="60"  name="details" id="details" class="form-control" required ></textarea>
        </br>
 
    <label for="image"><b>Upload Company Logo</b></label></br>
@@ -69,5 +57,3 @@
   </div>
 </form>
 </div>
-</body>
-</html>

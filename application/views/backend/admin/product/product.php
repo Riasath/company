@@ -21,28 +21,28 @@
 									?>
  <form action="<?php echo base_url()?>update-product" method="post" enctype="multipart/form-data">
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-md-6">
 					<h4>Product Title</h4>
 					<input type="text" class="form-control" value="<?php echo $list->title?>" name="title" id="title">
 				</div>
 
     <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
   
-    	<div class="col-md-7">
+    	<div class="col-md-10">
 			<h4>Product Details(Max 250digit) </h4>
-			<textarea style="" rows="4" cols="50"  name="details" id="details" required >
+			<textarea style="" rows="5" cols="70"  name="details" id="details" required >
 		     <?php echo $list->details?>
 	        </textarea>
 	         </div>
-			<div class="col-md-8">
+			<div class="col-md-10">
 			<h4>Product Section1(Max 250digit)</h4>
-			<textarea style="" rows="4" cols="50"  name="section1" id="section1" required >
+			<textarea style="" rows="5" cols="70"  name="section1" id="section1" required >
 		          <?php echo $list->section1?>
 	         </textarea>
 	         </div>
-			<div class="col-md-8">
+			<div class="col-md-10">
 					<h4>Product Section2(Max 250digit)</h4>
-			<textarea style="" rows="3" cols="50"  name="section2" id="section2" required >
+			<textarea style="" rows="5" cols="70"  name="section2" id="section2" required >
 				   <?php echo $list->section2?>
 			</textarea>
 			</div>

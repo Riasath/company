@@ -8,9 +8,9 @@
 			<h1 class="stunning-header-title">Digital Service</h1>
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item">
-					<a href="index-2.html">Home</a>
+					<a href="<?= base_url()?>home">Home</a>
 					<i class="seoicon-right-arrow"></i>
-					<a href="03_services.html">Services</a>
+					<a href="<?= base_url()?>digital-service">Services</a>
 					<i class="seoicon-right-arrow"></i>
 				</li>
 				<li class="breadcrumbs-item active">
@@ -175,7 +175,7 @@ y</h4>
 				<?php echo $v_levelsbox->details;?>
 			</p>
 
-			<a href="#" class="read-more">Read More
+			<a href="<?= base_url()?>service" class="read-more">Read More
 				<i class="seoicon-right-arrow"></i>
 			</a>
 		</div>

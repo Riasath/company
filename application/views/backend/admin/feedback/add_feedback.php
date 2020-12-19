@@ -61,7 +61,7 @@
 
 
             </div>
-             <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/feedback.png">
+             <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/feedback.png">
         </div>
 
     </div>

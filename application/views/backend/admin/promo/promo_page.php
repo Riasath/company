@@ -32,14 +32,14 @@
 	 <form action="<?php echo base_url()?>update-promo" method="post" enctype="multipart/form-data">
 			<div class="row">
 					            
-					<div class="col-md-6">
+					<div class="col-md-5">
 					<h4>Promo Title <?= $serial ?></h4>
 					<input type="text" class="form-control" value="<?php echo $list->title?>" name="title" id="title">
 				</div>
 
     <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
   
-    	<div class="col-md-6">
+    	<div class="col-md-7">
 	  <h4>Promo Details <?= $serial ?></h4>
 			<textarea style="background:#FFFFFF;" type="text" class="form-control" rows="4" cols="50"  name="details" id="details" value="" >
             <?php echo $list->details ?>

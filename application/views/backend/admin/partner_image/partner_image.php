@@ -43,7 +43,7 @@
 												
 												<td>
                                                 
-                                                <img src="<?php echo base_url().$list->image?>" style="width:200px;height: 160px;">
+                                                <img src="<?php echo base_url().$list->image?>" style="width:150px;height: 120px;">
                                                 </td>
 
 
@@ -52,10 +52,7 @@
 	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-partner-image/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
+
 <a href="<?php echo base_url()?>delete-partner-image/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>

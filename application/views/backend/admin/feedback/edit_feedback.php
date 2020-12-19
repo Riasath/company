@@ -1,54 +1,55 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>RTSOFTBD- Software and System Design</title>
-
-<link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
-<link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
-</head>
-<body>
 <div class="content-wrapper">
+  <div class="card-body">
+    <div class="card card-primary">
+      <div class="card-header" style="background:#117A8B; ">
+        <div class="row">
+          <div class="col-md-10">
+            <h3 class="card-title">Edit Feedback</h3>
+          </div>
+
+        </div>
+
+      </div>
   <form action="<?php echo base_url()?>update-feedback" method="post" enctype="multipart/form-data">
-  <div class="container">
-  
-<label for="image"><b>Recent Author Image</b></label></br>
-    <img src="<?php echo base_url().$all_feedback_by_id->image?>" style="height:120px;width:170px;border:1px solid #000000;">
-     </br>
 
- <label for="description"><b>Add Feedback description</b></label></br>
+  <div class="row">
+  <div class="col-md-6">
+      <h4>Add Author Name</h4> 
+    <input type="text" class="form-control"  name="author" id="author"
+     value="<?php echo $all_feedback_by_id->author?>"></br>
+    </div>
+     <input type="hidden"  name="id" id="id" value="<?php echo $all_feedback_by_id->id?>">
+    <div class="col-md-6">
+          <h4>Add Author Market</h4> 
+    <input type="text" class="form-control" name="market" id="market" 
+     value="<?php echo $all_feedback_by_id->market?>"></br>
+    </div>
+    <div class="col-md-7">
+      <h4>Add Feedback description</h4> 
    
-    <textarea style="background:#F1F1F1;" type="text" rows="4" cols="70"  name="description" id="description" value="" >
-         <?php echo $all_feedback_by_id->description ?>
-       </textarea>
-       </br>
-        
-   
-   
-    <input type="hidden" value="<?php echo $all_feedback_by_id->id ?>"name="id" id="id" ></br>
-
-    <label for="author"><b>Add Author Name</b></label></br>
-       <input type="text" value="<?php echo $all_feedback_by_id->author ?>"name="author" id="author" >
-         </br>
-          <label for="market"><b>Add Author Market</b></label></br>
-       <input type="text" value="<?php echo $all_feedback_by_id->market ?>"name="market" id="market" >
-         </br>
-  
-    <label for="image"><b>Add NEW Author Image</b></label></br>
-       <input type="file" name="image" id="image" >
-         </br>
-
-    <button type="submit" class="registerbtn">Update</button></br>
-   
+    <textarea class="form-control"  rows="4" cols="70"  name="description" id="description"  value=""><?php echo $all_feedback_by_id->description?></textarea>
+     
+    </div>
+    <div class="col-md-6">
+       <h4>Recent Author Image</h4> 
+    <img src="<?php echo base_url().$all_feedback_by_id->image ?>">
+    </div>
+    <div class="col-md-6">
+      <h4>Add NEW Author Image(maximum width120px and height 90px;)</h4>  
+    <input type="file" class="form-control" name="image" id="image" 
+     >
+    </div>
+    
   </div>
-</form>
+   
+  <button type="submit" class="btn btn-info" style="margin:20px; ">Update</button></br>
+   
+
+  </form>
+
+</div>
 </div>
 </div>
 
 
-
-
-
-</div>
-</body>
-</html>

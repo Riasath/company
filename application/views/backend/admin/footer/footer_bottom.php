@@ -5,7 +5,7 @@
 			<div class="card-header" style="background: #138294;">
 				<div class="row">
 					<div class="col-md-10">
-						<h3 class="card-title">Footer Section Before Copyright Area</h3>
+						<h3 class="card-title">This section place in every pages footer Section before Copyright Area</h3>
 					</div>
 				</div>
                    </div>
@@ -35,7 +35,7 @@
   
     	<div class="col-md-6">
 			<h4>Footer Area Address</h4>
-			    <textarea style="background:;" rows="2" cols="50" class="form-control"  name="address" id="address" >
+			    <textarea style="text-align:left; " rows="2" cols="50" class="form-control"  name="address" id="address" >
 			    	<?php echo $list->address?>
 			    </textarea>
 				</div>
@@ -66,7 +66,7 @@
 					
 				</div>
                    </div>
-                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/footerbottom.png">		
+                    <img class="img-fluid" src="<?php echo base_url('assets')?>/images/footerbottom.png">		
 		</div>
 
 		</div>

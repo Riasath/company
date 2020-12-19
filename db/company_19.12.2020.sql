@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2020 at 07:17 PM
+-- Generation Time: Dec 19, 2020 at 02:27 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -505,7 +505,7 @@ CREATE TABLE `feedback` (
 INSERT INTO `feedback` (`id`, `description`, `image`, `author`, `market`) VALUES
 (1, 'Investigationes demonstraverunt lectores legere me lius quod ii legunt.', 'assets/feedback_images/avatar.png', 'Ariful', 'RTSOFTBD'),
 (2, 'Investigationes demonstraverunt lectores legere me lius quod ii legunt.', 'assets/feedback_images/avatar2.png', 'Shaown', 'RTSOFTBD'),
-(3, 'Investigationes demonstraverunt lectores legere me lius quod ii legunt.', 'assets/feedback_images/avatar3.png', 'Sohel', 'Envato'),
+(3, 'Investigationes demonstraverunt lectores legere me lius quod ii legunt.', 'assets/feedback_images/avatar3.png', 'Sohel', 'Envato market'),
 (4, 'Investigationes demonstraverunt lectores legere me lius quod ii legunt.', 'assets/feedback_images/avatar6.png', 'Mizan', 'RTSOFTBD');
 
 -- --------------------------------------------------------
@@ -525,7 +525,7 @@ CREATE TABLE `footer` (
 --
 
 INSERT INTO `footer` (`footer_id`, `footer_heading`, `footer_details`) VALUES
-(6, 'RTSOFTBD Company', '                Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum soluta nobis eleifend option congue nihil uarta decima et quinta. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lob');
+(6, 'RTSOFTBD Company', ' Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum soluta nobis eleifend option congue nihil uarta decima et quinta. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lob       ');
 
 -- --------------------------------------------------------
 
@@ -583,19 +583,21 @@ INSERT INTO `footer_bottom` (`id`, `mobile`, `gmail`, `address`) VALUES
 
 CREATE TABLE `footer_img` (
   `id` int(11) NOT NULL,
-  `footer_images` varchar(250) NOT NULL
+  `footer_images` varchar(250) NOT NULL,
+  `link` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `footer_img`
 --
 
-INSERT INTO `footer_img` (`id`, `footer_images`) VALUES
-(24, 'assets/footer_images/203.png'),
-(25, 'assets/footer_images/213.png'),
-(26, 'assets/footer_images/221.png'),
-(27, 'assets/footer_images/231.png'),
-(28, 'assets/footer_images/241.png');
+INSERT INTO `footer_img` (`id`, `footer_images`, `link`) VALUES
+(24, 'assets/footer_images/5.png', 'http://localhost/company/home'),
+(25, 'assets/footer_images/102.png', 'http://localhost/company/home'),
+(26, 'assets/footer_images/8.png', 'http://localhost/company/home'),
+(27, 'assets/footer_images/7.png', 'http://localhost/company/home'),
+(28, 'assets/footer_images/ghjgjh.png', 'http://localhost/company/home'),
+(34, 'assets/footer_images/6.png', 'http://localhost/company/home');
 
 -- --------------------------------------------------------
 
@@ -1038,7 +1040,12 @@ CREATE TABLE `signup` (
 
 INSERT INTO `signup` (`id`, `fname`, `lname`, `gmail`, `password`, `gender`, `terms`) VALUES
 (4, 'ariful ', 'haque', 'admin@gmail.com', 'admin', 'Male', 'Accept Terms'),
-(5, 'Enayet', 'Mazhar', 'admin@gmail.com', 'admin', 'Male', 'Accept Terms');
+(5, 'Enayet', 'Mazhar', 'admin@gmail.com', 'admin', 'Male', 'Accept Terms'),
+(6, 'Dixon', 'Halder', 'dixon@gmail.com', '12345', 'Male', 'Accept Terms'),
+(7, 'Gelani', 'rana', 'rana@gmail.com', '12345', 'Male', 'Accept Terms'),
+(8, 'Riaz ', 'fahad', 'fahad@gmail.com', '12345', 'Male', 'Accept Terms'),
+(9, 'Tuhin', 'Khan', 'tuhin@gmail.com', '12345', 'Male', 'Accept Terms'),
+(10, 'Imrul', 'niloy', 'niloy@gmail.com', '12345', 'Male', 'Accept Terms');
 
 -- --------------------------------------------------------
 
@@ -1058,13 +1065,13 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`slider_id`, `slider_image`, `slider_descriptions`, `slider_about`) VALUES
-(38, 'assets/slider_images/11slide.png', 'RTSOFTBD.', '      rtsoftbd rtsoftbd   '),
-(41, 'assets/slider_images/21slidee.png', 'RTSOFTBD', '            jdhgasdhasilkud ASKIUJDHFAsiklhjikl '),
-(42, 'assets/slider_images/slider123.png', 'Digital Marketing', 'We thrive to satisfy 1         your organizational needs by delivering robust, scalable business-oriented          solutions'),
-(43, 'assets/slider_images/slider21.png', 'Corporate Solutions', 'We thrive to satisfy 1         your organizational needs by delivering robust, scalable business-oriented          solutions'),
-(44, 'assets/slider_images/slider32.png', 'Corporate Solutions', 'We thrive to satisfy 1         your organizational needs by delivering robust, scalable business-oriented          solutions'),
-(45, 'assets/slider_images/slider56.png', 'Mobile App & IoT Services', 'We thrive to satisfy  your organizational needs by delivering robust, scalable business-oriented          solutions'),
-(46, 'assets/slider_images/21slidee1.png', 'RTSOFTBD', '      We thrive to satisfy 1      ');
+(38, 'assets/slider_images/11slide.png', 'Mobile Application', 'Welcome to RTsoftBD '),
+(41, 'assets/slider_images/21slidee.png', 'Web Development', 'Welcome to RTsoftBD'),
+(42, 'assets/slider_images/slider123.png', 'Digital Marketing', 'Welcome to RTsoftBD  '),
+(43, 'assets/slider_images/slider21.png', 'Corporate Solutions', 'Welcome to RTsoftBD'),
+(44, 'assets/slider_images/slider32.png', 'Enterprise Solutions', 'Welcome to RTsoftBD'),
+(45, 'assets/slider_images/slider56.png', 'Mobile App & IoT Services', 'Welcome to RTsoftBD'),
+(46, 'assets/slider_images/21slidee1.png', 'Software Development', 'Welcome to RTsoftBD       ');
 
 -- --------------------------------------------------------
 
@@ -1931,7 +1938,7 @@ ALTER TABLE `footer_bottom`
 -- AUTO_INCREMENT for table `footer_img`
 --
 ALTER TABLE `footer_img`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `form_head`
@@ -1997,7 +2004,7 @@ ALTER TABLE `partner`
 -- AUTO_INCREMENT for table `partner_image`
 --
 ALTER TABLE `partner_image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `popup`
@@ -2045,7 +2052,7 @@ ALTER TABLE `sidebar`
 -- AUTO_INCREMENT for table `signup`
 --
 ALTER TABLE `signup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `slider`

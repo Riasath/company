@@ -27,9 +27,9 @@
 
     <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
   
-    	<div class="col-md-7">
+    	<div class="col-md-10">
 			<h4>Expert Details</h4>
-			    <textarea style="" rows="4" cols="50" class="form-control"  name="details" id="details" >
+			    <textarea style="" rows="4" cols="60" class="form-control"  name="details" id="details" >
 			    	<?php echo $list->details?>
 			    </textarea>
 				</div>
@@ -60,7 +60,7 @@
 					
 				</div>
                    </div>
-                    <img style="" class="img-fluid" src="<?php echo base_url('assets')?>/images/expert.png">		
+                    <img class="img-fluid" src="<?php echo base_url('assets')?>/images/expert.png">		
 		</div>
 
 		</div>
