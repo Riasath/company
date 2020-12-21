@@ -44,7 +44,7 @@
 
       <div class="col-md-6">
         <h4>Add Posted Person Name</h4>
-         <input type="text" class="form-control" name="posted_by" id="posted_by" required>
+         <input type="text"  placeholder="Enter name" class="form-control" name="posted_by" id="posted_by" required>
      </div>
        
 

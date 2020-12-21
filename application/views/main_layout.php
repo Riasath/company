@@ -17,8 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/widgets-styles.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/ion.rangeSlider.css'); ?>">
 
-
-	<!--Plugins styles-->
+<!--Plugins styles-->
 
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/jquery.mCustomScrollbar.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/swiper.min.css'); ?>">

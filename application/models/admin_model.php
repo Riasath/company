@@ -10,9 +10,7 @@ $data['gmail']=$this->input->post('gmail',true);
 $data['day']=$this->input->post('day',true);   
 $data['time']=$this->input->post('time',true);   
    
-
-
-   $this->db->insert('popup',$data);
+ $this->db->insert('popup',$data);
 
   }
   public function select_popup(){

@@ -18,7 +18,7 @@
 
    <img src="<?php echo base_url().$all_slider_view_by_id->slider_image?>" class="img-fluid" style="height:350px;width:720px;border:1px solid #000000;">
     
-   <h4><span class="text-primary">Slider Title:</span> Slider Title:<?php echo $all_slider_view_by_id->slider_descriptions ?></h4>
+   <h4><span class="text-primary">Slider Title:</span> <?php echo $all_slider_view_by_id->slider_descriptions ?></h4>
   <h4> <span class="text-primary">Slider Description:</span> <?php echo $all_slider_view_by_id->slider_about ?> </h4>
 
  

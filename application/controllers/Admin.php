@@ -19,7 +19,6 @@ class Admin extends CI_Controller
     
     public function admin_login(){
 
-
 $username=$this->input->post('username',true);
 $password=$this->input->post('password',true);
 $this->load->model('admin_model');
