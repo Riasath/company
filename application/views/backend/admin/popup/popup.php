@@ -19,7 +19,7 @@
 
 
 									?>
- <form action="<?php echo base_url()?>update-sidebar" method="post" enctype="multipart/form-data">
+ <form action="<?php echo base_url()?>update-popup" method="post" enctype="multipart/form-data">
 			<div class="row">
 				<div class="col-md-6">
 					<h4>Popup Mobile</h4>

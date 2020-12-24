@@ -102,6 +102,64 @@ $data['all_popup_view_by_id'] = $this->admin_model->all_popup_view_by_id($id);
 		redirect('Admin/popup');
 
 	}
+	 //popupicon
+     public function popupicon()
+	{
+        $data = $this->engine->store_nav('appearance', 'popupicon', 'popupicon List');
+        $data['popupList'] = $this->Common->get_data('popupicon');
+        $path = 'backend/admin/popupicon/popupicon';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+	public function add_popupicon()
+	{
+        $data = $this->engine->store_nav('appearance', 'popupicon', 'Create New popupicon');
+		$path = 'backend/admin/popupicon/add_popupicon';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+		
+	}
+
+public function save_popupicon()
+	{
+
+
+		$this->admin_model->save_popupicon();
+		redirect('Admin/popupicon');
+	
+
+}
+public function edit_popupicon($id)
+	{
+       $data = $this->engine->store_nav('appearance', 'popupicon', 'welcome to our  popupicon ');
+$data['all_popupicon_by_id'] = $this->admin_model->all_popupicon_by_id($id);
+	   	$path = 'backend/admin/popupicon/edit_popupicon';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+
+	}
+	public function update_popupicon()
+	{
+
+		$this->admin_model->update_popupicon();
+		redirect('Admin/popupicon');
+           
+
+	}
+	public function view_popupicon($id){
+
+ $data = $this->engine->store_nav('appearance', 'popupicon', 'welcome to our  popupicon ');
+$data['all_popupicon_view_by_id'] = $this->admin_model->all_popupicon_view_by_id($id);
+	   	$path = 'backend/admin/popupicon/view_popupicon';
+      $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);  
+	}
+	public function delete_popupicon($id)
+	{
+
+		
+		$data = array();
+		$this->admin_model->delete_popupicon_by_id($id);
+
+		redirect('Admin/popupicon');
+
+	}
 	//signup
 	public function save_signup()
 	{

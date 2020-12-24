@@ -69,6 +69,102 @@ $query_result=$this->db->get();
       $this->db->delete('popup');
 
   }
+  //popup icon
+   public function save_popupicon(){
+
+ $data=array();
+   $data['link']=$this->input->post('link',true);
+    $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/popup_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+   
+ $this->db->insert('popupicon',$data);
+
+  }
+  
+  public function select_popupicon(){
+
+
+  $this->db->select('*');
+  $this->db->from('popupicon');
+  $query_result=$this->db->get();
+  $result=$query_result->result();
+
+
+  return $result;
+}
+public function all_popupicon_by_id($id){
+
+
+$this->db->SELECT('*');
+$this->db->FROM('popupicon');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+   public function update_popupicon(){
+
+
+    $data=array();
+    $id=$this->input->post('id',true);
+    $data['link']=$this->input->post('link',true);
+    
+    $sdata=array();
+             $error="";
+             $config['upload_path']             = 'assets/popup_images/';
+             $config['allowed_types']           ='gif|jpg|png';
+             $config['max_size']                =100000;
+             $config['max_width']               =2048; 
+             $config['max_height']              =1024; 
+             $this->load->library('upload',$config);
+
+
+             if( ! $this->upload->do_upload('image')){
+
+              $error=$this->upload->display_errors();
+             }
+             else{
+
+              $sdata=$this->upload->data();
+              $data['image']=$config['upload_path'].$sdata['file_name'];
+             }
+    $this->db->WHERE('id',$id);
+  $this->db->update('popupicon',$data);
+
+  }
+   public function all_popupicon_view_by_id($id){
+
+   
+    $this->db->SELECT('*');
+$this->db->FROM('popupicon');
+$this->db->WHERE('id',$id);
+$query_result=$this->db->get();
+ $result=$query_result->row();
+ return $result;
+  }
+  public function delete_popupicon_by_id($id){
+
+   $this->db->where('id',$id);
+      $this->db->delete('popupicon');
+
+  }
   //signup
    public function save_signup(){
 

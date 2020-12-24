@@ -48,6 +48,12 @@
 							</a>
 						</li>
 						<li class="nav-item">
+							<a href="<?php echo base_url('Admin/popupicon') ?>" class="nav-link <?= active_nav('popupicon', $sub_nav); ?>">
+								<i class="far fa-circle nav-icon"></i>
+								<p>PopUp Social icon</p>
+							</a>
+						</li>
+						<li class="nav-item">
 							<a href="<?php echo base_url('Admin/signup') ?>" class="nav-link <?= active_nav('signup', $sub_nav); ?>">
 								<i class="far fa-circle nav-icon"></i>
 								<p>User Signup</p>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RTSOFTBD- Software and System Design</title>
+  <title>RTSOFTBD- Software and System Design</title>
 
 <link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
 <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
 </head>
 <body>
 <div class="content-wrapper">
-	<form action="<?php echo base_url()?>update-client-list" method="post" enctype="multipart/form-data">
+  <form action="<?php echo base_url()?>update-client-list" method="post" enctype="multipart/form-data">
   <div class="container">
   
 <label for="client_image"><b>Recent Client Image</b></label></br>

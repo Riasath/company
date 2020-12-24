@@ -59,6 +59,12 @@ $route['edit-popup/(.+)']='Admin/edit_popup/$1';
 $route['update-popup']='Admin/update_popup';
 $route['view-popup/(.+)']='Admin/view_popup/$1';
 $route['delete-popup/(.+)']='Admin/delete_popup/$1';
+//popup icon
+$route['save-popupicon']='Admin/save_popupicon';
+$route['edit-popupicon/(.+)']='Admin/edit_popupicon/$1';
+$route['update-popupicon']='Admin/update_popupicon';
+$route['view-popupicon/(.+)']='Admin/view_popupicon/$1';
+$route['delete-popupicon/(.+)']='Admin/delete_popupicon/$1';
 
 
 //signup
