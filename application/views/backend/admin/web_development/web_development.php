@@ -28,11 +28,12 @@
 
 
 			?>
+			
 			 <?php
         $message=$this->session->userdata('message');
         if($message){
 
-          echo "<span class='alert alert-danger'>$message</span>";
+          echo "<span class='' style='color:#E1711D;font-family:verdana;font-size:20px;'>$message</span>";
           $this->session->unset_userdata('message');
         } 
         ?>

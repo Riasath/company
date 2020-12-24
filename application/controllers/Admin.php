@@ -82,7 +82,7 @@ $data['all_popup_by_id'] = $this->admin_model->all_popup_by_id($id);
 
 		$this->admin_model->update_popup();
 		$sdata=array();
-		$sdata['message']='Successfully updated data';
+		$sdata['message']='Successfully updated ';
 		$this->session->set_userdata($sdata);
 		redirect('Admin/popup');
            
