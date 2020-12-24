@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2020 at 09:45 AM
+-- Generation Time: Dec 24, 2020 at 02:07 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -39,7 +39,7 @@ CREATE TABLE `accordon` (
 --
 
 INSERT INTO `accordon` (`id`, `title`, `details`, `idname`) VALUES
-(6, 'RTSOFTBD WEB TEAM ', '                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                        ', 'first'),
+(6, 'RTSOFTBD WEB TEAM ', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                    ', 'first'),
 (7, 'Meet with Our Best Experts', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'second'),
 (8, 'Our Vision', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'third'),
 (9, 'Keyword Research', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 'fourth'),
@@ -69,7 +69,7 @@ CREATE TABLE `address` (
 --
 
 INSERT INTO `address` (`id`, `title`, `house`, `cellnum`, `officenum`, `supportnum`, `gmail`, `address`) VALUES
-(2, 'RTSOFTBD', '   # 132,Jahanara garden,green road,dhaka-1205                                ', '(+880) 1775-373737', '(+880) 1680-666888', '(+880) 1791-919197', 'rtsoftbd@gmail.com', 'www.rtsoftbd.us');
+(2, 'RTSOFTBD', '  # 132,Jahanara garden,green road,dhaka-1205                                                ', '(+880) 1775-373737', '(+880) 1680-666888', '(+880) 1791-919197', 'rtsoftbd@gmail.com', 'www.rtsoftbd.us');
 
 -- --------------------------------------------------------
 
@@ -107,7 +107,7 @@ CREATE TABLE `agency` (
 --
 
 INSERT INTO `agency` (`id`, `title`, `details`) VALUES
-(1, 'Full Services of Our Digital Agency', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                             ');
+(1, 'Full Services of Our Digital Agency', '  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                      ');
 
 -- --------------------------------------------------------
 
@@ -127,10 +127,10 @@ CREATE TABLE `android` (
 --
 
 INSERT INTO `android` (`id`, `title`, `details`, `image`) VALUES
-(1, 'Client Managment System', 'Developed by RTsoftBD Android devlopment Team', 'assets/android_images/32.png'),
+(1, 'Client Managment System', '            Developed by RTsoftBD Android devlopment Team            ', 'assets/android_images/32.png'),
 (2, 'Blood Bank Application', '                  Developed by RTsoftBD Android devlopment Team              ', 'assets/android_images/901.png'),
 (3, 'Awaaz Pakistan', 'Developed by RTsoftBD Android devlopment Team', 'assets/android_images/91.png'),
-(6, 'Zajira (জাজিরা) ', 'Developed by RTsoftBD Android Devlopment Team', 'assets/android_images/34.png');
+(6, 'Zajira (জাজিরা) ', 'Developed by RTsoftBD Android devlopment Team', 'assets/android_images/34.png');
 
 -- --------------------------------------------------------
 
@@ -152,7 +152,7 @@ CREATE TABLE `blog` (
 --
 
 INSERT INTO `blog` (`id`, `date`, `blog_title`, `blog_details`, `avatar`, `posted_by`) VALUES
-(9, '2020-12-07', 'WELCOME TO RTSOFTBD', 'Why do compromises when RTSOFTBD can make your website the way you want?Just sit and relax, we are here to take care your virtual appearance the best way', 'assets/blog_avatar/avatar6.png', 'RTSOFTBD'),
+(9, '2020-12-24', 'WELCOME TO RTSOFTBD', 'Why do compromises when RTSOFTBD can make your website the way you want?Just sit and relax, we are here to take care your virtual appearance the best way', 'assets/blog_avatar/avatar6.png', 'RTSOFTBD'),
 (10, '2020-12-16', 'Web Application', 'Awesome applocation made by RTSOFTBD Web Application TEAM.Visit our website gather information.', 'assets/blog_avatar/avatar51.png', 'shaown'),
 (11, '2020-10-29', 'think positive', 'Awesome applocation made by RTSOFTBD Web Application TEAM.', 'assets/blog_avatar/avatar32.png', 'admin'),
 (12, '2020-10-29', 'Another blog12', '12 Awesome applocation made by RTSOFTBD Web Application TEAM.', 'assets/blog_avatar/avatar231.png', 'admin12');
@@ -174,7 +174,7 @@ CREATE TABLE `brand` (
 --
 
 INSERT INTO `brand` (`id`, `title`, `details`) VALUES
-(1, 'Professional Tools for Your Business', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                  ');
+(1, 'Professional Tools for Your Business', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                           ');
 
 -- --------------------------------------------------------
 
@@ -194,7 +194,7 @@ CREATE TABLE `brandbox` (
 --
 
 INSERT INTO `brandbox` (`id`, `title`, `details`, `value`) VALUES
-(1, 'Brand Monitoring', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 10),
+(1, 'Brand Monitoring', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.            ', 10),
 (2, 'Social Media Contests', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 40),
 (3, 'Social Media Management', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 50),
 (4, 'Meet with Our Best Experts', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.', 90),
@@ -219,7 +219,7 @@ CREATE TABLE `client_head` (
 --
 
 INSERT INTO `client_head` (`id`, `title`, `details`) VALUES
-(1, 'Our Valueable Partners', '                                  \r\n       Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD                       ');
+(1, 'Our Valueable Partners', '                                                              \r\n       Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD                                                           ');
 
 -- --------------------------------------------------------
 
@@ -237,7 +237,7 @@ CREATE TABLE `client_img` (
 --
 
 INSERT INTO `client_img` (`client_id`, `client_image`) VALUES
-(15, 'assets/client_images/21.png'),
+(15, 'assets/client_images/23.png'),
 (16, 'assets/client_images/31.png'),
 (17, 'assets/client_images/41.png'),
 (18, 'assets/client_images/42.png'),
@@ -260,7 +260,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `title`, `details`) VALUES
-(1, 'Tell Us About Your Project', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                    ');
+(1, 'Tell Us About Your Project', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                             ');
 
 -- --------------------------------------------------------
 
@@ -306,7 +306,7 @@ CREATE TABLE `contact_head` (
 --
 
 INSERT INTO `contact_head` (`id`, `title`, `details`) VALUES
-(1, 'Get In Touch', '                           \r\n      Eodem modo typi, qui nunc nobis videntur parum clari,\r\n      fiant sollemnes in futurum. Claritas est etiam processus dynamicus,\r\n      qui sequitur mutationem consuetudium lectorum. ');
+(1, 'Get In Touch', ' Eodem modo typi, qui nunc nobis videntur parum clari,\r\n      fiant sollemnes in futurum. Claritas est etiam processus dynamicus,\r\n      qui sequitur mutationem consuetudium lectorum.          ');
 
 -- --------------------------------------------------------
 
@@ -372,7 +372,7 @@ CREATE TABLE `demo` (
 --
 
 INSERT INTO `demo` (`id`, `title`, `details`, `image`) VALUES
-(2, 'প্রকৌশলী মোহাম্মদ মোমিনুল হক ', '                 Developed by RTsoftBD Web devlopment Team              ', 'assets/demo_images/1061.png'),
+(2, 'প্রকৌশলী মোহাম্মদ মোমিনুল হক ', ' Developed by RTsoftBD Web devlopment Team                          ', 'assets/demo_images/1061.png'),
 (3, 'প্রকৌশলী মোহাম্মদ হোসাইন ', 'Developed by RTsoftBD Web devlopment Team', 'assets/demo_images/39.png'),
 (4, 'Bangladesh Volunteers ', 'Developed by RTsoftBD Web devlopment Team', 'assets/demo_images/108.png'),
 (5, 'PURAN BAZAR DEGREE COLLEGE ', 'Developed by RTsoftBD Web devlopment Team', 'assets/demo_images/94.png');
@@ -395,7 +395,7 @@ CREATE TABLE `description` (
 --
 
 INSERT INTO `description` (`id`, `title`, `details1`, `details2`) VALUES
-(1, 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.', '                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore wisi enim ad minim veniam;                                ', '                                  Mirum est notare quam littera gothica, quam nunc putamus parum, anteposuerit litterarum formas duis dolore.                                ');
+(1, 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.', '  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore wisi enim ad minim veniam;                                                ', '  Mirum est notare quam littera gothica, quam nunc putamus parum, anteposuerit litterarum formas duis dolore.                                                ');
 
 -- --------------------------------------------------------
 
@@ -415,7 +415,7 @@ CREATE TABLE `dservice` (
 --
 
 INSERT INTO `dservice` (`id`, `image`, `title`, `details`) VALUES
-(1, 'assets/dservice_images/marketing1.png', 'The Best Digital Service Strategy', '                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                ');
+(1, 'assets/dservice_images/marketing1.png', 'The Best Digital Service Strategy', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                ');
 
 -- --------------------------------------------------------
 
@@ -435,7 +435,7 @@ CREATE TABLE `eservice` (
 --
 
 INSERT INTO `eservice` (`id`, `image`, `title`, `details`) VALUES
-(7, 'assets/eservice_images/services14.png', 'RTSOFTBD WEB TEAM ', '                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                    '),
+(7, 'assets/eservice_images/services14.png', 'RTSOFTBD WEB TEAM ', '  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                            '),
 (9, 'assets/eservice_images/services2.png', 'RTSOFTBD WEB SERVICE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (10, 'assets/eservice_images/services3.png', 'RTSOFTBD SOFTWARE SERVICE', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (11, 'assets/eservice_images/services4.png', 'RTSOFTBD Android Application', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
@@ -458,7 +458,7 @@ CREATE TABLE `expert` (
 --
 
 INSERT INTO `expert` (`id`, `title`, `details`) VALUES
-(1, 'Meet with Our Best Experts', '                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.   Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.');
+(1, 'Meet with Our Best Experts', '                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.   Claritas est etiam processus dynamicus, qui sequitur mutation');
 
 -- --------------------------------------------------------
 
@@ -478,7 +478,7 @@ CREATE TABLE `feature` (
 --
 
 INSERT INTO `feature` (`id`, `image`, `title`, `details`) VALUES
-(4, 'assets/feature_images/features14.png', 'RTSOFTBD Awesome', '                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                '),
+(4, 'assets/feature_images/features14.png', 'RTSOFTBD Awesome', '   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                            '),
 (5, 'assets/feature_images/features2.png', 'RTSOFTBD WEB TEAM ', '            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.            '),
 (6, 'assets/feature_images/features3.png', 'RTSOFTBD APPLICATION TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (7, 'assets/feature_images/features4.png', 'RTSOFTBD TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
@@ -525,7 +525,7 @@ CREATE TABLE `footer` (
 --
 
 INSERT INTO `footer` (`footer_id`, `footer_heading`, `footer_details`) VALUES
-(6, 'RTSOFTBD Company', ' Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum soluta nobis eleifend option congue nihil uarta decima et quinta. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lob       ');
+(6, 'RTSOFTBD Company', 'Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum soluta nobis eleifend option congue nihil uarta decima et quinta. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit l       ');
 
 -- --------------------------------------------------------
 
@@ -573,7 +573,7 @@ CREATE TABLE `footer_bottom` (
 --
 
 INSERT INTO `footer_bottom` (`id`, `mobile`, `gmail`, `address`) VALUES
-(4, '01832780099', 'rtsoftbd@gmail.com', ' 132,jahanara garden,dhaka                           ');
+(4, '01832780099', 'rtsoftbd@gmail.com', '132,jahanara garden,dhaka                                                ');
 
 -- --------------------------------------------------------
 
@@ -616,7 +616,7 @@ CREATE TABLE `form_head` (
 --
 
 INSERT INTO `form_head` (`id`, `title`, `details`) VALUES
-(1, 'Have You Any Questions?', '                           \r\n       Please contact us using the form and we’ll get back to you as soon as possible.              ');
+(1, 'Have You Any Questions?', '   Please contact us using the form and we’ll get back to you as soon as possible.                       ');
 
 -- --------------------------------------------------------
 
@@ -637,7 +637,7 @@ CREATE TABLE `foundation` (
 --
 
 INSERT INTO `foundation` (`id`, `foundation_image`, `date`, `foundation_title`, `foundation_details`) VALUES
-(3, 'assets/foundation_images/book3.png', '2020-11-05', 'Foundation2020 of the Company', '                           Investigationes2020 demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci ta');
+(3, 'assets/foundation_images/book3.png', '2020-12-24', 'Foundation2020 of the Company', '                                    Investigationes2020 demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Ut wisi enim ad minim veniam, quis nostrud ');
 
 -- --------------------------------------------------------
 
@@ -713,7 +713,7 @@ CREATE TABLE `levels` (
 --
 
 INSERT INTO `levels` (`id`, `title`, `details`) VALUES
-(1, 'Unrivalled Levels of Service', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                ');
+(1, 'Unrivalled Levels of Service', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                ');
 
 -- --------------------------------------------------------
 
@@ -733,7 +733,7 @@ CREATE TABLE `levelsbox` (
 --
 
 INSERT INTO `levelsbox` (`id`, `image`, `title`, `details`) VALUES
-(1, 'assets/levelsbox_images/info-box25.png', 'The Best Email Marketing Strategy', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy qui nunc nobis videntur parum clari.'),
+(1, 'assets/levelsbox_images/info-box25.png', 'The Best Email Marketing Strategy', '  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy qui nunc nobis videntur parum clari.'),
 (2, 'assets/levelsbox_images/info-box23.png', 'RTSOFTBD WEB DEVELOPMENT', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (3, 'assets/levelsbox_images/info-box24.png', 'RTSOFTBD WEB TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (4, 'assets/levelsbox_images/info-box17.png', 'RTSOFTBD APPLICATION TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
@@ -777,7 +777,7 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`m_id`, `m_name`, `m_url`, `m_desc`, `m_created_at`) VALUES
-(1, 'Home', 'http://localhost/company/home', 'BLANK', '2020-12-24 06:30:01'),
+(1, 'Home', 'http://localhost/company/home', 'BLANK', '2020-12-24 11:03:12'),
 (2, 'About', 'http://localhost/company/about', '', '2020-12-24 06:30:18'),
 (3, 'Software Development', '', '', '2020-12-09 07:54:49'),
 (4, 'Digital Marketing', '', '', '2020-12-09 07:55:07'),
@@ -804,7 +804,7 @@ CREATE TABLE `menu_item` (
 --
 
 INSERT INTO `menu_item` (`m_item_id`, `m_id`, `m_item_name`, `m_item_url`, `m_item_desc`, `m_item_created_at`) VALUES
-(3, 3, 'Software Service', 'http://localhost/company/service', '23:13', '2020-12-24 06:32:15'),
+(3, 3, 'Software Service', 'http://localhost/company/service', '23:13', '2020-12-24 11:05:22'),
 (6, 4, 'Digital Service', 'http://localhost/company/digital-service', '', '2020-12-24 06:32:52'),
 (7, 4, 'SEO', 'blank', 'blank', '2020-12-12 10:25:46'),
 (8, 4, 'Email Marketing', 'test', 'blank', '2020-12-12 10:25:37'),
@@ -837,7 +837,7 @@ CREATE TABLE `partner` (
 --
 
 INSERT INTO `partner` (`id`, `title`, `details`) VALUES
-(1, 'Our Valueable Partner', '                       Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima                         ');
+(1, 'Our Valueable Partner', ' Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima                                  ');
 
 -- --------------------------------------------------------
 
@@ -882,7 +882,7 @@ CREATE TABLE `popup` (
 --
 
 INSERT INTO `popup` (`id`, `mobile`, `gmail`, `day`, `time`) VALUES
-(1, '018327800991', 'shaown@gmail.com', 'Monday-Saturday', '10am-6pm');
+(1, '01832780099', 'shaown@gmail.com', 'Monday-Saturday', '10am-6pm');
 
 -- --------------------------------------------------------
 
@@ -926,7 +926,7 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `title`, `details`, `section1`, `section2`) VALUES
-(6, 'Our Product Based Services', ' RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDeveloping your needs on the web.\r\nCustomized Mobile Application Development.\r\nSEO, Social Me', '                                                          RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDeveloping your needs on the web.\r\nC', '                                                   RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDeveloping your needs on the web.\r\nCustomiz');
+(6, 'Our Product Based Services', 'RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDeveloping your needs on the web.\r\nCustomized Mobile Application Development.\r\nSEO, Social Me ', '                                                                      RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDeveloping your needs on', '                                                          RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDeveloping your needs on the web.\r\nC');
 
 -- --------------------------------------------------------
 
@@ -946,7 +946,7 @@ CREATE TABLE `promo` (
 --
 
 INSERT INTO `promo` (`id`, `image`, `title`, `details`) VALUES
-(1, 'assets/promo_images/info-box13.png', 'Excellent Support', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit,          sed diam nonummy nibh euismod tincidunt laoreet dolore magna.'),
+(1, 'assets/promo_images/info-box13.png', 'Excellent Support', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit,          sed diam nonummy nibh euismod tincidunt laoreet dolore magna.            '),
 (3, 'assets/promo_images/info-box21.png', 'Awesome Team', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (4, 'assets/promo_images/info-box23.png', 'RTSOFTBD', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
 (5, 'assets/promo_images/info-box8.png', 'RTSOFTBD WEB TEAM ', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.'),
@@ -970,7 +970,7 @@ CREATE TABLE `quality` (
 --
 
 INSERT INTO `quality` (`id`, `title`, `details`) VALUES
-(1, 'Quality Skills', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.');
+(1, 'Quality Skills', ' Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.         ');
 
 -- --------------------------------------------------------
 
@@ -1016,7 +1016,7 @@ CREATE TABLE `short_story` (
 --
 
 INSERT INTO `short_story` (`id`, `short_story_heading`, `short_story_title`, `short_story_subtitle1`, `short_story_subtitle2`) VALUES
-(1, 'Short Story About Our Company', '       RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDeveloping your needs on the web.\r\nCu', '            E-commerce solution with payment gateway integration.\r\nOnline Streaming and Live Web Casting.\r\nInspiring people for web presence.\r\nTo be a part of Digital Bangladesh.\r\nTo develop and parti', '       RTsoftBD is an incredibly SOFTWARE Farm for corporate and creative professionals.Focused on helping clients to build a successful business on web and mobile application. It works on all major s');
+(1, 'Short Story About Our Company', ' RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves:\r\n\r\nDevelopin         ', '  E-commerce solution with payment gateway integration.\r\nOnline Streaming and Live Web Casting.\r\nInspiring people for web presence.\r\nTo be a p          ', ' RTsoftBD is an incredibly SOFTWARE Farm for corporate and creative professionals.Focused on helping clients to build a successful business on web and mobile applicat   ');
 
 -- --------------------------------------------------------
 
@@ -1039,7 +1039,7 @@ CREATE TABLE `sidebar` (
 --
 
 INSERT INTO `sidebar` (`id`, `title`, `details`, `image`, `mobile`, `gmail`, `address`) VALUES
-(1, '', '', 'assets/sidebar_images/rtsoftbd_logo2.png', '018327800991', 'shaown@gmail.com', '');
+(1, 'RTSOFTBD', '                                                     RTSOFTBD develops standards and set goals that help contribute to our success and your satisfaction. These are the goals that we have set for ourselves: Developing your needs on the web.           ', 'assets/sidebar_images/rtsoftbd_logo2.png', '01832780099', 'shaown@gmail.com', '                                                   132,jahanara garden,dhaka                                                                                  ');
 
 -- --------------------------------------------------------
 
@@ -1088,7 +1088,7 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`slider_id`, `slider_image`, `slider_descriptions`, `slider_about`) VALUES
-(38, 'assets/slider_images/11slide.png', 'Mobile Application', 'Welcome to RTsoftBD '),
+(38, 'assets/slider_images/11slide.png', 'Mobile Application', ' Welcome to RTsoftBD                       '),
 (41, 'assets/slider_images/21slidee.png', 'Web Development', 'Welcome to RTsoftBD'),
 (42, 'assets/slider_images/slider123.png', 'Digital Marketing', 'Welcome to RTsoftBD  '),
 (43, 'assets/slider_images/slider21.png', 'Corporate Solutions', 'Welcome to RTsoftBD'),
@@ -1140,7 +1140,7 @@ CREATE TABLE `software` (
 --
 
 INSERT INTO `software` (`id`, `title`, `details`, `image`) VALUES
-(1, 'Client Managment', '                   Developed by RTsoftBD Software devlopment Team              ', 'assets/software_images/371.png'),
+(1, 'Client Managment', '                               Developed by RTsoftBD Software devlopment Team                          ', 'assets/software_images/371.png'),
 (2, 'Lottery BD ', 'Developed by RTsoftBD Software devlopment Team', 'assets/software_images/102.png'),
 (3, 'TopUp 2 You ', 'Developed by RTsoftBD Software devlopment Team', 'assets/software_images/40.png'),
 (5, 'Eman-Tel ', 'Developed by RTsoftBD Software devlopment Team', 'assets/software_images/35.png');
@@ -1241,7 +1241,7 @@ CREATE TABLE `tell` (
 --
 
 INSERT INTO `tell` (`id`, `title`, `details`) VALUES
-(1, 'Unrivalled Levels of Service', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                       ');
+(1, 'Unrivalled Levels of Service', '  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                       ');
 
 -- --------------------------------------------------------
 
@@ -1281,7 +1281,7 @@ CREATE TABLE `testimonial_head` (
 --
 
 INSERT INTO `testimonial_head` (`id`, `title`, `details`) VALUES
-(1, 'Happy Clients   About Us', '                           \r\n    Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD              ');
+(1, 'Happy Clients   About Us', '                                                              \r\n    Get Excellent Unique ENTERPRISE SOLUTION with RTsoftBD                                                           ');
 
 -- --------------------------------------------------------
 
@@ -1300,7 +1300,7 @@ CREATE TABLE `tools` (
 --
 
 INSERT INTO `tools` (`id`, `title`, `details`) VALUES
-(1, 'Professional Tools for Your Business', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                  ');
+(1, 'Professional Tools for Your Business', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                           ');
 
 -- --------------------------------------------------------
 
@@ -1370,7 +1370,7 @@ CREATE TABLE `vision` (
 --
 
 INSERT INTO `vision` (`id`, `title`, `details`, `image1`, `image2`) VALUES
-(1, 'Our Vision', '                        Mirum est notare quam littera gothica, quam nunc putamus parum          claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta          decima.                        ', 'assets/vision_images/elements1.png', 'assets/vision_images/eye1.png');
+(1, 'Our Vision', '                                                Mirum est notare quam littera gothica, quam nunc putamus parum          claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta          decima.                           ', 'assets/vision_images/elements1.png', 'assets/vision_images/eye1.png');
 
 -- --------------------------------------------------------
 
@@ -1390,7 +1390,7 @@ CREATE TABLE `web_design` (
 --
 
 INSERT INTO `web_design` (`id`, `title`, `details`, `image`) VALUES
-(1, 'E-martbd', '                  Developed by RTsoftBD Web devlopment Team\r\n              ', 'assets/web_design_images/381.png'),
+(1, 'E-martbd', '                              Developed by RTsoftBD Web devlopment Team\r\n                          ', 'assets/web_design_images/381.png'),
 (2, 'EasyPaid ', 'Developed by RTsoftBD Web devlopment Team', 'assets/web_design_images/93.png'),
 (3, 'Fashion Asia ', 'Developed by RTsoftBD Web devlopment Team', 'assets/web_design_images/101.png'),
 (7, 'The Blood Bank ', 'Developed by RTsoftBD Web Design Team', 'assets/web_design_images/96.png');
@@ -1413,7 +1413,7 @@ CREATE TABLE `web_development` (
 --
 
 INSERT INTO `web_development` (`id`, `title`, `details`, `image`) VALUES
-(2, '136th IPU ASSEMBLY, Bangladesh', 'Developed by RTsoftBD Web devlopment Team', 'assets/web_development_images/31.png'),
+(2, '136th IPU ASSEMBLY, Bangladesh', '            Developed by RTsoftBD Web devlopment Team            ', 'assets/web_development_images/31.png'),
 (3, '62nd CPC Conference', 'Developed by RTsoftBD Web devlopment Team              ', 'assets/web_development_images/301.png'),
 (4, 'Barisal City Corporation ', 'Developed by RTsoftBD Web devlopment Team', 'assets/web_development_images/33.png'),
 (5, 'Bakila Union ', 'Developed by RTsoftBD Web devlopment Team', 'assets/web_development_images/361.png');
@@ -1436,7 +1436,7 @@ CREATE TABLE `work` (
 --
 
 INSERT INTO `work` (`id`, `title`, `details`, `image`) VALUES
-(1, 'RTSOFTBD We Work for Your Profit', '                                                            RTSOFTBD  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.           ', 'assets/work_images/321.png'),
+(1, 'RTSOFTBD We Work for Your Profit', '                                                                                    RTSOFTBD  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi en', 'assets/work_images/321.png'),
 (2, '2We Work for Your Profit', '            2Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.            ', 'assets/work_images/30.png'),
 (3, 'We Work for Your Profit', '    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi enim ad veniam.                                                ', 'assets/work_images/90.png'),
 (4, 'We Work for Your Profit', '                                                                                                                                                                        sfsdfFDSAFSDA                        3Lorem ipsum dolor sit amet, consectetuer adi', 'assets/work_images/36.png');
@@ -1957,7 +1957,7 @@ ALTER TABLE `footer`
 -- AUTO_INCREMENT for table `footermenu`
 --
 ALTER TABLE `footermenu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `footer_bottom`
@@ -2017,7 +2017,7 @@ ALTER TABLE `logo`
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `m_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `menu_item`
@@ -2035,7 +2035,7 @@ ALTER TABLE `partner`
 -- AUTO_INCREMENT for table `partner_image`
 --
 ALTER TABLE `partner_image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `popup`
@@ -2047,7 +2047,7 @@ ALTER TABLE `popup`
 -- AUTO_INCREMENT for table `popupicon`
 --
 ALTER TABLE `popupicon`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `product`
@@ -2095,7 +2095,7 @@ ALTER TABLE `signup`
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `slider_id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `slider_id` int(150) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `slides_item`
@@ -2131,7 +2131,7 @@ ALTER TABLE `tell`
 -- AUTO_INCREMENT for table `testimonials`
 --
 ALTER TABLE `testimonials`
-  MODIFY `testi_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `testi_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `testimonial_head`

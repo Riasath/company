@@ -745,7 +745,7 @@ $data['link']=$this->input->post('link',true);
 
 
   $this->db->insert('footermenu',$data);
- redirect('Admin/footermenu');
+ 
 
 
       }
@@ -1194,7 +1194,7 @@ $data['foundation_details']=$this->input->post('foundation_details',true);
 
             $this->db->insert('foundation',$data);
 
-       redirect('Admin/foundation');
+      
 
 
       }
@@ -1303,7 +1303,7 @@ $data['details']=$this->input->post('details',true);
 
             $this->db->insert('work',$data);
 
-       redirect('Admin/work');
+      
 
 
       }
@@ -1555,7 +1555,6 @@ $data['tlink']=$this->input->post('tlink',true);
             $this->db->insert('team',$data);
 
 
-       redirect('Admin/team');
 
 
       }
@@ -1744,7 +1743,7 @@ $data['details']=$this->input->post('details',true);
              }
 
             $this->db->insert('promo',$data);
-             redirect('Admin/promo');
+            
 
       }
        public function select_all_promo(){
@@ -1857,7 +1856,7 @@ $data['details']=$this->input->post('details',true);
              }
 
             $this->db->insert('vision',$data);
-             redirect('Admin/vision');
+          
 
       }
          public function select_all_vision(){
@@ -1972,7 +1971,7 @@ $data['market']=$this->input->post('market',true);
              }
 
             $this->db->insert('feedback',$data);
-             redirect('Admin/feedback');
+            
 
       }
       public function select_all_feedback(){
@@ -2140,7 +2139,7 @@ $query_result=$this->db->get();
              }
 
             $this->db->insert('partner_image',$data);
-             redirect('Admin/partner_image');
+            
 
       }
        public function select_all_partner_image(){
@@ -2245,7 +2244,6 @@ $data['details']=$this->input->post('details',true);
 
             $this->db->insert('eservice',$data);
 
-       redirect('Admin/eservice_box');
 
 
       }
@@ -2400,7 +2398,7 @@ $data['value']=$this->input->post('value',true);
 
 
   $this->db->insert('qualityitem',$data);
- redirect('Admin/qualityitem');
+ 
 
 
       }
@@ -2553,7 +2551,7 @@ $data['details']=$this->input->post('details',true);
 
             $this->db->insert('feature',$data);
 
-       redirect('Admin/feature');
+      
 
 
       }
@@ -2797,7 +2795,6 @@ $data['details']=$this->input->post('details',true);
 
             $this->db->insert('tools_box',$data);
 
-       redirect('Admin/tools_box');
 
 
       }
@@ -3315,7 +3312,6 @@ $data['details']=$this->input->post('details',true);
 
             $this->db->insert('levelsbox',$data);
 
-       redirect('Admin/levelsbox');
 
 
       }
@@ -3403,7 +3399,7 @@ $data['idname']=$this->input->post('idname',true);
 
 
   $this->db->insert('accordon',$data);
- redirect('Admin/accordon');
+ 
 
 
       }
@@ -3542,7 +3538,7 @@ $data['value']=$this->input->post('value',true);
 
 
   $this->db->insert('brandbox',$data);
- redirect('Admin/brandbox');
+
 
 
       }
@@ -3733,7 +3729,7 @@ $data['details']=$this->input->post('details',true);
              }
 
             $this->db->insert('android',$data);
-             redirect('Admin/android');
+             
 
       }
        public function select_android_items(){
@@ -3827,7 +3823,7 @@ $data['details']=$this->input->post('details',true);
              }
 
             $this->db->insert('web_development',$data);
-             redirect('Admin/web_development');
+             
 
       }
        public function select_web_development_items(){
@@ -3923,7 +3919,7 @@ $data['details']=$this->input->post('details',true);
              }
 
             $this->db->insert('web_design',$data);
-             redirect('Admin/web_design');
+           
 
       }
        public function select_web_design_items(){
@@ -4017,7 +4013,7 @@ $data['details']=$this->input->post('details',true);
              }
 
             $this->db->insert('software',$data);
-             redirect('Admin/software');
+             
 
       }
        public function select_software_items(){
@@ -4111,7 +4107,7 @@ $data['details']=$this->input->post('details',true);
              }
 
             $this->db->insert('demo',$data);
-             redirect('Admin/demo');
+            
 
       }
        public function select_demo_items(){
@@ -4189,7 +4185,7 @@ $data['m_url']=$this->input->post('m_url',true);
 $data['m_desc']=$this->input->post('m_desc',true); 
 
   $this->db->insert('menu',$data);
- redirect('Admin/mainmenu');
+
 
 
       }
@@ -4249,7 +4245,7 @@ $data['m_item_desc']=$this->input->post('m_item_desc',true);
 
 
   $this->db->insert('menu_item',$data);
- redirect('Admin/dropdown');
+
 
 
       }
@@ -4698,11 +4694,8 @@ $sdata=array();
               $sdata=$this->upload->data();
               $data['image']=$config['upload_path'].$sdata['file_name'];
              }
-
-
- 
-   $this->db->insert('logo',$data);
-             redirect('Admin/logo');
+     $this->db->insert('logo',$data);
+          
 
       }
        public function select_logo(){

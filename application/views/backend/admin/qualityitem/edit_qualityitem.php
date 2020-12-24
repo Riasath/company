@@ -1,45 +1,42 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>RTSOFTBD- Software and System Design</title>
-
-<link rel="stylesheet" href="<?= base_url('assets/css/stylelogin1.css');?>" media='all'>
-<link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css');?>" media='all'>
-</head>
-<body>
+  
 <div class="content-wrapper">
+  <div class="card-body">
+    <div class="card card-danger">
+      <div class="card-header" style="">
+        <div class="row">
+          <div class="col-md-10">
+            <h3 class="card-title">Quality Item</h3>
+          </div>
+          
+
+        </div>
+
+      </div>
   <form action="<?php echo base_url()?>update-qualityitem" method="post" enctype="multipart/form-data">
-  <div class="container">
-  
 
+     <div class="row">
+       <div class="col-md-6">
+            <h4>Add Quality Item Title</h4>
+       <input type="text"class="form-control" value="<?php echo $all_qualityitem_by_id->title ?>"name="title" id="title" >
+      
+       </div>
+       <input type="hidden" value="<?php echo $all_qualityitem_by_id->id ?>"name="id" id="id" >
+      <div class="col-md-6">
+            <h4>Add Quality Item Value</h4>
+       <input type="text"class="form-control" value="<?php echo $all_qualityitem_by_id->value ?>"name="value" id="value" >
+      
+       </div>
 
-    <label for="title"><b>Add Quality Item Title</b></label></br>
-       <input type="text" value="<?php echo $all_qualityitem_by_id->title ?>"name="title" id="title" >
-         </br>
- 
-   
-   
-    <input type="hidden" value="<?php echo $all_qualityitem_by_id->id ?>"name="id" id="id" ></br>
+     </div>
+       <button type="submit" style="margin:20px;"class="btn btn-danger">Update</button></br>
+      
 
-    
-          <label for="value"><b>Add Quality Item Value</b></label></br>
-       <input type="text" value="<?php echo $all_qualityitem_by_id->value ?>"name="value" id="value" >
-         </br>
-  
-   
-
-    <button type="submit" class="registerbtn">Update</button></br>
-   
-  </div>
 </form>
+
+</div>
 </div>
 </div>
 
 
 
-
-
-</div>
-</body>
-</html>

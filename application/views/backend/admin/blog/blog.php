@@ -13,6 +13,14 @@
 			</div>
 
 			<?= alert_check() ?>
+			 <?php
+        $message=$this->session->userdata('message');
+        if($message){
+
+          echo "<span class='alert alert-danger'>$message</span>";
+          $this->session->unset_userdata('message');
+        } 
+        ?>
 			<section class="content" style="margin-top:20px">
 <a href="<?php echo base_url('Admin/add_blog') ?>">
 		<button type='button' id="" style="margin:20px;" class='btn bg-dark'>Create New Blog</i>

@@ -13,6 +13,14 @@
 			</div>
 
 			<?= alert_check() ?>
+			 <?php
+        $message=$this->session->userdata('message');
+        if($message){
+
+          echo "<span class='alert alert-danger'>$message</span>";
+          $this->session->unset_userdata('message');
+        } 
+        ?>
 				<a href="<?php echo base_url('Admin/add_footer_icon') ?>">
 				<button type='button' id="" style="margin:20px; "class='btn bg-info'>Create New Icon</i>
 				</button></a>

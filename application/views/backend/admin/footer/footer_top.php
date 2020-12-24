@@ -18,6 +18,15 @@
 
 
 									?>
+
+									 <?php
+        $message=$this->session->userdata('message');
+        if($message){
+
+          echo "<span class='alert alert-danger'>$message</span>";
+          $this->session->unset_userdata('message');
+        } 
+        ?>
  <form action="<?php echo base_url()?>update-footertop-list" method="post" enctype="multipart/form-data">
 			<div class="row">
 				<div class="col-md-6">

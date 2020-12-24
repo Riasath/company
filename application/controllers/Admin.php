@@ -81,6 +81,9 @@ $data['all_popup_by_id'] = $this->admin_model->all_popup_by_id($id);
 	{
 
 		$this->admin_model->update_popup();
+		$sdata=array();
+		$sdata['message']='Successfully updated data';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/popup');
            
 
@@ -123,7 +126,10 @@ public function save_popupicon()
 
 
 		$this->admin_model->save_popupicon();
-		redirect('Admin/popupicon');
+		$sdata=array();
+		$sdata['message']='Successfully save data';
+		$this->session->set_userdata($sdata);
+		redirect('Admin/add_popupicon');
 	
 
 }
@@ -139,6 +145,9 @@ $data['all_popupicon_by_id'] = $this->admin_model->all_popupicon_by_id($id);
 	{
 
 		$this->admin_model->update_popupicon();
+		$sdata=array();
+		$sdata['message']='Successfully updated data';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/popupicon');
            
 
@@ -211,6 +220,9 @@ public function signup()
 	{
 
 		$this->admin_model->update_sidebar();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/sidebar');
            
 
@@ -279,6 +291,9 @@ public function signup()
 	{
 
 		$this->Common->update_slider_list();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/list_slider');
 
 
@@ -297,7 +312,10 @@ public function signup()
 	{
 
 		$this->admin_model->save_slider_info();
-		redirect('Admin/list_slider');
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('Admin/add_slider');
 	}
 	public function add_slides_item()
 	{
@@ -440,13 +458,19 @@ public function signup()
 	{
 
 		$this->slider_model->save_testimonials_list();
-	     redirect('Admin/testimonials');
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+	     redirect('Admin/add_testimonials');
 	}
 
 	public function update_testimonials_list()
 	{
 
 		$this->slider_model->update_testimonials_list();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/testimonials');
            
 
@@ -465,6 +489,9 @@ public function signup()
 	{
 
 		$this->slider_model->update_blog_list();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/blog');
            
 
@@ -473,7 +500,10 @@ public function signup()
 	{
 
 		$this->slider_model->save_blog_list();
-	     redirect('Admin/blog');
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+	     redirect('Admin/add_blog');
 	}
 	  public function edit_client_list($client_id)
 	{
@@ -488,6 +518,9 @@ public function signup()
 	{
 
 		$this->slider_model->update_client_list();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/client');
            
 
@@ -496,7 +529,10 @@ public function signup()
 	{
 
 		$this->slider_model->save_client_list();
-	     redirect('Admin/client');
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+	     redirect('Admin/add_client');
 	}
 	  public function edit_footertop_list($footer_id)
 	{
@@ -519,6 +555,9 @@ public function signup()
 	{
 
 		$this->slider_model->update_footertop_list();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/footer_top');
            
 
@@ -542,6 +581,9 @@ public function signup()
 	{
 
 		$this->slider_model->update_footerbottom();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/footer_bottom');
            
 
@@ -558,6 +600,9 @@ public function signup()
 	{
 
 		$this->slider_model->update_footericonlist();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/footer_icon');
            
 
@@ -565,7 +610,10 @@ public function signup()
 	public function save_footericon(){
 
     $this->slider_model->save_footericon();
-    	redirect('Admin/footer_icon');
+    	$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+    	redirect('Admin/add_footer_icon');
      
 	}
 	public function edit_footer_copyright($id)
@@ -581,6 +629,9 @@ public function signup()
 	{
 
 		$this->slider_model->update_footer_copyright_list();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/footer');
            
 
@@ -754,6 +805,10 @@ public function signup()
 
 
 		$this->admin_model->save_footermenu();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_footermenu');
 
 	}
 	 public function edit_footermenu($id)
@@ -768,6 +823,9 @@ public function signup()
 	{
 
 		$this->admin_model->update_footermenu();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/footermenu');
            
 
@@ -835,6 +893,9 @@ public function signup()
 	{
 
 		$this->admin_model->update_shortstory_list();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/short_story');
            
 
@@ -882,6 +943,10 @@ $data = $this->engine->store_nav('about page', 'foundation', 'Create New foundat
 
 
 		$this->admin_model->save_foundation();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_foundation');
 
 	}
 	 public function edit_foundation_list($id)
@@ -899,6 +964,9 @@ $data = $this->engine->store_nav('about page', 'foundation', 'Create New foundat
 	{
 
 		$this->admin_model->update_foundation_list();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/foundation');
            
 
@@ -946,6 +1014,10 @@ $data = $this->engine->store_nav('about page', 'work', 'Create New work');
 
 
 		$this->admin_model->save_work();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_work');
 
 	}
 	public function edit_work($id)
@@ -965,6 +1037,9 @@ $data = $this->engine->store_nav('about page', 'work', 'Create New work');
 	{
 
 		$this->admin_model->update_work();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/work');
            
 
@@ -1025,6 +1100,9 @@ public function edit_expert($id)
 	{
 
 		$this->admin_model->update_expert();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/expert');
            
 
@@ -1067,6 +1145,10 @@ public function save_team()
 
 
 		$this->admin_model->save_team();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_team');
 	
 
 }
@@ -1084,6 +1166,9 @@ public function edit_team($id)
 	{
 
 		$this->admin_model->update_team();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/team');
            
 
@@ -1126,6 +1211,10 @@ $data = $this->engine->store_nav('about page', 'promo', 'Create New promo');
 
 
 		$this->admin_model->save_promo();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_promo');
 	
 
 }
@@ -1141,6 +1230,9 @@ public function edit_promo($id)
 	{
 
 		$this->admin_model->update_promo();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/promo');
            
 
@@ -1185,6 +1277,10 @@ $data = $this->engine->store_nav('about page', 'vision', 'Create New vision');
 
 
 		$this->admin_model->save_vision();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_vision');
 	
 
 }
@@ -1201,6 +1297,9 @@ public function edit_vision($id)
 	{
 
 		$this->admin_model->update_vision();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/vision');
            
 
@@ -1245,6 +1344,10 @@ $data = $this->engine->store_nav('about page', 'feedback', 'Create New feedback'
 
 
 		$this->admin_model->save_feedback();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_feedback');
 	
 
 }
@@ -1261,6 +1364,9 @@ public function edit_feedback($id)
 	{
 
 		$this->admin_model->update_feedback();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/feedback');
            
 
@@ -1317,6 +1423,9 @@ public function edit_partner($id)
 	{
 
 		$this->admin_model->update_partner();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/partner');
            
 
@@ -1358,6 +1467,11 @@ $data = $this->engine->store_nav('about page', 'partner_image', 'Create New part
 
 
 		$this->admin_model->save_partner_image();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_partner_image');
+
 	
 
 }
@@ -1373,6 +1487,9 @@ public function edit_partner_image($id)
 	{
 
 		$this->admin_model->update_partner_image();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/partner_image');
            
 
@@ -1430,6 +1547,9 @@ public function edit_partner_image($id)
 	{
 
 		$this->admin_model->update_agency();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/agency');
            
 
@@ -1469,6 +1589,10 @@ public function edit_partner_image($id)
 
 
 		$this->admin_model->save_eservice();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_service');
 	
 
 }
@@ -1485,6 +1609,9 @@ $data['all_eservice_by_id'] = $this->admin_model->all_eservice_by_id($id);
 	{
 
 		$this->admin_model->update_eservice();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/eservice_box');
            
 
@@ -1542,6 +1669,9 @@ $data['all_product_by_id'] = $this->admin_model->all_product_by_id($id);
 	{
 
 		$this->admin_model->update_product();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/product');
            
 
@@ -1597,6 +1727,10 @@ public function feature()
 
 
 		$this->admin_model->save_feature();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_feature');
 	
 
 }
@@ -1612,6 +1746,9 @@ $data['all_feature_by_id'] = $this->admin_model->all_feature_by_id($id);
 	{
 
 		$this->admin_model->update_feature();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/feature');
            
 
@@ -1668,6 +1805,9 @@ $data['all_quality_by_id'] = $this->admin_model->all_quality_by_id($id);
 	{
 
 		$this->admin_model->update_quality();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/quality');
            
 
@@ -1708,6 +1848,10 @@ public function qualityitem()
 
 
 		$this->admin_model->save_qualityitem();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_qualityitem');
 	}
 	public function edit_qualityitem($id)
 	{
@@ -1722,6 +1866,9 @@ $data['all_qualityitem_by_id'] = $this->admin_model->all_qualityitem_by_id($id);
 	{
 
 		$this->admin_model->update_qualityitem();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/qualityitem');
            
 
@@ -1783,6 +1930,9 @@ $data['all_tools_by_id'] = $this->admin_model->all_tools_by_id($id);
 	{
 
 		$this->admin_model->update_tools();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/tools');
            
 
@@ -1825,6 +1975,10 @@ $data['all_tools_view_by_id'] = $this->admin_model->all_tools_view_by_id($id);
 
 
 		$this->admin_model->save_tools_box();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_tools_box');
 	
 
 }
@@ -1842,6 +1996,9 @@ $data['all_tools_box_by_id'] = $this->admin_model->all_tools_box_by_id($id);
 	{
 
 		$this->admin_model->update_tools_box();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/tools_box');
            
 
@@ -1902,6 +2059,9 @@ $data['all_contact_by_id'] = $this->admin_model->all_contact_by_id($id);
 	{
 
 		$this->admin_model->update_contact();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/contact');
            
 
@@ -2003,6 +2163,9 @@ $data['all_dservice_by_id'] = $this->admin_model->all_dservice_by_id($id);
 	{
 
 		$this->admin_model->update_dservice();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/dservice');
            
 
@@ -2062,6 +2225,9 @@ $data['all_description_by_id'] = $this->admin_model->all_description_by_id($id);
 	{
 
 		$this->admin_model->update_description();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/description');
            
 
@@ -2122,6 +2288,9 @@ $data['all_tell_by_id'] = $this->admin_model->all_tell_by_id($id);
 	{
 
 		$this->admin_model->update_tell();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/tell');
            
 
@@ -2184,6 +2353,9 @@ $data['all_levels_by_id'] = $this->admin_model->all_levels_by_id($id);
 	{
 
 		$this->admin_model->update_levels();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/levels');
            
 
@@ -2227,6 +2399,10 @@ public function levelsbox()
 
 
 		$this->admin_model->save_levelsbox();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_levelsbox');
 	
 
 }
@@ -2242,6 +2418,9 @@ $data['all_levelsbox_by_id'] = $this->admin_model->all_levelsbox_by_id($id);
 	{
 
 		$this->admin_model->update_levelsbox();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/levelsbox');
            
 
@@ -2285,6 +2464,10 @@ public function accordon()
 
 
 		$this->admin_model->save_accordon();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_accordon');
 	
 
 }
@@ -2300,6 +2483,9 @@ $data['all_accordon_by_id'] = $this->admin_model->all_accordon_by_id($id);
 	{
 
 		$this->admin_model->update_accordon();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/accordon');
            
 
@@ -2361,6 +2547,9 @@ $data['all_brand_by_id'] = $this->admin_model->all_brand_by_id($id);
 	{
 
 		$this->admin_model->update_brand();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/brand');
            
 
@@ -2408,6 +2597,10 @@ public function brandbox()
 
 
 		$this->admin_model->save_brandbox();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_brandbox');
 	
 
 }
@@ -2423,6 +2616,9 @@ $data['all_brandbox_by_id'] = $this->admin_model->all_brandbox_by_id($id);
 	{
 
 		$this->admin_model->update_brandbox();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/brandbox');
            
 
@@ -2510,6 +2706,9 @@ $data['all_address_by_id'] = $this->admin_model->all_address_by_id($id);
 	{
 
 		$this->admin_model->update_address();
+			$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/address');
            
 
@@ -2561,6 +2760,10 @@ public function android()
 
 
 		$this->admin_model->save_android();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_android');
 	
 
 }
@@ -2577,6 +2780,9 @@ public function edit_android($id)
 	{
 
 		$this->admin_model->update_android();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/android');
            
 
@@ -2626,6 +2832,10 @@ public function web_development()
 
 
 		$this->admin_model->save_web_development();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_web_development');
 	
 
 }
@@ -2641,6 +2851,9 @@ public function edit_web_development($id)
 	{
 
 		$this->admin_model->update_web_development();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/web_development');
            
 
@@ -2693,6 +2906,11 @@ public function web_design()
 
 
 		$this->admin_model->save_web_design();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_web_design');
+
 	
 
 }
@@ -2708,6 +2926,9 @@ public function edit_web_design($id)
 	{
 
 		$this->admin_model->update_web_design();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/web_design');
            
 
@@ -2760,6 +2981,10 @@ public function software()
 
 
 		$this->admin_model->save_software();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_software');
 	
 
 }
@@ -2775,6 +3000,9 @@ public function edit_software($id)
 	{
 
 		$this->admin_model->update_software();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/software');
            
 
@@ -2827,6 +3055,10 @@ public function demo()
 
 
 		$this->admin_model->save_demo();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_demo');
 	
 
 }
@@ -2842,6 +3074,9 @@ public function edit_demo($id)
 	{
 
 		$this->admin_model->update_demo();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/demo');
            
 
@@ -2895,6 +3130,10 @@ public function edit_demo($id)
 
 
 		$this->admin_model->save_mainmenu();
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_mainmenu');
 	
 
 }
@@ -2910,6 +3149,9 @@ public function edit_mainmenu($m_id)
 	{
 
 		$this->admin_model->update_mainmenu();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/mainmenu');
            
 
@@ -2957,6 +3199,10 @@ public function edit_mainmenu($m_id)
 
 
 		$this->admin_model->save_dropdown();
+			$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_dropdown');
 	
 
 }
@@ -2977,6 +3223,9 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->update_dropdown();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/dropdown');
            
 
@@ -3035,6 +3284,9 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->update_testimonial_head();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/testimonial_head');
            
 
@@ -3093,6 +3345,9 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->update_client_head();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/client_head');
            
 
@@ -3152,6 +3407,9 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->update_contact_head();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/contact_head');
            
 
@@ -3211,6 +3469,9 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->update_form_head();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/form_head');
            
 
@@ -3258,7 +3519,10 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->save_counter();
-		redirect('Admin/counter');
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('Admin/add_counter');
 	}
 	public function edit_counter($id)
 	{
@@ -3272,6 +3536,9 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->update_counter();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/counter');
            
 
@@ -3380,7 +3647,11 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->save_logo();
-		redirect('Admin/logo');
+		$sdata=array();
+		$sdata['message']='Successfully saved';
+		$this->session->set_userdata($sdata);
+		redirect('admin/add_logo');
+		
 	}
 	public function edit_logo($id)
 	{
@@ -3394,6 +3665,9 @@ public function edit_dropdown($m_item_id)
 	{
 
 		$this->admin_model->update_logo();
+		$sdata=array();
+		$sdata['message']='Successfully updated';
+		$this->session->set_userdata($sdata);
 		redirect('Admin/logo');
            
 

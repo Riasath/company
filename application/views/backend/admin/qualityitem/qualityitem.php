@@ -17,6 +17,14 @@
 			</div>
 
 			<?= alert_check() ?>
+			 <?php
+        $message=$this->session->userdata('message');
+        if($message){
+
+          echo "<span class='alert alert-danger'>$message</span>";
+          $this->session->unset_userdata('message');
+        } 
+        ?>
 	
 		<section class="content" style="margin-top:20px">
 			<a href="<?php echo base_url('Admin/add_qualityitem') ?>">
@@ -63,10 +71,7 @@
 	<button  style="margin:10px;"type='button' class='btn bg-success'>Edit<i class='fas fa-user-edit'></i>
 	</button>
 </a>
-<a href="<?php echo base_url()?>view-qualityitem/<?php echo $list->id?>" id="<?= $list->id ?>">
-	<button  style="margin:10px;"type='button' class='btn bg-primary'>View<i class='fas fa-eye'></i>
-	</button>
-</a>
+
 <a href="<?php echo base_url()?>delete-qualityitem/<?php echo $list->id?>" id="<?= $list->id ?>">
 	<button  style="margin:10px;"type='button'  onclick="return confirm('Are you sure you want to delete this item?');" class='btn bg-danger'>Delete<i class='fas fa-times'></i>
 	</button>

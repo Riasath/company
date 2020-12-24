@@ -19,6 +19,14 @@
             
 
             <?= alert_check() ?>
+                     <?php
+        $message=$this->session->userdata('message');
+        if($message){
+
+          echo "<span class='alert alert-info'>$message</span>";
+          $this->session->unset_userdata('message');
+        } 
+        ?>
             <section class="content" style="margin-top:20px">
              
         <form action="<?php echo base_url() ?>save-partner-image" method="post" enctype="multipart/form-data">

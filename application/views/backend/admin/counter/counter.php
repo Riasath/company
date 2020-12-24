@@ -16,6 +16,14 @@
 				<a href="<?php echo base_url('Admin/add_counter') ?>">
 				<button type='button' id="" style="margin:20px; "class='btn bg-info'>Create New Conter Items</i>
 				</button></a>
+				 <?php
+        $message=$this->session->userdata('message');
+        if($message){
+
+          echo "<span class='alert alert-danger'>$message</span>";
+          $this->session->unset_userdata('message');
+        } 
+        ?>
 	
 		
 								
