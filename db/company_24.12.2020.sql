@@ -130,7 +130,7 @@ INSERT INTO `android` (`id`, `title`, `details`, `image`) VALUES
 (1, 'Client Managment System', 'Developed by RTsoftBD Android devlopment Team', 'assets/android_images/32.png'),
 (2, 'Blood Bank Application', '                  Developed by RTsoftBD Android devlopment Team              ', 'assets/android_images/901.png'),
 (3, 'Awaaz Pakistan', 'Developed by RTsoftBD Android devlopment Team', 'assets/android_images/91.png'),
-(6, 'Zajira (জাজিরা) ', 'Developed by RTsoftBD Android devlopment Team', 'assets/android_images/34.png');
+(6, 'Zajira (জাজিরা) ', 'Developed by RTsoftBD Android Devlopment Team', 'assets/android_images/34.png');
 
 -- --------------------------------------------------------
 
