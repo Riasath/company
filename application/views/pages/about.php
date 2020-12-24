@@ -254,7 +254,7 @@
 			>
 				
 <div class="teammembers-item">
-<img src="<?php echo $v_team->image?>" style="height:160px;width:230px;">
+<img src="<?php echo $v_team->image?>" style="height:160px;width:200px;">
 <h5 class="teammembers-item-name">
 	<?php echo $v_team->name;?>
 </h5>

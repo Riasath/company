@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
            <!--  --><?php //echo $title;?><!--  -->
-
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/fonts.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/crumina-fonts.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/normalize.css'); ?>">
@@ -192,7 +191,7 @@ style="height:50px;width:150px;" class="img-fluid" alt="RTSOFTBD">
   <?php if($menu->menu_id !=$menu->m_id):?>
      
 	<li class="menu-item-has-children">
-		<a href="<?php echo base_url().$menu->m_url;?>">
+		<a href="<?php echo $menu->m_url;?>">
 			<?php echo $menu->m_name;?>
 		</a>
 	</li>
@@ -206,7 +205,7 @@ style="height:50px;width:150px;" class="img-fluid" alt="RTSOFTBD">
 	<?php if($menu->menu_id ==$item->m_id):?>
      
 	<li class="menu-item-has-children">
-		<a href="<?php echo base_url().$item->m_item_url;?>" class="seoicon-right-arrow">
+		<a href="<?php echo $item->m_item_url;?>" class="seoicon-right-arrow">
 			<?php echo $item->m_item_name;?>
 		</a>
 	</li>
@@ -385,8 +384,8 @@ style="height:50px;width:150px;" class="img-fluid" alt="RTSOFTBD">
 	 <?php foreach($footermenu as $v_menu){?>
 	<li>
 		<i class="fa fa-caret-right" aria-hidden="true"></i>
-		<a href="<?= base_url().$v_menu->link;?>">
-			<?php echo $v_menu->title;?>
+		<a href="<?= $v_menu->link;?>">
+    <?php echo $v_menu->title;?>
 		</a>
 	</li>
 	<?php }?>

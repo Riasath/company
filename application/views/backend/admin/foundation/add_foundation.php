@@ -5,7 +5,7 @@
             <div class="card-header" style="background:#218637; ">
                 <div class="row">
                     <div class="col-md-10">
-                        <h3 class="card-title">Create Slider</h3>
+                        <h3 class="card-title">Create Foundation Timeline</h3>
                     </div>
                 </div>
             </div>

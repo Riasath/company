@@ -25,14 +25,17 @@
    <div class="row">
      
     <div class="col-md-6">
-         <h2><span class="text-danger">Must select MainMenu Name</span>  </h2>
+         <h2><span class="text-danger">Must select MainMenu Name</span> 
+          </h2>
         <select class="form-control" name="m_id" id="m_id">
         <option value="" disabled>Select a parent menu</option>
       <?php foreach ($main_menu as $key => $value): ?>
         <option value="<?=$value->m_id?>"><?=$value->m_name?></option>
+
       <?php endforeach ?>
       </select>
      </div>
+     
        <div class="col-md-6">
         <h4>Dropdown Item Menu Name</h4>
          <input type="text"  class="form-control" placeholder="Enter Items name" name="m_item_name" id="m_item_name" required>

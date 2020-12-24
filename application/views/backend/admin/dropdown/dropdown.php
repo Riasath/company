@@ -48,7 +48,7 @@
                      </select>
                  </div>
 				<div class="col-md-5">
-					<h4>Dropdown Menu Item UR <?= $serial ?></h4>
+					<h4>Dropdown Menu Item URL <?= $serial ?></h4>
 					<input type="text" class="form-control" value="<?php echo $list->m_item_url?>" name="m_item_url" id="m_item_url" required>
 				</div>
 

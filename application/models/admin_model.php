@@ -13,6 +13,7 @@ $data['time']=$this->input->post('time',true);
  $this->db->insert('popup',$data);
 
   }
+  
   public function select_popup(){
 
 
@@ -1353,6 +1354,10 @@ $data=array();
   
 $data['name']=$this->input->post('name',true); 
 $data['post']=$this->input->post('post',true); 
+ $data['fblink']=$this->input->post('fblink',true);
+$data['ylink']=$this->input->post('ylink',true);
+$data['glink']=$this->input->post('glink',true);
+$data['tlink']=$this->input->post('tlink',true);
 
              
              $sdata=array();
@@ -1487,10 +1492,13 @@ $query_result=$this->db->get();
     
     $data['name']=$this->input->post('name',true);
     $data['post']=$this->input->post('post',true);
+    $data['fblink']=$this->input->post('fblink',true);
+    $data['ylink']=$this->input->post('ylink',true);
+    $data['glink']=$this->input->post('glink',true);
+    $data['tlink']=$this->input->post('tlink',true);
    
-
-
-         $sdata=array();
+   
+ $sdata=array();
              $error="";
              $config['upload_path']             = 'assets/team_member_img/';
              $config['allowed_types']           ='gif|jpg|png';

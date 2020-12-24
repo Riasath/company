@@ -62,7 +62,7 @@
 		
 		<div class="col-md-6">
 			<h4>Upload New  Foundation Photo
-            ((Maximum 270px width,282px height ))
+            (Maximum 270px width,282px height )
 			</h4>
 				 <input type="file" name="foundation_image" class="form-control">
 			</div>

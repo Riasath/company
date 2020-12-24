@@ -21,6 +21,7 @@
        <input type="text"class="form-control" value="<?php echo $all_team_by_id->name ?>"name="name" id="name" >
       
        </div>
+       <input type="hidden" value="<?php echo $all_team_by_id->id ?>"name="id" id="id" >
        <div class="col-md-6">
          <h4>Recent Member Image</h4>
        <img class="img-fluid" style="height:90px;width:90px;" src="<?php echo base_url().$all_team_by_id->image?>">

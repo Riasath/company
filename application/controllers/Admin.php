@@ -5,6 +5,7 @@ class Admin extends CI_Controller
 {
     private $main_layout = 'backend/master_layout';
     private $side_menu = 'backend/admin/side_menu';
+  
     public function index()
 	{
  
@@ -2512,6 +2513,7 @@ public function edit_android($id)
 	   	$path = 'backend/admin/android/edit_android';
       $this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
 
+
 	}
 	public function update_android()
 	{
@@ -2552,9 +2554,6 @@ public function web_development()
 	}
 	
 
-	
-
-	
 	public function add_web_development()
 	{
         $data = $this->engine->store_nav('portfolio', 'web_development', 'Create New web_development');

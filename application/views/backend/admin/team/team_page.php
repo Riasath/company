@@ -37,10 +37,10 @@
 										<th >Team Member Youtube Image</th>
 										<th >Team Member Google Image</th>
 										<th >Team Member TWitter Image</th>
-										<th >Team Member facebook Image</th>
-										<th >Team Member youtube Image</th>
-										<th >Team Member google Image</th>
-										<th >Team Member TWitter Image</th>
+										<th >Team Member facebook Image Link </th>
+										<th >Team Member youtube Image Link</th>
+										<th >Team Member google Image Link</th>
+										<th >Team Member TWitter Image Link</th>
                                         <th >Action</th>
 									</tr>
 								</thead>

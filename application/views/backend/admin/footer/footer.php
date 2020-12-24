@@ -33,7 +33,7 @@
 					<input type="text" class="form-control" value="<?php echo $list->company_name?>" name="company_name" id="company_name">
 				</div>
 			<div class="col-md-6">
-						<h4>Degin By Name</h4>
+						<h4>Design By Name</h4>
 					<input type="text" class="form-control" value="<?php echo $list->design?>" name="design" id="design">
 				</div>
 				<div class="col-md-6">
