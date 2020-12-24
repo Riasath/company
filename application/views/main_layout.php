@@ -121,26 +121,17 @@
 
 <div class="follow_us">
 <span>Follow us:</span>
+ <?php foreach($popupicon as $v_popup){?>
 <div class="socials">
 
-<a href="#" class="social__item">
-<img src="<?= base_url('assets/images/')?>circle-facebook.svg" alt="facebook">
-</a>
-
-<a href="#" class="social__item">
-<img src="<?= base_url('assets/images/')?>twitter.svg" alt="twitter">
-</a>
-
-<a href="#" class="social__item">
-<img src="<?= base_url('assets/images/')?>google.svg" alt="google">
-</a>
-
-<a href="#" class="social__item">
-<img src="<?= base_url('assets/images/')?>youtube.svg" alt="youtube">
+<a href="<?php echo $v_popup->link?>" class="social__item">
+<img src="<?php echo $v_popup->image?>" style="height:20px;width: 20px;border-radius:4px;  ">
 </a>
 
 </div>
+<?php }?>
 </div>
+
 
 <a href="#" class="top-bar-close" id="top-bar-close-js">
 <span></span>

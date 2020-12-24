@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2020 at 07:35 AM
+-- Generation Time: Dec 24, 2020 at 09:45 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -882,7 +882,30 @@ CREATE TABLE `popup` (
 --
 
 INSERT INTO `popup` (`id`, `mobile`, `gmail`, `day`, `time`) VALUES
-(1, '01832780099', 'shaown@gmail.com', 'Monday-Saturday', '10am-6pm');
+(1, '018327800991', 'shaown@gmail.com', 'Monday-Saturday', '10am-6pm');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `popupicon`
+--
+
+CREATE TABLE `popupicon` (
+  `id` int(11) NOT NULL,
+  `image` varchar(250) NOT NULL,
+  `link` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `popupicon`
+--
+
+INSERT INTO `popupicon` (`id`, `image`, `link`) VALUES
+(2, 'assets/popup_images/51.png', 'http://facebook.com'),
+(3, 'assets/popup_images/8.png', 'http://google.com'),
+(4, 'assets/popup_images/102.png', 'http://twitter.com'),
+(5, 'assets/popup_images/7.png', 'http://youtube.com'),
+(6, 'assets/popup_images/61.png', 'http://whatsapp.com');
 
 -- --------------------------------------------------------
 
@@ -1016,7 +1039,7 @@ CREATE TABLE `sidebar` (
 --
 
 INSERT INTO `sidebar` (`id`, `title`, `details`, `image`, `mobile`, `gmail`, `address`) VALUES
-(1, 'RTsoftBD', '                                                                                                                                                  RTSOFTBD is an incredibly SOFTWARE Farm for corporate and creative\r\nprofessionals.Focused on helping cli', 'assets/sidebar_images/rtsoftbd_logo2.png', '+88017000000', 'rtsoftbd@gmail.com', '                                                                                                                       132,Jahanara garden,green road,dhaka-1205                                                                                          ');
+(1, '', '', 'assets/sidebar_images/rtsoftbd_logo2.png', '018327800991', 'shaown@gmail.com', '');
 
 -- --------------------------------------------------------
 
@@ -1651,6 +1674,12 @@ ALTER TABLE `popup`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `popupicon`
+--
+ALTER TABLE `popupicon`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -2013,6 +2042,12 @@ ALTER TABLE `partner_image`
 --
 ALTER TABLE `popup`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `popupicon`
+--
+ALTER TABLE `popupicon`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `product`

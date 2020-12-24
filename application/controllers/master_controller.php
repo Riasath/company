@@ -24,6 +24,7 @@ public function __construct(){
   $data['infobox1']=$this->admin_model->select_infobox1();
  $data['mainlogo']=$this->admin_model->select_logo();
    $data['popup']=$this->admin_model->select_popup();
+   $data['popupicon']=$this->admin_model->select_popupicon();
    $data['sidebar']=$this->admin_model->select_sidebar();
 
   $data['all_db_slider']=$this->slider_model->select_all_slider_info();

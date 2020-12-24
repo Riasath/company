@@ -29,16 +29,21 @@
 
 			?>
 
-	 <form action="<?php echo base_url()?>update-popoupicon" method="post" enctype="multipart/form-data">
+	 <form action="<?php echo base_url()?>update-popupicon" method="post" enctype="multipart/form-data">
 			<div class="row">
 					            
 		<div class="col-md-6">
 			<h4>Social media icon <?= $serial ?> </h4>
-			 <img  style="height: 200px;width: 300px;"src="<?php echo base_url().$list->image?>">
+			 <img  style="border-radius:4px;height:80px;width:110px;"src="<?php echo base_url().$list->image?>">
 			</div>
 		<div class="col-md-6">
 			<h4>Upload New Social media icon <?= $serial ?></h4>
 				 <input type="file" name="image" class="form-control">
+			</div>
+
+			<div class="col-md-6">
+			<h4>Add icon link <?= $serial ?></h4>
+				<input type="text" class="form-control" value="<?php echo $list->link?>" name="link" id="link">
 			</div>
 			  <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>
 			 

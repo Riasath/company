@@ -5,11 +5,11 @@
             <div class="card-header" style="background:#23272B; ">
                 <div class="row">
                     <div class="col-md-10">
-                        <h3 class="card-title">Create Client</h3>
+                        <h3 class="card-title">Create Popup Icon</h3>
                     </div>
                      <div class="col-md-2">
-            <a href="<?php echo base_url('Admin/client') ?>">
-              <button type='button' id="" class='btn bg-info'>Client List</i>
+            <a href="<?php echo base_url('Admin/popupicon') ?>">
+              <button type='button' id="" class='btn bg-info'>Icon List</i>
               </button></a>
           </div>
                 </div>
@@ -21,14 +21,18 @@
             <?= alert_check() ?>
             <section class="content" style="margin-top:20px">
              
-        <form action="<?php echo base_url() ?>save-client-list" method="post" enctype="multipart/form-data">
+        <form action="<?php echo base_url() ?>save-popupicon" method="post" enctype="multipart/form-data">
                                
 
    <div class="row">
      
      <div class="col-md-6">
-        <h4>Add Client Image (Maximum height 101px and width 107px)</h4>
-         <input type="file" class="form-control" name="client_image" id="client_image" required>
+        <h4>Add social media icon (Maximum height 100px and width 100px)</h4>
+         <input type="file" class="form-control" name="image" id="image" required>
+     </div>
+     <div class="col-md-6">
+        <h4>Add social media link</h4>
+         <input type="text" class="form-control" name="link" id="link" required>
      </div>
 
      
@@ -53,7 +57,7 @@
 
 
             </div>
-          <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/client.png">
+          <img  class="img-fluid" src="<?php echo base_url('assets')?>/images/socialpopup.png">
           
 
           
