@@ -12,8 +12,8 @@
 
  <form action="" method="post" enctype="multipart/form-data">
 	<div class="row">
-		<div class="col-md-8"><p>স্মারক নং-</p></div>
-			<div class="col-md-4"><p>তারিখঃ<input type="date"></p>
+		<div class="col-md-9"><p>স্মারক নং-</p></div>
+			<div class="col-md-3"><p>তারিখঃ<input type="date"></p>
 			   </div>
 
 			<div class="col-md-12">
@@ -141,12 +141,12 @@
               <input type="text"  class="form-control"required>
 		   
 		   </div>
-		   <div class="col-md-4">
+		   <div class="col-md-4" style="margin-top:15px;">
 		   	<p>
 		   		অতএব,উক্ত তথ্য বিবেচনা করে </p>
 
 		   	</div>
-		   	 <div class="col-md-8">
+		   	 <div class="col-md-8" style="margin-top:15px;">
 		   	<input type="text"  class="form-control"required>
              </div>
               <div class="col-md-12">
