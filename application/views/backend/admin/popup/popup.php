@@ -22,7 +22,7 @@
 
 									 <?php
         $message=$this->session->userdata('message');
-        if($message){
+        if($message ){
 
           echo "<span class='' style='color:#E1711D;font-family:verdana;font-size:20px;' >$message</span>";
           $this->session->unset_userdata('message');
@@ -32,7 +32,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h4>Popup Mobile</h4>
-					<input type="text" class="form-control" value="<?php echo $list->mobile?>" name="mobile" id="mobile">
+					<input type="text" class="form-control" value="<?php echo $list->mobile?>" name="mobile" id="mobile" >
 				</div>
 
     <input type="hidden" value="<?php echo $list->id ?>"name="id" id="id" ></br>

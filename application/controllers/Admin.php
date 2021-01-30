@@ -3697,6 +3697,18 @@ public function edit_dropdown($m_item_id)
 
 
 
+//micro finance project
+	public function form()
+	{
+        $data = $this->engine->store_nav('project', 'form', 'project form');
+       // $data['logoList'] = $this->Common->get_data('logo');
+        
+        $path = 'backend/admin/form/index';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+
+
 
 	
 	

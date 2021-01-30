@@ -32,6 +32,28 @@
 					</a>
 				</li>
 
+
+						<li class="nav-item has-treeview <?= active_open('project', $main_nav); ?>">
+					<a href="#" class="nav-link <?= active_nav('project', $main_nav); ?>">
+						<i class="nav-icon fas fa-edit"></i>
+						<p>
+
+						Project
+							<i class="fas fa-angle-left right"></i>
+						</p>
+					</a>
+					<ul class="nav nav-treeview">
+					
+			<li class="nav-item">
+			<a href="<?php echo base_url('Admin/form') ?>" class="nav-link <?= active_nav('form', $sub_nav); ?>">
+				<i class="far fa-circle nav-icon"></i>
+					<p>সদস্য আবেদন ফরমঃ</p>
+			</a>
+		</li>
+												
+					</ul>
+				</li>
+
 				<li class="nav-item has-treeview <?= active_open('appearance', $main_nav); ?>">
 					<a href="#" class="nav-link <?= active_nav('appearance', $main_nav); ?>">
 						<i class="nav-icon fas fa-edit"></i>
