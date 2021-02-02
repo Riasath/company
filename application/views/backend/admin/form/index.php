@@ -11,8 +11,8 @@
 
  <form action="" method="post" enctype="multipart/form-data">
 	<div class="row">
-		<div class="col-md-10"><p>স্মারক নং-</p></div>
-			<div class="col-md-2"><p>তারিখঃ<input type="date"></p>
+		<div class="col-md-9"><p>স্মারক নং-</p></div>
+			<div class="col-md-3"><p>তারিখঃ<input type="date"></p>
 			   </div>
 
 			<div class="col-md-12">
