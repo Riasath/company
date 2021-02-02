@@ -348,12 +348,12 @@
 		    </h6>
 		   </div>
 		   
-		   <div class="col-md-4" style="margin-top:8px; " >
+		   <div class="col-md-3" style="margin-top:8px; " >
 		   
               <input type="text"  class="form-control"required>
 		   
 		   </div>
-		   <div class="col-md-3" style="margin-top:8px; "  >
+		   <div class="col-md-4" style="margin-top:8px; "  >
 		   	<h6 >
               ঋণ অনুমোদন/মঞ্জুর করলাম
 		    </h6>
