@@ -56,6 +56,18 @@
 					<p>সদস্য আবেদন ফরমঃ1</p>
 			</a>
 		</li>
+		<li class="nav-item">
+			<a href="<?php echo base_url('Admin/table1') ?>" class="nav-link <?= active_nav('table1', $sub_nav); ?>">
+				<i class="far fa-circle nav-icon"></i>
+					<p>Table1</p>
+			</a>
+		</li>
+		<li class="nav-item">
+			<a href="<?php echo base_url('Admin/table2') ?>" class="nav-link <?= active_nav('table2', $sub_nav); ?>">
+				<i class="far fa-circle nav-icon"></i>
+					<p>Table2</p>
+			</a>
+		</li>
 												
 					</ul>
 				</li>

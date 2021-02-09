@@ -3717,6 +3717,25 @@ public function edit_dropdown($m_item_id)
 	}
 
 
+//table1
+	public function table1()
+	{
+        $data = $this->engine->store_nav('project', 'table1', 'project table');
+       // $data['logoList'] = $this->Common->get_data('logo');
+        
+        $path = 'backend/admin/table1/index';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+		public function table2()
+	{
+        $data = $this->engine->store_nav('project', 'table2', 'project table');
+       // $data['logoList'] = $this->Common->get_data('logo');
+        
+        $path = 'backend/admin/table2/index';
+		$this->engine->render_view($data, $path, $this->side_menu, $this->main_layout);
+	}
+
+
 
 
 	
